@@ -13,7 +13,7 @@
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
 </head>
-
+<?php include_once "Conn_SQL.php"; ?>
 <body>
 	<div class="banner1">
 		<div class="banner-info1">
@@ -30,17 +30,17 @@
 						<div class="logo">
 							<table>
 								<tr>
-									<td style="width:15%"><a href="index.html"><img src="images/logo.png" style="border-radius: 20px;width:100%;" /></a></td>
+									<td style="width:15%"><a href="index.php"><img src="images/logo.png" style="border-radius: 20px;width:100%;" /></a></td>
 									<td style="width:30%">
-										<a class="navbar-brand" href="index.html" style="font-size: 50px;">
+										<a class="navbar-brand" href="index.php" style="font-size: 50px;">
 											台灣語文學會<br><text style="font-size: 12px;">Taiwan Languagee & Literature Society</text>
 										</a>
 									</td>
 									<td style="width:55%;">
 										<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 											<ul class="nav navbar-nav cl-effect-18" id="cl-effect-18">
-												<li class="act"><a href="index.html" style="font-size: 16px;">首頁</a></li>
-												<li><a href="events.html" style="font-size: 16px;">學會簡介</a></li>
+												<li class="act"><a href="index.php" style="font-size: 16px;">首頁</a></li>
+												<li><a href="Introduction.php" style="font-size: 16px;">學會簡介</a></li>
 												<li role="presentation" class="dropdown" style="font-size: 16px;">
 													<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
 														aria-haspopup="true" aria-expanded="false" style="font-size: 16px;">
@@ -90,9 +90,18 @@
 					<h2>最新消息</h2>
 				</div>
 				<div class="marquee">
-					<div class="marquee1"><a class="breaking" href="single.html">「第十五屆台灣語言及其教學國際學術研討會」徵稿啟事</a></div>
-					<div class="marquee2"><a class="breaking" href="single.html">國際漢學平台李壬癸院士的訪談影片分享</a></div>
-					<div class="marquee2"><a class="breaking" href="single.html">《臺灣語文研究》第18卷第2期已出版</a></div>
+					<?php
+						$sql = "SELECT * FROM `marquee` WHERE `IsShow`=1";
+						$result = $conn->query($sql);
+						if ($result->num_rows > 0) {
+    						while ($row = mysqli_fetch_array($result)) {
+								if($row["url"]!="")
+									echo "<div class='marquee1'><a class='breaking' href='".$row["url"]."'>".$row["Message"]."</a></div>";
+								else
+									echo "<div class='marquee1'><a class='breaking'>".$row["Message"]."</a></div>";
+    						}
+						}	
+					?>		
 					<div class="clearfix"></div>
 				</div>
 				<div class="clearfix"></div>
@@ -128,50 +137,54 @@
 					<h3>組織成員</h3>
 					<div class="banner-bottom-video-grid-left">
 						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-							<div class="panel panel-default">
-								<div class="panel-heading" role="tab" id="headingOne">
-									<h4 class="panel-title">
-										<a class="pa_italic collapsed" role="button" data-toggle="collapse"
-											data-parent="#accordion" href="#collapseOne" aria-expanded="true"
-											aria-controls="collapseOne">
-											<span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i
-												class="glyphicon glyphicon-minus"
-												aria-hidden="true"></i>第16屆理監事會[任期自2022/08/27至2024/08/26]
-										</a>
-									</h4>
-								</div>
-								<div id="collapseOne" class="panel-collapse collapse" role="tabpanel"
-									aria-labelledby="headingOne" style="height: 0px;">
-									<div class="panel-body">
-										<table class="table table-bordered">
-											<tr>
-												<td width="35%">常務理事兼會長</td>
-												<td>陳麗君</td>
-											</tr>
-											<tr>
-												<td>常務理事兼副會長</td>
-												<td>陳淑娟</td>
-											</tr>
-											<tr>
-												<td>常務理事</td>
-												<td>葉美利</td>
-											</tr>
-											<tr>
-												<td>理　事</td>
-												<td>江敏華、吳瑞文、何萬順、洪惟仁、徐富美、張學謙、楊秀芳、鄭　縈</td>
-											</tr>
-											<tr>
-												<td>常務監事</td>
-												<td>王　旭</td>
-											</tr>
-											<tr>
-												<td>監　事</td>
-												<td>連金發、曹逢甫</td>
-											</tr>
-										</table>
-									</div>
-								</div>
-							</div>
+							<?php
+								$sql = "SELECT * FROM `member` ORDER BY OrderIndex DESC";
+								$result = $conn->query($sql);
+								if ($result->num_rows > 0) {
+									while ($row = mysqli_fetch_array($result)) {
+										echo "<div class='panel panel-default'>";
+										echo "	<div class='panel-heading' role='tab' id='headingOne'>";
+										echo "		<h4 class='panel-title'>";
+										echo "			<a class='pa_italic collapsed' role='button' data-toggle='collapse'";
+										echo "				data-parent='#accordion' href='#collapse".$row["Term"]."' aria-expanded='true'";
+										echo "				aria-controls='collapse".$row["Term"]."'>";
+										echo "				<span class='glyphicon glyphicon-plus' aria-hidden='true'></span><i";
+										echo "					class='glyphicon glyphicon-minus'";
+										echo "					aria-hidden='true'></i>第".$row["Term"]."屆理監事會[".$row["Sessions"]."]";
+										echo "			</a>";
+										echo "		</h4>";
+										echo "	</div>";
+										echo "	<div id='collapse".$row["Term"]."' class='panel-collapse collapse' role='tabpanel'";
+										echo "		aria-labelledby='headingOne' style='height: 0px;'>";
+										echo "		<div class='panel-body'>";
+										echo "			<table class='table table-bordered'>";
+															for($i=1;$i<=15;$i++){
+																if($row["Title".$i]!=""){
+																	if($i==1){
+																		echo "				<tr>";
+																		echo "					<td width='35%'>".$row["Title".$i]."</td>";
+																		echo "					<td>".$row["Value".$i]."</td>";
+																		echo "				</tr>";
+
+																	}
+																	else{
+																		echo "				<tr>";
+																		echo "					<td>".$row["Title".$i]."</td>";
+																		echo "					<td>".$row["Value".$i]."</td>";
+																		echo "				</tr>";
+																	}
+																}
+																else{
+																	break;
+																}
+															}
+										echo "			</table>";
+										echo "		</div>";
+										echo "	</div>";
+										echo "</div>";
+									}
+								}
+							?>
 						</div>
 					</div>
 				</div>
