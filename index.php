@@ -40,13 +40,13 @@
 						<div class="logo">
 							<table>
 								<tr>
-									<td style="width:15%"><a href="index.php"><img src="images/logo.png" style="border-radius: 20px;width:100%;" /></a></td>
+									<td style="width:10%"><a href="index.php"><img src="images/logo.png" style="border-radius: 20px;width:100%;" /></a></td>
 									<td style="width:30%">
 										<a class="navbar-brand" href="index.php" style="font-size: 50px;">
 											台灣語文學會<br><text style="font-size: 12px;">Taiwan Languagee & Literature Society</text>
 										</a>
 									</td>
-									<td style="width:55%;">
+									<td style="width:60%;">
 										<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 											<ul class="nav navbar-nav cl-effect-18" id="cl-effect-18">
 												<li class="act"><a href="index.php" style="font-size: 16px;">首頁</a></li>
@@ -61,16 +61,8 @@
 														<li><a href="short-codes.html">期刊</a></li>
 													</ul>
 												</li>
-												<li role="presentation" class="dropdown" style="font-size: 16px;">
-													<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-														aria-haspopup="true" aria-expanded="false" style="font-size: 16px;">
-														會員專區 <span class="caret"></span>
-													</a>
-													<ul class="dropdown-menu" style="font-size: 16px;">
-														<li><a href="short-codes.html">申請入會</a></li>
-														<li><a href="icons.html">入會申請表</a></li>
-													</ul>
-												</li>
+												<li><a href="Member.php" style="font-size: 16px;">歷屆獎項</a></li>
+												<li><a href="Member.php" style="font-size: 16px;">會員專區</a></li>
 												<li role="presentation" class="dropdown" style="font-size: 16px;">
 													<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
 														aria-haspopup="true" aria-expanded="false" style="font-size: 16px;">
