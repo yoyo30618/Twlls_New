@@ -129,54 +129,31 @@
 			</div><br>
 				<div id="top" class="callbacks_container" >
 					<ul class="rslides" id="slider3">
-						<li style="width: 100%;">
-							<div class="banner-info-slider">
-								<ul>
-									<li><a href="single.html">研討會</a></li>
-									<li style="float:right;padding-right: 2%;">21 MAR 2024</li>
-								</ul>
-								<h3>「第十五屆台灣語言及其教學國際學術研討會」徵稿啟事</h3>
-								<p><span>-- <i>台灣語言及其教學國際學術研討會</i></span></p>
-								<div class="more">
-									<a href="single.html" class="type-1">
-										<span> Read More </span>
-										<span> Read More </span>
-									</a>
-								</div>
-							</div>
-						</li>
-						<li style="width: 100%;">
-							<div class="banner-info-slider">
-								<ul>
-									<li><a href="single.html">出版品</a></li>
-									<li style="float:right;padding-right: 2%;">15 FEB 2024</li>
-								</ul>
-								<h3>《臺灣語文研究》第18卷第2期已出版</h3>
-								<p><span>-- <i>《臺灣語文研究》</i></span></p>
-								<div class="more">
-									<a href="single.html" class="type-1">
-										<span> Read More </span>
-										<span> Read More </span>
-									</a>
-								</div>
-							</div>
-						</li>
-						<li style="width: 100%;">
-							<div class="banner-info-slider">
-								<ul>
-									<li><a href="single.html">學會公告</a></li>
-									<li style="float:right;padding-right: 2%;">30 JAN 2024</li>
-								</ul>
-								<h3>國際漢學平台李壬癸院士的訪談影片分享</h3>
-								<p><span>-- <i>國際漢學平台</i></span></p>
-								<div class="more">
-									<a href="single.html" class="type-1">
-										<span> Read More </span>
-										<span> Read More </span>
-									</a>
-								</div>
-							</div>
-						</li>
+						<?php
+							$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `ShowOnBanner`=1 ORDER BY OrderIndex LIMIT 20";
+							$result = $conn->query($sql);
+							if ($result->num_rows > 0) {
+								while ($row = mysqli_fetch_array($result)) {
+									echo"<li style='width: 100%;'>";
+										echo"<div class='banner-info-slider'>";
+											echo"<ul>";
+												echo"<li><a>".$row["Classification"]."</a></li>";
+												echo"<li style='float:right;padding-right: 2%;'>".substr($row["DateTime"],0,10)."</li>";
+											echo"</ul>";
+											echo"<h3><a style='color:white;' href='".$row["url"]."'>".$row["Title"]."</a></h3>";
+											echo"<p><span>-- <i>".$row["PostedBy"]."</i></span></p>";
+											echo"<div class='more'>";
+												echo"<a href='' class='type-1'>";
+													echo"<span> Read More </span>";
+													echo"<span> Read More </span>";
+												echo"</a>";
+											echo"</div>";
+										echo"</div>";
+									echo"</li>";
+						
+								}
+							}
+						?>						
 					</ul>
 				</div>
 			</div>
@@ -195,14 +172,18 @@
 								</div>
 							</div>
 							<ul class="list" style="font-size: 10pt;">
-								<li><a>第六屆台灣語文學會優秀博士論文獎獲獎名單</a></li>
-								<li><a>因應Covid-19多數學校延後畢業離校手續期限，第六屆台灣語文學會優秀博士論文獎持續收件至十月底</a></li>
-								<li><a>第六屆台灣語文學會優秀博士論文獎即日起開放申請</a></li>
-								<li><a>台灣語文學會Logo設計比賽獲獎名單</a></li>
-								<li><a>臺東大學華語系多語言詩歌比賽</a></li>
+								<?php
+									$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='活動消息' ORDER BY OrderIndex LIMIT 20";
+									$result = $conn->query($sql);
+									if ($result->num_rows > 0) {
+										while ($row = mysqli_fetch_array($result)) {
+											echo "<li><a style='color:black' href='".$row["url"]."'>".$row["Title"]."</a></li>";
+										}
+									}
+								?>
 							</ul>
 							<div class="read-more">
-								<a href="single.html">READ MORE</a>
+								<a href="News.php">READ MORE</a>
 							</div>
 						</div>
 					</div>
@@ -215,14 +196,18 @@
 								</div>
 							</div>
 							<ul class="list" style="font-size: 10pt;">
-								<li><a>台灣語文學會「一日大師講座」活動即將於2020/10/28舉辦</a></li>
-								<li><a>台灣語言學系列演講－－台灣ê社會語言狀況，歡迎踴躍參加</a></li>
-								<li><a>2022/4/8「反對2030雙語國家」記者會相關報導</a></li>
-								<li><a>國際漢學平台李壬癸院士的訪談影片分享</a></li>
-								<li><a>台灣語文學會第16屆理監事選舉結果及當選名單</a></li>
+								<?php
+									$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='研討會消息' ORDER BY OrderIndex LIMIT 20";
+									$result = $conn->query($sql);
+									if ($result->num_rows > 0) {
+										while ($row = mysqli_fetch_array($result)) {
+											echo "<li><a style='color:black' href='".$row["url"]."'>".$row["Title"]."</a></li>";
+										}
+									}
+								?>
 							</ul>
 							<div class="read-more">
-								<a href="single.html">READ MORE</a>
+								<a href="News.php">READ MORE</a>
 							</div>
 						</div>
 					</div>
@@ -231,18 +216,22 @@
 							<div class="video-bottom-grid1-before before1">
 								<img src="images/smallbanner.jpg" alt=" " class="img-responsive" />
 								<div class="video-bottom-grid1-pos">
-									<p>出版刊物</p>
+									<p>刊物出版消息</p>
 								</div>
 							</div>
 							<ul class="list" style="font-size: 10pt;">
-								<li><a>《臺灣語文研究》榮獲2023年臺灣人文及社會科學核心期刊第一級</a></li>
-								<li><a>《臺灣語文研究》第18卷第2期已出版</a></li>
-								<li><a>《臺灣語文研究》第18卷第1期已出版</a></li>
-								<li><a>《臺灣語文研究》第17卷第2期已出版</a></li>
-								<li><a>《臺灣語文研究》第17卷第1期已出版</a></li>
+								<?php
+									$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='刊物出版消息' ORDER BY OrderIndex LIMIT 20";
+									$result = $conn->query($sql);
+									if ($result->num_rows > 0) {
+										while ($row = mysqli_fetch_array($result)) {
+											echo "<li><a style='color:black' href='".$row["url"]."'>".$row["Title"]."</a></li>";
+										}
+									}
+								?>
 							</ul>
 							<div class="read-more">
-								<a href="single.html">READ MORE</a>
+								<a href="News.php">READ MORE</a>
 							</div>
 						</div>
 					</div>
@@ -255,14 +244,18 @@
 								</div>
 							</div>
 							<ul class="list" style="font-size: 10pt;">
-								<li><a>	[徵稿啟事]第七屆青年學者台灣語言學術研討會暨台灣語文學會成立三十周年慶祝大會	</a></li>
-								<li><a>	第十三屆台灣語言及其教學國際學術研討會	</a></li>
-								<li><a>	第十三屆台灣語言及其教學國際學術研討會徵稿啟事	</a></li>
-								<li><a>	第六屆青年學者台灣語言學術研討會 論文發表錄取名單	</a></li>
-								<li><a>	第六屆青年學者台灣語言學術研討會開始報名	</a></li>
+								<?php
+									$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='學會消息' ORDER BY OrderIndex LIMIT 20";
+									$result = $conn->query($sql);
+									if ($result->num_rows > 0) {
+										while ($row = mysqli_fetch_array($result)) {
+											echo "<li><a style='color:black' href='".$row["url"]."'>".$row["Title"]."</a></li>";
+										}
+									}
+								?>
 							</ul>
 							<div class="read-more">
-								<a href="single.html">READ MORE</a>
+								<a href="News.php">READ MORE</a>
 							</div>
 						</div>
 					</div>
@@ -284,8 +277,8 @@
 				</div>
 				<div class="col-md-4 footer-grid-left">
 					<h3>相關連結</h3>
-					<a style="color:white"><i>- 洪惟仁老師網站</i></a><br>
-					<a style="color:white"><i>- 台灣語言學學會</i></a>
+					<a style="color:white" href="http://www.uijin.idv.tw/" target="_blank"><i>- 洪惟仁老師網站</i></a><br>
+					<a style="color:white" href="https://linguist.tw/zh-tw/" target="_blank"><i>- 台灣語言學學會</i></a>
 				</div>
 				<div class="col-md-4 footer-grid-left">
 					<h3>關於我們</h3>

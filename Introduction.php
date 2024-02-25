@@ -108,7 +108,7 @@
 					<div class="news-grid-rght3">
 						<img src="images/found.jpg" alt=" " class="img-responsive" />
 						<div class="story">
-							<p>台灣語文學會</p>
+							<p style="color:red;">「台灣語文學會」成立經過</p>
 							<h3>
 								<pre style="white-space: pre-wrap;font-family:CustomFont;">
 　　「台灣語文學會」最早於1990年開始，由張裕宏教授、董忠司教授與洪惟仁教授展開籌備。1991年，委由董忠司教授草擬學會章程草案。之後陸續邀集周純一教授、陳恒嘉教授等討論草案內容，並積極聯絡各大學、研究單位的語文及相關科目的學者，募集發起人。
@@ -188,11 +188,7 @@
 						<h3>相關法規</h3>
 						<ul>
 							<li>
-								<h2><a href="single.html">台灣語文學會組織章程</a> By 台灣語文學會 <label>|</label> <i>31.12.2015</i>
-								</h2>
-							</li>
-							<li>
-								<h2><a href="single.html">台灣語文學會理監事選舉辦法</a> By 台灣語文學會 <label>|</label> <i>31.12.2015</i>
+								<h2><a href="Constitution.php">台灣語文學會組織章程</a> By 台灣語文學會
 								</h2>
 							</li>
 						</ul>
@@ -214,8 +210,8 @@
 				</div>
 				<div class="col-md-4 footer-grid-left">
 					<h3>相關連結</h3>
-					<a style="color:white"><i>- 洪惟仁老師網站</i></a><br>
-					<a style="color:white"><i>- 台灣語言學學會</i></a>
+					<a style="color:white" href="http://www.uijin.idv.tw/" target="_blank"><i>- 洪惟仁老師網站</i></a><br>
+					<a style="color:white" href="https://linguist.tw/zh-tw/" target="_blank"><i>- 台灣語言學學會</i></a>
 				</div>
 				<div class="col-md-4 footer-grid-left">
 					<h3>關於我們</h3>

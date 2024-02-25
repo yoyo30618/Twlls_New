@@ -174,7 +174,7 @@
 								</tr>
 								<tr> 
 									<td colspan="2"><b>附註：</b><br> 
-									1.符合上述資格，欲加入本學會者，可自行下載「<a href="documents/tlls_application2020.doc" style="color:blue">入會申請表</a>」，詳細填寫資料後，請<a href="mailto:contact.tlls@gmail.com" style="color:blue">E-mail</a>寄回本會。<br>
+									1.符合上述資格，欲加入本學會者，可自行下載「<a href="Documents/tlls_application2020.doc" style="color:blue">入會申請表</a>」，詳細填寫資料後，請<a href="mailto:contact.tlls@gmail.com" style="color:blue">E-mail</a>寄回本會。<br>
 									2.本學會於接受「入會申請表」後，經由理事會審核通過，方可成為正式會員。<br>
 									3.經理事會審核通過新加入的會員，需繳交壹仟圓入會費，及年費。<br />年費：一般會員壹仟圓，學生會員（為目前在學學生）伍佰圓。
 									</td>
@@ -251,8 +251,8 @@
 				</div>
 				<div class="col-md-4 footer-grid-left">
 					<h3>相關連結</h3>
-					<a style="color:white"><i>- 洪惟仁老師網站</i></a><br>
-					<a style="color:white"><i>- 台灣語言學學會</i></a>
+					<a style="color:white" href="http://www.uijin.idv.tw/" target="_blank"><i>- 洪惟仁老師網站</i></a><br>
+					<a style="color:white" href="https://linguist.tw/zh-tw/" target="_blank"><i>- 台灣語言學學會</i></a>
 				</div>
 				<div class="col-md-4 footer-grid-left">
 					<h3>關於我們</h3>
