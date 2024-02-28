@@ -103,99 +103,105 @@
 				</script>
 			</div>
 			<div class="upcoming-events-grids">
-				<div class="col-md-6 upcoming-events-left">
-					<h3>成立經過</h3>
+				<div class="col-md-12 upcoming-events-left">
+					<h3><b>最新消息</b></h3>
 					<div class="news-grid-rght3">
-						<img src="images/found.jpg" alt=" " class="img-responsive" />
 						<div class="story">
-							<p style="color:red;">「台灣語文學會」成立經過</p>
-							<h3>
-								<pre style="white-space: pre-wrap;font-family:CustomFont;">
-　　「台灣語文學會」最早於1990年開始，由張裕宏教授、董忠司教授與洪惟仁教授展開籌備。1991年，委由董忠司教授草擬學會章程草案。之後陸續邀集周純一教授、陳恒嘉教授等討論草案內容，並積極聯絡各大學、研究單位的語文及相關科目的學者，募集發起人。
-　　1991年 4月13日，第一次發起人會假國家政策研究中心會議室正式召開。會中討論了章程草案，填寫發起人名冊，選出籌備委員共九名：張裕宏、洪惟仁、董忠司、姚榮松、曹逢甫、江永進、陳恒嘉、羅肇錦、趙順文（依得票數順序），接著立即召開第一次籌備會議，討論進一步之籌備工作、決定未來一年半的工作計劃：
-    1. 1991年底以前完成音標研議。
-    2. 1992年底以前完成台語常用漢字表。籌備經費由台語社負擔。籌備伊始，台語社即慨捐一萬元，以為支應。
-       1991年5月5日，召開第二次籌備會議。
-       1991年5月8日，由董忠司教授與洪惟仁教授遞送申請書前往內政部申請立案，並於 5月31日獲准正式籌備。
-       1991年6月23日，在台北市ＹＭＣＡ舉行第二次發起人會，並依法在內政部社會司派員監督下舉行發起人會議，此為第一次正式之發起人會。會中討論章程草案，選出十一名籌備委員為：曹逢甫、江永進、姚榮松、董忠司、洪惟仁、羅肇錦、陳恒嘉、黃宣範、龔煌城、鍾榮富、張文彬（依得票順序）。並選出曹逢甫為主任委員。
-       1991年7月20日，在國立臺灣師範大學召開第二次籌備會議，會中決定 8月17日召開「台灣語文學會」成立大會。
-       1991年 8月17日，「台灣語文學會」正式成立。
-							</pre>
-							</h3>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 upcoming-events-right">
-					<h3>組織成員</h3>
-					<div class="banner-bottom-video-grid-left">
-						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-							<?php
-								$sql = "SELECT * FROM `member` ORDER BY OrderIndex DESC";
-								$result = $conn->query($sql);
-								if ($result->num_rows > 0) {
-									while ($row = mysqli_fetch_array($result)) {
-										echo "<div class='panel panel-default'>";
-										echo "	<div class='panel-heading' role='tab' id='headingOne'>";
-										echo "		<h4 class='panel-title'>";
-										echo "			<a class='pa_italic collapsed' role='button' data-toggle='collapse'";
-										echo "				data-parent='#accordion' href='#collapse".$row["Term"]."' aria-expanded='true'";
-										echo "				aria-controls='collapse".$row["Term"]."'>";
-										echo "				<span class='glyphicon glyphicon-plus' aria-hidden='true'></span><i";
-										echo "					class='glyphicon glyphicon-minus'";
-										echo "					aria-hidden='true'></i>第".$row["Term"]."屆理監事會[".$row["Sessions"]."]";
-										echo "			</a>";
-										echo "		</h4>";
-										echo "	</div>";
-										echo "	<div id='collapse".$row["Term"]."' class='panel-collapse collapse' role='tabpanel'";
-										echo "		aria-labelledby='headingOne' style='height: 0px;'>";
-										echo "		<div class='panel-body'>";
-										echo "			<table class='table table-bordered'>";
-															for($i=1;$i<=15;$i++){
-																if($row["Title".$i]!=""){
-																	if($i==1){
-																		echo "				<tr>";
-																		echo "					<td width='35%'>".$row["Title".$i]."</td>";
-																		echo "					<td>".$row["Value".$i]."</td>";
-																		echo "				</tr>";
-
-																	}
-																	else{
-																		echo "				<tr>";
-																		echo "					<td>".$row["Title".$i]."</td>";
-																		echo "					<td>".$row["Value".$i]."</td>";
-																		echo "				</tr>";
-																	}
-																}
-																else{
-																	break;
-																}
-															}
-										echo "			</table>";
-										echo "		</div>";
-										echo "	</div>";
-										echo "</div>";
-									}
-								}
-							?>
+							<div class="video-bottom-grids">
+								<div class="video-bottom-grids1">
+									<div class="col-md-3 video-bottom-grid">
+										<div class="video-bottom-grid1">
+											<div class="video-bottom-grid1-before">
+												<img src="images/smallbanner.jpg" alt=" " class="img-responsive" />
+												<div class="video-bottom-grid1-pos">
+													<p style="color:white;font-size:20pt">活動消息</p>
+												</div>
+											</div>
+											<ul class="list" style="font-size: 10pt;">
+												<?php
+													$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='活動消息' ORDER BY OrderIndex";
+													$result = $conn->query($sql);
+													if ($result->num_rows > 0) {
+														while ($row = mysqli_fetch_array($result)) {
+															echo "<li><a style='color:black' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></li>";
+														}
+													}
+												?>
+											</ul>
+										</div>
+									</div>
+									<div class="col-md-3 video-bottom-grid">
+										<div class="video-bottom-grid1">
+											<div class="video-bottom-grid1-before before1">
+												<img src="images/smallbanner.jpg" alt=" " class="img-responsive" />
+												<div class="video-bottom-grid1-pos">
+													<p style="color:white;font-size:20pt">研討會消息</p>
+												</div>
+											</div>
+											<ul class="list" style="font-size: 10pt;">
+												<?php
+													$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='研討會消息' ORDER BY OrderIndex";
+													$result = $conn->query($sql);
+													if ($result->num_rows > 0) {
+														while ($row = mysqli_fetch_array($result)) {
+															echo "<li><a style='color:black' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></li>";
+														}
+													}
+												?>
+											</ul>
+										</div>
+									</div>
+									<div class="col-md-3 video-bottom-grid">
+										<div class="video-bottom-grid1">
+											<div class="video-bottom-grid1-before before1">
+												<img src="images/smallbanner.jpg" alt=" " class="img-responsive" />
+												<div class="video-bottom-grid1-pos">
+													<p style="color:white;font-size:20pt">刊物消息</p>
+												</div>
+											</div>
+											<ul class="list" style="font-size: 10pt;">
+												<?php
+													$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='刊物消息' ORDER BY OrderIndex";
+													$result = $conn->query($sql);
+													if ($result->num_rows > 0) {
+														while ($row = mysqli_fetch_array($result)) {
+															echo "<li><a style='color:black' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></li>";
+														}
+													}
+												?>
+											</ul>
+										</div>
+									</div>
+									<div class="col-md-3 video-bottom-grid">
+										<div class="video-bottom-grid1">
+											<div class="video-bottom-grid1-before before1">
+												<img src="images/smallbanner.jpg" alt=" " class="img-responsive" />
+												<div class="video-bottom-grid1-pos">
+													<p style="color:white;font-size:20pt">學會消息</p>
+												</div>
+											</div>
+											<ul class="list" style="font-size: 10pt;">
+												<?php
+													$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='學會消息' ORDER BY OrderIndex";
+													$result = $conn->query($sql);
+													if ($result->num_rows > 0) {
+														while ($row = mysqli_fetch_array($result)) {
+															echo "<li><a style='color:black' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></li>";
+														}
+													}
+												?>
+											</ul>
+										</div>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
-			<div class="news">
-				<div class="news-grids">
-					<div class="col-md-12 news-grid-left">
-						<h3>相關法規</h3>
-						<ul>
-							<li>
-								<h2><a href="Constitution.php">台灣語文學會組織章程</a> By 台灣語文學會
-								</h2>
-							</li>
-						</ul>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-			</div>
+			<br>
 		</div>
 	</div>
 	<div class="footer">

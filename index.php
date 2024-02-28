@@ -57,7 +57,7 @@
 														學術活動 <span class="caret"></span>
 													</a>
 													<ul class="dropdown-menu" style="font-size: 16px;">
-														<li><a href="short-codes.html">研討會</a></li>
+														<li><a href="Seminar.php">研討會</a></li>
 														<li><a href="short-codes.html">期刊</a></li>
 													</ul>
 												</li>
@@ -108,14 +108,14 @@
 				</div>
 				<div class="marquee">
 					<?php
-						$sql = "SELECT * FROM `marquee` WHERE `IsShow`=1";
+						$sql = "SELECT * FROM `news` WHERE `ShowOnMarquee`=1";
 						$result = $conn->query($sql);
 						if ($result->num_rows > 0) {
     						while ($row = mysqli_fetch_array($result)) {
 								if($row["url"]!="")
-									echo "<div class='marquee1'><a class='breaking' href='".$row["url"]."'>".$row["Message"]."</a></div>";
+									echo "<div class='marquee1'><a class='breaking' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></div>";
 								else
-									echo "<div class='marquee1'><a class='breaking'>".$row["Message"]."</a></div>";
+									echo "<div class='marquee1'><a class='breaking'>".$row["Title"]."</a></div>";
     						}
 						}	
 					?>		
@@ -130,7 +130,7 @@
 				<div id="top" class="callbacks_container" >
 					<ul class="rslides" id="slider3">
 						<?php
-							$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `ShowOnBanner`=1 ORDER BY OrderIndex LIMIT 20";
+							$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `ShowOnBanner`=1 ORDER BY OrderIndex LIMIT 10";
 							$result = $conn->query($sql);
 							if ($result->num_rows > 0) {
 								while ($row = mysqli_fetch_array($result)) {
@@ -173,17 +173,18 @@
 							</div>
 							<ul class="list" style="font-size: 10pt;">
 								<?php
-									$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='活動消息' ORDER BY OrderIndex LIMIT 20";
+									$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='活動消息' ORDER BY OrderIndex LIMIT 10";
 									$result = $conn->query($sql);
 									if ($result->num_rows > 0) {
 										while ($row = mysqli_fetch_array($result)) {
-											echo "<li><a style='color:black' href='".$row["url"]."'>".$row["Title"]."</a></li>";
+											echo "<li><a style='color:black' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></li>";
 										}
+										 
 									}
 								?>
 							</ul>
 							<div class="read-more">
-								<a href="News.php">READ MORE</a>
+								<a href="News.php">查看全部公告</a>
 							</div>
 						</div>
 					</div>
@@ -197,17 +198,17 @@
 							</div>
 							<ul class="list" style="font-size: 10pt;">
 								<?php
-									$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='研討會消息' ORDER BY OrderIndex LIMIT 20";
+									$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='研討會消息' ORDER BY OrderIndex LIMIT 10";
 									$result = $conn->query($sql);
 									if ($result->num_rows > 0) {
 										while ($row = mysqli_fetch_array($result)) {
-											echo "<li><a style='color:black' href='".$row["url"]."'>".$row["Title"]."</a></li>";
+											echo "<li><a style='color:black' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></li>";
 										}
 									}
 								?>
 							</ul>
 							<div class="read-more">
-								<a href="News.php">READ MORE</a>
+								<a href="News.php">查看全部公告</a>
 							</div>
 						</div>
 					</div>
@@ -216,22 +217,22 @@
 							<div class="video-bottom-grid1-before before1">
 								<img src="images/smallbanner.jpg" alt=" " class="img-responsive" />
 								<div class="video-bottom-grid1-pos">
-									<p>刊物出版消息</p>
+									<p>刊物消息</p>
 								</div>
 							</div>
 							<ul class="list" style="font-size: 10pt;">
 								<?php
-									$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='刊物出版消息' ORDER BY OrderIndex LIMIT 20";
+									$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='刊物消息' ORDER BY OrderIndex LIMIT 10";
 									$result = $conn->query($sql);
 									if ($result->num_rows > 0) {
 										while ($row = mysqli_fetch_array($result)) {
-											echo "<li><a style='color:black' href='".$row["url"]."'>".$row["Title"]."</a></li>";
+											echo "<li><a style='color:black' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></li>";
 										}
 									}
 								?>
 							</ul>
 							<div class="read-more">
-								<a href="News.php">READ MORE</a>
+								<a href="News.php">查看全部公告</a>
 							</div>
 						</div>
 					</div>
@@ -245,17 +246,17 @@
 							</div>
 							<ul class="list" style="font-size: 10pt;">
 								<?php
-									$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='學會消息' ORDER BY OrderIndex LIMIT 20";
+									$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='學會消息' ORDER BY OrderIndex LIMIT 10";
 									$result = $conn->query($sql);
 									if ($result->num_rows > 0) {
 										while ($row = mysqli_fetch_array($result)) {
-											echo "<li><a style='color:black' href='".$row["url"]."'>".$row["Title"]."</a></li>";
+											echo "<li><a style='color:black' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></li>";
 										}
 									}
 								?>
 							</ul>
 							<div class="read-more">
-								<a href="News.php">READ MORE</a>
+								<a href="News.php">查看全部公告</a>
 							</div>
 						</div>
 					</div>

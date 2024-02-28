@@ -47,8 +47,9 @@
 														學術活動 <span class="caret"></span>
 													</a>
 													<ul class="dropdown-menu" style="font-size: 16px;">
-														<li><a href="short-codes.html">研討會</a></li>
+														<li><a href="Seminar.php">研討會</a></li>
 														<li><a href="short-codes.html">期刊</a></li>
+														
 													</ul>
 												</li>
 												<li><a href="Member.php" style="font-size: 16px;">歷屆獎項</a></li>
@@ -83,14 +84,14 @@
 				</div>
 				<div class="marquee">
 					<?php
-						$sql = "SELECT * FROM `marquee` WHERE `IsShow`=1";
+						$sql = "SELECT * FROM `news` WHERE `ShowOnMarquee`=1";
 						$result = $conn->query($sql);
 						if ($result->num_rows > 0) {
     						while ($row = mysqli_fetch_array($result)) {
 								if($row["url"]!="")
-									echo "<div class='marquee1'><a class='breaking' href='".$row["url"]."'>".$row["Message"]."</a></div>";
+									echo "<div class='marquee1'><a class='breaking' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></div>";
 								else
-									echo "<div class='marquee1'><a class='breaking'>".$row["Message"]."</a></div>";
+									echo "<div class='marquee1'><a class='breaking'>".$row["Title"]."</a></div>";
     						}
 						}	
 					?>		
