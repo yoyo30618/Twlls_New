@@ -47,7 +47,7 @@
 														學術活動 <span class="caret"></span>
 													</a>
 													<ul class="dropdown-menu" style="font-size: 16px;">
-														<li><a href="../../Seminar.php">研討會</a></li>
+														<li><a href="../../Conference.php">研討會</a></li>
 														<li><a href="../../short-codes.html">期刊</a></li>
 													</ul>
 												</li>

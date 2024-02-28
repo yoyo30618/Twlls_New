@@ -1,0 +1,96 @@
+<div id="tt">
+                        <div id="tit">最 新 消 息</div>
+                    </div>
+                    <div class="content">
+                        <table width="795" border="0" cellspacing="0" cellpadding="0" class="tab">
+                            <tr bgcolor="#ededed" style=" border-top: 1px #CCC solid;">
+                                <td width="540" align="left">
+                                    <div class="tee">標題</div>
+                                </td>
+                                <td width="80" align="left">
+                                    <div class="tee">日期</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="tti"><img class="tp" src="images/g.png" width="10">
+                                    <div id="tta"><a href="NEW/2015第三屆優秀博論獎獲獎結果公告.pdf">2015第三屆台灣語文學會優秀博士論文獎獲獎結果公告</a></div>
+                                </td>
+                                <td>
+                                    <div class="orange">2015/10/02</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="tti"><img class="tp" src="images/g.png" width="10">
+                                    <div id="tta"><a href="NEW/2015台灣語文學會一日大師講座_通知.php">2015台灣語文學會一日大師講座</a></div>
+                                </td>
+                                <td>
+                                    <div class="orange">2015/10/02</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="tti"><img class="tp" src="images/g.png" width="10">
+                                    <div id="tta"><a href="NEW/2015_第四屆青年學者台灣語言學術研討會徵稿啟事fnl.php">第四屆青年學者台灣語言學術研討會</a></div>
+                                </td>
+                                <td>
+                                    <div class="orange">2015/06/15</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="tti"><img class="tp" src="images/g.png" width="10">
+                                    <div id="tta"><a href="NEW/2015博論獎徵件啟事.php">第三屆博士論文獎徵件啟事</a></div>
+                                </td>
+                                <td>
+                                    <div class="orange">2015/06/15</div>
+                                </td>
+                            </tr>
+                            </tr>
+                            <tr>
+                                <td id="tti"><img class="tp" src="images/g.png" width="10">
+                                    <div id="tta"><a href="http://2014istl10.blog.fc2.com/blog-category-8.html">第十屆台灣語言及其教學國際學術研討會</a></div>
+                                </td>
+                                <td>
+                                    <div class="orange">2014/09/20</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="tti"><img class="tp" src="images/g.png" width="10">
+                                    <div id="tta"><a href="NEW/103%E5%A4%A7%E5%B8%AB%E8%AC%9B%E5%BA%A7%E6%B5%B7%E5%A0%B1.pdf">第一屆台灣語言學大師講座</a></div>
+                                </td>
+                                <td>
+                                    <div class="orange">2014/09/20</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="tti"><img class="tp" src="images/g.png" width="10">
+                                    <div id="tta"><a href="NEW/2014%E5%8D%9A%E8%AB%96%E7%8D%8E%E5%BE%B5%E4%BB%B6%E5%95%9F%E4%BA%8B.php">第二屆優秀博士論文獎</a></div>
+                                </td>
+                                <td>
+                                    <div class="orange">2014/09/19</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="tti"><img class="tp" src="images/g.png" width="10">
+                                    <div id="tta"><a href="NEW/2014%E5%8D%9A%E8%AB%96%E7%8D%8E%E5%BE%B5%E4%BB%B6%E5%95%9F%E4%BA%8B.php">2014博論獎徵件啟事</a></div>
+                                </td>
+                                <td>
+                                    <div class="orange">2014/05/30</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="tti"><img class="tp" src="images/g.png" width="10">
+                                    <div id="tta"><a href="http://NEW/%E7%AC%AC%E5%8D%81%E5%B1%86%E5%BE%B5%E7%A8%BF%E5%95%9F%E4%BA%8B%E7%A2%BA%E5%AE%9A%E7%89%88.php">第十屆臺灣語言及其教學國際學術研討會徵稿啟事</a></div>
+                                </td>
+                                <td>
+                                    <div class="orange">2013/10/14</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="tti"><img class="tp" src="images/g.png" width="10">
+                                    <div id="tta"><a href="NEW/%E7%8D%B2%E7%8D%8E%E5%90%8D%E5%96%AE%E5%85%AC%E5%B8%83.pdf">第一屆台灣語文學會優秀博士論文獎獲獎名單</a></div>
+                                </td>
+                                <td>
+                                    <div class="orange">2013/09/11</div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>

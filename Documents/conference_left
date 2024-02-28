@@ -1,0 +1,27 @@
+ 
+                    
+                    <div id="slidecon"></div>
+                    <div id="innavidiv">
+                        <ul id="innavi" class="slide">
+                            <div>
+				
+                                 <li class="product"><a href="conference_2015_3.php">台灣語言及其教學國際研討會</a></li>
+                        
+                          
+                            </div>
+                            
+                            <div>
+                                
+                                <li class="product"><a href="conference_2015_2.php">青年學者台灣語言學術研討會</a></li>
+                       
+
+                            </div>
+                             <div>
+                
+                               
+                                <li class="product"><a href="conference_2015_1.php">台灣語言學一日大師/專題講座</a></li>
+                            </div>
+                        </ul>
+                    </div>
+                    <!--innavidiv-->
+            

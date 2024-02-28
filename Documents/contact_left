@@ -1,0 +1,15 @@
+ 
+                    
+                    <div id="slidecon"></div>
+                    <div id="innavidiv">
+                        <ul id="innavi" class="slide">
+                            <div>
+				
+                                <li class="product"><a href="contact.php">聯絡我們</a> </li>
+                          
+                            </div>
+                          
+                        </ul>
+                    </div>
+                    <!--innavidiv-->
+            

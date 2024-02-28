@@ -1,0 +1,43 @@
+ 
+                    
+                    <div id="slidecon"></div>
+                    <div id="innavidiv">
+                        <ul id="innavi" class="slide">
+                            <div>
+				
+                                <li class="product"><a href="about.php">成立經過</a> </li>
+                          
+                            </div>
+                            <div>
+                                <li class="product"><a href="#">組織成員</a> </li>
+                                <div id="slide">
+                                    <ul>
+                                        <li><a href="about_2_12.php">第12屆理監事會</a></li>
+                                        <li><a href="about_2_11.php">第11屆理監事會</a></li>
+                                        <li><a href="about_2_10.php">第10屆理監事會</a></li>
+                                        <li><a href="about_2_9.php">第9屆理監事會</a></li>
+                                        <li><a href="about_2_8.php">第8屆理監事會</a></li>
+                                        <li><a href="about_2_7.php">第7屆理監事會</a></li>
+                                        <li><a href="about_2_6.php">第6屆理監事會</a></li>
+                                        <li><a href="about_2_5.php">第5屆理監事會</a></li>
+                                        <li><a href="about_2_4.php">第4屆理監事會</a></li>
+                                        <li><a href="about_2_3.php">第3屆理監事會</a></li>
+                                        <li><a href="about_2_2.php">第2屆理監事會</a></li>
+                                        <li><a href="about_2_1.php">第1屆理監事會</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+                                <li class="product"><a href="#">相關法規</a> </li>
+                                <div id="slide">
+                                    <ul>
+                                        <li><a href="about_3_1.php">台灣語言學組織章程</a></li>
+                                        <li><a href="about_3_2.php">台灣語言學理監事選舉辦法</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </ul>
+                    </div>
+                    <!--innavidiv-->
+            

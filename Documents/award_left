@@ -1,0 +1,19 @@
+ 
+                    
+                    <div id="slidecon"></div>
+                    <div id="innavidiv">
+                        <ul id="innavi" class="slide">
+                            <div>
+				
+                                <li class="product"><a href="award.php">優秀博士論文獎</a> </li>
+                          
+                            </div>
+                           
+                            <div>
+                                <li class="product"><a href="award_2.php">博論獎申請辦法</a> </li>
+                               
+                            </div>
+                        </ul>
+                    </div>
+                    <!--innavidiv-->
+            

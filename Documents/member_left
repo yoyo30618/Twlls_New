@@ -1,0 +1,20 @@
+ 
+                    
+                    <div id="slidecon"></div>
+                    <div id="innavidiv">
+                        <ul id="innavi" class="slide">
+                            <div>
+				
+                                <li class="product"><a href="member_1.php">申請入會</a> </li>
+                          
+                            </div>
+
+                            <div>
+                                <li class="product"><a href="member_2.php">繳交年費</a> </li>
+                               
+
+                            </div>
+                        </ul>
+                    </div>
+                    <!--innavidiv-->
+            
