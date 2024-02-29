@@ -106,53 +106,15 @@
 				<div class="col-md-8 upcoming-events-left">
 					<h3>首頁 / 研討會</h3>
 					<div class="news-grid-rght3">
-						<div class="story">
-							<table class="table table-bordered">
-								<tr>
-									<th style="text-align:center;">台灣語言及其教學國際研討會</th>
-									<th style="text-align:center;">青年學者台灣語言學術研討會</th>
-									<th style="text-align:center;">台灣語言學一日大師/專題講座</th>
-								</tr>
-								<tr>
-									<td style="text-align:center;"><a href="Conference_1-7.php">第七屆</a></td>
-									<td style="text-align:center;"><a href="Conference_2-3.php">第三屆</a></td>
-									<td style="text-align:center;"><a href="Conference_3-1.php">第一屆</a></td>
-								</tr>
-								<tr>
-									<td style="text-align:center;"><a href="Conference_1-8.php">第八屆</a></td>
-									<td style="text-align:center;"><a href="Conference_2-4.php">第四屆</a></td>
-									<td style="text-align:center;"><a href="Conference_3-2.php">第二屆</a></td>
-								</tr>
-								<tr>
-									<td style="text-align:center;"><a href="Conference_1-9.php">第九屆</a></td>
-									<td style="text-align:center;"><a href="Conference_2-5.php">第五屆</a></td>
-									<td style="text-align:center;"><a href="Conference_3-3.php">第三屆</a></td>
-								</tr>
-								<tr>
-									<td style="text-align:center;"><a href="Conference_1-10.php">第十屆</a></td>
-									<td style="text-align:center;"><a href="Conference_2-6.php">第六屆</a></td>
-									<td style="text-align:center;"><a href="Conference_3-4.php">第四屆</a></td>
-								</tr>
-								<tr>
-									<td style="text-align:center;"><a href="Conference_1-11.php">第十一屆</a></td>
-									<td style="text-align:center;"><a href="Conference_2-7.php">第七屆</a></td>
-									<td style="text-align:center;"><a href="Conference_3-5.php">第五屆</a></td>
-								</tr>
-								<tr>
-									<td style="text-align:center;"><a href="Conference_1-12.php">第時二屆</a></td>
-									<td style="text-align:center;"><a href="Conference_2-8.php">第八屆</a></td>
-									<td style="text-align:center;"><a href="Conference_3-6.php">第六屆</a></td>
-								</tr>
-								<tr>
-									<td style="text-align:center;"><a href="Conference_1-13.php">第十三屆</a></td>
-									<td style="text-align:center;"><a href=""></a></td>
-									<td style="text-align:center;"><a href="Conference_3-7.php">第七屆</a></td>
-								</tr>
-								<tr>
-									<td style="text-align:center;"><a href="Conference_1-14.php">第十四屆</a></td>
-									<td style="text-align:center;"><a href=""></a></td>
-									<td style="text-align:center;"><a href=""></a></td>
-								</tr>
+						<div class="story"> <!--修改研討會主要內容區域-->
+							<table style="width:100%;">
+								<tr><td style="text-align:center;color:red;"><b>第八屆青年學者台灣語言學術研討會</b></td></tr>
+								<tr><td style="text-align:center;"><br></td></tr>
+								<tr><td style="text-align:center;">會議主網站：<a href="https://sites.google.com/view/ysstl8/%E9%A6%96%E9%A0%81?authuser=0" target="_blank">https://sites.google.com/view/ysstl8/%E9%A6%96%E9%A0%81?authuser=0</a></td></tr>
+								<tr><td style="text-align:center;"><br></td></tr>
+								<tr><td style="text-align:center;"><a href="https://sites.google.com/view/ysstl8/%E5%A0%B1%E5%90%8D%E8%88%87%E6%9C%83?authuser=0" target="_blank">直接報名請點我</a></td></tr>
+							
+								<tr><td style="text-align:center;"><embed src="../Documents/8thyouth.png" style="width:100%;" alt="第十四屆臺灣語言及其教學國際學術研討會議程" ></embed></td></tr>
 							</table>
 						</div>
 					</div><br>
