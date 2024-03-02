@@ -58,7 +58,7 @@
 													</a>
 													<ul class="dropdown-menu" style="font-size: 16px;">
 														<li><a href="Conference.php">研討會</a></li>
-														<li><a href="short-codes.html">期刊</a></li>
+														<li><a href="Pay.php">期刊</a></li>
 													</ul>
 												</li>
 												<li><a href="Member.php" style="font-size: 16px;">歷屆獎項</a></li>
@@ -69,7 +69,7 @@
 														線上繳費 <span class="caret"></span>
 													</a>
 													<ul class="dropdown-menu" style="font-size: 16px;">
-														<li><a href="short-codes.html">會員繳費與捐款</a></li>
+														<li><a href="Pay.php">會員繳費與捐款</a></li>
 														<li><a href="icons.html">出版品購買</a></li>
 													</ul>
 												</li>

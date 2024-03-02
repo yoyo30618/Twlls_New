@@ -1,0 +1,124 @@
+﻿<div id="tt">
+    <div id="tit">最 新 消 息</div>
+</div>
+
+<div class="content">
+    <table width="795" border="0" cellspacing="0" cellpadding="0" class="tab">
+        <tr bgcolor="#ededed" style=" border-top: 1px #CCC solid;">
+            <td width="540" align="left">
+                <div class="tee">標題</div>
+            </td>
+            <td width="80" align="left">
+                <div class="tee">日期</div>
+            </td>
+        </tr>
+
+        <tr>
+            <td id="tti"><img class="tp" src="images/g.png" width="10">
+                <div id="tta"><a href="http://www.twlls.org.tw/jtll/journal_15_1.php" target="_blank"><font color="#FF0000">new</font>&nbsp;《臺灣語文研究》第15卷第1期已出版</a></div>
+            </td>
+            <td>
+                <div class="orange">2020/05/12</div>
+            </td>
+        </tr>
+
+        <tr>
+            <td id="tti"><img class="tp" src="images/g.png" width="10">
+                <div id="tta"><a href="http://www.twlls.org.tw/jtll/journal_14_2.php" target="_blank">《臺灣語文研究》第14卷第2期已出版</a></div>
+            </td>
+            <td>
+                <div class="orange">2019/10/23</div>
+            </td>
+        </tr>
+
+        <tr>
+            <td id="tti"><img class="tp" src="images/g.png" width="10">
+                <div id="tta"><a href="http://www.twlls.org.tw/logoresult.php" target="_blank">台灣語文學會Logo設計比賽獲獎名單</a></div>
+            </td>
+            <td>
+                <div class="orange">2019/10/15</div>
+            </td>
+        </tr>
+
+        <tr>
+            <td id="tti"><img class="tp" src="images/g.png" width="10">
+                <div id="tta"><a href="https://wcoh.nttu.edu.tw/p/406-1031-91782,r73.php?Lang=zh-tw" target="_blank">臺東大學華語系多語言詩歌比賽</a></div>
+            </td>
+            <td>
+                <div class="orange">2019/10/03</div>
+            </td>
+        </tr>
+
+        <tr>
+            <td id="tti"><img class="tp" src="images/g.png" width="10">
+                <div id="tta"><a href="https://istlt2020.wixsite.com/nthu/blank-3?fbclid=IwAR1EkPVrJxOkoXwBHnO4xaqWDR1TykNY2iOVy13eNY61Y9KPSl5ltJ5nMa4" target="_blank">第十三屆台灣語言及其教學國際學術研討會徵稿啟事</a></div>
+            </td>
+            <td>
+                <div class="orange">2019/10/03</div>
+            </td>
+        </tr>
+
+        <tr>
+            <td id="tti"><img class="tp" src="images/g.png" width="10">
+                <div id="tta"><a href="https://sites.google.com/view/ysstl6/ysstl6?authuser=0" target="_blank">第六屆青年學者台灣語言學術研討會開始報名</a></div>
+            </td>
+            <td>
+                <div class="orange">2019/10/02</div>
+            </td>
+        </tr>
+
+        <tr>
+            <td id="tti"><img class="tp" src="images/g.png" width="10">
+                <div id="tta"><a href="http://www.twlls.org.tw/award_1_05.php" target="_blank">第五屆台灣語文學會優秀博士論文獎獲獎名單</a></div>
+            </td>
+            <td>
+                <div class="orange">2019/10/01</div>
+            </td>
+        </tr>
+
+        <tr>
+            <td id="tti"><img class="tp" src="images/g.png" width="10">
+                <div id="tta"><a href="https://drive.google.com/open?id=1BBL-1YAte9-i-2VgPB7xcRLQaTpPqjk4" target="_blank">第六屆青年學者台灣語言學術研討會 論文發表錄取名單</a></div>
+            </td>
+            <td>
+                <div class="orange">2019/06/21</div>
+            </td>
+        </tr>
+
+        <tr>
+            <td id="tti"><img class="tp" src="images/g.png" width="10">
+                <div id="tta"><a href="http://www.twlls.org.tw/jtll/callForPaper_notice.php">《臺灣語文研究》徵稿啟事</a></div>
+            </td>
+            <td>
+                <div class="orange">2019/05/03</div>
+            </td>
+        </tr>
+
+        <tr>
+            <td id="tti"><img class="tp" src="images/g.png" width="10">
+                <div id="tta"><a href="http://www.twlls.org.tw/jtll/journal_14_1.php">《臺灣語文研究》第14卷第1期已出版並於華藝線上圖書館館藏</a></div>
+            </td>
+            <td>
+                <div class="orange">2019/05/02</div>
+            </td>
+        </tr>
+
+        <tr>
+            <td id="tti"><img class="tp" src="images/g.png" width="10">
+                <div id="tta"><a href="NEWS_certificate2019.php">《臺灣語文研究》榮獲「臺灣學術資源影響力」知識影響力獎</a></div>
+            </td>
+            <td>
+                <div class="orange">2019/04/09</div>
+            </td>
+        </tr>
+
+        <tr>
+            <td id="tti"><img class="tp" src="images/g.png" width="10">
+                <div id="tta"><a href="documents/2018mail.pdf">會長互台灣語文學會的批</a></div>
+            </td>
+            <td>
+                <div class="orange">2018/12/25</div>
+            </td>
+        </tr>
+    </table>
+</div>

@@ -1,6 +1,6 @@
 <?php
-    $conn = new mysqli('localhost', 'root', 'yoyo0516', 'twlls');
-    $conn->query("SET NAMES UTF8mb4");
+    $conn = new mysqli('localhost', 'vhost100843', 'tlls2015', 'vhost100843-1');
+    $conn->query("SET NAMES UTF8");
     if ($conn->connect_error) {
         print json_encode($arr);
         return;
