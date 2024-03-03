@@ -13,9 +13,9 @@ if (isset($_GET['orderNo']) == false) {
     return;
 }
 
-$conn = new mysqli('localhost', 'vhost100843', 'tlls2015', 'vhost100843');
-$conn->query("SET NAMES UTF8");
-if ($conn->connect_error) {
+$conn_1 = new mysqli('localhost', 'vhost100843', 'tlls2015', 'vhost100843');
+$conn_1->query("SET NAMES UTF8");
+if ($conn_1->connect_error) {
     print json_encode($arr);
     return;
 }
@@ -27,13 +27,13 @@ function mysql_string_safe($con, $stringtoclean)
 }
 
 
-$no = mysql_string_safe($conn, $_GET['orderNo']);
+$no = mysql_string_safe($conn_1, $_GET['orderNo']);
 $sql = "SELECT * FROM `tlls_order` where orderNo = '$no' limit 1";
-$result = $conn->query($sql);
+$result = $conn_1->query($sql);
 if ($result->num_rows > 0) {
     while ($row = mysqli_fetch_object($result)) {
         $sql = "UPDATE `tlls_order` SET isPay = true where orderNo = '$no' and isPay = false";
-        $conn->query($sql);
+        $conn_1->query($sql);
         // 20230724前舊版本
         // $no = $_GET['orderNo'];
         // $s = "IV=$HashIV";
@@ -242,7 +242,7 @@ if ($result->num_rows > 0) {
 
         //$sql = "SELECT * FROM `tlls_order` where timestamp >=  '$thisyear/01/01 00:00:00'";
         $sql = "SELECT MAX(ReceiptNum) FROM `tlls_order` where timestamp >=  '$thisyear/01/01 00:00:00' and timestamp <= '$thisyear/12/31 23:59:59'";
-        $result2 = $conn->query($sql);
+        $result2 = $conn_1->query($sql);
         // 產生收據編號
         $row2 = $result2->fetch_row();
         if ($result2->num_rows == 0 || $row2[0] == 0 || $row2[0] == '') {
@@ -255,7 +255,7 @@ if ($result->num_rows > 0) {
 
         // 填入收據編號欄位的值 
         $sql = "UPDATE `tlls_order` SET ReceiptNum = $ReceiptNum, ReceiptID = $yearno where orderNo = '$no'"; // ReceiptID: 資料庫的收據編號
-        $conn->query($sql);
+        $conn_1->query($sql);
 
         $tdString = "";
         for ($i = 0; $i <= 2; $i++) {

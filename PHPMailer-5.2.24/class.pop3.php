@@ -113,7 +113,7 @@ class POP3
      * @var boolean
      * @access protected
      */
-    protected $connected = false;
+    protected $conn_1ected = false;
 
     /**
      * Error container.

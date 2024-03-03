@@ -85,7 +85,7 @@
 				<div class="marquee">
 					<?php
 						$sql = "SELECT * FROM `news` WHERE `ShowOnMarquee`=1";
-						$result = $conn->query($sql);
+						$result = $conn_1->query($sql);
 						if ($result->num_rows > 0) {
     						while ($row = mysqli_fetch_array($result)) {
 								if($row["url"]!="")

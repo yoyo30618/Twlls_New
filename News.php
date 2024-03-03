@@ -84,7 +84,7 @@
 				<div class="marquee">
 					<?php
 						$sql = "SELECT * FROM `news` WHERE `ShowOnMarquee`=1";
-						$result = $conn->query($sql);
+						$result = $conn_1->query($sql);
 						if ($result->num_rows > 0) {
     						while ($row = mysqli_fetch_array($result)) {
 								if($row["url"]!="")
@@ -120,7 +120,7 @@
 											<ul class="list" style="font-size: 10pt;">
 												<?php
 													$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='活動消息' ORDER BY OrderIndex";
-													$result = $conn->query($sql);
+													$result = $conn_1->query($sql);
 													if ($result->num_rows > 0) {
 														while ($row = mysqli_fetch_array($result)) {
 															echo "<li><a style='color:black' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></li>";
@@ -141,7 +141,7 @@
 											<ul class="list" style="font-size: 10pt;">
 												<?php
 													$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='研討會消息' ORDER BY OrderIndex";
-													$result = $conn->query($sql);
+													$result = $conn_1->query($sql);
 													if ($result->num_rows > 0) {
 														while ($row = mysqli_fetch_array($result)) {
 															echo "<li><a style='color:black' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></li>";
@@ -162,7 +162,7 @@
 											<ul class="list" style="font-size: 10pt;">
 												<?php
 													$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='刊物消息' ORDER BY OrderIndex";
-													$result = $conn->query($sql);
+													$result = $conn_1->query($sql);
 													if ($result->num_rows > 0) {
 														while ($row = mysqli_fetch_array($result)) {
 															echo "<li><a style='color:black' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></li>";
@@ -183,7 +183,7 @@
 											<ul class="list" style="font-size: 10pt;">
 												<?php
 													$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='學會消息' ORDER BY OrderIndex";
-													$result = $conn->query($sql);
+													$result = $conn_1->query($sql);
 													if ($result->num_rows > 0) {
 														while ($row = mysqli_fetch_array($result)) {
 															echo "<li><a style='color:black' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></li>";

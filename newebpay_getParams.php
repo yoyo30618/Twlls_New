@@ -129,15 +129,15 @@ $arr['CheckValue'] = strtoupper(hash("sha256", $s));
 
 
 
-$conn = new mysqli('localhost', 'vhost100843', 'tlls2015', 'vhost100843');
-$conn->query("SET NAMES UTF8");
-if ($conn->connect_error) {
+$conn_1 = new mysqli('localhost', 'vhost100843', 'tlls2015', 'vhost100843');
+$conn_1->query("SET NAMES UTF8");
+if ($conn_1->connect_error) {
     print json_encode($arr);
     return;
 }
 
 $sql = "SELECT * FROM `tlls_order` where orderNo = 'TY$mytime'";
-$result = $conn->query($sql);
+$result = $conn_1->query($sql);
 if ($result->num_rows > 0) {
     print json_encode($arr);
     return;
@@ -149,19 +149,19 @@ function mysql_string_safe($con, $stringtoclean)
     return $safestring;
 }
 
-$name = mysql_string_safe($conn, $_GET['name']);
-$phone = mysql_string_safe($conn, $_GET['phone']);
-$email = mysql_string_safe($conn, $_GET['Email']);
-$ReceiptTitle = mysql_string_safe($conn, isset($_GET['ReceiptTitle']) ? $_GET['ReceiptTitle'] : "");
-$TaxIDNumber = mysql_string_safe($conn, isset($_GET['TaxIDNumber']) ? $_GET['TaxIDNumber'] : "");
-$ReceiptAddress = mysql_string_safe($conn, isset($_GET['ReceiptAddress']) ? $_GET['ReceiptAddress'] : "");
+$name = mysql_string_safe($conn_1, $_GET['name']);
+$phone = mysql_string_safe($conn_1, $_GET['phone']);
+$email = mysql_string_safe($conn_1, $_GET['Email']);
+$ReceiptTitle = mysql_string_safe($conn_1, isset($_GET['ReceiptTitle']) ? $_GET['ReceiptTitle'] : "");
+$TaxIDNumber = mysql_string_safe($conn_1, isset($_GET['TaxIDNumber']) ? $_GET['TaxIDNumber'] : "");
+$ReceiptAddress = mysql_string_safe($conn_1, isset($_GET['ReceiptAddress']) ? $_GET['ReceiptAddress'] : "");
 $itemdesc = $theString;
 $timestamp = date("Y-m-d h:i:s", $mytime);
 
 $sql = "INSERT INTO `vhost100843`.`tlls_order` (`name`, `email`, `phone`, `ReceiptTitle`, `TaxIDNumber`, `ReceiptAddress`, `timestamp`, `amt`, `itemdesc`, `orderNo`) VALUES ";
 $sql .= "('$name', '$email', '$phone', '$ReceiptTitle', '$TaxIDNumber', '$ReceiptAddress', '$timestamp', '$Amt', '$itemdesc', 'TY$mytime')";
-$result = $conn->query($sql);
-$conn->close();
+$result = $conn_1->query($sql);
+$conn_1->close();
 
 
 $arr['status'] = 1;
