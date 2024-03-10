@@ -143,7 +143,7 @@
 											echo"<h3><a style='color:white;' href='".$row["url"]."'>".$row["Title"]."</a></h3>";
 											echo"<p><span>-- <i>".$row["PostedBy"]."</i></span></p>";
 											echo"<div class='more'>";
-												echo"<a href='' class='type-1'>";
+												echo"<a href='".$row["url"]."' class='type-1'>";
 													echo"<span> Read More </span>";
 													echo"<span> Read More </span>";
 												echo"</a>";

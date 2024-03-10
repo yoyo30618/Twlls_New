@@ -227,7 +227,7 @@
 									aria-labelledby='headingOne' style='height: 0px;'>
 									<div class='panel-body'>
 									入會申請表如附件，請下載後詳細填寫。<br>
-									<a href="documents/tlls_application2020.doc" style="color:blue">入會申請表</a><br>
+									<a href="Documents/tlls_application2020.doc" style="color:blue">入會申請表</a><br>
 									</div>
 								</div>
 							</div>
