@@ -104,10 +104,35 @@
 			</div>
 			<div class="upcoming-events-grids">
 				<div class="col-md-12 upcoming-events-left">
-					<h3><b>[已截稿]第八屆青年學者台灣語言學術研討會</b></h3>
+					<h3><b>《閩南地區方言地圖集》已出版</b></h3>
 					<div class="news-grid-rght3">
 						<div class="story">
-						<img src="../../Documents/8thyouth.png" style="height:600px"/><br>
+							<table>
+								<tr>
+									<td colspan="3" style="text-align:center">《閩南地區方言地圖集》已出版，欲購買本書請至本會<a href="Pay_2.php">線上繳費區</a>。<br>本會會員一律7.5折，另加郵資；非會員依購買本數折扣。</td>
+								</tr>
+								<tr>
+									<td><br></td>
+								</tr>
+								<tr>
+									<td style="width:50%">
+										<img src="../../Documents/minnandiqufangyandituji.jpg" style="width:100%"/>
+									</td>
+									<td style="width:2%">
+									</td>
+									<td>
+										書　　名：閩南地區方言地圖集<br>
+										作　　者：洪惟仁<br>
+										編輯策畫：鄭清鴻<br>
+										特約編輯：邱芊樺<br>
+										責任編輯：楊巽彰、林玄同<br>
+										封面設計：Lucace workshop. 盧卡斯工作室<br>
+										出  版  者：臺灣語文學會<br>
+										印　　刷：秀威資訊科技股份有限公司<br>
+										定　　價：新台幣1600元整<br>
+									</td>
+								</tr>
+							</table>
 						</div>
 					</div>
 				</div>

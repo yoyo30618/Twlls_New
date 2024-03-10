@@ -104,10 +104,16 @@
 			</div>
 			<div class="upcoming-events-grids">
 				<div class="col-md-12 upcoming-events-left">
-					<h3><b>[已截稿]第八屆青年學者台灣語言學術研討會</b></h3>
+					<h3><b>國家圖書館獎狀</b></h3>
 					<div class="news-grid-rght3">
 						<div class="story">
-						<img src="../../Documents/8thyouth.png" style="height:600px"/><br>
+							<table>
+								<tr>
+									<td>
+										<img src="../../Documents/nclaward.jpg" style="width:50%"/>
+									</td>
+								</tr>
+							</table>
 						</div>
 					</div>
 				</div>

@@ -104,10 +104,13 @@
 			</div>
 			<div class="upcoming-events-grids">
 				<div class="col-md-12 upcoming-events-left">
-					<h3><b>[已截稿]第八屆青年學者台灣語言學術研討會</b></h3>
+					<h3><b>以「多語臺灣，英語友善」取代「雙語國家」！台灣語文學會對「2030雙語國家」政策的立場聲明 - 連署同意公開姓名名單（更新至04/14）</b></h3>
 					<div class="news-grid-rght3">
 						<div class="story">
-						<img src="../../Documents/8thyouth.png" style="height:600px"/><br>
+						連署同意公開姓名名單1110414：依姓氏筆劃排序<br>
+						<embed src="../../Documents/list_1110414.pdf" style="width:100%;height:600px"></embed><br>
+						大專院校教授願意公開姓名名單1110331：依姓氏筆劃排序<br>
+						<embed src="../../Documents/list_1110331.pdf" style="width:100%;height:600px"></embed>
 						</div>
 					</div>
 				</div>

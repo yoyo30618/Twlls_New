@@ -104,10 +104,11 @@
 			</div>
 			<div class="upcoming-events-grids">
 				<div class="col-md-12 upcoming-events-left">
-					<h3><b>[已截稿]第八屆青年學者台灣語言學術研討會</b></h3>
+					<h3><b>因應Covid-19多數學校延後畢業離校手續期限，第六屆台灣語文學會優秀博士論文獎持續收件至十月底</b></h3>
 					<div class="news-grid-rght3">
 						<div class="story">
-						<img src="../../Documents/8thyouth.png" style="height:600px"/><br>
+						附件：
+						<a href="../../Award/Award_4.php" >徵件啟事</a>
 						</div>
 					</div>
 				</div>

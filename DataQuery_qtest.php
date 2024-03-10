@@ -114,7 +114,7 @@
 								if (isset($_SESSION['Islogin']) OR $userPassword === $correctPassword) {
 									$_SESSION['Islogin']=1;
 									?>
-									<h2>收款資料查詢</h2>  
+									<h2>收款資料查詢_測試區</h2>  
 									<?php
 										$Page=1;
 										$Line=0;
@@ -127,7 +127,7 @@
 												<thead>
 												<tr align="right">
 													<td colspan="9">
-														<form action="DataQuery.php" method="get">
+														<form action="DataQuery_qtest.php" method="get">
 															<div class="input-group mb-3 d-grid gap-2 d-md-flex justify-content-md-end">
 																<input type="hidden" name="Page" value="1">
 																<input type="text" class="form-control" placeholder="請輸入查詢資料" name="KeyWord" value="<?php if(isset($_GET['KeyWord'])) echo $_GET['KeyWord']; ?>">
@@ -144,17 +144,17 @@
 													<td>收據<br>編號</td>
 													<td>金額</td>
 													<td>用途<br></td>
-													<td>寄書<br>資訊</td>
+													<!-- <td>寄書<br>資訊</td>
 													<td>購買<br>本數</td>
-												</tr>
+												</tr> -->
 											</thead>
 											<tbody>
 												<?php
-													$sql = "SELECT * FROM `tlls_order` where 1 ORDER BY `tlls_order`.`orderNo` DESC";
+													$sql = "SELECT * FROM `qtest` where 1 ORDER BY `qtest`.`orderNo` DESC";
 													$Keyword="";
 													if(isset($_GET['KeyWord'])){
 														$Keyword=$_GET['KeyWord'];
-														$sql = "SELECT * FROM `tlls_order` where ";
+														$sql = "SELECT * FROM `qtest` where ";
 														$sql .= "`name` like '%" . $_GET['KeyWord'] . "%' OR ";
 														$sql .= "`email` like '%" . $_GET['KeyWord'] . "%' OR ";
 														$sql .= "`phone` like '%" . $_GET['KeyWord'] . "%' OR ";
@@ -165,9 +165,9 @@
 														$sql .= "`amt` like '%" . $_GET['KeyWord'] . "%' OR ";
 														$sql .= "`itemdesc` like '%" . $_GET['KeyWord'] . "%' OR ";
 														$sql .= "`orderNo` like '%" . $_GET['KeyWord'] . "%' OR ";
-														$sql .= "`BookAddress` like '%" . $_GET['KeyWord'] . "%' OR ";
-														$sql .= "`BookQuantity` like '%" . $_GET['KeyWord'] . "%' ";
-														$sql .= "ORDER BY `tlls_order`.`orderNo`";
+														// $sql .= "`BookAddress` like '%" . $_GET['KeyWord'] . "%' OR ";
+														// $sql .= "`BookQuantity` like '%" . $_GET['KeyWord'] . "%' ";
+														$sql .= "ORDER BY `qtest`.`orderNo`";
 													}
 													$result = $conn->query($sql);
 													if ($result->num_rows > 0) {
@@ -183,26 +183,27 @@
 																echo "<td bgcolor='$color'>$row->ReceiptID</td>";
 																echo "<td bgcolor='$color'>$row->amt</td>";
 																echo "<td bgcolor='$color'>$row->itemdesc</td>";
-																echo "<td bgcolor='$color'>$row->BookAddress</td>";
-																echo "<td bgcolor='$color'>$row->BookQuantity</td>";
+																// echo "<td bgcolor='$color'>$row->BookAddress</td>";
+																// echo "<td bgcolor='$color'>$row->BookQuantity</td>";
 															echo "</tr>";
 														}
 													}
 												?>
 											</tbody>
-									</table>   
+									</table>  
+						
 								<?php
                 				} else {
                     			?>
 									<div style="margin:10px auto;">
 										<div>
-											<div id="tit">收款資料查詢</div>
+											<div id="tit">收款資料查詢_測試區</div>
 											<div class="container">
 											</div>
 										</div>
 									</div>
 									<?php
-									echo '<form action="DataQuery.php" method="post">';
+									echo '<form action="DataQuery_qtest.php" method="post">';
 									echo '  <label for="password">Password:</label>';
 									echo '  <input type="password" name="password" id="password">';
 									echo '  <input type="submit" value="Submit">';
@@ -214,13 +215,13 @@
 									?>
 									<div style="margin:10px auto;">
 										<div>
-											<div id="tit">收款資料查詢</div>
+											<div id="tit">收款資料查詢_測試區</div>
 											<div class="container">
 											</div>
 										</div>
 									</div>
 									<?php
-									echo '<form action="DataQuery.php" method="post">';
+									echo '<form action="DataQuery_qtest.php" method="post">';
 									echo '  <label for="password">Password:</label>';
 									echo '  <input type="password" name="password" id="password">';
 									echo '  <input type="submit" value="Submit">';

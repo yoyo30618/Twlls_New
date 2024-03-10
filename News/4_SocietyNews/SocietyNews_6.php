@@ -104,10 +104,11 @@
 			</div>
 			<div class="upcoming-events-grids">
 				<div class="col-md-12 upcoming-events-left">
-					<h3><b>[已截稿]第八屆青年學者台灣語言學術研討會</b></h3>
+					<h3><b>國家圖書館獎狀</b></h3>
 					<div class="news-grid-rght3">
 						<div class="story">
-						<img src="../../Documents/8thyouth.png" style="height:600px"/><br>
+							<text style="color:red">賀《臺灣語文研究》榮獲2020年國家圖書館「臺灣學術資源影響力」期刊即時傳播獎語言學門第二名</text>
+							<img src="../../Documents/nclaward2020.jpg" style="height:600px"/><br>
 						</div>
 					</div>
 				</div>

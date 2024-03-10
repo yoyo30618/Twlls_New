@@ -104,10 +104,10 @@
 			</div>
 			<div class="upcoming-events-grids">
 				<div class="col-md-12 upcoming-events-left">
-					<h3><b>[已截稿]第八屆青年學者台灣語言學術研討會</b></h3>
+					<h3><b>2021年馬來西亞－臺灣漢語方言國際學術研討會</b></h3>
 					<div class="news-grid-rght3">
 						<div class="story">
-						<img src="../../Documents/8thyouth.png" style="height:600px"/><br>
+							<img src="../../Documents/MTCCD_2021_new.jpg" style="height:600px"/><br>
 						</div>
 					</div>
 				</div>

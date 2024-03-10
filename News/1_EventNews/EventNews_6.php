@@ -104,10 +104,35 @@
 			</div>
 			<div class="upcoming-events-grids">
 				<div class="col-md-12 upcoming-events-left">
-					<h3><b>[已截稿]第八屆青年學者台灣語言學術研討會</b></h3>
+					<h3><b>台灣語文學會Logo設計比賽獲獎名單</b></h3>
 					<div class="news-grid-rght3">
 						<div class="story">
-						<img src="../../Documents/8thyouth.png" style="height:600px"/><br>
+							<table class="table table-bordered">
+								<tr>
+									<th>項目</th>
+									<th>作品名稱</th>
+									<th>作者</th>
+								</tr>
+								<tr>
+									<td>優選（獎金8,000元及獎狀一紙）</td>
+									<td><a href="../../Documents/logowin.pdf">臺灣語文向前行</a></td>
+									<td>陳文順</td>
+								</tr>
+								<tr>
+									<td>優等（獎金3,000元及獎狀一紙）</td>
+									<td>從缺</td>
+									<td></td>
+								</tr>
+								<tr>
+
+									<td>佳作（獎狀一紙）</td>
+									<td>
+										<a href="../../Documents/logoex1.pdf">寶島多元話</a><br>
+										<a href="../../Documents/logoex2.pdf">語言橋樑</a><br>
+										<a href="../../Documents/logoex3.pdf">好好話臺灣</a></td>
+									<td>洪誘羚<br>洪唯真<br>郭俐伶</td>
+								</tr>
+							</table>
 						</div>
 					</div>
 				</div>

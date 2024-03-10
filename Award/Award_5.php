@@ -104,75 +104,77 @@
 			</div>
 			<div class="upcoming-events-grids">
 				<div class="col-md-8 upcoming-events-left">
-					<h3>首頁 / 研討會</h3>
+					<h3>首頁 / 優秀博士論文獎</h3>
 					<div class="news-grid-rght3">
-						<div class="story"> <!--修改研討會主要內容區域-->
-							<table style="width:100%;">
-								<tr><td style="text-align:center;color:red;"><b>第十一屆臺灣語言及其教學國際學術研討會</b></td></tr>
+						<div class="story"> 
+							<table style="width:100%;" class="table table-bordered"> <!--論文獎結果-->
+								<tr>
+									<td colspan="4"><b>第五屆台灣語文學會優秀博士論文獎（2019）獲獎者一名，佳作一名。</b></td><!--本屆論文獎註釋說明-->
+								</tr>
+								<tr>
+									<th style="text-align:center;width:13%">獲獎者</th>
+									<th style="text-align:center;width:13%">畢業年</th>
+									<th style="text-align:center;">博士論文題目</th>
+									<th style="text-align:center;width:15%">指導教授</th>
+								</tr>
+								<tr>
+									<td style="text-align:center;">劉承賢</td>
+									<td style="text-align:center;">2017</td>
+									<td style="text-align:center;">
+										海圖新繪：從句法─語用介面看台灣閩南語的製圖分析<br>
+										Charting the High Seas: A Cartographic View of Taiwanese Southern Min from the Syntax-Pragmatics Interface
+									</td>
+									<td style="text-align:center;">蔡維天</td>
+								</tr>
+							</table>
+							<table style="width:100%;" class="table table-bordered"> <!--論文獎結果-->
+								<tr>
+									<th style="text-align:center;width:13%">佳作</th>
+									<th style="text-align:center;width:13%">畢業年</th>
+									<th style="text-align:center;">博士論文題目</th>
+									<th style="text-align:center;width:15%">指導教授</th>
+								</tr>
+								<tr>
+									<td style="text-align:center;">市川春樹</td>
+									<td style="text-align:center;">2017</td>
+									<td style="text-align:center;">日治前期(1895-1919)的臺灣本土語言教學、教材之研究</td>
+									<td style="text-align:center;">賀安娟<br>羅濟立</td>
+								</tr>
+							</table>
+							<table style="width:100%;"><!--論文獎規則-->
+								<tr><td style="text-align:center;color:red;"><b>第五屆台灣語文學會優秀博士論文獎</b></td></tr>
+								<tr><td style="text-align:center;color:darkblue;"><b>徵件啟事</b></td></tr>
 								<tr><td style="text-align:center;"><br></td></tr>
-								<tr><td style="text-align:center;">徵稿啟事</td></tr>
-								<tr><td style=""><br></td></tr>
-								<tr><td style="">一、會議名稱：</td></tr>
-								<tr><td style="">第十一屆臺灣語言及其教學國際學術研討會</td></tr>
-								<tr><td style=""><br></td></tr>
-								<tr><td style="">二、主辦單位</td></tr>
-								<tr><td style="">台灣語文學會、中央研究院語言學研究所</td></tr>
-								<tr><td style=""><br></td></tr>
-								<tr><td style="">三、會議日期</td></tr>
-								<tr><td style="">2016年7月12、13日</td></tr>
-								<tr><td style=""><br></td></tr>
-								<tr><td style="">四、會議地點</td></tr>
-								<tr><td style="">中央研究院學術活動中心</td></tr>
-								<tr><td style=""><br></td></tr>
-								<tr><td style="">五、會議主題</td></tr>
 								<tr>
-									<td style="">
-										台灣語言的共時與歷時研究<br><br>
-										會議子題：<br>
-										1. 台灣語言語音與音韻的結構分析<br>
-										2. 台灣語言的構詞及句法的理論探討<br>
-										3. 台灣語言的歷史發展與變異<br>
-										4. 台灣語言的接觸與新變（含新移民研究）<br>
-										5. 台灣語言的融合與消長<br>
-										6. 台灣語言的復振及相關政策<br>
-										7. 台灣語言研究的回顧與前瞻<br>
-										8. 其他與台灣語言或台灣語言教學相關之議題<br>
-									</td>
-								</tr>
-								<tr><td style=""><br></td></tr>
-								<tr><td style="">六、摘要截稿日期</td></tr>
-								<tr><td style="">2016年1月20日(三)</td></tr>
-								<tr><td style=""><br></td></tr>
-								<tr><td style="">七、公布摘要通過日期</td></tr>
-								<tr><td style="">2016年3月15日(二)</td></tr>
-								<tr><td style=""><br></td></tr>
-								<tr><td style="">八、全文截稿日期</td></tr>
-								<tr><td style="">2016年6月15日(三)</td></tr>
-								<tr><td style=""><br></td></tr>
-								<tr><td style="">九、投稿方式</td></tr>
-								<tr>
-									<td style="">
-										（1）投稿語言：台灣語言、英語。<br>
-										（2）個別投稿：與「會議主題、子題」相關的台灣語言及教學研究。<br>
-										（3）專題小組（panel）投稿：自組專題小組成員3~5人（含主持人）。<br>
-										請下載「2016年第十一屆台灣語言及其教學國際學術研討會 投稿人資料表」（專題小組投稿者的參加成員都必須各自下載填寫），並將「論文題目與摘要」存為一式兩檔（WORD檔及PDF檔），以電子郵件寄到以下信箱。<br>
-									</td>
-								</tr>
-								<tr><td style=""><br></td></tr>
-								<tr><td style="">十、聯絡地址</td></tr>
-								<tr>
-									<td style="">
-										11529台北市南港區研究院路二段128號 中央研究院語言學研究所 吳瑞文老師研究室<br>    
-										電子信箱：<a href="mailto:istlt2016@gate.sinica.edu.tw">stlt2016@gate.sinica.edu.tw</a><br>
-										聯絡人：林秀蓮小姐（電話：02-26525000 分機6137）<br>
-									</td>
-								</tr>
-								<tr><td style=""><br></td></tr>
-								<tr><td style="">十一、會議收費方式</td></tr>
-								<tr>
-									<td style="">
-										（1） 台灣語文學會會員（已繳交2016年度年費）免繳論文發表費、註冊費。<br> 
-										（2） 非會員者，論文發表費：學生1500元；非學生2000元（已含會議註冊費）。<br>
+								<td>
+									　為獎勵台灣語文研究的優秀博士論文，特設此一獎項。台灣語文學會將邀請獲獎之優秀青年學者現身說法，講論學位論文的重要研究成果，一方面示範學術研究的方法與態度，一方面也分享學術研究的成果與經驗，以鼓勵並引導在學研究生積極投入台灣語文的相關研究。自2015年起，本活動每兩年舉辦一次。<br><br>
+									一、獎項名稱：台灣語文學會優秀博士論文獎<br><br>
+									二、名額：每屆一至兩名<br><br>
+									三、主辦單位：台灣語文學會<br><br>
+									四、申請資格：<br>
+									　　（1）<b>2015年7月至2019年6月已正式取得博士學位者</b>（每人以申請兩次為限）。<br>
+									　　（2）申請者若為台灣語文學會會員請繳交當年年費；若非台灣語文學會會員，可選擇入會或繳交審查費用1000元。<br>
+									　　（欲加入台灣語文學會者請參見<a href="../Member.php">會員專區</a>）<br>
+									五、論文主題限定：有關台灣語言相關之研究，包括閩南語、客家話、南島語及台灣華語的語音、音韻、構詞、句法及其他台灣語言學相關研究之博士學位論文。<br><br>
+									六、申請方式：指導教授推薦或本人自行報名均可。請填寫「<a href="../Documents/5thddapp.docx"><b>申請表</b></a>」（表末請自評並說明<b>該論文與台灣語言的相關性</b>），並檢附以下資料：<br>
+									　　（1）<b>研究結論要點</b>（summary）3-5頁以及<b>章節目錄</b>。<br>
+									　　（2）<b>博士論文全本</b>（電子檔一份，若審查人需要紙本論文，將請申請人提供紙本論文）。<br>
+									　　（3）<b>博士學位證書</b>（掃描檔一份）。<br>
+									　　<text style="color:blue">備註：應屆畢業生已通過口試但尚未辦理離校手續者，可先以
+									    <text style="color:red">論文口試通過證明</text>暫代畢業證書，俟辦理離校手續後再補交畢業證書。畢業證書補件期限為
+										<text style="color:red">8月20日</text>，未能於期限前補齊資料者，將取消獲獎資格，已繳交之審查費或入會費亦不予退還。</text><br>
+									　　備妥以上資料，以電子郵件方式寄至<a href="mailto:contact.tlls@gmail.com">contact.tlls@gmail.com。</a><br><br>
+									七、審查：由本學會理監事委員組織學術委員會，進行初審、複審兩階段審查。通過資格初審的博士論文進入全文複審，再由學術委員會議決獲獎名單。<br><br>
+									八、申請截止日期：<b>2019年7月15日</b><br><br>
+									<text style="color:red">九、應屆畢業生畢業證書補件截止日期：2019年8月20日</text><br><br>
+									十、獲獎名單公布日期：<b>2019年9月30日</b><br><br>
+									十一、<b>獲獎者將於「第六屆青年學者臺灣語言學術研討會」（2019年11月2日於國立彰化師範大學台灣文學所）中獲頒獎狀，並進行約30分鐘的學位論文成果發表。</b><br><br>
+									十二、獲獎者若為會員，將獲免繳年費兩年；若非會員，將獲邀請入會並免繳年費兩年。<br><br>
+									十三、繳費方式：<br>
+									　　台灣語文學會帳戶：渣打銀行（代碼052）轉帳帳號「06353-0018637」。<br>
+									　　轉帳完成後請以電子郵件告知「<b>姓名</b>」及「<b>匯款帳號末六碼</b>」，<br>
+									　　電子郵件請寄<a href="mailto:contact.tlls@gmail.com">contact.tlls@gmail.com</a><br><br>
+									十四、聯絡地址：台灣語文學會祕書處聯絡組<a href="mailto:contact.tlls@gmail.com">contact.tlls@gmail.com</a><br><br>
 									</td>
 								</tr>
 							</table>
@@ -180,35 +182,18 @@
 					</div><br>
 				</div>
 				<div class="col-md-4 upcoming-events-right">
-					<h3>研討會</h3>
+					<h3>優秀博士論文獎暨申請辦法</h3>
 					<div class="banner-bottom-video-grid-left">
 						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 							<div class='panel panel-default'>
 								<div class='panel-heading' role='tab' id='headingOne'>
 									<h4 class='panel-title'>
-										<a class='pa_italic collapsed' role='button' data-toggle='collapse'
-											data-parent='#accordion' href='#collapse1' aria-expanded='true'
-											aria-controls='collapse1'>
+										<a class='pa_italic collapsed'  href='Award_7.php'>
 											<span class='glyphicon glyphicon-plus' aria-hidden='true'></span><i
 												class='glyphicon glyphicon-minus'
-												aria-hidden='true'></i>台灣語言及其教學國際研討會
+												aria-hidden='true'></i>第七屆優秀博士論文獎
 										</a>
 									</h4>
-								</div>
-								<div id='collapse1' class='panel-collapse collapse' role='tabpanel'
-									aria-labelledby='headingOne' style='height: 0px;'>
-									<div class='panel-body'>
-									<ul>
-										<li><a href='Conference_1-14.php'>第十四屆</li>
-										<li><a href='Conference_1-13.php'>第十三屆</li>
-										<li><a href='Conference_1-12.php'>第十二屆</li>
-										<li><a href='Conference_1-11.php'>第十一屆</li>
-										<li><a href='Conference_1-10.php'>第十屆</li>
-										<li><a href='Conference_1-9.php'>第九屆</li>
-										<li><a href='Conference_1-8.php'>第八屆</li>
-										<li><a href='Conference_1-7.php'>第七屆</li>
-									</ul>
-									</div>
 								</div>
 							</div>
 						</div>
@@ -216,27 +201,12 @@
 							<div class='panel panel-default'>
 								<div class='panel-heading' role='tab' id='headingOne'>
 									<h4 class='panel-title'>
-										<a class='pa_italic collapsed' role='button' data-toggle='collapse'
-											data-parent='#accordion' href='#collapse2' aria-expanded='true'
-											aria-controls='collapse2'>
+										<a class='pa_italic collapsed'  href='Award_6.php'>
 											<span class='glyphicon glyphicon-plus' aria-hidden='true'></span><i
 												class='glyphicon glyphicon-minus'
-												aria-hidden='true'></i>青年學者台灣語言學術研討會
+												aria-hidden='true'></i>第六屆優秀博士論文獎
 										</a>
 									</h4>
-								</div>
-								<div id='collapse2' class='panel-collapse collapse' role='tabpanel'
-									aria-labelledby='headingOne' style='height: 0px;'>
-									<div class='panel-body'>
-									<ul>
-										<li><a href='Conference_2-8.php'>第八屆</li>
-										<li><a href='Conference_2-7.php'>第七屆</li>
-										<li><a href='Conference_2-6.php'>第六屆</li>
-										<li><a href='Conference_2-5.php'>第五屆</li>
-										<li><a href='Conference_2-4.php'>第四屆</li>
-										<li><a href='Conference_2-3.php'>第三屆</li>
-									</ul>
-									</div>
 								</div>
 							</div>
 						</div>
@@ -244,27 +214,38 @@
 							<div class='panel panel-default'>
 								<div class='panel-heading' role='tab' id='headingOne'>
 									<h4 class='panel-title'>
-										<a class='pa_italic collapsed' role='button' data-toggle='collapse'
-											data-parent='#accordion' href='#collapse3' aria-expanded='true'
-											aria-controls='collapse3'>
+										<a class='pa_italic collapsed'  href='Award_5.php'>
 											<span class='glyphicon glyphicon-plus' aria-hidden='true'></span><i
 												class='glyphicon glyphicon-minus'
-												aria-hidden='true'></i>台灣語言學一日大師/專題講座
+												aria-hidden='true'></i>第五屆優秀博士論文獎
 										</a>
 									</h4>
 								</div>
-								<div id='collapse3' class='panel-collapse collapse' role='tabpanel'
-									aria-labelledby='headingOne' style='height: 0px;'>
-									<div class='panel-body'>
-									<ul>
-										<li><a href='Conference_3-7.php'>第七屆</li>
-										<li><a href='Conference_3-6.php'>第六屆</li>
-										<li><a href='Conference_3-5.php'>第五屆</li>
-										<li><a href='Conference_3-4.php'>第四屆</li>
-										<li><a href='Conference_3-3.php'>第三屆</li>
-										<li><a href='Conference_3-2.php'>第二屆</li>
-										<li><a href='Conference_3-1.php'>第一屆</li>
-									</ul>
+							</div>
+						</div>
+						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+							<div class='panel panel-default'>
+								<div class='panel-heading' role='tab' id='headingOne'>
+									<h4 class='panel-title'>
+										<a class='pa_italic collapsed'  href='Award_4.php'>
+											<span class='glyphicon glyphicon-plus' aria-hidden='true'></span><i
+												class='glyphicon glyphicon-minus'
+												aria-hidden='true'></i>第四屆優秀博士論文獎
+										</a>
+									</h4>
+								</div>
+							</div>
+						</div>
+						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+							<div class='panel panel-default'>
+								<div class='panel-heading' role='tab' id='headingOne'>
+									<h4 class='panel-title'>
+										<a class='pa_italic collapsed'  href='Award_3.php'>
+											<span class='glyphicon glyphicon-plus' aria-hidden='true'></span><i
+												class='glyphicon glyphicon-minus'
+												aria-hidden='true'></i>第三屆優秀博士論文獎
+										</a>
+									</h4>
 								</div>
 							</div>
 						</div>

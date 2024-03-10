@@ -104,10 +104,11 @@
 			</div>
 			<div class="upcoming-events-grids">
 				<div class="col-md-12 upcoming-events-left">
-					<h3><b>[已截稿]第八屆青年學者台灣語言學術研討會</b></h3>
+					<h3><b>第七屆青年學者台灣語言學術研討會論文發表錄取名單</b></h3>
 					<div class="news-grid-rght3">
 						<div class="story">
-						<img src="../../Documents/8thyouth.png" style="height:600px"/><br>
+						有關旨揭名單，請參閱附件檔案。<br>
+						附件：<a href="../../Documents/ysstl.7_20210526.docx">錄取名單</a>
 						</div>
 					</div>
 				</div>

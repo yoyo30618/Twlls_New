@@ -48,7 +48,7 @@
 													</a>
 													<ul class="dropdown-menu" style="font-size: 16px;">
 														<li><a href="../../Conference.php">研討會</a></li>
-														<li><a href="../../Pay.php">期刊</a></li>
+														<li><a href="http://www.twlls.org.tw/jtll/index.php">期刊</a></li>
 													</ul>
 												</li>
 												<li><a href="../../Member.php" style="font-size: 16px;">歷屆獎項</a></li>
@@ -60,7 +60,7 @@
 													</a>
 													<ul class="dropdown-menu" style="font-size: 16px;">
 														<li><a href="../../Pay.php">會員繳費與捐款</a></li>
-														<li><a href="../../icons.html">出版品購買</a></li>
+														<li><a href="../../Pay_2.php">出版品購買</a></li>
 													</ul>
 												</li>
 												<li><a href="../../breaking.html" style="font-size: 16px;">人才庫</a></li>
@@ -88,7 +88,7 @@
 						if ($result->num_rows > 0) {
     						while ($row = mysqli_fetch_array($result)) {
 								if($row["url"]!="")
-									echo "<div class='marquee1'><a class='breaking' href='../../".$row["url"]."'>".$row["Message"]."</a></div>";
+									echo "<div class='marquee1'><a class='breaking' href='../../".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></div>";
 								else
 									echo "<div class='marquee1'><a class='breaking'>".$row["Title"]."</a></div>";
     						}
@@ -104,10 +104,10 @@
 			</div>
 			<div class="upcoming-events-grids">
 				<div class="col-md-12 upcoming-events-left">
-					<h3><b>本會前監事古國順教授辭世，享壽83歲，敬邀線上追思</b></h3>
+					<h3><b>台灣語文學會組織章程（2022.07.12修訂通過）</b></h3>
 					<div class="news-grid-rght3">
 						<div class="story">
-							
+							<embed src="../../Documents/bylaw_revised_20220712.pdf" style="width:100%;height:600px"></embed>
 						</div>
 					</div>
 				</div>

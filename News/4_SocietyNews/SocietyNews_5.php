@@ -104,10 +104,13 @@
 			</div>
 			<div class="upcoming-events-grids">
 				<div class="col-md-12 upcoming-events-left">
-					<h3><b>[已截稿]第八屆青年學者台灣語言學術研討會</b></h3>
+					<h3><b>本會前監事古國順教授辭世，享壽83歲，敬邀線上追思</b></h3>
 					<div class="news-grid-rght3">
 						<div class="story">
-						<img src="../../Documents/8thyouth.png" style="height:600px"/><br>
+						　　本會前監事古國順教授於 5 月 21 日辭世，享壽 83 歲。古教授畢生致力於客家語文教育，除大學教育及出版專書外，長期投入客語薪傳工作，為全國語文競賽、教育部客家辭典編纂掌舵，在制訂台灣語言音標與建立客語能力分級認證考試制度等方面貢獻卓著，對於台灣推廣客家語言文化居功厥偉，亦曾獲客家傑出成就獎與客家貢獻獎殊榮之肯定。<br>
+						　　本會對其辭世深感惋惜與哀悼。由於疫情無法到場致意，台灣客家語文學會設立了「古國順教授線上追思會」，網址如下，歡迎所有認識古教授的人在此寫下您的悼念與追思，學會會將您的心意滙整後致贈給家屬，同時也向做仙的古教授表達他的走並不孤單。～感謝大家～
+						<br><br>古國順教授線上追思會網址：
+						<br><a href="https://docs.google.com/forms/d/1f8Z9ghZaenyXcfeFkGOEHtLC9e5KOQOWtEtn8itV24s/edit" target="_blank">https://docs.google.com/forms/d/1f8Z9ghZaenyXcfeFkGOEHtLC9e5KOQOWtEtn8itV24s/edit</a>
 						</div>
 					</div>
 				</div>

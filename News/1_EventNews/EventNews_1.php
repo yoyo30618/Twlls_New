@@ -48,7 +48,7 @@
 													</a>
 													<ul class="dropdown-menu" style="font-size: 16px;">
 														<li><a href="../../Conference.php">研討會</a></li>
-														<li><a href="../../Pay.php">期刊</a></li>
+														<li><a href="http://www.twlls.org.tw/jtll/index.php">期刊</a></li>
 													</ul>
 												</li>
 												<li><a href="../../Member.php" style="font-size: 16px;">歷屆獎項</a></li>
@@ -60,7 +60,7 @@
 													</a>
 													<ul class="dropdown-menu" style="font-size: 16px;">
 														<li><a href="../../Pay.php">會員繳費與捐款</a></li>
-														<li><a href="../../icons.html">出版品購買</a></li>
+														<li><a href="../../Pay_2.php">出版品購買</a></li>
 													</ul>
 												</li>
 												<li><a href="../../breaking.html" style="font-size: 16px;">人才庫</a></li>
@@ -88,7 +88,7 @@
 						if ($result->num_rows > 0) {
     						while ($row = mysqli_fetch_array($result)) {
 								if($row["url"]!="")
-									echo "<div class='marquee1'><a class='breaking' href='../../".$row["url"]."'>".$row["Message"]."</a></div>";
+									echo "<div class='marquee1'><a class='breaking' href='../../".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></div>";
 								else
 									echo "<div class='marquee1'><a class='breaking'>".$row["Title"]."</a></div>";
     						}
@@ -104,10 +104,19 @@
 			</div>
 			<div class="upcoming-events-grids">
 				<div class="col-md-12 upcoming-events-left">
-					<h3><b>本會前監事古國順教授辭世，享壽83歲，敬邀線上追思</b></h3>
+					<h3><b>國際漢學平台李壬癸院士的訪談影片分享</b></h3>
 					<div class="news-grid-rght3">
 						<div class="story">
-							
+						由國家圖書館與國立中山大學文學院教育部標竿計畫「跨文化漢學之島：國際漢學平台在中山」所合辦的「國際漢學家訪談」，2021年迄2022年，已邀請22位海內外深具影響力的漢學家及人文學者完成影音訪談，交流內容包括其學思歷程、研究生涯、學術著作、漢學觀點、海內外漢學研究經驗，乃至跨文化生活的分享等。<br>
+						目前唯一一場語言學的訪談乃由李壬癸院士分享其對台灣南島語研究的學思歷程，並給予年輕研究者懇切的建言。<br>
+						非常值得大家學習與思索~~<br><br>
+						時間：2022.3.8　09:30-12:00<br>
+						受訪者：李壬癸　中央研究院院士<br>
+						訪問人：杜佳倫　中山大學中國文學系副教授<br><br>
+						訪談影片連結:<br>
+						<a href="https://youtu.be/IRntvWo3aZY?si=bifJu2aDdlwCR_AQ" target="_blank">https://youtu.be/IRntvWo3aZY?si=bifJu2aDdlwCR_AQ</a><br><br>
+						「國際漢學平台在中山」完整網頁:<br>
+						<a href="https://sinology.nsysu.edu.tw/interview/#ftoc-heading-9" target="_blank">https://sinology.nsysu.edu.tw/interview/#ftoc-heading-9</a><br>
 						</div>
 					</div>
 				</div>

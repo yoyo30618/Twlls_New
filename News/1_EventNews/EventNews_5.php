@@ -104,10 +104,11 @@
 			</div>
 			<div class="upcoming-events-grids">
 				<div class="col-md-12 upcoming-events-left">
-					<h3><b>[已截稿]第八屆青年學者台灣語言學術研討會</b></h3>
+					<h3><b>台灣語文學會三十週年慶祝專區，敬邀留言祝賀</b></h3>
 					<div class="news-grid-rght3">
 						<div class="story">
-						<img src="../../Documents/8thyouth.png" style="height:600px"/><br>
+					　　「台灣語文學會」成立於 1991 年 8 月 17 日，今年為「台灣語文學會」創會三十週年。本會以從事臺灣語文的研究和教育為宗旨，三十年來，在確立臺灣語言的主體性、推動台灣語文教育以及促進台灣語文的學術化上都扮演重要的角色。在此誠摯邀請語文學界相關人士，不論是老朋友或新朋友，以文字、照片或影音等方式表達祝賀。請點選下方表單連結，留下您對學會的祝賀之意，學會匯整後將置放於官網之「台灣語文學會三十週年慶祝專區」。誠心感謝您對學會長久以來的支持。<br>
+						<br>「台灣語文學會三十週年慶祝專區」表單連結：<a href="https://reurl.cc/kLE7Dn" target="_blank">https://reurl.cc/kLE7Dn</a>。<br>
 						</div>
 					</div>
 				</div>

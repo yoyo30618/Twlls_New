@@ -104,10 +104,47 @@
 			</div>
 			<div class="upcoming-events-grids">
 				<div class="col-md-12 upcoming-events-left">
-					<h3><b>[已截稿]第八屆青年學者台灣語言學術研討會</b></h3>
+					<h3><b>2022/4/8「反對2030雙語國家」記者會相關報導</b></h3>
 					<div class="news-grid-rght3">
 						<div class="story">
-						<img src="../../Documents/8thyouth.png" style="height:600px"/><br>
+							1.     公視新聞_憂獨尊英語破壞台灣語言生態　學界連署反對2030雙語政策<br>
+							<a href="https://news.pts.org.tw/article/575389" target="_blank">https://news.pts.org.tw/article/575389</a><br>
+							2.     公視新聞_嗙雙語政策孤注重英文　學者籲政府保本土語言<br>
+							<a href="https://news.pts.org.tw/article/575497" target="_blank">https://news.pts.org.tw/article/575497</a><br>
+							3.     客家新聞_憂本土語流失　學界連署反2030雙語政策<br>
+							<a href="https://www.hakkatv.org.tw/news-detail/1649413989747737" target="_blank">https://www.hakkatv.org.tw/news-detail/1649413989747737</a><br>
+							(蕃新聞) <a href="https://n.yam.com/Article/2022040855929" target="_blank">https://n.yam.com/Article/2022040855929</a>1<br>
+							4.     原視新聞網_台灣擁有多元語言文化　學界掀反對獨尊英語聲浪<br>
+							<a href="https://news.ipcf.org.tw/29261" target="_blank">https://news.ipcf.org.tw/29261</a><br>
+							5.     大紀元_雙語政策致階級惡化　台學者籲以加拿大為借鏡<br>
+							<a href="https://www.epochtimes.com/b5/22/4/8/n13704618.htm" target="_blank">https://www.epochtimes.com/b5/22/4/8/n13704618.htm</a><br>
+							6.     工商時報_學界批雙語國家政策淪自我殖民　呼籲立刻退回行政院<br>
+							<a href="https://ctee.com.tw/livenews/ch/chinatimes/20220408002659-260405" target="_blank">https://ctee.com.tw/livenews/ch/chinatimes/20220408002659-260405</a><br>
+							7.     中央社_學界連署逾千人支持　籲走向「多語台灣英語友善」<br>
+							<a href="https://money.udn.com/money/story/7307/6223857?from=edn_newest_index" target="_blank">https://money.udn.com/money/story/7307/6223857?from=edn_newest_index</a><br>
+							8.     中央社_學界發起連署　籲走向「多語台灣英語友善」(圖)<br>
+							<a href="https://tw.news.yahoo.com/%E5%AD%B8%E7%95%8C%E7%99%BC%E8%B5%B7%E9%80%A3%E7%BD%B2-%E7%B1%B2%E8%B5%B0%E5%90%91-%E5%A4%9A%E8%AA%9E%E5%8F%B0%E7%81%A3%E8%8B%B1%E8%AA%9E%E5%8F%8B%E5%96%84-%E5%9C%96-042446564.html" target="_blank">https://tw.news.yahoo.com/%E5%AD%B8%E7%95%8C%E7%99%BC%E8%B5%B7%E9%80%A3%E7%BD%B2-%E7%B1%B2%E8%B5%B0%E5%90%91-%E5%A4%9A%E8%AA%9E%E5%8F%B0%E7%81%A3%E8%8B%B1%E8%AA%9E%E5%8F%8B%E5%96%84-%E5%9C%96-042446564.html</a><br>
+							9.     中央廣播電臺_學界團體反對「雙語國家」　籲發展「多語台灣」方案<br>
+							<a href="https://www.rti.org.tw/news/view/id/2129453" target="_blank">https://www.rti.org.tw/news/view/id/2129453</a><br>
+							10.  中時_學界批雙語國家政策淪自我殖民　呼籲立刻退回行政院<br>
+							<a href="https://www.chinatimes.com/realtimenews/20220408002659-260405?chdtv" target="_blank">https://www.chinatimes.com/realtimenews/20220408002659-260405?chdtv</a><br>
+							11.  中時_雙語政策獨尊英語　學界批自我殖民<br>
+							<a href="https://turnnewsapp.com/choice/259073.html" target="_blank">https://turnnewsapp.com/choice/259073.html</a><br>
+							12.  民視新聞網_反對「2030雙語國家」　逾400位專家學者連署<br>
+							(文字) <a href="https://tw.news.yahoo.com/%E5%8F%8D%E5%B0%8D-2030%E9%9B%99%E8%AA%9E%E5%9C%8B%E5%AE%B6-%E9%80%BE400%E4%BD%8D%E5%B0%88%E5%AE%B6%E5%AD%B8%E8%80%85%E9%80%A3%E7%BD%B2-062359035.html" target="_blank">https://tw.news.yahoo.com/%E5%8F%8D%E5%B0%8D-2030%E9%9B%99%E8%AA%9E%E5%9C%8B%E5%AE%B6-%E9%80%BE400%E4%BD%8D%E5%B0%88%E5%AE%B6%E5%AD%B8%E8%80%85%E9%80%A3%E7%BD%B2-062359035.html</a><br>
+							(影片) <a href="https://tw.tv.yahoo.com/life-news/%E5%8F%8D%E5%B0%8D-2030%E9%9B%99%E8%AA%9E%E5%9C%8B%E5%AE%B6-%E9%80%BE400%E4%BD%8D%E5%B0%88%E5%AE%B6%E5%AD%B8%E8%80%85%E9%80%A3%E7%BD%B2-082502762.html" target="_blank">https://tw.tv.yahoo.com/life-news/%E5%8F%8D%E5%B0%8D-2030%E9%9B%99%E8%AA%9E%E5%9C%8B%E5%AE%B6-%E9%80%BE400%E4%BD%8D%E5%B0%88%E5%AE%B6%E5%AD%B8%E8%80%85%E9%80%A3%E7%BD%B2-082502762.html</a><br>
+							13.  民視新聞網_反對獨尊英語！學界籲檢討2030雙語國家<br>
+							<a href="https://tw.news.yahoo.com/%E5%8F%8D%E5%B0%8D%E7%8D%A8%E5%B0%8A%E8%8B%B1%E8%AA%9E-%E5%AD%B8%E7%95%8C%E7%B1%B2%E6%AA%A2%E8%A8%8E2030%E9%9B%99%E8%AA%9E%E5%9C%8B%E5%AE%B6-035747294.html" target="_blank">https://tw.news.yahoo.com/%E5%8F%8D%E5%B0%8D%E7%8D%A8%E5%B0%8A%E8%8B%B1%E8%AA%9E-%E5%AD%B8%E7%95%8C%E7%B1%B2%E6%AA%A2%E8%A8%8E2030%E9%9B%99%E8%AA%9E%E5%9C%8B%E5%AE%B6-035747294.html</a><br>
+							14.  自由時報_台灣語文學會等倡議「多語台灣、英語友善」逾1700人連署支持<br>
+							<a href="https://news.ltn.com.tw/news/life/breakingnews/3886386" target="_blank">https://news.ltn.com.tw/news/life/breakingnews/3886386</a><br>
+							15.  國語日報_學界反雙語國家　籲發展多語臺灣<br>
+							<a href="https://www.mdnkids.com/content.asp?sub=1&sn=6412" target="_blank">https://www.mdnkids.com/content.asp?sub=1&sn=6412</a><br>
+							16.  聯合報_雙語國家恐弱化學生學習力　台大教授批：烏魯木齊政策<br>
+							<a href="https://udn.com/news/story/6885/6224161?from=udn-referralnews_ch2artbottom" target="_blank">https://udn.com/news/story/6885/6224161?from=udn-referralnews_ch2artbottom</a><br>
+							17.  聯合報_雙語國家恐釀階級惡化　學者籲以加拿大、新加坡為鑑<br>
+							<a href="https://udn.com/news/story/6885/6224249" target="_blank">https://udn.com/news/story/6885/6224249</a><br>
+							18.  Taiwan News_Academics urge prioritization of Taiwan's native languages over English<br>
+							<a href="https://www.taiwannews.com.tw/en/news/4503281" target="_blank">https://www.taiwannews.com.tw/en/news/4503281</a><br>
 						</div>
 					</div>
 				</div>

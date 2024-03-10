@@ -104,10 +104,12 @@
 			</div>
 			<div class="upcoming-events-grids">
 				<div class="col-md-12 upcoming-events-left">
-					<h3><b>[已截稿]第八屆青年學者台灣語言學術研討會</b></h3>
+					<h3><b>國家圖書館獎狀</b></h3>
 					<div class="news-grid-rght3">
 						<div class="story">
-						<img src="../../Documents/8thyouth.png" style="height:600px"/><br>
+							<text style="color:red">賀《臺灣語文研究》榮獲國家圖書館「111年臺灣學術資源影響力」期刊即時傳播獎：語言學學門期刊第一名</text>
+							<img src="../../Documents/nclaward2022.jpg" style="height:600px"/><br>
+							附件：<a href="../../Documents/nclaward2022.jpg" >獎狀</a>
 						</div>
 					</div>
 				</div>

@@ -48,10 +48,10 @@
 													</a>
 													<ul class="dropdown-menu" style="font-size: 16px;">
 														<li><a href="Conference.php">研討會</a></li>
-														<li><a href="Pay.php">期刊</a></li>
+														<li><a href="http://www.twlls.org.tw/jtll/index.php">期刊</a></li>
 													</ul>
 												</li>
-												<li><a href="Member.php" style="font-size: 16px;">歷屆獎項</a></li>
+												<li><a href="Award.php" style="font-size: 16px;">歷屆獎項</a></li>
 												<li><a href="Member.php" style="font-size: 16px;">會員專區</a></li>
 												<li role="presentation" class="dropdown" style="font-size: 16px;">
 													<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
@@ -60,7 +60,7 @@
 													</a>
 													<ul class="dropdown-menu" style="font-size: 16px;">
 														<li><a href="Pay.php">會員繳費與捐款</a></li>
-														<li><a href="icons.html">出版品購買</a></li>
+														<li><a href="Pay_2.php">出版品購買</a></li>
 													</ul>
 												</li>
 												<li><a href="breaking.html" style="font-size: 16px;">人才庫</a></li>
