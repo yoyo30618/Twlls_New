@@ -450,7 +450,7 @@ EOF;
         /*sendMail("contact.tlls@gmail.com", "台灣語文學會 線上繳費系統 繳款成功 $row->timestamp", array($files[0]));
         sendMail("contact.tlls@gmail.com", "台灣語文學會 線上繳費系統 繳款成功 $row->timestamp", array($files[1]));
         sendMail("contact.tlls@gmail.com", "台灣語文學會 線上繳費系統 繳款成功 $row->timestamp", array($files[2]));*/
-        sendMail("contact.tlls@gmail.com", "【TLLS收款通知】開立電子收據 $yearno $row->timestamp", 2, $files, $row, $yearno);
+        sendMail("contact.tlls@gmail.com", "【TLLS收款通知】開立電子收據".$yearno.$row->timestamp, 2, $files, $row, $yearno);
         // 取消寄送明細，因為寄送明細程式會造成藍新系統多次回傳，每次回傳都會觸發寄信功能，導致產生重覆信件。
         //require_once("newebpay_yearlycsv.php");
         //$csv_data = getYearlyCSV($apiUrl, $MerchantID, $HashIV, $HashKey, $row->timestamp, $row->name, $row->ReceiptTitle, $row->TaxIDNumber, $row->email, $row->phone);
