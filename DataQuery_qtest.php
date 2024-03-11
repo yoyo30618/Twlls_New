@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
+<?php session_start();?>
 <html>
-
 <head>
 	<title>台灣語文學會</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -110,7 +110,7 @@
 							<?php
 							$correctPassword = 'tlls2015';
 							if (isset($_SESSION['Islogin']) OR $_SERVER['REQUEST_METHOD'] === 'POST') {
-								$userPassword = $_POST['password'];
+								if(isset($_POST['password'])) $userPassword = $_POST['password'];
 								if (isset($_SESSION['Islogin']) OR $userPassword === $correctPassword) {
 									$_SESSION['Islogin']=1;
 									?>
@@ -118,10 +118,6 @@
 									<?php
 										$Page=1;
 										$Line=0;
-										if(isset($_GET['Page'])){
-											$Page=$_GET['Page'];
-											$Line=(int)($_GET['Page']-1)*20;
-										}
 									?>
 									<table class="table table-bordered">
 												<thead>
@@ -129,7 +125,6 @@
 													<td colspan="9">
 														<form action="DataQuery_qtest.php" method="get">
 															<div class="input-group mb-3 d-grid gap-2 d-md-flex justify-content-md-end">
-																<input type="hidden" name="Page" value="1">
 																<input type="text" class="form-control" placeholder="請輸入查詢資料" name="KeyWord" value="<?php if(isset($_GET['KeyWord'])) echo $_GET['KeyWord']; ?>">
 																<button class="btn btn-outline-secondary" type="submit" id="button-addon2">查詢</button>
 															</div>
@@ -164,10 +159,10 @@
 														$sql .= "`ReceiptAddress` like '%" . $_GET['KeyWord'] . "%' OR ";
 														$sql .= "`amt` like '%" . $_GET['KeyWord'] . "%' OR ";
 														$sql .= "`itemdesc` like '%" . $_GET['KeyWord'] . "%' OR ";
-														$sql .= "`orderNo` like '%" . $_GET['KeyWord'] . "%' OR ";
+														$sql .= "`orderNo` like '%" . $_GET['KeyWord'] . "%'";
 														// $sql .= "`BookAddress` like '%" . $_GET['KeyWord'] . "%' OR ";
 														// $sql .= "`BookQuantity` like '%" . $_GET['KeyWord'] . "%' ";
-														$sql .= "ORDER BY `qtest`.`orderNo`";
+														$sql .= "ORDER BY `qtest`.`orderNo` DESC";
 													}
 													$result = $conn->query($sql);
 													if ($result->num_rows > 0) {

@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
+<?php session_start();?>
 <html>
-
 <head>
 	<title>台灣語文學會</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -110,7 +110,7 @@
 							<?php
 							$correctPassword = 'tlls2015';
 							if (isset($_SESSION['Islogin']) OR $_SERVER['REQUEST_METHOD'] === 'POST') {
-								$userPassword = $_POST['password'];
+								if(isset($_POST['password'])) $userPassword = $_POST['password'];
 								if (isset($_SESSION['Islogin']) OR $userPassword === $correctPassword) {
 									$_SESSION['Islogin']=1;
 									?>
@@ -167,7 +167,7 @@
 														$sql .= "`orderNo` like '%" . $_GET['KeyWord'] . "%' OR ";
 														$sql .= "`BookAddress` like '%" . $_GET['KeyWord'] . "%' OR ";
 														$sql .= "`BookQuantity` like '%" . $_GET['KeyWord'] . "%' ";
-														$sql .= "ORDER BY `tlls_order`.`orderNo`";
+														$sql .= "ORDER BY `tlls_order`.`orderNo` DESC";
 													}
 													$result = $conn->query($sql);
 													if ($result->num_rows > 0) {
