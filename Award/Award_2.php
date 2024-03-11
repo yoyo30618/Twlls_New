@@ -8,12 +8,12 @@
 	<meta name="keywords" content="" />
 	<script
 		type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-	<script src="js/jquery-1.11.1.min.js"></script>
+	<link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<script src="../js/jquery-1.11.1.min.js"></script>
 	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
 </head>
-<?php include_once "Conn_SQL.php"; ?>
+<?php include_once "../Conn_SQL.php"; ?>
 <body>
 	<div class="banner1">
 		<div class="banner-info1">
@@ -30,40 +30,40 @@
 						<div class="logo">
 							<table>
 								<tr>
-									<td style="width:10%"><a href="index.php"><img src="images/logo.png" style="border-radius: 20px;width:100%;" /></a></td>
+									<td style="width:10%"><a href="../index.php"><img src="../images/logo.png" style="border-radius: 20px;width:100%;" /></a></td>
 									<td style="width:30%">
-										<a class="navbar-brand" href="index.php" style="font-size: 50px;">
+										<a class="navbar-brand" href="../index.php" style="font-size: 50px;">
 											台灣語文學會<br><text style="font-size: 12px;">Taiwan Languagee & Literature Society</text>
 										</a>
 									</td>
 									<td style="width:60%;">
 										<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 											<ul class="nav navbar-nav cl-effect-18" id="cl-effect-18">
-												<li class="act"><a href="index.php" style="font-size: 16px;">首頁</a></li>
-												<li><a href="Introduction.php" style="font-size: 16px;">學會簡介</a></li>
+												<li class="act"><a href="../index.php" style="font-size: 16px;">首頁</a></li>
+												<li><a href="../Introduction.php" style="font-size: 16px;">學會簡介</a></li>
 												<li role="presentation" class="dropdown" style="font-size: 16px;">
 													<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
 														aria-haspopup="true" aria-expanded="false" style="font-size: 16px;">
 														學術活動 <span class="caret"></span>
 													</a>
 													<ul class="dropdown-menu" style="font-size: 16px;">
-														<li><a href="Conference.php">研討會</a></li>
+														<li><a href="../Conference.php">研討會</a></li>
 														<li><a href="http://www.twlls.org.tw/jtll/index.php">期刊</a></li>
 													</ul>
 												</li>
-												<li><a href="Award.php" style="font-size: 16px;">歷屆獎項</a></li>
-												<li><a href="Member.php" style="font-size: 16px;">會員專區</a></li>
+												<li><a href="../Award.php" style="font-size: 16px;">歷屆獎項</a></li>
+												<li><a href="../Member.php" style="font-size: 16px;">會員專區</a></li>
 												<li role="presentation" class="dropdown" style="font-size: 16px;">
 													<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
 														aria-haspopup="true" aria-expanded="false" style="font-size: 16px;">
 														線上繳費 <span class="caret"></span>
 													</a>
 													<ul class="dropdown-menu" style="font-size: 16px;">
-														<li><a href="Pay.php">會員繳費與捐款</a></li>
-														<li><a href="Pay_2.php">出版品購買</a></li>
+														<li><a href="../Pay.php">會員繳費與捐款</a></li>
+														<li><a href="../Pay_2.php">出版品購買</a></li>
 													</ul>
 												</li>
-												<li><a href="breaking.html" style="font-size: 16px;">人才庫</a></li>
+												<li><a href="../breaking.html" style="font-size: 16px;">人才庫</a></li>
 											</ul>
 										</div><!-- /.navbar-collapse -->
 									</td>
@@ -88,7 +88,7 @@
 						if ($result->num_rows > 0) {
     						while ($row = mysqli_fetch_array($result)) {
 								if($row["url"]!="")
-									echo "<div class='marquee1'><a class='breaking' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></div>";
+									echo "<div class='marquee1'><a class='breaking' href='../".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></div>";
 								else
 									echo "<div class='marquee1'><a class='breaking'>".$row["Title"]."</a></div>";
     						}
@@ -97,26 +97,27 @@
 					<div class="clearfix"></div>
 				</div>
 				<div class="clearfix"></div>
-				<script type="text/javascript" src="js/jquery.marquee.js"></script>
+				<script type="text/javascript" src="../js/jquery.marquee.js"></script>
 				<script>
 					$('.marquee').marquee({ pauseOnHover: true });
 				</script>
 			</div>
 			<div class="upcoming-events-grids">
 				<div class="col-md-8 upcoming-events-left">
-					<h3>首頁 / 優秀博士論文獎暨申請辦法</h3>
+					<h3>首頁 / 優秀博士論文獎</h3>
 					<div class="news-grid-rght3">
-						<div class="story">
-							<table class="table table-bordered">
-							<?php
-								$sql = "SELECT * FROM `relatedlinks` WHERE `Notice`='歷屆獎項' AND `IsUsed`=1 ORDER BY `OrderIndex` DESC";
-								$result = $conn_1->query($sql);
-								if ($result->num_rows > 0) {
-									while ($row = mysqli_fetch_array($result)) {
-										echo "<tr><td style='text-align:center;'><a href='".$row["Value"]."'>".$row["Item"].$row["Function"]."</a></td></tr>";
-									}
-								}	
-							?>	
+						<div class="story"> 
+							<table style="width:100%;" class="table table-bordered"> <!--論文獎結果-->
+								<tr>
+									<th style="text-align:center;width:20%">屆　次</th>
+									<th style="text-align:center;width:20%">得　獎　者</th>
+									<th style="text-align:center;">得　獎　論　文　題　目</th>
+								</tr>
+								<tr>
+									<td style="text-align:center;">第二屆<br>(2014)</td>
+									<td style="text-align:center;">林建宏</td>
+									<td style="text-align:center;">The Syntax and Semantics of Comparatives in Taiwan Sign Language（台灣手語比較句的句法和語意）</td>
+								</tr>
 							</table>
 						</div>
 					</div><br>
@@ -124,27 +125,27 @@
 				<div class="col-md-4 upcoming-events-right">
 					<h3>優秀博士論文獎暨申請辦法</h3>
 					<div class="banner-bottom-video-grid-left">
-						<?php
-							$sql = "SELECT * FROM `relatedlinks` WHERE `Notice`='歷屆獎項' AND `IsUsed`=1 ORDER BY `OrderIndex` DESC";
-							$result = $conn_1->query($sql);
-							if ($result->num_rows > 0) {
-								while ($row = mysqli_fetch_array($result)) {
-									echo "<div class='panel-group' id='accordion' role='tablist' aria-multiselectable='true'>";
-										echo "<div class='panel panel-default'>";
-											echo "<div class='panel-heading' role='tab' id='headingOne'>";
-												echo "<h4 class='panel-title'>";
-													echo "<a class='pa_italic collapsed'  href='".$row["Value"]."'>";
-														echo "<span class='glyphicon glyphicon-plus' aria-hidden='true'></span><i";
-															echo "class='glyphicon glyphicon-minus'";
-															echo "aria-hidden='true'></i>".$row["Item"].$row["Function"];
-													echo "</a>";
-												echo "</h4>";
+							<?php
+								$sql = "SELECT * FROM `relatedlinks` WHERE `Notice`='歷屆獎項' AND `IsUsed`=1 ORDER BY `OrderIndex` DESC";
+								$result = $conn_1->query($sql);
+								if ($result->num_rows > 0) {
+									while ($row = mysqli_fetch_array($result)) {
+										echo "<div class='panel-group' id='accordion' role='tablist' aria-multiselectable='true'>";
+											echo "<div class='panel panel-default'>";
+												echo "<div class='panel-heading' role='tab' id='headingOne'>";
+													echo "<h4 class='panel-title'>";
+														echo "<a class='pa_italic collapsed'  href='../".$row["Value"]."'>";
+															echo "<span class='glyphicon glyphicon-plus' aria-hidden='true'></span><i";
+																echo "class='glyphicon glyphicon-minus'";
+																echo "aria-hidden='true'></i>".$row["Item"].$row["Function"];
+														echo "</a>";
+													echo "</h4>";
+												echo "</div>";
 											echo "</div>";
 										echo "</div>";
-									echo "</div>";
-								}
-							}	
-						?>	
+									}
+								}	
+							?>	
 					</div>
 				</div>
 				<div class="clearfix"> </div>
@@ -186,7 +187,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/bootstrap.js"></script>
+	<script src="../js/bootstrap.js"></script>
 </body>
 
 </html>

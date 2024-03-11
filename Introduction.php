@@ -103,14 +103,14 @@
 				</script>
 			</div>
 			<div class="upcoming-events-grids">
-				<div class="col-md-6 upcoming-events-left">
+				<div class="col-md-7 upcoming-events-left">
 					<h3>成立經過</h3>
 					<div class="news-grid-rght3">
 						<img src="images/found.jpg" alt=" " class="img-responsive" />
 						<div class="story">
 							<p style="color:red;">「台灣語文學會」成立經過</p>
 							<h3>
-								<pre style="white-space: pre-wrap;font-family:CustomFont;">
+								<pre style="white-space: pre-wrap;font-family:CustomFont;font-size:14pt">
 　　「台灣語文學會」最早於1990年開始，由張裕宏教授、董忠司教授與洪惟仁教授展開籌備。1991年，委由董忠司教授草擬學會章程草案。之後陸續邀集周純一教授、陳恒嘉教授等討論草案內容，並積極聯絡各大學、研究單位的語文及相關科目的學者，募集發起人。
 　　1991年 4月13日，第一次發起人會假國家政策研究中心會議室正式召開。會中討論了章程草案，填寫發起人名冊，選出籌備委員共九名：張裕宏、洪惟仁、董忠司、姚榮松、曹逢甫、江永進、陳恒嘉、羅肇錦、趙順文（依得票數順序），接著立即召開第一次籌備會議，討論進一步之籌備工作、決定未來一年半的工作計劃：
     1. 1991年底以前完成音標研議。
@@ -125,7 +125,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6 upcoming-events-right">
+				<div class="col-md-5 upcoming-events-right">
 					<h3>組織成員</h3>
 					<div class="banner-bottom-video-grid-left">
 						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">

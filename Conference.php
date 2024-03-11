@@ -107,53 +107,43 @@
 					<h3>首頁 / 研討會</h3>
 					<div class="news-grid-rght3">
 						<div class="story">
-							<table class="table table-bordered">
-								<tr>
-									<th style="text-align:center;">台灣語言及其教學國際研討會</th>
-									<th style="text-align:center;">青年學者台灣語言學術研討會</th>
-									<th style="text-align:center;">台灣語言學一日大師/專題講座</th>
-								</tr>
-								<tr>
-									<td style="text-align:center;"><a href="Conference/Conference_1-7.php">第七屆</a></td>
-									<td style="text-align:center;"><a href="Conference/Conference_2-3.php">第三屆</a></td>
-									<td style="text-align:center;"><a href="Conference/Conference_3-1.php">第一屆</a></td>
-								</tr>
-								<tr>
-									<td style="text-align:center;"><a href="Conference/Conference_1-8.php">第八屆</a></td>
-									<td style="text-align:center;"><a href="Conference/Conference_2-4.php">第四屆</a></td>
-									<td style="text-align:center;"><a href="Conference/Conference_3-2.php">第二屆</a></td>
-								</tr>
-								<tr>
-									<td style="text-align:center;"><a href="Conference/Conference_1-9.php">第九屆</a></td>
-									<td style="text-align:center;"><a href="Conference/Conference_2-5.php">第五屆</a></td>
-									<td style="text-align:center;"><a href="Conference/Conference_3-3.php">第三屆</a></td>
-								</tr>
-								<tr>
-									<td style="text-align:center;"><a href="Conference/Conference_1-10.php">第十屆</a></td>
-									<td style="text-align:center;"><a href="Conference/Conference_2-6.php">第六屆</a></td>
-									<td style="text-align:center;"><a href="Conference/Conference_3-4.php">第四屆</a></td>
-								</tr>
-								<tr>
-									<td style="text-align:center;"><a href="Conference/Conference_1-11.php">第十一屆</a></td>
-									<td style="text-align:center;"><a href="Conference/Conference_2-7.php">第七屆</a></td>
-									<td style="text-align:center;"><a href="Conference/Conference_3-5.php">第五屆</a></td>
-								</tr>
-								<tr>
-									<td style="text-align:center;"><a href="Conference/Conference_1-12.php">第時二屆</a></td>
-									<td style="text-align:center;"><a href="Conference/Conference_2-8.php">第八屆</a></td>
-									<td style="text-align:center;"><a href="Conference/Conference_3-6.php">第六屆</a></td>
-								</tr>
-								<tr>
-									<td style="text-align:center;"><a href="Conference/Conference_1-13.php">第十三屆</a></td>
-									<td style="text-align:center;"><a href=""></a></td>
-									<td style="text-align:center;"><a href="Conference/Conference_3-7.php">第七屆</a></td>
-								</tr>
-								<tr>
-									<td style="text-align:center;"><a href="Conference/Conference_1-14.php">第十四屆</a></td>
-									<td style="text-align:center;"><a href=""></a></td>
-									<td style="text-align:center;"><a href=""></a></td>
-								</tr>
-							</table>
+							<?php
+								$sql = "SELECT * FROM `relatedlinks` WHERE `Notice`='研討會' AND `IsUsed`=1 ORDER BY `OrderIndex` DESC";
+								$result = $conn_1->query($sql);
+								// 初始化陣列來儲存每種研討會的屆數
+								$seminars = array(
+									'台灣語言及其教學國際研討會' => array(),
+									'青年學者台灣語言學術研討會' => array(),
+									'台灣語言學一日大師/專題講座' => array()
+								);
+								$maxSessions=0;
+								while ($row = mysqli_fetch_array($result)) {
+									$type = $row['Function'];
+									$Item = $row['Item'];
+									$Value = $row['Value'];
+									if($maxSessions<$row['OrderIndex']) $maxSessions=$row['OrderIndex'];
+									array_push($seminars[$type], array('Item' => $Item, 'Value' => $Value));
+								}
+								echo"<table class='table table-bordered'>";
+									echo"<tr>";
+										echo"<th style='text-align:center;'>台灣語言及其教學國際研討會</th>";
+										echo"<th style='text-align:center;'>青年學者台灣語言學術研討會</th>";
+										echo"<th style='text-align:center;'>台灣語言學一日大師/專題講座</th>";
+									echo"</tr>";
+									for ($i = 0; $i <$maxSessions; $i++) {
+										echo"<tr>";
+										foreach ($seminars as $type => $sessions) {
+											echo "<td style='text-align:center;'>";
+											if(isset($sessions[$i]))
+												echo"<a href='".$sessions[$i]['Value']."'>".$sessions[$i]['Item']."</a>";
+											else
+												echo"";
+											echo "</td>";
+										}
+									}
+									echo"<tr>";
+								echo"</table>";
+							?>
 						</div>
 					</div><br>
 				</div>

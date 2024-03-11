@@ -166,72 +166,29 @@
 				</div>
 				<div class="col-md-4 upcoming-events-right">
 					<h3>優秀博士論文獎暨申請辦法</h3>
+					
 					<div class="banner-bottom-video-grid-left">
-						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-							<div class='panel panel-default'>
-								<div class='panel-heading' role='tab' id='headingOne'>
-									<h4 class='panel-title'>
-										<a class='pa_italic collapsed'  href='Award_7.php'>
-											<span class='glyphicon glyphicon-plus' aria-hidden='true'></span><i
-												class='glyphicon glyphicon-minus'
-												aria-hidden='true'></i>第七屆優秀博士論文獎
-										</a>
-									</h4>
-								</div>
-							</div>
-						</div>
-						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-							<div class='panel panel-default'>
-								<div class='panel-heading' role='tab' id='headingOne'>
-									<h4 class='panel-title'>
-										<a class='pa_italic collapsed'  href='Award_6.php'>
-											<span class='glyphicon glyphicon-plus' aria-hidden='true'></span><i
-												class='glyphicon glyphicon-minus'
-												aria-hidden='true'></i>第六屆優秀博士論文獎
-										</a>
-									</h4>
-								</div>
-							</div>
-						</div>
-						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-							<div class='panel panel-default'>
-								<div class='panel-heading' role='tab' id='headingOne'>
-									<h4 class='panel-title'>
-										<a class='pa_italic collapsed'  href='Award_5.php'>
-											<span class='glyphicon glyphicon-plus' aria-hidden='true'></span><i
-												class='glyphicon glyphicon-minus'
-												aria-hidden='true'></i>第五屆優秀博士論文獎
-										</a>
-									</h4>
-								</div>
-							</div>
-						</div>
-						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-							<div class='panel panel-default'>
-								<div class='panel-heading' role='tab' id='headingOne'>
-									<h4 class='panel-title'>
-										<a class='pa_italic collapsed'  href='Award_4.php'>
-											<span class='glyphicon glyphicon-plus' aria-hidden='true'></span><i
-												class='glyphicon glyphicon-minus'
-												aria-hidden='true'></i>第四屆優秀博士論文獎
-										</a>
-									</h4>
-								</div>
-							</div>
-						</div>
-						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-							<div class='panel panel-default'>
-								<div class='panel-heading' role='tab' id='headingOne'>
-									<h4 class='panel-title'>
-										<a class='pa_italic collapsed'  href='Award_3.php'>
-											<span class='glyphicon glyphicon-plus' aria-hidden='true'></span><i
-												class='glyphicon glyphicon-minus'
-												aria-hidden='true'></i>第三屆優秀博士論文獎
-										</a>
-									</h4>
-								</div>
-							</div>
-						</div>
+							<?php
+								$sql = "SELECT * FROM `relatedlinks` WHERE `Notice`='歷屆獎項' AND `IsUsed`=1 ORDER BY `OrderIndex` DESC";
+								$result = $conn_1->query($sql);
+								if ($result->num_rows > 0) {
+									while ($row = mysqli_fetch_array($result)) {
+										echo "<div class='panel-group' id='accordion' role='tablist' aria-multiselectable='true'>";
+											echo "<div class='panel panel-default'>";
+												echo "<div class='panel-heading' role='tab' id='headingOne'>";
+													echo "<h4 class='panel-title'>";
+														echo "<a class='pa_italic collapsed'  href='../".$row["Value"]."'>";
+															echo "<span class='glyphicon glyphicon-plus' aria-hidden='true'></span><i";
+																echo "class='glyphicon glyphicon-minus'";
+																echo "aria-hidden='true'></i>".$row["Item"].$row["Function"];
+														echo "</a>";
+													echo "</h4>";
+												echo "</div>";
+											echo "</div>";
+										echo "</div>";
+									}
+								}	
+							?>	
 					</div>
 				</div>
 				<div class="clearfix"> </div>

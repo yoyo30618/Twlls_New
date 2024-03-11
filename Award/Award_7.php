@@ -152,16 +152,17 @@
 										8月20日，未能於期限前補齊資料者，將取消獲獎資格，已繳交之審查費或入會費亦不予退還。<br>
 									　　備妥以上資料，以電子郵件方式寄至<a href="mailto:contact.tlls@gmail.com">contact.tlls@gmail.com。</a><br><br>
 									七、審查：由本學會理監事委員組織學術委員會，進行初審、複審兩階段審查。通過資格初審的博士論文進入全文複審，再由學術委員會議決獲獎名單。<br><br>
-									八、申請截止日期：<b>2023年7月31日</b><br><br>
-									<text style="color:red">九、應屆畢業生畢業證書補件截止日期：2023年8月20日</text><br><br>
-									十、獲獎名單公布日期：<b>2023年9月30日</b><br><br>
-									十一、<b>獲獎者將於「第八屆青年學者臺灣語言學術研討會」（2023年10月13日於國立清華大學）中獲頒獎狀，並進行約30分鐘的學位論文成果發表。</b><br><br>
-									十二、獲獎者若為會員，將獲免繳年費兩年；若非會員，將獲邀請入會並免繳年費兩年。<br><br>
-									十三、繳費方式：<br><br>
+									八、重要日期：<br>
+									　　申請截止日期：<b>2023年7月31日</b><br>
+									　　應屆畢業生畢業證書補件截止日期：<b>2023年8月20日</b><br>
+									　　獲獎名單公布日期：<b>2023年9月30日</b><br><br>
+									九、<b>獲獎者將於「第八屆青年學者臺灣語言學術研討會」（2023年10月13日於國立清華大學）中獲頒獎狀，並進行約30分鐘的學位論文成果發表。</b><br><br>
+									十、獲獎者將頒贈獎狀一只。若為會員，將獲免繳年費兩年；若非會員，將獲邀請入會並免繳年費兩年。<br><br>
+									十一、繳費方式：<br><br>
 									　　台灣語文學會帳戶：渣打銀行（代碼052）轉帳帳號「06353-0018637」。<br><br>
 									　　轉帳完成後請以電子郵件告知「<b>姓名</b>」及「<b>匯款帳號末六碼</b>」，<br><br>
 									　　電子郵件請寄<a href="mailto:contact.tlls@gmail.com">contact.tlls@gmail.com</a><br><br>
-									十四、聯絡地址：台灣語文學會祕書處聯絡組<a href="mailto:contact.tlls@gmail.com">contact.tlls@gmail.com</a><br><br>
+									十二、聯絡地址：台灣語文學會祕書處聯絡組<a href="mailto:contact.tlls@gmail.com">contact.tlls@gmail.com</a><br><br>
 									</td>
 								</tr>
 							</table>
@@ -170,72 +171,29 @@
 				</div>
 				<div class="col-md-4 upcoming-events-right">
 					<h3>優秀博士論文獎暨申請辦法</h3>
+					
 					<div class="banner-bottom-video-grid-left">
-						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-							<div class='panel panel-default'>
-								<div class='panel-heading' role='tab' id='headingOne'>
-									<h4 class='panel-title'>
-										<a class='pa_italic collapsed'  href='Award_7.php'>
-											<span class='glyphicon glyphicon-plus' aria-hidden='true'></span><i
-												class='glyphicon glyphicon-minus'
-												aria-hidden='true'></i>第七屆優秀博士論文獎
-										</a>
-									</h4>
-								</div>
-							</div>
-						</div>
-						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-							<div class='panel panel-default'>
-								<div class='panel-heading' role='tab' id='headingOne'>
-									<h4 class='panel-title'>
-										<a class='pa_italic collapsed'  href='Award_6.php'>
-											<span class='glyphicon glyphicon-plus' aria-hidden='true'></span><i
-												class='glyphicon glyphicon-minus'
-												aria-hidden='true'></i>第六屆優秀博士論文獎
-										</a>
-									</h4>
-								</div>
-							</div>
-						</div>
-						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-							<div class='panel panel-default'>
-								<div class='panel-heading' role='tab' id='headingOne'>
-									<h4 class='panel-title'>
-										<a class='pa_italic collapsed'  href='Award_5.php'>
-											<span class='glyphicon glyphicon-plus' aria-hidden='true'></span><i
-												class='glyphicon glyphicon-minus'
-												aria-hidden='true'></i>第五屆優秀博士論文獎
-										</a>
-									</h4>
-								</div>
-							</div>
-						</div>
-						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-							<div class='panel panel-default'>
-								<div class='panel-heading' role='tab' id='headingOne'>
-									<h4 class='panel-title'>
-										<a class='pa_italic collapsed'  href='Award_4.php'>
-											<span class='glyphicon glyphicon-plus' aria-hidden='true'></span><i
-												class='glyphicon glyphicon-minus'
-												aria-hidden='true'></i>第四屆優秀博士論文獎
-										</a>
-									</h4>
-								</div>
-							</div>
-						</div>
-						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-							<div class='panel panel-default'>
-								<div class='panel-heading' role='tab' id='headingOne'>
-									<h4 class='panel-title'>
-										<a class='pa_italic collapsed'  href='Award_3.php'>
-											<span class='glyphicon glyphicon-plus' aria-hidden='true'></span><i
-												class='glyphicon glyphicon-minus'
-												aria-hidden='true'></i>第三屆優秀博士論文獎
-										</a>
-									</h4>
-								</div>
-							</div>
-						</div>
+							<?php
+								$sql = "SELECT * FROM `relatedlinks` WHERE `Notice`='歷屆獎項' AND `IsUsed`=1 ORDER BY `OrderIndex` DESC";
+								$result = $conn_1->query($sql);
+								if ($result->num_rows > 0) {
+									while ($row = mysqli_fetch_array($result)) {
+										echo "<div class='panel-group' id='accordion' role='tablist' aria-multiselectable='true'>";
+											echo "<div class='panel panel-default'>";
+												echo "<div class='panel-heading' role='tab' id='headingOne'>";
+													echo "<h4 class='panel-title'>";
+														echo "<a class='pa_italic collapsed'  href='../".$row["Value"]."'>";
+															echo "<span class='glyphicon glyphicon-plus' aria-hidden='true'></span><i";
+																echo "class='glyphicon glyphicon-minus'";
+																echo "aria-hidden='true'></i>".$row["Item"].$row["Function"];
+														echo "</a>";
+													echo "</h4>";
+												echo "</div>";
+											echo "</div>";
+										echo "</div>";
+									}
+								}	
+							?>	
 					</div>
 				</div>
 				<div class="clearfix"> </div>

@@ -141,7 +141,7 @@
 												<tr>
 													<td style="text-align:center;">10：00－10：30</td>
 													<td style="text-align:center;color:red;">邀請中</td>
-													<td colspan="2"  style="text-align:center;color:red;">102年度台灣語文博士論文獎得獎人發表(I)</td>
+													<td colspan="2"  style="text-align:center;color:red;">102年度台灣語文博士論文獎得獎人發表(II)</td>
 												</tr>
 												<tr>
 													<td style="text-align:center;">10：30－10：50</td>
@@ -164,6 +164,45 @@
 													<td style="text-align:center;">盧俊方</td>
 													<td style="text-align:center;">臺灣客語曾梗兩攝韻尾流變探析</td>
 													<td style="text-align:center;">江敏華</td>
+												</tr>
+												
+												<tr>
+													<td rowspan="3" style="text-align:center;">第一場發表會B(南島語)<br>10：50－12：00</td>
+													<td rowspan="3" style="text-align:center;">黃美金</td>
+													<td style="text-align:center;">林政明</td>
+													<td style="text-align:center;">Analysis for Stress Assignment in Amis Emphatic Form</td>
+													<td style="text-align:center;">葉詩綺</td>
+												</tr>
+												<tr>
+													<td style="text-align:center;">潘家榮</td>
+													<td style="text-align:center;">Imperatives and Commands in Saaroa and Tsou</td>
+													<td style="text-align:center;">葉美利</td>
+												</tr>
+												<tr>
+													<td style="text-align:center;">吳新生</td>
+													<td style="text-align:center;">泰雅語比較結構的句法研究</td>
+													<td style="text-align:center;">黃美金</td>
+												</tr>
+												<tr>
+													<td style="text-align:center;">12：00－13：30</td>
+													<td colspan="4"  style="text-align:center;"><b>午餐、休息（台灣語文學會會員大會）</b></td>
+												</tr>
+												<tr>
+													<td rowspan="3" style="text-align:center;">第二場發表會A（客家語）<br>13：30－14：40</td>
+													<td rowspan="3" style="text-align:center;">鍾榮富</td>
+													<td style="text-align:center;">徐賢德</td>
+													<td style="text-align:center;">六堆客家語言接觸研究—以高樹地區為例</td>
+													<td style="text-align:center;">劉秀雪</td>
+												</tr>
+												<tr>
+													<td style="text-align:center;">李慧質</td>
+													<td style="text-align:center;">臺灣南部客家話「同」之用法</td>
+													<td style="text-align:center;">鍾榮富</td>
+												</tr>
+												<tr>
+													<td style="text-align:center;">陳美婷</td>
+													<td style="text-align:center;">「客語生活學校」實施客語教學的現況與行動策略：以美濃國中為例</td>
+													<td style="text-align:center;">鍾鎮城</td>
 												</tr>
 												<tr>
 													<td rowspan="3" style="text-align:center;">第二場發表會B（閩南語）<br>13：30－14：40</td>
@@ -225,7 +264,7 @@
 													<td colspan="4"  style="text-align:center;"><b>茶敘時間</b></td>
 												</tr>
 												<tr>
-													<td rowspan="3" style="text-align:center;">第四場發表會A<br>16：30－17：40</td>
+													<td rowspan="3" style="text-align:center;">第四場發表會A（跨語言）<br>16：30－17：40</td>
 													<td rowspan="3" style="text-align:center;">洪惟仁</td>
 													<td style="text-align:center;">李宣槿</td>
 													<td style="text-align:center;">漢語方言異序詞研究—以牲畜公與母的地名為例</td>
@@ -339,6 +378,7 @@
 				</div>
 				<div class="col-md-4 upcoming-events-right">
 					<h3>研討會</h3>
+					
 					<div class="banner-bottom-video-grid-left">
 						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 							<div class='panel panel-default'>
@@ -357,14 +397,15 @@
 									aria-labelledby='headingOne' style='height: 0px;'>
 									<div class='panel-body'>
 									<ul>
-										<li><a href='Conference_1-14.php'>第十四屆</li>
-										<li><a href='Conference_1-13.php'>第十三屆</li>
-										<li><a href='Conference_1-12.php'>第十二屆</li>
-										<li><a href='Conference_1-11.php'>第十一屆</li>
-										<li><a href='Conference_1-10.php'>第十屆</li>
-										<li><a href='Conference_1-9.php'>第九屆</li>
-										<li><a href='Conference_1-8.php'>第八屆</li>
-										<li><a href='Conference_1-7.php'>第七屆</li>
+										<?php
+											$sql = "SELECT * FROM `relatedlinks` WHERE `Notice`='研討會' AND `Function`='台灣語言及其教學國際研討會' AND `IsUsed`=1 ORDER BY `OrderIndex` DESC";
+											$result = $conn_1->query($sql);
+											if ($result->num_rows > 0) {
+												while ($row = mysqli_fetch_array($result)) {
+													echo "<li><a href='../".$row['Value']."'>".$row['Item']."</li>";
+												}
+											}
+										?>
 									</ul>
 									</div>
 								</div>
@@ -387,12 +428,15 @@
 									aria-labelledby='headingOne' style='height: 0px;'>
 									<div class='panel-body'>
 									<ul>
-										<li><a href='Conference_2-8.php'>第八屆</li>
-										<li><a href='Conference_2-7.php'>第七屆</li>
-										<li><a href='Conference_2-6.php'>第六屆</li>
-										<li><a href='Conference_2-5.php'>第五屆</li>
-										<li><a href='Conference_2-4.php'>第四屆</li>
-										<li><a href='Conference_2-3.php'>第三屆</li>
+										<?php
+											$sql = "SELECT * FROM `relatedlinks` WHERE `Notice`='研討會' AND `Function`='青年學者台灣語言學術研討會' AND `IsUsed`=1 ORDER BY `OrderIndex` DESC";
+											$result = $conn_1->query($sql);
+											if ($result->num_rows > 0) {
+												while ($row = mysqli_fetch_array($result)) {
+													echo "<li><a href='../".$row['Value']."'>".$row['Item']."</li>";
+												}
+											}
+										?>
 									</ul>
 									</div>
 								</div>
@@ -415,13 +459,15 @@
 									aria-labelledby='headingOne' style='height: 0px;'>
 									<div class='panel-body'>
 									<ul>
-										<li><a href='Conference_3-7.php'>第七屆</li>
-										<li><a href='Conference_3-6.php'>第六屆</li>
-										<li><a href='Conference_3-5.php'>第五屆</li>
-										<li><a href='Conference_3-4.php'>第四屆</li>
-										<li><a href='Conference_3-3.php'>第三屆</li>
-										<li><a href='Conference_3-2.php'>第二屆</li>
-										<li><a href='Conference_3-1.php'>第一屆</li>
+										<?php
+											$sql = "SELECT * FROM `relatedlinks` WHERE `Notice`='研討會' AND `Function`='台灣語言學一日大師/專題講座' AND `IsUsed`=1 ORDER BY `OrderIndex` DESC";
+											$result = $conn_1->query($sql);
+											if ($result->num_rows > 0) {
+												while ($row = mysqli_fetch_array($result)) {
+													echo "<li><a href='../".$row['Value']."'>".$row['Item']."</li>";
+												}
+											}
+										?>
 									</ul>
 								</div>
 							</div>

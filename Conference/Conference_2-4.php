@@ -186,56 +186,6 @@
 													<td style="text-align:center;">11：35－13：00</td>
 													<td colspan="4" style="text-align:center;"><b>午餐、休息</b></td>
 												</tr>
-
-
-												<tr>
-													<td rowspan="4" style="text-align:center;">第一場發表會A<br>（原住民語）<br>09：50－11：35</td>
-													<td rowspan="4" style="text-align:center;">黃美金</td>
-													<td style="text-align:center;">高秀玉</td>
-													<td style="text-align:center;">泰雅族家庭的族語傳承與使用—以新竹縣尖石鄉為例</td>
-													<td style="text-align:center;">陳淑娟</td>
-												</tr>
-												<tr>
-													<td style="text-align:center;">黃天來</td>
-													<td style="text-align:center;">從話語概念看阿美語族語教材課文用語的研究</td>
-													<td style="text-align:center;">黃美金</td>
-												</tr>
-												<tr>
-													<td style="text-align:center;">黃基成</td>
-													<td style="text-align:center;">排灣語na與nu標記初探</td>
-													<td style="text-align:center;">湯愛玉</td>
-												</tr>
-												<tr>
-													<td style="text-align:center;">陳誼誠</td>
-													<td style="text-align:center;">從族語文本評估阿美族語的語言活力</td>
-													<td style="text-align:center;">張學謙</td>
-												</tr>
-												<tr>
-													<td rowspan="4" style="text-align:center;">第一場發表會B<br>（原住民語）<br>9：40－11:35</td>
-													<td rowspan="4" style="text-align:center;">楊秀芳</td>
-													<td style="text-align:center;">董宜佳</td>
-													<td style="text-align:center;">排灣貴族階層使用的語言意義及其關係─以土坂村Patjalinuk頭目家的祭儀為例</td>
-													<td style="text-align:center;">葉美利</td>
-												</tr>
-												<tr>
-													<td style="text-align:center;">陳嬿庄</td>
-													<td style="text-align:center;">噶哈巫語的使用現狀與語言、文化復振</td>
-													<td style="text-align:center;">李佩容</td>
-												</tr>
-												<tr>
-													<td style="text-align:center;">何秀珍</td>
-													<td style="text-align:center;">初探雙語人以雙語作論述用語，觀察其語言成分及論述效益—以排灣族牧師講道為例</td>
-													<td style="text-align:center;">江敏華</td>
-												</tr>
-												<tr>
-													<td style="text-align:center;">武佳箴</td>
-													<td style="text-align:center;">阿美族表達感謝的語用研究—以面子與文化比較的觀點切入</td>
-													<td style="text-align:center;">陳麗君</td>
-												</tr>
-												<tr>
-													<td style="text-align:center;">11：35－13：00</td>
-													<td colspan="4" style="text-align:center;"><b>午餐、休息</b></td>
-												</tr>
 												<tr>
 													<td rowspan="3" style="text-align:center;">第二場發表會A<br>（客家語）<br>13：00－14：20</td>
 													<td rowspan="3" style="text-align:center;">葉美利</td>
@@ -254,27 +204,6 @@
 													<td style="text-align:center;">何純惠</td>
 													<td style="text-align:center;">兩岸客家話小稱詞演變探析─臺灣客家話與廣東、福建客家話的初步比較</td>
 													<td style="text-align:center;">杜佳倫</td>
-												</tr>
-												<tr>
-													<td rowspan="3" style="text-align:center;">第二場發表會B<br>（華語與台華比較）<br>13：00－14：20</td>
-													<td rowspan="3" style="text-align:center;">陳麗君</td>
-													<td style="text-align:center;">佐藤圭司</td>
-													<td style="text-align:center;">從閩南語看日語漢字讀音「長音」</td>
-													<td style="text-align:center;">陳麗君</td>
-												</tr>
-												<tr>
-													<td style="text-align:center;">黃萍雅</td>
-													<td style="text-align:center;">導覽員的語言使用現象—以高雄市哈瑪星文化公車為觀察對象</td>
-													<td style="text-align:center;">楊允言</td>
-												</tr>
-												<tr>
-													<td style="text-align:center;">蔡子培</td>
-													<td style="text-align:center;">台灣華語電視新聞主播播報語音分析</td>
-													<td style="text-align:center;">舒兆民</td>
-												</tr>
-												<tr>
-													<td style="text-align:center;">14：20－14：40</td>
-													<td colspan="4" style="text-align:center;"><b>茶敘時間</b></td>
 												</tr>
 												<tr>
 													<td rowspan="3" style="text-align:center;">第二場發表會B<br>（華語與台華比較）<br>13：00－14：20</td>
@@ -439,6 +368,7 @@
 				</div>
 				<div class="col-md-4 upcoming-events-right">
 					<h3>研討會</h3>
+					
 					<div class="banner-bottom-video-grid-left">
 						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 							<div class='panel panel-default'>
@@ -457,14 +387,15 @@
 									aria-labelledby='headingOne' style='height: 0px;'>
 									<div class='panel-body'>
 									<ul>
-										<li><a href='Conference_1-14.php'>第十四屆</li>
-										<li><a href='Conference_1-13.php'>第十三屆</li>
-										<li><a href='Conference_1-12.php'>第十二屆</li>
-										<li><a href='Conference_1-11.php'>第十一屆</li>
-										<li><a href='Conference_1-10.php'>第十屆</li>
-										<li><a href='Conference_1-9.php'>第九屆</li>
-										<li><a href='Conference_1-8.php'>第八屆</li>
-										<li><a href='Conference_1-7.php'>第七屆</li>
+										<?php
+											$sql = "SELECT * FROM `relatedlinks` WHERE `Notice`='研討會' AND `Function`='台灣語言及其教學國際研討會' AND `IsUsed`=1 ORDER BY `OrderIndex` DESC";
+											$result = $conn_1->query($sql);
+											if ($result->num_rows > 0) {
+												while ($row = mysqli_fetch_array($result)) {
+													echo "<li><a href='../".$row['Value']."'>".$row['Item']."</li>";
+												}
+											}
+										?>
 									</ul>
 									</div>
 								</div>
@@ -487,12 +418,15 @@
 									aria-labelledby='headingOne' style='height: 0px;'>
 									<div class='panel-body'>
 									<ul>
-										<li><a href='Conference_2-8.php'>第八屆</li>
-										<li><a href='Conference_2-7.php'>第七屆</li>
-										<li><a href='Conference_2-6.php'>第六屆</li>
-										<li><a href='Conference_2-5.php'>第五屆</li>
-										<li><a href='Conference_2-4.php'>第四屆</li>
-										<li><a href='Conference_2-3.php'>第三屆</li>
+										<?php
+											$sql = "SELECT * FROM `relatedlinks` WHERE `Notice`='研討會' AND `Function`='青年學者台灣語言學術研討會' AND `IsUsed`=1 ORDER BY `OrderIndex` DESC";
+											$result = $conn_1->query($sql);
+											if ($result->num_rows > 0) {
+												while ($row = mysqli_fetch_array($result)) {
+													echo "<li><a href='../".$row['Value']."'>".$row['Item']."</li>";
+												}
+											}
+										?>
 									</ul>
 									</div>
 								</div>
@@ -515,13 +449,15 @@
 									aria-labelledby='headingOne' style='height: 0px;'>
 									<div class='panel-body'>
 									<ul>
-										<li><a href='Conference_3-7.php'>第七屆</li>
-										<li><a href='Conference_3-6.php'>第六屆</li>
-										<li><a href='Conference_3-5.php'>第五屆</li>
-										<li><a href='Conference_3-4.php'>第四屆</li>
-										<li><a href='Conference_3-3.php'>第三屆</li>
-										<li><a href='Conference_3-2.php'>第二屆</li>
-										<li><a href='Conference_3-1.php'>第一屆</li>
+										<?php
+											$sql = "SELECT * FROM `relatedlinks` WHERE `Notice`='研討會' AND `Function`='台灣語言學一日大師/專題講座' AND `IsUsed`=1 ORDER BY `OrderIndex` DESC";
+											$result = $conn_1->query($sql);
+											if ($result->num_rows > 0) {
+												while ($row = mysqli_fetch_array($result)) {
+													echo "<li><a href='../".$row['Value']."'>".$row['Item']."</li>";
+												}
+											}
+										?>
 									</ul>
 								</div>
 							</div>

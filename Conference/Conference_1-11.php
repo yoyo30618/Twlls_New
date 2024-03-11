@@ -181,6 +181,7 @@
 				</div>
 				<div class="col-md-4 upcoming-events-right">
 					<h3>研討會</h3>
+					
 					<div class="banner-bottom-video-grid-left">
 						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 							<div class='panel panel-default'>
@@ -199,14 +200,15 @@
 									aria-labelledby='headingOne' style='height: 0px;'>
 									<div class='panel-body'>
 									<ul>
-										<li><a href='Conference_1-14.php'>第十四屆</li>
-										<li><a href='Conference_1-13.php'>第十三屆</li>
-										<li><a href='Conference_1-12.php'>第十二屆</li>
-										<li><a href='Conference_1-11.php'>第十一屆</li>
-										<li><a href='Conference_1-10.php'>第十屆</li>
-										<li><a href='Conference_1-9.php'>第九屆</li>
-										<li><a href='Conference_1-8.php'>第八屆</li>
-										<li><a href='Conference_1-7.php'>第七屆</li>
+										<?php
+											$sql = "SELECT * FROM `relatedlinks` WHERE `Notice`='研討會' AND `Function`='台灣語言及其教學國際研討會' AND `IsUsed`=1 ORDER BY `OrderIndex` DESC";
+											$result = $conn_1->query($sql);
+											if ($result->num_rows > 0) {
+												while ($row = mysqli_fetch_array($result)) {
+													echo "<li><a href='../".$row['Value']."'>".$row['Item']."</li>";
+												}
+											}
+										?>
 									</ul>
 									</div>
 								</div>
@@ -229,12 +231,15 @@
 									aria-labelledby='headingOne' style='height: 0px;'>
 									<div class='panel-body'>
 									<ul>
-										<li><a href='Conference_2-8.php'>第八屆</li>
-										<li><a href='Conference_2-7.php'>第七屆</li>
-										<li><a href='Conference_2-6.php'>第六屆</li>
-										<li><a href='Conference_2-5.php'>第五屆</li>
-										<li><a href='Conference_2-4.php'>第四屆</li>
-										<li><a href='Conference_2-3.php'>第三屆</li>
+										<?php
+											$sql = "SELECT * FROM `relatedlinks` WHERE `Notice`='研討會' AND `Function`='青年學者台灣語言學術研討會' AND `IsUsed`=1 ORDER BY `OrderIndex` DESC";
+											$result = $conn_1->query($sql);
+											if ($result->num_rows > 0) {
+												while ($row = mysqli_fetch_array($result)) {
+													echo "<li><a href='../".$row['Value']."'>".$row['Item']."</li>";
+												}
+											}
+										?>
 									</ul>
 									</div>
 								</div>
@@ -257,13 +262,15 @@
 									aria-labelledby='headingOne' style='height: 0px;'>
 									<div class='panel-body'>
 									<ul>
-										<li><a href='Conference_3-7.php'>第七屆</li>
-										<li><a href='Conference_3-6.php'>第六屆</li>
-										<li><a href='Conference_3-5.php'>第五屆</li>
-										<li><a href='Conference_3-4.php'>第四屆</li>
-										<li><a href='Conference_3-3.php'>第三屆</li>
-										<li><a href='Conference_3-2.php'>第二屆</li>
-										<li><a href='Conference_3-1.php'>第一屆</li>
+										<?php
+											$sql = "SELECT * FROM `relatedlinks` WHERE `Notice`='研討會' AND `Function`='台灣語言學一日大師/專題講座' AND `IsUsed`=1 ORDER BY `OrderIndex` DESC";
+											$result = $conn_1->query($sql);
+											if ($result->num_rows > 0) {
+												while ($row = mysqli_fetch_array($result)) {
+													echo "<li><a href='../".$row['Value']."'>".$row['Item']."</li>";
+												}
+											}
+										?>
 									</ul>
 								</div>
 							</div>
