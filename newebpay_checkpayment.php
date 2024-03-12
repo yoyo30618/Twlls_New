@@ -78,10 +78,10 @@ if ($result->num_rows > 0) {
         'MerchantOrderNo'=>$mon
         ));
         $hashs="IV=".$HashIV."&".$data1."&Key=".$HashKey;
+        //IV=PQK9lCFHY2IuFZqC&Amt=1440&MerchantID=MS3340779031&MerchantOrderNo=TY1710222475&Key=2qZoz5pmpq4PolPgRsxz8adBXyooGxai
         $hash=strtoupper(hash("sha256",$hashs));
+        //65BB570D7C159EA118759C1A62F5980B74589365C2D5B4F7DDE43333C2FBC334
 
-        echo $hashs."<br>";
-        echo $hash."<br>";
         $ch = curl_init(); 
         curl_setopt($ch, CURLOPT_URL, $apiUrl); 
         curl_setopt($ch, CURLOPT_POST, true); 
