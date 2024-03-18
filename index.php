@@ -138,35 +138,41 @@
 				<div id="top" class="callbacks_container" >
 					<ul class="rslides" id="slider3">
 						<?php
-							$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `ShowOnBanner`=1 ORDER BY OrderIndex LIMIT 10";
-							$result = $conn_1->query($sql);
-							if ($result->num_rows > 0) {
-								while ($row = mysqli_fetch_array($result)) {
-									echo"<li style='width: 100%;min-height:330px'>";
-										echo"<div class='banner-info-slider'>";
-											echo"<ul>";
-												echo"<li><a>".$row["Classification"]."</a></li>";
-												echo"<li style='float:right;padding-right: 2%;'>".substr($row["DateTime"],0,10)."</li>";
-											echo"</ul>";
-											echo"<h3><a style='color:white;' href='".$row["url"]."'>".$row["Title"]."</a></h3>";
-											echo"<p><span>-- <i>".$row["PostedBy"]."</i></span></p>";
-											echo"<div class='more'>";
-												echo"<a href='".$row["url"]."' class='type-1'>";
-													echo"<span> Read More </span>";
-													echo"<span> Read More </span>";
-												echo"</a>";
-												echo"<video autoplay muted loop id='bgVideo'>";
-												echo"<source src='images/banner.mp4' type='video/mp4'>";
-												echo"Your browser does not support HTML5 video.";
-												echo"</video>";
-											echo"</div>";
+							echo"<li style='width: 100%;min-height:600px'>";
+								echo"<div class='banner-info-slider'>";
+									echo"<video autoplay muted loop id='bgVideo'>";
+									echo"<source src='images/banner.mp4' type='video/mp4'>";
+									echo"Your browser does not support HTML5 video.";
+									echo"</video>";
+								echo"</div>";
+								
+							echo"</li>";
+							// 原本是最新消息橫幅 他不要
+							// $sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `ShowOnBanner`=1 ORDER BY OrderIndex LIMIT 10";
+							// $result = $conn_1->query($sql);
+							// if ($result->num_rows > 0) {
+							// 	while ($row = mysqli_fetch_array($result)) {
+							// 		echo"<li style='width: 100%;min-height:330px'>";
+							// 			echo"<div class='banner-info-slider'>";
+							// 				echo"<ul>";
+							// 					echo"<li><a>".$row["Classification"]."</a></li>";
+							// 					echo"<li style='float:right;padding-right: 2%;'>".substr($row["DateTime"],0,10)."</li>";
+							// 				echo"</ul>";
+							// 				echo"<h3><a style='color:white;' href='".$row["url"]."'>".$row["Title"]."</a></h3>";
+							// 				echo"<p><span>-- <i>".$row["PostedBy"]."</i></span></p>";
+							// 				echo"<div class='more'>";
+							// 					echo"<a href='".$row["url"]."' class='type-1'>";
+							// 						echo"<span> Read More </span>";
+							// 						echo"<span> Read More </span>";
+							// 					echo"</a>";
+							// 				echo"</div>";
 
-										echo"</div>";
+							// 			echo"</div>";
 										
-									echo"</li>";
+							// 		echo"</li>";
 						
-								}
-							}
+							// 	}
+							// }
 						?>					
 					</ul>
 				</div>
@@ -185,13 +191,13 @@
 									<p>活動消息</p>
 								</div>
 							</div>
-							<ul class="list" style="font-size: 10pt;">
+							<ul class="list" style="font-size: 12pt;">
 								<?php
 									$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='活動消息' ORDER BY OrderIndex LIMIT 3";
 									$result = $conn_1->query($sql);
 									if ($result->num_rows > 0) {
 										while ($row = mysqli_fetch_array($result)) {
-											echo "<li style='min-height: 90px;'><a style='color:black' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></li>";
+											echo "<li style='min-height: 110px;'><a style='color:black' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></li>";
 										}
 										 
 									}
@@ -210,13 +216,13 @@
 									<p>學術研討會</p>
 								</div>
 							</div>
-							<ul class="list" style="font-size: 10pt;">
+							<ul class="list" style="font-size: 12pt;">
 								<?php
 									$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='學術研討會' ORDER BY OrderIndex LIMIT 3";
 									$result = $conn_1->query($sql);
 									if ($result->num_rows > 0) {
 										while ($row = mysqli_fetch_array($result)) {
-											echo "<li style='min-height: 90px;'><a style='color:black' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></li>";
+											echo "<li style='min-height: 110px;'><a style='color:black' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></li>";
 										}
 									}
 								?>
@@ -234,13 +240,13 @@
 									<p>出版品</p>
 								</div>
 							</div>
-							<ul class="list" style="font-size: 10pt;">
+							<ul class="list" style="font-size: 12pt;">
 								<?php
 									$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='出版品' ORDER BY OrderIndex LIMIT 3";
 									$result = $conn_1->query($sql);
 									if ($result->num_rows > 0) {
 										while ($row = mysqli_fetch_array($result)) {
-											echo "<li style='min-height: 90px;'><a style='color:black' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></li>";
+											echo "<li style='min-height: 110px;'><a style='color:black' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></li>";
 										}
 									}
 								?>

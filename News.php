@@ -117,13 +117,13 @@
 													<p style="color:white;font-size:20pt">活動消息</p>
 												</div>
 											</div>
-											<ul class="list" style="font-size: 10pt;">
+											<ul class="list" style="font-size: 12pt;">
 												<?php
 													$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='活動消息' ORDER BY OrderIndex";
 													$result = $conn_1->query($sql);
 													if ($result->num_rows > 0) {
 														while ($row = mysqli_fetch_array($result)) {
-															echo "<li style='min-height: 90px;'><a style='color:black;' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></li>";
+															echo "<li style='min-height: 110px;'><a style='color:black;' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></li>";
 														}
 													}
 												?>
@@ -138,13 +138,13 @@
 													<p style="color:white;font-size:20pt">學術研討會</p>
 												</div>
 											</div>
-											<ul class="list" style="font-size: 10pt;">
+											<ul class="list" style="font-size: 12pt;">
 												<?php
 													$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='學術研討會' ORDER BY OrderIndex";
 													$result = $conn_1->query($sql);
 													if ($result->num_rows > 0) {
 														while ($row = mysqli_fetch_array($result)) {
-															echo "<li style='min-height: 90px;'><a style='color:black;' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></li>";
+															echo "<li style='min-height: 110px;'><a style='color:black;' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></li>";
 														}
 													}
 												?>
@@ -159,13 +159,13 @@
 													<p style="color:white;font-size:20pt">出版品</p>
 												</div>
 											</div>
-											<ul class="list" style="font-size: 10pt;">
+											<ul class="list" style="font-size: 12pt;">
 												<?php
 													$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='出版品' ORDER BY OrderIndex";
 													$result = $conn_1->query($sql);
 													if ($result->num_rows > 0) {
 														while ($row = mysqli_fetch_array($result)) {
-															echo "<li style='min-height: 90px;'><a style='color:black;' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></li>";
+															echo "<li style='min-height: 110px;'><a style='color:black;' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></li>";
 														}
 													}
 												?>
