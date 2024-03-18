@@ -17,6 +17,14 @@
 			border-radius: 15px;
 			padding: 10px;
 		}
+		#bgVideo {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		}
 	</style>
 				<script type="text/javascript" src="js/jquery.marquee.js"></script>
 				<script>
@@ -134,7 +142,7 @@
 							$result = $conn_1->query($sql);
 							if ($result->num_rows > 0) {
 								while ($row = mysqli_fetch_array($result)) {
-									echo"<li style='width: 100%;'>";
+									echo"<li style='width: 100%;min-height:330px'>";
 										echo"<div class='banner-info-slider'>";
 											echo"<ul>";
 												echo"<li><a>".$row["Classification"]."</a></li>";
@@ -147,13 +155,19 @@
 													echo"<span> Read More </span>";
 													echo"<span> Read More </span>";
 												echo"</a>";
+												echo"<video autoplay muted loop id='bgVideo'>";
+												echo"<source src='images/banner.mp4' type='video/mp4'>";
+												echo"Your browser does not support HTML5 video.";
+												echo"</video>";
 											echo"</div>";
+
 										echo"</div>";
+										
 									echo"</li>";
 						
 								}
 							}
-						?>						
+						?>					
 					</ul>
 				</div>
 			</div>
@@ -163,21 +177,21 @@
 		<div class="container">
 			<div class="video-bottom-grids">
 				<div class="video-bottom-grids1">
-					<div class="col-md-3 video-bottom-grid">
+					<div class="col-md-4 video-bottom-grid">
 						<div class="video-bottom-grid1">
 							<div class="video-bottom-grid1-before">
-								<img src="images/smallbanner.jpg" alt=" " class="img-responsive" />
+								<img src="images/PIC1.jpg" alt=" " class="img-responsive" />
 								<div class="video-bottom-grid1-pos">
 									<p>活動消息</p>
 								</div>
 							</div>
 							<ul class="list" style="font-size: 10pt;">
 								<?php
-									$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='活動消息' ORDER BY OrderIndex LIMIT 10";
+									$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='活動消息' ORDER BY OrderIndex LIMIT 3";
 									$result = $conn_1->query($sql);
 									if ($result->num_rows > 0) {
 										while ($row = mysqli_fetch_array($result)) {
-											echo "<li><a style='color:black' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></li>";
+											echo "<li style='min-height: 90px;'><a style='color:black' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></li>";
 										}
 										 
 									}
@@ -188,21 +202,21 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 video-bottom-grid">
+					<div class="col-md-4 video-bottom-grid">
 						<div class="video-bottom-grid1">
 							<div class="video-bottom-grid1-before before1">
-								<img src="images/smallbanner.jpg" alt=" " class="img-responsive" />
+								<img src="images/PIC2.png" alt=" " class="img-responsive" />
 								<div class="video-bottom-grid1-pos">
-									<p>研討會消息</p>
+									<p>學術研討會</p>
 								</div>
 							</div>
 							<ul class="list" style="font-size: 10pt;">
 								<?php
-									$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='研討會消息' ORDER BY OrderIndex LIMIT 10";
+									$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='學術研討會' ORDER BY OrderIndex LIMIT 3";
 									$result = $conn_1->query($sql);
 									if ($result->num_rows > 0) {
 										while ($row = mysqli_fetch_array($result)) {
-											echo "<li><a style='color:black' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></li>";
+											echo "<li style='min-height: 90px;'><a style='color:black' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></li>";
 										}
 									}
 								?>
@@ -212,21 +226,21 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 video-bottom-grid">
+					<div class="col-md-4 video-bottom-grid">
 						<div class="video-bottom-grid1">
 							<div class="video-bottom-grid1-before before1">
-								<img src="images/smallbanner.jpg" alt=" " class="img-responsive" />
+								<img src="images/PIC3.jpg" alt=" " class="img-responsive" />
 								<div class="video-bottom-grid1-pos">
-									<p>刊物消息</p>
+									<p>出版品</p>
 								</div>
 							</div>
 							<ul class="list" style="font-size: 10pt;">
 								<?php
-									$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='刊物消息' ORDER BY OrderIndex LIMIT 10";
+									$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='出版品' ORDER BY OrderIndex LIMIT 3";
 									$result = $conn_1->query($sql);
 									if ($result->num_rows > 0) {
 										while ($row = mysqli_fetch_array($result)) {
-											echo "<li><a style='color:black' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></li>";
+											echo "<li style='min-height: 90px;'><a style='color:black' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></li>";
 										}
 									}
 								?>
@@ -236,30 +250,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 video-bottom-grid">
-						<div class="video-bottom-grid1">
-							<div class="video-bottom-grid1-before before1">
-								<img src="images/smallbanner.jpg" alt=" " class="img-responsive" />
-								<div class="video-bottom-grid1-pos">
-									<p>學會消息</p>
-								</div>
-							</div>
-							<ul class="list" style="font-size: 10pt;">
-								<?php
-									$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='學會消息' ORDER BY OrderIndex LIMIT 10";
-									$result = $conn_1->query($sql);
-									if ($result->num_rows > 0) {
-										while ($row = mysqli_fetch_array($result)) {
-											echo "<li><a style='color:black' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></li>";
-										}
-									}
-								?>
-							</ul>
-							<div class="read-more">
-								<a href="News.php">查看全部公告</a>
-							</div>
-						</div>
-					</div>
+					
 					<div class="clearfix"> </div>
 				</div>
 			</div>

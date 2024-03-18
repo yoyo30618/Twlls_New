@@ -109,10 +109,10 @@
 						<div class="story">
 							<div class="video-bottom-grids">
 								<div class="video-bottom-grids1">
-									<div class="col-md-3 video-bottom-grid">
+									<div class="col-md-4 video-bottom-grid">
 										<div class="video-bottom-grid1">
 											<div class="video-bottom-grid1-before">
-												<img src="images/smallbanner.jpg" alt=" " class="img-responsive" />
+												<img src="images/PIC1.jpg" alt=" " class="img-responsive" />
 												<div class="video-bottom-grid1-pos">
 													<p style="color:white;font-size:20pt">活動消息</p>
 												</div>
@@ -123,70 +123,49 @@
 													$result = $conn_1->query($sql);
 													if ($result->num_rows > 0) {
 														while ($row = mysqli_fetch_array($result)) {
-															echo "<li><a style='color:black' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></li>";
+															echo "<li style='min-height: 90px;'><a style='color:black;' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></li>";
 														}
 													}
 												?>
 											</ul>
 										</div>
 									</div>
-									<div class="col-md-3 video-bottom-grid">
+									<div class="col-md-4 video-bottom-grid">
 										<div class="video-bottom-grid1">
 											<div class="video-bottom-grid1-before before1">
-												<img src="images/smallbanner.jpg" alt=" " class="img-responsive" />
+												<img src="images/PIC2.png" alt=" " class="img-responsive" />
 												<div class="video-bottom-grid1-pos">
-													<p style="color:white;font-size:20pt">研討會消息</p>
+													<p style="color:white;font-size:20pt">學術研討會</p>
 												</div>
 											</div>
 											<ul class="list" style="font-size: 10pt;">
 												<?php
-													$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='研討會消息' ORDER BY OrderIndex";
+													$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='學術研討會' ORDER BY OrderIndex";
 													$result = $conn_1->query($sql);
 													if ($result->num_rows > 0) {
 														while ($row = mysqli_fetch_array($result)) {
-															echo "<li><a style='color:black' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></li>";
+															echo "<li style='min-height: 90px;'><a style='color:black;' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></li>";
 														}
 													}
 												?>
 											</ul>
 										</div>
 									</div>
-									<div class="col-md-3 video-bottom-grid">
+									<div class="col-md-4 video-bottom-grid">
 										<div class="video-bottom-grid1">
 											<div class="video-bottom-grid1-before before1">
-												<img src="images/smallbanner.jpg" alt=" " class="img-responsive" />
+												<img src="images/PIC3.jpg" alt=" " class="img-responsive" />
 												<div class="video-bottom-grid1-pos">
-													<p style="color:white;font-size:20pt">刊物消息</p>
+													<p style="color:white;font-size:20pt">出版品</p>
 												</div>
 											</div>
 											<ul class="list" style="font-size: 10pt;">
 												<?php
-													$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='刊物消息' ORDER BY OrderIndex";
+													$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='出版品' ORDER BY OrderIndex";
 													$result = $conn_1->query($sql);
 													if ($result->num_rows > 0) {
 														while ($row = mysqli_fetch_array($result)) {
-															echo "<li><a style='color:black' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></li>";
-														}
-													}
-												?>
-											</ul>
-										</div>
-									</div>
-									<div class="col-md-3 video-bottom-grid">
-										<div class="video-bottom-grid1">
-											<div class="video-bottom-grid1-before before1">
-												<img src="images/smallbanner.jpg" alt=" " class="img-responsive" />
-												<div class="video-bottom-grid1-pos">
-													<p style="color:white;font-size:20pt">學會消息</p>
-												</div>
-											</div>
-											<ul class="list" style="font-size: 10pt;">
-												<?php
-													$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='學會消息' ORDER BY OrderIndex";
-													$result = $conn_1->query($sql);
-													if ($result->num_rows > 0) {
-														while ($row = mysqli_fetch_array($result)) {
-															echo "<li><a style='color:black' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></li>";
+															echo "<li style='min-height: 90px;'><a style='color:black;' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></li>";
 														}
 													}
 												?>
