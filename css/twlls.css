@@ -1,0 +1,19 @@
+.Twlls_Footer_Table td, .Twlls_Footer_Table th {
+    padding: 12px;
+    line-height: 1.5;
+    vertical-align: top;
+}
+
+.Twlls_Footer_Table_Title {
+    color:#EBEDC3;
+    font-size: 20px;
+    /*font-weight: bold;*/
+}
+.marquee {
+    background-color: #418765;
+    font-size: 1em;
+    padding: 8px 0;
+    overflow: hidden;
+    width: 100%; /* 背景顏色的寬度是 100% */
+    margin: 0 auto; /* 水平居中 */
+}

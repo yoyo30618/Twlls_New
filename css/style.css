@@ -208,13 +208,11 @@ body a:hover{
 }
 /*------------------ Slider Part ends Here----------*/
 .banner{
-	/* background:url(../images/banner.jpg) no-repeat 0px 0px; */
-	background:#4F467E;
+	background:#ffffff;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
-	min-height:600px;
 }
 .banner1{
 	/* background:url(../images/banner.jpg) no-repeat 0px 0px; */
@@ -233,7 +231,7 @@ body a:hover{
 }
 .navbar-brand{
 	font-size: 2.5em;
-    color: #fff !important;
+    color: #000 !important;
     text-decoration: none;
     text-transform: uppercase;
     height: 85px;
@@ -247,7 +245,7 @@ body a:hover{
 	-moz-border-radius: 100%;
 	-o-border-radius: 100%;
 	-ms-border-radius: 100%;
-    border: 2px solid #fff;
+    border: 2px solid #000;
 }
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border: none;
@@ -259,7 +257,7 @@ body a:hover{
     margin: 0;
 }
 .navbar-default .navbar-nav > li > a {
-    color: #fff;
+    color: #000;
     font-size: 14px;
     padding: 18px 15px 0;
     font-weight: 400;
@@ -685,24 +683,16 @@ body a:hover{
     background-color: #000;
     position: relative;
 }
-.marquee {
-    width: 80%;
-    margin-left: 16%;
-    color: #777;
-    font-size: 1em;
-    padding: 8px 0;
-    color: #84754E;
-    overflow: hidden;
-}
 .marquee1 {
     float: left;
-    margin-right: 6em;
+	color: white;
 }
 .marquee2 {
     float: right;
+	color: white;
 }
 a.breaking {
-    color: #000;
+    color: white;
     font-size: 1.2em;
     font-weight: 400;
 	text-decoration:none;
@@ -2647,9 +2637,7 @@ img.mobile1 {
 /*--single--*/
 .icon-box {
     padding: 8px 15px;
-    background: rgba(149, 149, 149, 0.18);
     margin: 1em 0 1em 0;
-    border: 5px solid #ffffff;
     text-align: left;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -2987,7 +2975,7 @@ img.mobile1 {
 	}
 .footer-top-w3layouts-agile-grid1 ul.tag2 li a{	
 	font-size: 14px;
-    color: #fff;
+    color: #000;
     padding: 3px 9px 5px;
     background: #000;
 	}
@@ -3005,7 +2993,7 @@ img.mobile1 {
     color: #333 !important;
 }
 .dropdown-menu > li > a:hover {
-    color: #fff !important;
+    color: #000 !important;
 }
 /*-- //single --*/
 /*-----start-responsive-design------*/
@@ -3489,19 +3477,19 @@ img.mobile1 {
 }
 @media (max-width:767px){
 	.navbar-default .navbar-toggle {
-		border-color: #fff;
+		border-color: #000;
 	}
 	.navbar-toggle {
 		margin: 8px 0 0;
-		background-color: #fff;
+		background-color: #000;
 	}
 	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-		background-color: #fff;
+		background-color: #000;
 	}
 	.navbar-nav {
 		float: none;
 		text-align: center;
-		background: #2D2D2D;
+		background: #fff;
 		padding: 1em 0;
 		margin: 0 0 1em;
 	}

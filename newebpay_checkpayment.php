@@ -430,7 +430,7 @@ EOF;
                 echo "Message could not be sent. <p>";
                 echo "Mailer Error: " . $mail->ErrorInfo;
             } else {
-                echo "Message sent";
+                echo "Mail Sent to ".$to." Success.<br>";
             }
         }
 
@@ -455,7 +455,7 @@ EOF;
         //require_once("newebpay_yearlycsv.php");
         //$csv_data = getYearlyCSV($apiUrl, $MerchantID, $HashIV, $HashKey, $row->timestamp, $row->name, $row->ReceiptTitle, $row->TaxIDNumber, $row->email, $row->phone);
         //sendMail("contact.tlls@gmail.com", "台灣語文學會 線上繳費系統 繳款成功 $row->timestamp", array(array('content' => $csv_data, 'name' => 'yearly.csv')));
-        echo memory_get_usage() . " - end\n\n";
+        //echo memory_get_usage() . " - end\n\n";
         return;
     }
 }
