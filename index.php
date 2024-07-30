@@ -25,11 +25,13 @@
 			height: 100%;
 			z-index: -1;
 		}
-		.AllBODY{
-			background-image: url('images/AllBackGround.png'); 
-			background-size: cover; 
-			background-position: center;
-		}
+		.AllBODY {
+    background-image: url('images/bg.jpg'); 
+    background-size: auto; 
+    background-position: center;
+    background-repeat: repeat; /* 讓背景圖片重複 */
+}
+
 		.AboutMe {
             width: 70%;
             height: 500px;
@@ -112,59 +114,59 @@
             </div>
         </div>
 	</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	<div class="banner-bottom">
 		<div class="container">
 			<div class="video-bottom-grids">
+				<div>
+					<p style="color:#fff;font-size:25px">最新消息<a href="News.php" style="color:#F7FBCF;font-size:15px">more...</a></p>
+				</div>
 				<div class="video-bottom-grids1">
 					<div class="col-md-4 video-bottom-grid">
 						<div class="video-bottom-grid1">
 							<div class="video-bottom-grid1-before">
-								<img src="images/PIC1.jpg" alt=" " class="img-responsive" />
+								<img src="images/frontpage-news-activity.jpg" alt=" " class="img-responsive" />
 								<div class="video-bottom-grid1-pos">
-									<p>活動消息</p>
+								</div>
+								<div style="width:60%;float:left;font-size:25px;padding:5px 15px;">
+									<p style="color:#52403C">活動消息</p></div>
+								<div style="width:40%;float:right; padding:5px 15px;color:#52403C;">
+									<a href="News.php" style="color:#52403C">全部活動消息▶</a>
 								</div>
 							</div>
+							<div style="clear:both;"></div>
 							<ul class="list" style="font-size: 12pt;">
 								<?php
 									$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='活動消息' ORDER BY OrderIndex LIMIT 3";
 									$result = $conn_1->query($sql);
 									if ($result->num_rows > 0) {
 										while ($row = mysqli_fetch_array($result)) {
-											echo "<li style='min-height: 110px;'><a style='color:black' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></li>";
+											echo "<li style='min-height: 110px; padding:5px 15px;'>";
+											echo "<div style='width:70%;float:left;font-size:15px'>";
+											echo "		<a style='color:black' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a>";
+											echo "</div>";
+											echo "<div style='width:30%;float:right;font-size:10px'>";
+											echo "　　　<a href='".$row["url"]."' class='custom-button'>more...</a>";
+											echo "</div>";
+											echo "</li>";
 										}
 										 
 									}
 								?>
 							</ul>
-							<div class="read-more">
-								<a href="News.php">查看全部公告</a>
-							</div>
 						</div>
 					</div>
 					<div class="col-md-4 video-bottom-grid">
 						<div class="video-bottom-grid1">
-							<div class="video-bottom-grid1-before before1">
-								<img src="images/PIC2.png" alt=" " class="img-responsive" />
+							<div class="video-bottom-grid1-before before">
+								<img src="images/frontpage-news-conference.jpg" alt=" " class="img-responsive" />
 								<div class="video-bottom-grid1-pos">
-									<p>學術研討會</p>
 								</div>
+								<div style="width:60%;float:left;font-size:25px;padding:5px 15px;">
+                                    <p style="color:#52403C">學術研討會</p></div>
+                                <div style="width:40%;float:right; padding:5px 15px;color:#52403C;">
+                                    <a href="News.php" style="color:#52403C">全部學術研討會▶</a>
+								</div>
+                            	<div style="clear:both;"></div>
 							</div>
 							<ul class="list" style="font-size: 12pt;">
 								<?php
@@ -172,38 +174,51 @@
 									$result = $conn_1->query($sql);
 									if ($result->num_rows > 0) {
 										while ($row = mysqli_fetch_array($result)) {
-											echo "<li style='min-height: 110px;'><a style='color:black' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></li>";
+                                            echo "<li style='min-height: 110px; padding:5px 15px;'>";
+                                            echo "<div style='width:70%;float:left;font-size:15px'>";
+                                            echo "     <a style='color:black' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a>";
+                                            echo "</div>";
+                                            echo "<div style='width:30%;float:right;font-size:10px'>";
+                                            echo "　　　<a href='".$row["url"]."' class='custom-button'>more...</a>";
+                                            echo "</div>";
+                                            echo "</li>";
 										}
 									}
 								?>
 							</ul>
-							<div class="read-more">
-								<a href="News.php">查看全部公告</a>
-							</div>
 						</div>
 					</div>
 					<div class="col-md-4 video-bottom-grid">
 						<div class="video-bottom-grid1">
-							<div class="video-bottom-grid1-before before1">
-								<img src="images/PIC3.jpg" alt=" " class="img-responsive" />
+							<div class="video-bottom-grid1-before before">
+								<img src="images/frontpage-news-publish.jpg" alt=" " class="img-responsive" />
 								<div class="video-bottom-grid1-pos">
-									<p>出版品</p>
 								</div>
+								<div style="width:60%;float:left;font-size:25px;padding:5px 15px;">
+                                    <p style="color:#52403C">出版資訊</p></div>
+                                <div style="width:40%;float:right; padding:5px 15px;color:#52403C;">
+                                    <a href="News.php" style="color:#52403C">全部出版資訊▶</a>
+                                </div>
 							</div>
+							<div style="clear:both;"></div>
 							<ul class="list" style="font-size: 12pt;">
 								<?php
-									$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='出版品' ORDER BY OrderIndex LIMIT 3";
+									$sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='出版資訊' ORDER BY OrderIndex LIMIT 3";
 									$result = $conn_1->query($sql);
 									if ($result->num_rows > 0) {
 										while ($row = mysqli_fetch_array($result)) {
-											echo "<li style='min-height: 110px;'><a style='color:black' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></li>";
+                                            echo "<li style='min-height: 110px; padding:5px 15px;'>";
+                                            echo "<div style='width:70%;float:left;font-size:15px'>";
+                                            echo "     <a style='color:black' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a>";
+                                            echo "</div>";
+                                            echo "<div style='width:30%;float:right;font-size:10px'>";
+                                            echo "　　　<a href='".$row["url"]."' class='custom-button'>more...</a>";
+                                            echo "</div>";
+                                            echo "</li>";
 										}
 									}
 								?>
 							</ul>
-							<div class="read-more">
-								<a href="News.php">查看全部公告</a>
-							</div>
 						</div>
 					</div>
 					

@@ -224,7 +224,7 @@ body a:hover{
 	min-height:200px;
 }
 .banner-info {
-    padding-top: 2em;
+    padding-top: 0em;
 }
 .banner-info1 {
     padding-top: 2em;
@@ -249,7 +249,6 @@ body a:hover{
 }
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border: none;
-	padding-bottom: 3em;
 }
 .navbar-default {
     background: none;
@@ -490,6 +489,7 @@ body a:hover{
 .dropdown-menu > li > a {
     padding: 5px 0;
     text-align: center;
+	background-color: #418765;
 }
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
     color: #fff;
@@ -517,9 +517,30 @@ body a:hover{
 .br-bm-gd-lt:hover .overlay {
     right: 0;
 }
-.banner-bottom{
-	padding:2em 0 0;
+.banner-bottom {
+    position: relative; /* 設定相對定位 */
+    padding: 2em 0 0;
+    background-image: url(../images/frontpage-news-bg.jpg);
+    background-size: cover; /* 確保背景圖覆蓋整個區域 */
+    background-position: center; /* 背景圖置中 */
 }
+
+.banner-bottom::before {
+    content: ""; /* 必須有內容 */
+    position: absolute; /* 絕對定位 */
+    top: 0; /* 從上方開始 */
+    left: 0; /* 從左方開始 */
+    right: 0; /* 延伸到右方 */
+    bottom: 0; /* 延伸到底部 */
+    background-color: rgba(65, 135, 101, 0.5); /* 淺綠色，並設置透明度 */
+    z-index: 1; /* 確保在背景圖上方 */
+}
+
+.banner-bottom > * {
+    position: relative; /* 確保內容在 z-index 1 之上 */
+    z-index: 2; /* 內容在淺綠色層之上 */
+}
+
 .br-bm-gd-lt,.br-bm-gd-lt1,.br-bm-gd-lt2,.br-bm-gd-lt3,.br-bm-gd-lt4,.br-bm-gd-lt5,.br-bm-gd-lt6,.br-bm-gd-lt7{
 	min-height:300px;
 	position:relative;
@@ -1050,8 +1071,12 @@ a.orange2{
 }	
 /*--//banner-bottom --*/
 /*-- video-bottom-grids --*/
+
+.video-bottom-grid1 {
+	background-color: #fff;
+}
 .video-bottom-grid1 img{
-	border-top:5px solid #1ABC9C;
+	border-bottom:5px solid #558D33;
 }
 .video-bottom-grid1-before{
 	position:relative;
@@ -2990,7 +3015,7 @@ img.mobile1 {
     margin: 0 0 3em;
 }
 .dropdown-menu > li > a {
-    color: #333 !important;
+    color: #fff !important;
 }
 .dropdown-menu > li > a:hover {
     color: #000 !important;
@@ -3035,9 +3060,6 @@ img.mobile1 {
 	}
 	.callbacks_nav.next {
 		right: 1%;
-	}
-	.banner,.banner-info {
-		min-height: 600px;
 	}
 	.banner-bottom {
 		padding: 3em 0 0;
@@ -3173,9 +3195,6 @@ img.mobile1 {
 	.type-1 span {
 		padding: .4em 1em .4em;
 		font-size:1em;
-	}
-	.banner, .banner-info {
-		min-height: 570px;
 	}
 	.banner-bottom-grid-left {
 		float: left;
@@ -3337,9 +3356,6 @@ img.mobile1 {
 	.type-1 span {
 		padding: .4em 1em .4em;
 		font-size:1em;
-	}
-	.banner, .banner-info {
-		min-height: 570px;
 	}
 	.banner-bottom-grid-left {
 		float: left;
@@ -3652,9 +3668,6 @@ img.mobile1 {
 	.banner-info-slider {
 		padding: 2em 0 0 1em;
 	}
-	.banner, .banner-info {
-		min-height: 420px;
-	}
 	.callbacks_tabs {
 		bottom: -5%;
 	}
@@ -3910,9 +3923,6 @@ img.mobile1 {
 	.navbar-brand {
 		font-size: 1.5em;
 		height:60px;
-	}
-	.banner, .banner-info {
-		min-height: 375px;
 	}
 	.banner-bottom-grid-left {
 		float: none;

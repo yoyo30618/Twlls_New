@@ -5,7 +5,7 @@
 }
 
 .Twlls_Footer_Table_Title {
-    color:#EBEDC3;
+    color:#F7FBCF;
     font-size: 20px;
     /*font-weight: bold;*/
 }
@@ -17,3 +17,40 @@
     width: 100%; /* 背景顏色的寬度是 100% */
     margin: 0 auto; /* 水平居中 */
 }
+.banner-info {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* 確保在最上層 */
+    transition: height 0.3s; /* 平滑過渡 */
+}
+
+.banner-info.shrink {
+    height: 80px !important; /* 設定縮小後的高度 */
+}
+
+.navbar-brand.shrink {
+    font-size: 25px !important; /* 縮小後的字體大小 */
+}
+
+.navbar-brand2.shrink {
+    font-size: 8px !important; /* 縮小後的字體大小 */
+}
+    .custom-button {
+        display: inline-block; /* 使其行內顯示 */
+        background-color: white; /* 白色背景 */
+        border: 2px solid #6F4C3E; /* 咖啡色框線 */
+        border-radius: 12px; /* 圓角 */
+        color: #6F4C3E; /* 咖啡色文字 */
+        font-size: 16px; /* 字體大小 */
+        padding: 10px 20px; /* 內邊距 */
+        text-decoration: none; /* 去除下劃線 */
+        cursor: pointer; /* 鼠標變為手型 */
+        transition: background-color 0.3s, color 0.3s; /* 動畫效果 */
+    }
+
+    .custom-button:hover {
+        background-color: #6F4C3E; /* 懸停時背景變為咖啡色 */
+        color: white; /* 懸停時文字變為白色 */
+    }

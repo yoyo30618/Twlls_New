@@ -84,12 +84,12 @@
             width: 100%;
             position: relative;
             margin: 0 auto;
+            margin-top:120px;
             overflow: hidden;
             background-repeat: no-repeat;
         }
 </style>
-    <div class="AL-slider-container" style="background-image: url('images/IndexBanner.png'); background-size: cover; background-position: center;">
-
+<div class="AL-slider-container" style="background-image: url('images/IndexBanner.png'); background-size: cover; background-position: top;">
         <div class="slider-container">
             <div class="slide active">
                 <div class="slide-content">

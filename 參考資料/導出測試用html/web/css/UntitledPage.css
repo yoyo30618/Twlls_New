@@ -1,0 +1,1780 @@
+.untitled-page.main {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  overflow: hidden;
+}
+.untitled-page .section1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.047);
+}
+.untitled-page .decorator {
+  position: absolute;
+  bottom: -174px;
+  left: -40px;
+  width: 250px;
+  height: 250px;
+}
+.untitled-page .flex_row {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 10px;
+  margin: 15px auto 16px;
+  width: 1300px;
+}
+.untitled-page .image15 {
+  width: 293px;
+  min-width: 0;
+}
+.untitled-page .flex_row1 {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+  width: 885px;
+  min-width: 0;
+}
+.untitled-page .highlight10 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 2px;
+  min-width: 0;
+  font: 400 17px/1.35 "Noto Sans", Helvetica, Arial, serif;
+  color: #70524a;
+  text-align: center;
+  letter-spacing: 1.44px;
+}
+.untitled-page .highlight11 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 2px;
+  min-width: 0;
+  font: 400 17px/1.35 "Noto Sans", Helvetica, Arial, serif;
+  color: #222222;
+  text-align: center;
+  letter-spacing: 1.94px;
+}
+.untitled-page .highlight111 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 2px;
+  min-width: 0;
+  font: 400 17px/1.35 "Noto Sans", Helvetica, Arial, serif;
+  color: #222222;
+  text-align: center;
+  letter-spacing: 2.14px;
+}
+.untitled-page .image16 {
+  width: 25px;
+  min-width: 0;
+  height: 25px;
+}
+.untitled-page .decorator1 {
+  position: absolute;
+  right: -40px;
+  bottom: -174px;
+  width: 250px;
+  height: 250px;
+}
+.untitled-page .section2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.untitled-page .decorator2 {
+  position: absolute;
+  top: 174px;
+  left: -40px;
+  width: 250px;
+  height: 250px;
+}
+.untitled-page .grid {
+  position: relative;
+  display: grid;
+  align-content: start;
+  gap: 1px 1px;
+  margin: 174px auto 106px;
+  width: 78.13%;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+.untitled-page .item {
+  grid-row: span 1;
+  grid-column: span 1;
+  width: 100%;
+}
+.untitled-page .decorator3 {
+  position: absolute;
+  top: 174px;
+  right: -40px;
+  width: 250px;
+  height: 250px;
+}
+.untitled-page .decorator4 {
+  position: absolute;
+  top: 424px;
+  left: -40px;
+  width: 250px;
+  height: 250px;
+}
+.untitled-page .decorator5 {
+  position: absolute;
+  top: 424px;
+  right: -40px;
+  width: 250px;
+  height: 250px;
+}
+.untitled-page .decorator6 {
+  position: absolute;
+  bottom: -145px;
+  left: -40px;
+  width: 250px;
+  height: 250px;
+}
+.untitled-page .section3 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 1920px;
+  height: 985px;
+  min-height: 985px;
+}
+.untitled-page .decorator7 {
+  position: absolute;
+  inset: 145px 1461px 591px 210px;
+  width: 249px;
+  height: 249px;
+}
+.untitled-page .decorator8 {
+  position: absolute;
+  inset: 145px 1211px 591px 460px;
+  width: 249px;
+  height: 249px;
+}
+.untitled-page .decorator9 {
+  position: absolute;
+  inset: 145px 965px 591px 710px;
+  width: 245px;
+  height: 249px;
+}
+.untitled-page .decorator10 {
+  position: absolute;
+  inset: 145px 711px 591px 960px;
+  width: 249px;
+  height: 249px;
+}
+.untitled-page .decorator11 {
+  position: absolute;
+  inset: 145px 461px 591px 1210px;
+  width: 249px;
+  height: 249px;
+}
+.untitled-page .decorator12 {
+  position: absolute;
+  inset: 145px 210px 591px 1460px;
+  width: 250px;
+  height: 249px;
+}
+.untitled-page .decorator13 {
+  position: absolute;
+  inset: 395px 1461px 341px 210px;
+  width: 249px;
+  height: 249px;
+}
+.untitled-page .decorator14 {
+  position: absolute;
+  inset: 395px 1211px 341px 460px;
+  width: 249px;
+  height: 249px;
+}
+.untitled-page .decorator15 {
+  position: absolute;
+  inset: 395px 965px 341px 710px;
+  width: 245px;
+  height: 249px;
+}
+.untitled-page .decorator16 {
+  position: absolute;
+  inset: 395px 711px 341px 960px;
+  width: 249px;
+  height: 249px;
+}
+.untitled-page .decorator17 {
+  position: absolute;
+  inset: 395px 461px 341px 1210px;
+  width: 249px;
+  height: 249px;
+}
+.untitled-page .decorator18 {
+  position: absolute;
+  inset: 395px 210px 341px 1460px;
+  width: 250px;
+  height: 249px;
+}
+.untitled-page .decorator19 {
+  position: absolute;
+  inset: 645px 1461px 91px 210px;
+  width: 249px;
+  height: 249px;
+}
+.untitled-page .decorator20 {
+  position: absolute;
+  inset: 645px 1211px 91px 460px;
+  width: 249px;
+  height: 249px;
+}
+.untitled-page .decorator21 {
+  position: absolute;
+  inset: 645px 965px 91px 710px;
+  width: 245px;
+  height: 249px;
+}
+.untitled-page .decorator22 {
+  position: absolute;
+  inset: 645px 711px 91px 960px;
+  width: 249px;
+  height: 249px;
+}
+.untitled-page .decorator23 {
+  position: absolute;
+  inset: 645px 461px 91px 1210px;
+  width: 249px;
+  height: 249px;
+}
+.untitled-page .decorator24 {
+  position: absolute;
+  inset: 645px 210px 91px 1460px;
+  width: 250px;
+  height: 249px;
+}
+.untitled-page .image1 {
+  position: absolute;
+  inset: 925px 200px 0 1660px;
+  width: 60px;
+  height: 60px;
+}
+.untitled-page .medium_title {
+  position: absolute;
+  inset: 95px 1150px 860px 430px;
+  display: flex;
+  align-items: center;
+  width: 340px;
+  height: 30px;
+  font: 700 25px/1.2 "Noto Sans", Helvetica, Arial, serif;
+  color: #3c7556;
+  letter-spacing: 1.14px;
+}
+.untitled-page .rect1 {
+  position: absolute;
+  inset: 155px 370px 640px;
+  width: 1180px;
+  height: 190px;
+  border-color: #418765;
+  border-style: solid;
+  border-width: 0 0 0 10px;
+}
+.untitled-page .group {
+  position: absolute;
+  inset: 155px 1175px 780px 395px;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 50px;
+}
+.untitled-page .rect2 {
+  position: relative;
+  min-height: 50px;
+  border-color: #70524a;
+  border-style: solid;
+  border-width: 1px 0;
+}
+.untitled-page .flex_row2 {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  display: flex;
+  gap: 0 17px;
+  width: 320px;
+  height: 30px;
+}
+.untitled-page .highlight4 {
+  display: flex;
+  align-items: center;
+  margin: 3px 0;
+  min-width: 0;
+  font: 700 18px/1.33 "Noto Sans", Helvetica, Arial, serif;
+  color: #70524a;
+  letter-spacing: 0.8px;
+}
+.untitled-page .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4px 0;
+  min-width: 68px;
+  font: 700 12px/1 Inter, Helvetica, Arial, serif;
+  color: white;
+  text-align: center;
+  background-color: #70524a;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.untitled-page .text {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-width: 0;
+  font: 400 14px/2.14 "Noto Sans", Helvetica, Arial, serif;
+  color: #70524a;
+  text-align: right;
+  letter-spacing: 0.6px;
+}
+.untitled-page .image4 {
+  position: absolute;
+  inset: 175px 1180px 800px 735px;
+  width: 5px;
+  height: 10px;
+}
+.untitled-page .rect21 {
+  position: absolute;
+  inset: 155px 805px 780px 765px;
+  width: 350px;
+  height: 50px;
+  border-color: #70524a;
+  border-style: solid;
+  border-width: 1px 0;
+}
+.untitled-page .highlight41 {
+  position: absolute;
+  inset: 168px 996px 793px 780px;
+  display: flex;
+  align-items: center;
+  width: 144px;
+  height: 24px;
+  font: 700 18px/1.33 "Noto Sans", Helvetica, Arial, serif;
+  color: #70524a;
+  letter-spacing: 0.8px;
+}
+.untitled-page .btn1 {
+  position: absolute;
+  inset: 169px 901px 794px 956px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 700 12px/1 Inter, Helvetica, Arial, serif;
+  color: white;
+  text-align: center;
+  background-color: #70524a;
+  border-radius: 5px;
+  padding: 5px 10px 5px 5px;
+}
+.untitled-page .text1 {
+  position: absolute;
+  inset: 165px 820px 790px 1027px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 73px;
+  height: 30px;
+  font: 400 14px/2.14 "Noto Sans", Helvetica, Arial, serif;
+  color: #70524a;
+  text-align: right;
+  letter-spacing: 0.6px;
+}
+.untitled-page .image41 {
+  position: absolute;
+  inset: 175px 810px 800px 1105px;
+  width: 5px;
+  height: 10px;
+}
+.untitled-page .rect22 {
+  position: absolute;
+  inset: 155px 435px 780px 1135px;
+  width: 350px;
+  height: 50px;
+  border-color: #70524a;
+  border-style: solid;
+  border-width: 1px 0;
+}
+.untitled-page .highlight42 {
+  position: absolute;
+  inset: 168px 626px 793px 1150px;
+  display: flex;
+  align-items: center;
+  width: 144px;
+  height: 24px;
+  font: 700 18px/1.33 "Noto Sans", Helvetica, Arial, serif;
+  color: #70524a;
+  letter-spacing: 0.8px;
+}
+.untitled-page .rect3 {
+  position: absolute;
+  inset: 169px 531px 794px 1321px;
+  width: 68px;
+  height: 22px;
+  background-color: #70524a;
+  border-radius: 5px;
+}
+.untitled-page .info {
+  position: absolute;
+  inset: 174px 541px 799px 1331px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 12px;
+  font: 700 12px/1 Inter, Helvetica, Arial, serif;
+  color: white;
+  text-align: center;
+}
+.untitled-page .text2 {
+  position: absolute;
+  inset: 165px 450px 790px 1397px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 73px;
+  height: 30px;
+  font: 400 14px/2.14 "Noto Sans", Helvetica, Arial, serif;
+  color: #70524a;
+  text-align: right;
+  letter-spacing: 0.6px;
+}
+.untitled-page .image42 {
+  position: absolute;
+  inset: 175px 440px 800px 1475px;
+  width: 5px;
+  height: 10px;
+}
+.untitled-page .rect23 {
+  position: absolute;
+  inset: 225px 1175px 710px 395px;
+  width: 350px;
+  height: 50px;
+  border-color: #70524a;
+  border-style: solid;
+  border-width: 1px 0;
+}
+.untitled-page .highlight43 {
+  position: absolute;
+  inset: 238px 1366px 723px 410px;
+  display: flex;
+  align-items: center;
+  width: 144px;
+  height: 24px;
+  font: 700 18px/1.33 "Noto Sans", Helvetica, Arial, serif;
+  color: #70524a;
+  letter-spacing: 0.8px;
+}
+.untitled-page .rect31 {
+  position: absolute;
+  inset: 239px 1271px 724px 581px;
+  width: 68px;
+  height: 22px;
+  background-color: #70524a;
+  border-radius: 5px;
+}
+.untitled-page .info1 {
+  position: absolute;
+  inset: 244px 1281px 729px 591px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 12px;
+  font: 700 12px/1 Inter, Helvetica, Arial, serif;
+  color: white;
+  text-align: center;
+}
+.untitled-page .text3 {
+  position: absolute;
+  inset: 235px 1190px 720px 657px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 73px;
+  height: 30px;
+  font: 400 14px/2.14 "Noto Sans", Helvetica, Arial, serif;
+  color: #70524a;
+  text-align: right;
+  letter-spacing: 0.6px;
+}
+.untitled-page .image43 {
+  position: absolute;
+  inset: 245px 1180px 730px 735px;
+  width: 5px;
+  height: 10px;
+}
+.untitled-page .rect24 {
+  position: absolute;
+  inset: 225px 805px 710px 765px;
+  width: 350px;
+  height: 50px;
+  border-color: #70524a;
+  border-style: solid;
+  border-width: 1px 0;
+}
+.untitled-page .highlight44 {
+  position: absolute;
+  inset: 238px 1014px 723px 780px;
+  display: flex;
+  align-items: center;
+  width: 126px;
+  height: 24px;
+  font: 700 18px/1.33 "Noto Sans", Helvetica, Arial, serif;
+  color: #70524a;
+  letter-spacing: 0.9px;
+}
+.untitled-page .rect32 {
+  position: absolute;
+  inset: 239px 901px 724px 956px;
+  width: 63px;
+  height: 22px;
+  background-color: #70524a;
+  border-radius: 5px;
+}
+.untitled-page .info2 {
+  position: absolute;
+  inset: 244px 911px 729px 961px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 12px;
+  font: 700 12px/1 Inter, Helvetica, Arial, serif;
+  color: white;
+  text-align: center;
+}
+.untitled-page .text4 {
+  position: absolute;
+  inset: 235px 820px 720px 1027px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 73px;
+  height: 30px;
+  font: 400 14px/2.14 "Noto Sans", Helvetica, Arial, serif;
+  color: #70524a;
+  text-align: right;
+  letter-spacing: 0.6px;
+}
+.untitled-page .image44 {
+  position: absolute;
+  inset: 245px 810px 730px 1105px;
+  width: 5px;
+  height: 10px;
+}
+.untitled-page .rect25 {
+  position: absolute;
+  inset: 225px 435px 710px 1135px;
+  width: 350px;
+  height: 50px;
+  border-color: #70524a;
+  border-style: solid;
+  border-width: 1px 0;
+}
+.untitled-page .highlight45 {
+  position: absolute;
+  inset: 238px 644px 723px 1150px;
+  display: flex;
+  align-items: center;
+  width: 126px;
+  height: 24px;
+  font: 700 18px/1.33 "Noto Sans", Helvetica, Arial, serif;
+  color: #70524a;
+  letter-spacing: 0.9px;
+}
+.untitled-page .rect33 {
+  position: absolute;
+  inset: 239px 531px 724px 1321px;
+  width: 68px;
+  height: 22px;
+  background-color: #70524a;
+  border-radius: 5px;
+}
+.untitled-page .info3 {
+  position: absolute;
+  inset: 244px 541px 729px 1331px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 12px;
+  font: 700 12px/1 Inter, Helvetica, Arial, serif;
+  color: white;
+  text-align: center;
+}
+.untitled-page .text5 {
+  position: absolute;
+  inset: 235px 450px 720px 1397px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 73px;
+  height: 30px;
+  font: 400 14px/2.14 "Noto Sans", Helvetica, Arial, serif;
+  color: #70524a;
+  text-align: right;
+  letter-spacing: 0.6px;
+}
+.untitled-page .image45 {
+  position: absolute;
+  inset: 245px 440px 730px 1475px;
+  width: 5px;
+  height: 10px;
+}
+.untitled-page .rect26 {
+  position: absolute;
+  inset: 295px 1175px 640px 395px;
+  width: 350px;
+  height: 50px;
+  border-color: #70524a;
+  border-style: solid;
+  border-width: 1px 0;
+}
+.untitled-page .highlight46 {
+  position: absolute;
+  inset: 308px 1384px 653px 410px;
+  display: flex;
+  align-items: center;
+  width: 126px;
+  height: 24px;
+  font: 700 18px/1.33 "Noto Sans", Helvetica, Arial, serif;
+  color: #70524a;
+  letter-spacing: 0.9px;
+}
+.untitled-page .rect34 {
+  position: absolute;
+  inset: 309px 1271px 654px 581px;
+  width: 68px;
+  height: 22px;
+  background-color: #70524a;
+  border-radius: 5px;
+}
+.untitled-page .info4 {
+  position: absolute;
+  inset: 314px 1281px 659px 591px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 12px;
+  font: 700 12px/1 Inter, Helvetica, Arial, serif;
+  color: white;
+  text-align: center;
+}
+.untitled-page .text6 {
+  position: absolute;
+  inset: 305px 1190px 650px 657px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 73px;
+  height: 30px;
+  font: 400 14px/2.14 "Noto Sans", Helvetica, Arial, serif;
+  color: #70524a;
+  text-align: right;
+  letter-spacing: 0.6px;
+}
+.untitled-page .image46 {
+  position: absolute;
+  inset: 315px 1180px 660px 735px;
+  width: 5px;
+  height: 10px;
+}
+.untitled-page .rect27 {
+  position: absolute;
+  inset: 295px 805px 640px 765px;
+  width: 350px;
+  height: 50px;
+  border-color: #70524a;
+  border-style: solid;
+  border-width: 1px 0;
+}
+.untitled-page .highlight47 {
+  position: absolute;
+  inset: 308px 1014px 653px 780px;
+  display: flex;
+  align-items: center;
+  width: 126px;
+  height: 24px;
+  font: 700 18px/1.33 "Noto Sans", Helvetica, Arial, serif;
+  color: #70524a;
+  letter-spacing: 0.9px;
+}
+.untitled-page .rect35 {
+  position: absolute;
+  inset: 309px 901px 654px 956px;
+  width: 63px;
+  height: 22px;
+  background-color: #70524a;
+  border-radius: 5px;
+}
+.untitled-page .info5 {
+  position: absolute;
+  inset: 314px 911px 659px 961px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 12px;
+  font: 700 12px/1 Inter, Helvetica, Arial, serif;
+  color: white;
+  text-align: center;
+}
+.untitled-page .text7 {
+  position: absolute;
+  inset: 305px 820px 650px 1027px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 73px;
+  height: 30px;
+  font: 400 14px/2.14 "Noto Sans", Helvetica, Arial, serif;
+  color: #70524a;
+  text-align: right;
+  letter-spacing: 0.6px;
+}
+.untitled-page .image47 {
+  position: absolute;
+  inset: 315px 810px 660px 1105px;
+  width: 5px;
+  height: 10px;
+}
+.untitled-page .flex_row3 {
+  position: absolute;
+  inset: 410px 1150px 545px 370px;
+  display: flex;
+  gap: 0 10px;
+  width: 400px;
+  height: 30px;
+}
+.untitled-page .image3 {
+  margin: 4px 0;
+  width: 50px;
+  min-width: 0;
+  height: 22px;
+}
+.untitled-page .medium_title1 {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  font: 700 25px/1.2 "Noto Sans", Helvetica, Arial, serif;
+  color: #558d33;
+  letter-spacing: 1.14px;
+}
+.untitled-page .rect4 {
+  position: absolute;
+  inset: 470px 370px 395px;
+  width: 1180px;
+  height: 120px;
+  border-color: #6aa447;
+  border-style: solid;
+  border-width: 0 0 0 10px;
+}
+.untitled-page .rect28 {
+  position: absolute;
+  inset: 470px 1175px 465px 395px;
+  width: 350px;
+  height: 50px;
+  border-color: #70524a;
+  border-style: solid;
+  border-width: 1px 0;
+}
+.untitled-page .highlight48 {
+  position: absolute;
+  inset: 483px 1384px 478px 410px;
+  display: flex;
+  align-items: center;
+  width: 126px;
+  height: 24px;
+  font: 700 18px/1.33 "Noto Sans", Helvetica, Arial, serif;
+  color: #70524a;
+  letter-spacing: 0.8px;
+}
+.untitled-page .rect36 {
+  position: absolute;
+  inset: 484px 1271px 479px 581px;
+  width: 68px;
+  height: 22px;
+  background-color: #70524a;
+  border-radius: 5px;
+}
+.untitled-page .info6 {
+  position: absolute;
+  inset: 489px 1281px 484px 591px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 12px;
+  font: 700 12px/1 Inter, Helvetica, Arial, serif;
+  color: white;
+  text-align: center;
+}
+.untitled-page .text8 {
+  position: absolute;
+  inset: 480px 1190px 475px 657px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 73px;
+  height: 30px;
+  font: 400 14px/2.14 "Noto Sans", Helvetica, Arial, serif;
+  color: #70524a;
+  text-align: right;
+  letter-spacing: 0.6px;
+}
+.untitled-page .image48 {
+  position: absolute;
+  inset: 490px 1180px 485px 735px;
+  width: 5px;
+  height: 10px;
+}
+.untitled-page .rect29 {
+  position: absolute;
+  inset: 470px 805px 465px 765px;
+  width: 350px;
+  height: 50px;
+  border-color: #70524a;
+  border-style: solid;
+  border-width: 1px 0;
+}
+.untitled-page .highlight49 {
+  position: absolute;
+  inset: 483px 1014px 478px 780px;
+  display: flex;
+  align-items: center;
+  width: 126px;
+  height: 24px;
+  font: 700 18px/1.33 "Noto Sans", Helvetica, Arial, serif;
+  color: #70524a;
+  letter-spacing: 0.8px;
+}
+.untitled-page .rect37 {
+  position: absolute;
+  inset: 484px 901px 479px 956px;
+  width: 63px;
+  height: 22px;
+  background-color: #70524a;
+  border-radius: 5px;
+}
+.untitled-page .info7 {
+  position: absolute;
+  inset: 489px 911px 484px 961px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 12px;
+  font: 700 12px/1 Inter, Helvetica, Arial, serif;
+  color: white;
+  text-align: center;
+}
+.untitled-page .text9 {
+  position: absolute;
+  inset: 480px 820px 475px 1027px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 73px;
+  height: 30px;
+  font: 400 14px/2.14 "Noto Sans", Helvetica, Arial, serif;
+  color: #70524a;
+  text-align: right;
+  letter-spacing: 0.6px;
+}
+.untitled-page .image49 {
+  position: absolute;
+  inset: 490px 810px 485px 1105px;
+  width: 5px;
+  height: 10px;
+}
+.untitled-page .rect210 {
+  position: absolute;
+  inset: 470px 435px 465px 1135px;
+  width: 350px;
+  height: 50px;
+  border-color: #70524a;
+  border-style: solid;
+  border-width: 1px 0;
+}
+.untitled-page .highlight410 {
+  position: absolute;
+  inset: 483px 657px 478px 1150px;
+  display: flex;
+  align-items: center;
+  width: 113px;
+  height: 24px;
+  font: 700 18px/1.33 "Noto Sans", Helvetica, Arial, serif;
+  color: #70524a;
+  letter-spacing: 0.8px;
+}
+.untitled-page .rect38 {
+  position: absolute;
+  inset: 484px 531px 479px 1321px;
+  width: 68px;
+  height: 22px;
+  background-color: #70524a;
+  border-radius: 5px;
+}
+.untitled-page .info8 {
+  position: absolute;
+  inset: 489px 541px 484px 1331px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 12px;
+  font: 700 12px/1 Inter, Helvetica, Arial, serif;
+  color: white;
+  text-align: center;
+}
+.untitled-page .text10 {
+  position: absolute;
+  inset: 480px 450px 475px 1397px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 73px;
+  height: 30px;
+  font: 400 14px/2.14 "Noto Sans", Helvetica, Arial, serif;
+  color: #70524a;
+  text-align: right;
+  letter-spacing: 0.6px;
+}
+.untitled-page .image410 {
+  position: absolute;
+  inset: 490px 440px 485px 1475px;
+  width: 5px;
+  height: 10px;
+}
+.untitled-page .rect211 {
+  position: absolute;
+  inset: 540px 1175px 395px 395px;
+  width: 350px;
+  height: 50px;
+  border-color: #70524a;
+  border-style: solid;
+  border-width: 1px 0;
+}
+.untitled-page .highlight411 {
+  position: absolute;
+  inset: 553px 1384px 408px 410px;
+  display: flex;
+  align-items: center;
+  width: 126px;
+  height: 24px;
+  font: 700 18px/1.33 "Noto Sans", Helvetica, Arial, serif;
+  color: #70524a;
+  letter-spacing: 0.9px;
+}
+.untitled-page .rect39 {
+  position: absolute;
+  inset: 554px 1271px 409px 581px;
+  width: 68px;
+  height: 22px;
+  background-color: #70524a;
+  border-radius: 5px;
+}
+.untitled-page .info9 {
+  position: absolute;
+  inset: 559px 1281px 414px 591px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 12px;
+  font: 700 12px/1 Inter, Helvetica, Arial, serif;
+  color: white;
+  text-align: center;
+}
+.untitled-page .text11 {
+  position: absolute;
+  inset: 550px 1190px 405px 657px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 73px;
+  height: 30px;
+  font: 400 14px/2.14 "Noto Sans", Helvetica, Arial, serif;
+  color: #70524a;
+  text-align: right;
+  letter-spacing: 0.6px;
+}
+.untitled-page .image411 {
+  position: absolute;
+  inset: 560px 1180px 415px 735px;
+  width: 5px;
+  height: 10px;
+}
+.untitled-page .rect212 {
+  position: absolute;
+  inset: 540px 805px 395px 765px;
+  width: 350px;
+  height: 50px;
+  border-color: #70524a;
+  border-style: solid;
+  border-width: 1px 0;
+}
+.untitled-page .highlight412 {
+  position: absolute;
+  inset: 553px 1027px 408px 780px;
+  display: flex;
+  align-items: center;
+  width: 113px;
+  height: 24px;
+  font: 700 18px/1.33 "Noto Sans", Helvetica, Arial, serif;
+  color: #70524a;
+  letter-spacing: 0.8px;
+}
+.untitled-page .rect310 {
+  position: absolute;
+  inset: 554px 901px 409px 956px;
+  width: 63px;
+  height: 22px;
+  background-color: #70524a;
+  border-radius: 5px;
+}
+.untitled-page .info10 {
+  position: absolute;
+  inset: 559px 911px 414px 961px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 12px;
+  font: 700 12px/1 Inter, Helvetica, Arial, serif;
+  color: white;
+  text-align: center;
+}
+.untitled-page .text12 {
+  position: absolute;
+  inset: 550px 820px 405px 1027px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 73px;
+  height: 30px;
+  font: 400 14px/2.14 "Noto Sans", Helvetica, Arial, serif;
+  color: #70524a;
+  text-align: right;
+  letter-spacing: 0.6px;
+}
+.untitled-page .image412 {
+  position: absolute;
+  inset: 560px 810px 415px 1105px;
+  width: 5px;
+  height: 10px;
+}
+.untitled-page .rect213 {
+  position: absolute;
+  inset: 540px 435px 395px 1135px;
+  width: 350px;
+  height: 50px;
+  border-color: #70524a;
+  border-style: solid;
+  border-width: 1px 0;
+}
+.untitled-page .highlight413 {
+  position: absolute;
+  inset: 553px 657px 408px 1150px;
+  display: flex;
+  align-items: center;
+  width: 113px;
+  height: 24px;
+  font: 700 18px/1.33 "Noto Sans", Helvetica, Arial, serif;
+  color: #70524a;
+  letter-spacing: 0.8px;
+}
+.untitled-page .rect311 {
+  position: absolute;
+  inset: 554px 531px 409px 1321px;
+  width: 68px;
+  height: 22px;
+  background-color: #70524a;
+  border-radius: 5px;
+}
+.untitled-page .info11 {
+  position: absolute;
+  inset: 559px 541px 414px 1331px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 12px;
+  font: 700 12px/1 Inter, Helvetica, Arial, serif;
+  color: white;
+  text-align: center;
+}
+.untitled-page .text13 {
+  position: absolute;
+  inset: 550px 450px 405px 1397px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 73px;
+  height: 30px;
+  font: 400 14px/2.14 "Noto Sans", Helvetica, Arial, serif;
+  color: #70524a;
+  text-align: right;
+  letter-spacing: 0.6px;
+}
+.untitled-page .image413 {
+  position: absolute;
+  inset: 560px 440px 415px 1475px;
+  width: 5px;
+  height: 10px;
+}
+.untitled-page .flex_row4 {
+  position: absolute;
+  inset: 655px 1138px 300px 370px;
+  display: flex;
+  gap: 0 10px;
+  width: 412px;
+  height: 30px;
+}
+.untitled-page .medium_title2 {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  font: 700 25px/1.2 "Noto Sans", Helvetica, Arial, serif;
+  color: #55463d;
+  letter-spacing: 1.14px;
+}
+.untitled-page .rect5 {
+  position: absolute;
+  inset: 715px 370px 80px;
+  width: 1180px;
+  height: 190px;
+  border-color: #70524a;
+  border-style: solid;
+  border-width: 0 0 0 10px;
+}
+.untitled-page .rect214 {
+  position: absolute;
+  inset: 715px 1175px 220px 395px;
+  width: 350px;
+  height: 50px;
+  border-color: #70524a;
+  border-style: solid;
+  border-width: 1px 0;
+}
+.untitled-page .highlight414 {
+  position: absolute;
+  inset: 728px 1384px 233px 410px;
+  display: flex;
+  align-items: center;
+  width: 126px;
+  height: 24px;
+  font: 700 18px/1.33 "Noto Sans", Helvetica, Arial, serif;
+  color: #70524a;
+  letter-spacing: 0.8px;
+}
+.untitled-page .rect312 {
+  position: absolute;
+  inset: 729px 1271px 234px 581px;
+  width: 68px;
+  height: 22px;
+  background-color: #70524a;
+  border-radius: 5px;
+}
+.untitled-page .info12 {
+  position: absolute;
+  inset: 734px 1281px 239px 591px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 12px;
+  font: 700 12px/1 Inter, Helvetica, Arial, serif;
+  color: white;
+  text-align: center;
+}
+.untitled-page .text14 {
+  position: absolute;
+  inset: 725px 1190px 230px 657px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 73px;
+  height: 30px;
+  font: 400 14px/2.14 "Noto Sans", Helvetica, Arial, serif;
+  color: #70524a;
+  text-align: right;
+  letter-spacing: 0.6px;
+}
+.untitled-page .image414 {
+  position: absolute;
+  inset: 735px 1180px 240px 735px;
+  width: 5px;
+  height: 10px;
+}
+.untitled-page .rect215 {
+  position: absolute;
+  inset: 715px 805px 220px 765px;
+  width: 350px;
+  height: 50px;
+  border-color: #70524a;
+  border-style: solid;
+  border-width: 1px 0;
+}
+.untitled-page .highlight415 {
+  position: absolute;
+  inset: 728px 1014px 233px 780px;
+  display: flex;
+  align-items: center;
+  width: 126px;
+  height: 24px;
+  font: 700 18px/1.33 "Noto Sans", Helvetica, Arial, serif;
+  color: #70524a;
+  letter-spacing: 0.8px;
+}
+.untitled-page .rect313 {
+  position: absolute;
+  inset: 729px 901px 234px 956px;
+  width: 63px;
+  height: 22px;
+  background-color: #70524a;
+  border-radius: 5px;
+}
+.untitled-page .info13 {
+  position: absolute;
+  inset: 734px 911px 239px 961px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 12px;
+  font: 700 12px/1 Inter, Helvetica, Arial, serif;
+  color: white;
+  text-align: center;
+}
+.untitled-page .text15 {
+  position: absolute;
+  inset: 725px 820px 230px 1027px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 73px;
+  height: 30px;
+  font: 400 14px/2.14 "Noto Sans", Helvetica, Arial, serif;
+  color: #70524a;
+  text-align: right;
+  letter-spacing: 0.6px;
+}
+.untitled-page .image415 {
+  position: absolute;
+  inset: 735px 810px 240px 1105px;
+  width: 5px;
+  height: 10px;
+}
+.untitled-page .rect216 {
+  position: absolute;
+  inset: 715px 435px 220px 1135px;
+  width: 350px;
+  height: 50px;
+  border-color: #70524a;
+  border-style: solid;
+  border-width: 1px 0;
+}
+.untitled-page .highlight416 {
+  position: absolute;
+  inset: 728px 644px 233px 1150px;
+  display: flex;
+  align-items: center;
+  width: 126px;
+  height: 24px;
+  font: 700 18px/1.33 "Noto Sans", Helvetica, Arial, serif;
+  color: #70524a;
+  letter-spacing: 0.8px;
+}
+.untitled-page .rect314 {
+  position: absolute;
+  inset: 729px 531px 234px 1321px;
+  width: 68px;
+  height: 22px;
+  background-color: #70524a;
+  border-radius: 5px;
+}
+.untitled-page .info14 {
+  position: absolute;
+  inset: 734px 541px 239px 1331px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 12px;
+  font: 700 12px/1 Inter, Helvetica, Arial, serif;
+  color: white;
+  text-align: center;
+}
+.untitled-page .text16 {
+  position: absolute;
+  inset: 725px 450px 230px 1397px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 73px;
+  height: 30px;
+  font: 400 14px/2.14 "Noto Sans", Helvetica, Arial, serif;
+  color: #70524a;
+  text-align: right;
+  letter-spacing: 0.6px;
+}
+.untitled-page .image416 {
+  position: absolute;
+  inset: 735px 440px 240px 1475px;
+  width: 5px;
+  height: 10px;
+}
+.untitled-page .rect217 {
+  position: absolute;
+  inset: 785px 1175px 150px 395px;
+  width: 350px;
+  height: 50px;
+  border-color: #70524a;
+  border-style: solid;
+  border-width: 1px 0;
+}
+.untitled-page .highlight417 {
+  position: absolute;
+  inset: 798px 1384px 163px 410px;
+  display: flex;
+  align-items: center;
+  width: 126px;
+  height: 24px;
+  font: 700 18px/1.33 "Noto Sans", Helvetica, Arial, serif;
+  color: #70524a;
+  letter-spacing: 0.8px;
+}
+.untitled-page .rect315 {
+  position: absolute;
+  inset: 799px 1271px 164px 581px;
+  width: 68px;
+  height: 22px;
+  background-color: #70524a;
+  border-radius: 5px;
+}
+.untitled-page .info15 {
+  position: absolute;
+  inset: 804px 1281px 169px 591px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 12px;
+  font: 700 12px/1 Inter, Helvetica, Arial, serif;
+  color: white;
+  text-align: center;
+}
+.untitled-page .text17 {
+  position: absolute;
+  inset: 795px 1190px 160px 657px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 73px;
+  height: 30px;
+  font: 400 14px/2.14 "Noto Sans", Helvetica, Arial, serif;
+  color: #70524a;
+  text-align: right;
+  letter-spacing: 0.6px;
+}
+.untitled-page .image417 {
+  position: absolute;
+  inset: 805px 1180px 170px 735px;
+  width: 5px;
+  height: 10px;
+}
+.untitled-page .rect218 {
+  position: absolute;
+  inset: 785px 805px 150px 765px;
+  width: 350px;
+  height: 50px;
+  border-color: #70524a;
+  border-style: solid;
+  border-width: 1px 0;
+}
+.untitled-page .highlight418 {
+  position: absolute;
+  inset: 798px 1014px 163px 780px;
+  display: flex;
+  align-items: center;
+  width: 126px;
+  height: 24px;
+  font: 700 18px/1.33 "Noto Sans", Helvetica, Arial, serif;
+  color: #70524a;
+  letter-spacing: 0.8px;
+}
+.untitled-page .rect316 {
+  position: absolute;
+  inset: 799px 901px 164px 956px;
+  width: 63px;
+  height: 22px;
+  background-color: #70524a;
+  border-radius: 5px;
+}
+.untitled-page .info16 {
+  position: absolute;
+  inset: 804px 911px 169px 961px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 12px;
+  font: 700 12px/1 Inter, Helvetica, Arial, serif;
+  color: white;
+  text-align: center;
+}
+.untitled-page .text18 {
+  position: absolute;
+  inset: 795px 820px 160px 1027px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 73px;
+  height: 30px;
+  font: 400 14px/2.14 "Noto Sans", Helvetica, Arial, serif;
+  color: #70524a;
+  text-align: right;
+  letter-spacing: 0.6px;
+}
+.untitled-page .image418 {
+  position: absolute;
+  inset: 805px 810px 170px 1105px;
+  width: 5px;
+  height: 10px;
+}
+.untitled-page .rect219 {
+  position: absolute;
+  inset: 785px 435px 150px 1135px;
+  width: 350px;
+  height: 50px;
+  border-color: #70524a;
+  border-style: solid;
+  border-width: 1px 0;
+}
+.untitled-page .highlight419 {
+  position: absolute;
+  inset: 798px 644px 163px 1150px;
+  display: flex;
+  align-items: center;
+  width: 126px;
+  height: 24px;
+  font: 700 18px/1.33 "Noto Sans", Helvetica, Arial, serif;
+  color: #70524a;
+  letter-spacing: 0.8px;
+}
+.untitled-page .rect317 {
+  position: absolute;
+  inset: 799px 531px 164px 1321px;
+  width: 68px;
+  height: 22px;
+  background-color: #70524a;
+  border-radius: 5px;
+}
+.untitled-page .info17 {
+  position: absolute;
+  inset: 804px 541px 169px 1331px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 12px;
+  font: 700 12px/1 Inter, Helvetica, Arial, serif;
+  color: white;
+  text-align: center;
+}
+.untitled-page .text19 {
+  position: absolute;
+  inset: 795px 450px 160px 1397px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 73px;
+  height: 30px;
+  font: 400 14px/2.14 "Noto Sans", Helvetica, Arial, serif;
+  color: #70524a;
+  text-align: right;
+  letter-spacing: 0.6px;
+}
+.untitled-page .image419 {
+  position: absolute;
+  inset: 805px 440px 170px 1475px;
+  width: 5px;
+  height: 10px;
+}
+.untitled-page .rect220 {
+  position: absolute;
+  inset: 855px 1175px 80px 395px;
+  width: 350px;
+  height: 50px;
+  border-color: #70524a;
+  border-style: solid;
+  border-width: 1px 0;
+}
+.untitled-page .highlight420 {
+  position: absolute;
+  inset: 868px 1384px 93px 410px;
+  display: flex;
+  align-items: center;
+  width: 126px;
+  height: 24px;
+  font: 700 18px/1.33 "Noto Sans", Helvetica, Arial, serif;
+  color: #70524a;
+  letter-spacing: 0.8px;
+}
+.untitled-page .rect318 {
+  position: absolute;
+  inset: 869px 1271px 94px 581px;
+  width: 68px;
+  height: 22px;
+  background-color: #70524a;
+  border-radius: 5px;
+}
+.untitled-page .info18 {
+  position: absolute;
+  inset: 874px 1281px 99px 591px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 12px;
+  font: 700 12px/1 Inter, Helvetica, Arial, serif;
+  color: white;
+  text-align: center;
+}
+.untitled-page .text20 {
+  position: absolute;
+  inset: 865px 1190px 90px 657px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 73px;
+  height: 30px;
+  font: 400 14px/2.14 "Noto Sans", Helvetica, Arial, serif;
+  color: #70524a;
+  text-align: right;
+  letter-spacing: 0.6px;
+}
+.untitled-page .image420 {
+  position: absolute;
+  inset: 875px 1180px 100px 735px;
+  width: 5px;
+  height: 10px;
+}
+.untitled-page .section4 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 1920px;
+  height: 408px;
+  min-height: 408px;
+}
+.untitled-page .decorator25 {
+  position: absolute;
+  inset: 160px 1461px 0 210px;
+  width: 249px;
+  height: 248px;
+}
+.untitled-page .decorator26 {
+  position: absolute;
+  inset: 160px 1211px 0 460px;
+  width: 249px;
+  height: 248px;
+}
+.untitled-page .decorator27 {
+  position: absolute;
+  inset: 162px 961px 0 710px;
+  width: 249px;
+  height: 246px;
+}
+.untitled-page .decorator28 {
+  position: absolute;
+  inset: 160px 711px 0 965px;
+  width: 244px;
+  height: 248px;
+}
+.untitled-page .decorator29 {
+  position: absolute;
+  inset: 160px 461px 0 1210px;
+  width: 249px;
+  height: 248px;
+}
+.untitled-page .decorator30 {
+  position: absolute;
+  inset: 160px 210px 0 1460px;
+  width: 250px;
+  height: 248px;
+}
+.untitled-page .cover {
+  position: absolute;
+  inset: 1px 0 0;
+  width: 1920px;
+  height: 407px;
+}
+.untitled-page .image {
+  position: absolute;
+  inset: 81px 1410px 127px 310px;
+  width: 200px;
+  height: 200px;
+}
+.untitled-page .rect {
+  position: absolute;
+  inset: 45px 419px 92px 560px;
+  width: 941px;
+  height: 271px;
+  border-color: white;
+  border-style: solid;
+  border-width: 0 0 0 1px;
+}
+.untitled-page .highlight {
+  position: absolute;
+  inset: 50px 1283px 328px 600px;
+  display: flex;
+  align-items: center;
+  width: 37px;
+  height: 30px;
+  font: 700 18px/1.66 "Noto Sans", Helvetica, Arial, serif;
+  color: #fdffa3;
+  letter-spacing: 0.5px;
+}
+.untitled-page .highlight1 {
+  position: absolute;
+  inset: 54px 1200px 327px 652px;
+  display: flex;
+  align-items: center;
+  width: 68px;
+  height: 27px;
+  font: 400 17px/1.58 "Noto Sans", Helvetica, Arial, serif;
+  color: white;
+}
+.untitled-page .highlight12 {
+  position: absolute;
+  inset: 54px 1096px 327px 756px;
+  display: flex;
+  align-items: center;
+  width: 68px;
+  height: 27px;
+  font: 400 17px/1.58 "Noto Sans", Helvetica, Arial, serif;
+  color: white;
+}
+.untitled-page .highlight13 {
+  position: absolute;
+  inset: 54px 962px 247px 860px;
+  display: flex;
+  align-items: center;
+  width: 98px;
+  height: 107px;
+  font: 400 17px/1.58 "Noto Sans", Helvetica, Arial, serif;
+  color: white;
+}
+.untitled-page .highlight14 {
+  position: absolute;
+  inset: 54px 824px 327px 994px;
+  display: flex;
+  align-items: center;
+  width: 102px;
+  height: 27px;
+  font: 400 17px/1.58 "Noto Sans", Helvetica, Arial, serif;
+  color: white;
+}
+.untitled-page .highlight15 {
+  position: absolute;
+  inset: 54px 720px 327px 1132px;
+  display: flex;
+  align-items: center;
+  width: 68px;
+  height: 27px;
+  font: 400 17px/1.58 "Noto Sans", Helvetica, Arial, serif;
+  color: white;
+}
+.untitled-page .highlight16 {
+  position: absolute;
+  inset: 54px 552px 300px 1236px;
+  display: flex;
+  align-items: center;
+  width: 132px;
+  height: 54px;
+  font: 400 17px/1.58 "Noto Sans", Helvetica, Arial, serif;
+  color: white;
+}
+.untitled-page .highlight17 {
+  position: absolute;
+  inset: 54px 465px 327px 1404px;
+  display: flex;
+  align-items: center;
+  width: 51px;
+  height: 27px;
+  font: 400 17px/1.58 "Noto Sans", Helvetica, Arial, serif;
+  color: white;
+}
+.untitled-page .highlight2 {
+  position: absolute;
+  inset: 192px 1245px 186px 600px;
+  display: flex;
+  align-items: center;
+  width: 75px;
+  height: 30px;
+  font: 700 18px/1.66 "Noto Sans", Helvetica, Arial, serif;
+  color: #fdffa3;
+  letter-spacing: 0.7px;
+}
+.untitled-page .highlight18 {
+  position: absolute;
+  inset: 196px 739px 158px 690px;
+  display: flex;
+  align-items: center;
+  width: 491px;
+  height: 54px;
+  font: 400 17px/1.58 "Noto Sans", Helvetica, Arial, serif;
+  color: white;
+}
+.untitled-page .highlight3 {
+  position: absolute;
+  inset: 280px 1245px 98px 600px;
+  display: flex;
+  align-items: center;
+  width: 75px;
+  height: 30px;
+  font: 700 18px/1.66 "Noto Sans", Helvetica, Arial, serif;
+  color: #fdffa3;
+  letter-spacing: 0.7px;
+}
+.untitled-page .highlight19 {
+  position: absolute;
+  inset: 284px 1111px 97px 690px;
+  display: flex;
+  align-items: center;
+  width: 119px;
+  height: 27px;
+  font: 400 17px/1.58 "Noto Sans", Helvetica, Arial, serif;
+  color: white;
+}
+.untitled-page .highlight110 {
+  position: absolute;
+  inset: 284px 956px 97px 849px;
+  display: flex;
+  align-items: center;
+  width: 115px;
+  height: 27px;
+  font: 400 17px/1.58 "Noto Sans", Helvetica, Arial, serif;
+  color: white;
+}
+.untitled-page .highlight21 {
+  position: absolute;
+  inset: 361px 672px 20px 669px;
+  display: flex;
+  align-items: center;
+  width: 579px;
+  height: 27px;
+  font: 400 16px/1.68 "Noto Sans", Helvetica, Arial, serif;
+  color: rgba(255, 255, 255, 0.749);
+}

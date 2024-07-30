@@ -1,5 +1,5 @@
 <link href="css/twlls.css" rel="stylesheet" type="text/css" media="all" />
-<div class="footer" style="background:#705750;color:white;">
+<div class="footer" style="background:#52403C;color:white;margin-top:40px">
     <div class="container">
         <div class="footer-grids wthree-agile">
             <table class="Twlls_Footer_Table">
