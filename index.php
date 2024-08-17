@@ -12,83 +12,6 @@
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
 	<style>
-		.rslides {
-			background-color: rgba(192, 192, 192, 0.4);
-			border-radius: 15px;
-			padding: 10px;
-		}
-		#bgVideo {
-			position: absolute;
-			right: 0;
-			bottom: 0;
-			width: 100%;
-			height: 100%;
-			z-index: -1;
-		}
-		.AllBODY {
-    background-image: url('images/bg.jpg'); 
-    background-size: auto; 
-    background-position: center;
-    background-repeat: repeat; /* 讓背景圖片重複 */
-}
-
-		.AboutMe {
-            width: 70%;
-            height: 500px;
-            position: relative;
-            margin: 5% auto;
-            overflow: hidden;
-        }
-        .AboutMe_Slide {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            transition: opacity 0.5s ease-in-out;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .AboutMe_Slide_Content {
-            position: relative;
-            width: 100%;
-            height: 100%;
-        }
-        .AboutMe_Slide_Text {
-            background-color: white;
-			padding: 2% 5% 2% 5%;
-            border-top-left-radius: 90px;
-            width: 45%;
-            height: 70%;
-            position: absolute;
-            top: 30%;
-            right: 10%;
-            z-index: 5;
-        }
-        .AboutMe_Slide_Back {
-			background-color: transparent; /* 將背景顏色設為透明 */
-			border: 2px solid #418765; /* 設置綠色外框 */
-			padding: 2% 5% 2% 5%;
-            border-top-left-radius: 90px;
-            width: 45%;
-            height: 70%;
-            position: absolute;
-            top: 20%;
-            right: 15%;
-            z-index: 1;
-        }
-        .AboutMe_Slide_Image {
-            width: 40%;
-            height: 75%;
-            border-top-left-radius: 90px;
-            background-size: cover;
-            background-position: center;
-            position: absolute;
-            top: 5%;
-            left: 10%;
-            z-index: 3;
-        }
 	</style>
 	<script type="text/javascript" src="js/jquery.marquee.js"></script>
 	<script>
@@ -108,8 +31,11 @@
 				<div class="AboutMe_Slide_Image" style="background-image: url('images/2.jpg')"></div>
                 <div class="AboutMe_Slide_Text">
 					<img src="images/icons/taiwan.png" style="width:12%;height:12%"/><br>
-                    <text style="font-size:30px">關於台灣語文學會</text>　　　　　<a href="">歡迎加入會員▶</a><br><br>
+                    <text style="font-size:30px;color:#418765">關於台灣語文學會</text>　　　　　
+					<a href="" style="color:#6AA447">歡迎加入會員▶</a><br><br>
                     <p>「台灣語文學會」最早於1990年開始，由張裕宏教授、董忠司教授與洪惟仁教授展開籌備。1991年，委由董忠司教授草擬學會章程草案。之後陸續邀集周純一教授、陳恒嘉教授等討論草案內容，並積極聯絡各大學、研究單位的語文及相關科目的學者，募集發起人。</p>
+					<br>
+					<button style="background-color:#418765;color:#fff;border-radius:10px;border:none;" onclick="window.location.href='Introduction.php';">「台灣語文學會」成立經過</button>
                 </div>
             </div>
         </div>
@@ -118,7 +44,7 @@
 		<div class="container">
 			<div class="video-bottom-grids">
 				<div>
-					<p style="color:#fff;font-size:25px">最新消息<a href="News.php" style="color:#F7FBCF;font-size:15px">more...</a></p>
+					<p style="color:#fff;font-size:25px">最新消息　<a href="News.php" style="color:#F7FBCF;font-size:15px">more...</a></p>
 				</div>
 				<div class="video-bottom-grids1">
 					<div class="col-md-4 video-bottom-grid">
@@ -130,7 +56,7 @@
 								<div style="width:60%;float:left;font-size:25px;padding:5px 15px;">
 									<p style="color:#52403C">活動消息</p></div>
 								<div style="width:40%;float:right; padding:5px 15px;color:#52403C;">
-									<a href="News.php" style="color:#52403C">全部活動消息▶</a>
+									<a href="News.php?tab=activity" style="color:#52403C">全部活動消息▶</a>
 								</div>
 							</div>
 							<div style="clear:both;"></div>
@@ -164,7 +90,7 @@
 								<div style="width:60%;float:left;font-size:25px;padding:5px 15px;">
                                     <p style="color:#52403C">學術研討會</p></div>
                                 <div style="width:40%;float:right; padding:5px 15px;color:#52403C;">
-                                    <a href="News.php" style="color:#52403C">全部學術研討會▶</a>
+                                    <a href="News.php?tab=seminar" style="color:#52403C">全部學術研討會▶</a>
 								</div>
                             	<div style="clear:both;"></div>
 							</div>
@@ -197,7 +123,7 @@
 								<div style="width:60%;float:left;font-size:25px;padding:5px 15px;">
                                     <p style="color:#52403C">出版資訊</p></div>
                                 <div style="width:40%;float:right; padding:5px 15px;color:#52403C;">
-                                    <a href="News.php" style="color:#52403C">全部出版資訊▶</a>
+                                    <a href="News.php?tab=publication" style="color:#52403C">全部出版資訊▶</a>
                                 </div>
 							</div>
 							<div style="clear:both;"></div>

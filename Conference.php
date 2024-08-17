@@ -1,7 +1,10 @@
 <!DOCTYPE HTML>
 <html>
-
 <head>
+	<?php
+	// 獲取當前選擇的標籤，預設為活動消息
+	$tab = isset($_GET['tab']) ? $_GET['tab'] : 'activity';
+	?>
 	<title>台灣語文學會</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -12,271 +15,159 @@
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+	<style>
+    </style>
+	<script type="text/javascript" src="js/jquery.marquee.js"></script>
+	<script>
+		$('.marquee').marquee({ pauseOnHover: true });
+	</script>
 </head>
 <?php include_once "Conn_SQL.php"; ?>
-<body>
-	<div class="banner1">
-		<div class="banner-info1">
-			<div class="container">
-				<nav class="navbar navbar-default">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-							data-target="#bs-example-navbar-collapse-1">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<div class="logo">
-							<table>
-								<tr>
-									<td style="width:10%"><a href="index.php"><img src="images/logo.png" style="border-radius: 20px;width:100%;" /></a></td>
-									<td style="width:30%">
-										<a class="navbar-brand" href="index.php" style="font-size: 50px;">
-											台灣語文學會<br><text style="font-size: 12px;">Taiwan Languagee & Literature Society</text>
-										</a>
-									</td>
-									<td style="width:60%;">
-										<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
-											<ul class="nav navbar-nav cl-effect-18" id="cl-effect-18">
-												<li class="act"><a href="index.php" style="font-size: 16px;">首頁</a></li>
-												<li><a href="Introduction.php" style="font-size: 16px;">學會簡介</a></li>
-												<li role="presentation" class="dropdown" style="font-size: 16px;">
-													<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-														aria-haspopup="true" aria-expanded="false" style="font-size: 16px;">
-														學術活動 <span class="caret"></span>
-													</a>
-													<ul class="dropdown-menu" style="font-size: 16px;">
-														<li><a href="Conference.php">研討會</a></li>
-														<li><a href="http://www.twlls.org.tw/jtll/index.php">期刊</a></li>
-													</ul>
-												</li>
-												<li><a href="Award.php" style="font-size: 16px;">歷屆獎項</a></li>
-												<li><a href="Member.php" style="font-size: 16px;">會員專區</a></li>
-												<li role="presentation" class="dropdown" style="font-size: 16px;">
-													<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-														aria-haspopup="true" aria-expanded="false" style="font-size: 16px;">
-														線上繳費 <span class="caret"></span>
-													</a>
-													<ul class="dropdown-menu" style="font-size: 16px;">
-														<li><a href="Pay.php">會員繳費與捐款</a></li>
-														<li><a href="Pay_2.php">出版品購買</a></li>
-													</ul>
-												</li>
-												<li><a href="breaking.html" style="font-size: 16px;">人才庫</a></li>
-											</ul>
-										</div><!-- /.navbar-collapse -->
-									</td>
-								</tr>
-							</table>
-						</div>
-					</div>
-				</nav>
-			</div>
-		</div>
-	</div>
-	<div class="news-and-events">
+<body class="AllBODY">
+	<?php include_once('Top.php');?>
+	<?php include_once('banner.php');?>
+	<div style="margin-top: 120px;"></div>
+	<?php include_once('marquee.php');?>
+	<div class="banner-bottom" style="background-image: url(images/frontpage-news-conference.jpg);">
 		<div class="container">
-			<div class="move-text">
-				<div class="breaking_news">
-					<h2>最新消息</h2>
-				</div>
-				<div class="marquee">
-					<?php
-						$sql = "SELECT * FROM `news` WHERE `ShowOnMarquee`=1";
-						$result = $conn_1->query($sql);
-						if ($result->num_rows > 0) {
-    						while ($row = mysqli_fetch_array($result)) {
-								if($row["url"]!="")
-									echo "<div class='marquee1'><a class='breaking' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a></div>";
-								else
-									echo "<div class='marquee1'><a class='breaking'>".$row["Title"]."</a></div>";
-    						}
-						}	
-					?>		
-					<div class="clearfix"></div>
-				</div>
-				<div class="clearfix"></div>
-				<script type="text/javascript" src="js/jquery.marquee.js"></script>
-				<script>
-					$('.marquee').marquee({ pauseOnHover: true });
-				</script>
-			</div>
-			<div class="upcoming-events-grids">
-				<div class="col-md-8 upcoming-events-left">
-					<h3>首頁 / 研討會</h3>
-					<div class="news-grid-rght3">
-						<div class="story">
-							<?php
-								$sql = "SELECT * FROM `relatedlinks` WHERE `Notice`='研討會' AND `IsUsed`=1 ORDER BY `OrderIndex` DESC";
-								$result = $conn_1->query($sql);
-								// 初始化陣列來儲存每種研討會的屆數
-								$seminars = array(
-									'台灣語言及其教學國際研討會' => array(),
-									'青年學者台灣語言學術研討會' => array(),
-									'台灣語言學一日大師/專題講座' => array()
-								);
-								$maxSessions=0;
-								while ($row = mysqli_fetch_array($result)) {
-									$type = $row['Function'];
-									$Item = $row['Item'];
-									$Value = $row['Value'];
-									if($maxSessions<$row['OrderIndex']) $maxSessions=$row['OrderIndex'];
-									array_push($seminars[$type], array('Item' => $Item, 'Value' => $Value));
-								}
-								echo"<table class='table table-bordered'>";
-									echo"<tr>";
-										echo"<th style='text-align:center;'>台灣語言及其教學國際研討會</th>";
-										echo"<th style='text-align:center;'>青年學者台灣語言學術研討會</th>";
-										echo"<th style='text-align:center;'>台灣語言學一日大師/專題講座</th>";
-									echo"</tr>";
-									for ($i = 0; $i <$maxSessions; $i++) {
-										echo"<tr>";
-										foreach ($seminars as $type => $sessions) {
-											echo "<td style='text-align:center;'>";
-											if(isset($sessions[$i]))
-												echo"<a href='".$sessions[$i]['Value']."'>".$sessions[$i]['Item']."</a>";
-											else
-												echo"";
-											echo "</td>";
-										}
-									}
-									echo"<tr>";
-								echo"</table>";
-							?>
-						</div>
-					</div><br>
-				</div>
-				<div class="col-md-4 upcoming-events-right">
-					<h3>研討會</h3>
-					<div class="banner-bottom-video-grid-left">
-						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-							<div class='panel panel-default'>
-								<div class='panel-heading' role='tab' id='headingOne'>
-									<h4 class='panel-title'>
-										<a class='pa_italic collapsed' role='button' data-toggle='collapse'
-											data-parent='#accordion' href='#collapse1' aria-expanded='true'
-											aria-controls='collapse1'>
-											<span class='glyphicon glyphicon-plus' aria-hidden='true'></span><i
-												class='glyphicon glyphicon-minus'
-												aria-hidden='true'></i>台灣語言及其教學國際研討會
-										</a>
-									</h4>
-								</div>
-								<div id='collapse1' class='panel-collapse collapse' role='tabpanel'
-									aria-labelledby='headingOne' style='height: 0px;'>
-									<div class='panel-body'>
-									<ul>
-										<li><a href='Conference/Conference_1-14.php'>第十四屆</li>
-										<li><a href='Conference/Conference_1-13.php'>第十三屆</li>
-										<li><a href='Conference/Conference_1-12.php'>第十二屆</li>
-										<li><a href='Conference/Conference_1-11.php'>第十一屆</li>
-										<li><a href='Conference/Conference_1-10.php'>第十屆</li>
-										<li><a href='Conference/Conference_1-9.php'>第九屆</li>
-										<li><a href='Conference/Conference_1-8.php'>第八屆</li>
-										<li><a href='Conference/Conference_1-7.php'>第七屆</li>
-									</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-							<div class='panel panel-default'>
-								<div class='panel-heading' role='tab' id='headingOne'>
-									<h4 class='panel-title'>
-										<a class='pa_italic collapsed' role='button' data-toggle='collapse'
-											data-parent='#accordion' href='#collapse2' aria-expanded='true'
-											aria-controls='collapse2'>
-											<span class='glyphicon glyphicon-plus' aria-hidden='true'></span><i
-												class='glyphicon glyphicon-minus'
-												aria-hidden='true'></i>青年學者台灣語言學術研討會
-										</a>
-									</h4>
-								</div>
-								<div id='collapse2' class='panel-collapse collapse' role='tabpanel'
-									aria-labelledby='headingOne' style='height: 0px;'>
-									<div class='panel-body'>
-									<ul>
-										<li><a href='Conference/Conference_2-8.php'>第八屆</li>
-										<li><a href='Conference/Conference_2-7.php'>第七屆</li>
-										<li><a href='Conference/Conference_2-6.php'>第六屆</li>
-										<li><a href='Conference/Conference_2-5.php'>第五屆</li>
-										<li><a href='Conference/Conference_2-4.php'>第四屆</li>
-										<li><a href='Conference/Conference_2-3.php'>第三屆</li>
-									</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-							<div class='panel panel-default'>
-								<div class='panel-heading' role='tab' id='headingOne'>
-									<h4 class='panel-title'>
-										<a class='pa_italic collapsed' role='button' data-toggle='collapse'
-											data-parent='#accordion' href='#collapse3' aria-expanded='true'
-											aria-controls='collapse3'>
-											<span class='glyphicon glyphicon-plus' aria-hidden='true'></span><i
-												class='glyphicon glyphicon-minus'
-												aria-hidden='true'></i>台灣語言學一日大師/專題講座
-										</a>
-									</h4>
-								</div>
-								<div id='collapse3' class='panel-collapse collapse' role='tabpanel'
-									aria-labelledby='headingOne' style='height: 0px;'>
-									<div class='panel-body'>
-									<ul>
-										<li><a href='Conference/Conference_3-7.php'>第七屆</li>
-										<li><a href='Conference/Conference_3-6.php'>第六屆</li>
-										<li><a href='Conference/Conference_3-5.php'>第五屆</li>
-										<li><a href='Conference/Conference_3-4.php'>第四屆</li>
-										<li><a href='Conference/Conference_3-3.php'>第三屆</li>
-										<li><a href='Conference/Conference_3-2.php'>第二屆</li>
-										<li><a href='Conference/Conference_3-1.php'>第一屆</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-			<br>
-		</div>
-	</div>
-	<div class="footer">
-		<div class="container">
-			<div class="footer-grids wthree-agile">
-				<div class="col-md-4 footer-grid-left">
-					<h3>聯絡我們</h3>
-					<ul>
-						<li>聯絡信箱：contact.tlls@gmail.com</li>
-						<li>學會地址：11529台北市南港區研究院路二段128號<br>中研院語言所</li>
-					</ul>
-				</div>
-				<div class="col-md-4 footer-grid-left">
-					<h3>相關連結</h3>
-					<a style="color:white" href="http://www.uijin.idv.tw/" target="_blank"><i>- 洪惟仁老師網站</i></a><br>
-					<a style="color:white" href="https://linguist.tw/zh-tw/" target="_blank"><i>- 台灣語言學學會</i></a>
-				</div>
-				<div class="col-md-4 footer-grid-left">
-					<h3>關於我們</h3>
-					<p>
-						「台灣語文學會」最早於1990年開始，由張裕宏教授、董忠司教授與洪惟仁教授展開籌備。
-						1991年，委由董忠司教授草擬學會章程草案。
-						之後陸續邀集周純一教授、陳恒嘉教授等討論草案內容，並積極聯絡各大學、研究單位的語文及相關科目的學者，募集發起人。
-						<i>- 「台灣語文學會」成立經過</i>
-					</p>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-			<div class="footer-bottom">
-				<div class="footer-bottom-left-whtree-agileinfo">
-					<p>Copyright &copy; 台灣語文學會 / Taiwan Languages and Literature Society</p>
-				</div>
-				<div class="clearfix"> </div>
+			<div class="video-bottom-grids" style="color:white;text-align:center;height:150px; display:flex; align-items:center; justify-content:center;">
+				<text style="font-size:40px;">學術研討會</text>
 			</div>
 		</div>
 	</div>
+	<div style="background-color:#418765;padding:10px;height:450px;">
+        <div class="slider-container">
+            <div class="slide active">
+                <div class="slide-content">
+                    <?php
+                    $sqltitleconference = "SELECT * FROM `relatedlinks`  WHERE `Notice`='研討會' AND `IsUsed`='1' AND `Date`!='' ORDER BY `relatedlinks`.`Date` DESC";
+                    $resulttitleconference = $conn_1->query($sqltitleconference);
+                    if ($resulttitleconference->num_rows > 0) {
+                        while ($rowtitle = mysqli_fetch_array($resulttitleconference)) {
+                            echo "<div class='Conference-slide-image' style='background-image: url(\"images/Conference/".$rowtitle['Photo']."\");'></div>";
+                            echo "<div class='Conference-slide-text'>";
+                            echo "    <table style='width:100%;'>";
+                            echo "        <tr>";
+                            echo "            <td colspan='2' style='color:#3C7556;font-size:20px; padding: 8px;'>";
+                            echo "                ".$rowtitle['Item']." ".$rowtitle['Function']."<br>".$rowtitle['Title'];
+                            echo "            </td>";
+                            echo "        </tr>";
+                            echo "        <tr>";
+                            echo "            <td style='color:#70524A;font-size:14px; padding: 8px;width:20%;'>";
+                            echo "                <div class='bordered-div'>";
+                            echo "                    Date<br>日期";
+                            echo "                </div>";
+                            echo "            </td>";
+                            echo "            <td style='color:#70524A;font-size:18px; padding: 8px;width:80%;'>";
+                            echo "                ".$rowtitle['Date'];
+                            echo "            </td>";
+                            echo "        </tr>";
+                            echo "        <tr>";
+                            echo "            <td style='color:#70524A;font-size:14px; padding: 8px;'>";
+                            echo "                <div class='bordered-div'>";
+                            echo "                    Place<br>地點";
+                            echo "                </div>";
+                            echo "            </td>";
+                            echo "            <td style='color:#70524A;font-size:18px; padding: 8px;'>";
+                            echo "                ".$rowtitle['Place'];
+                            echo "            </td>";
+                            echo "        </tr>";
+                            echo "        <tr>";
+                            echo "            <td style='color:#70524A;font-size:14px; padding: 8px;' colspan='2'>";
+                            echo "                <button style='background-color:#70524A;color:#fff;border-radius:5px;border:none;' onclick='window.location.href=\"ConferenceMasterPage.php?sessions=".$rowtitle['Link']."\";'>詳細資訊</button>";
+                            echo "                <a href='ConferenceMasterPage.php?sessions=".$rowtitle['MeetingURL']."' style='color:#52403C'>會議主網站▶</a>";
+                            echo "            </td>";
+                            echo "        </tr>";
+                            echo "    </table>";
+                            echo "</div>";
+                            break;
+                        }
+                    }
+                    ?>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="AllBODY container ">
+		<div class="video-bottom-grids1">
+			<div class="col-md-12 video-bottom-grid">
+                <!--台灣語言及其教學國際研討會-->
+                <?php
+                    $sqltitle = "SELECT  DIStinct `Function` FROM `relatedlinks` WHERE `Notice`='研討會' AND `IsUsed`=1  ORDER BY `Function` ASC";
+                    $resulttitle = $conn_1->query($sqltitle);
+                    if ($resulttitle->num_rows > 0) {
+                        while ($rowtitle = mysqli_fetch_array($resulttitle)) {
+                            $titlecolor="#3C7556";
+                            $titlecsrc="icon-LOGO3.png";
+                            if($rowtitle['Function']=="台灣語言及其教學國際研討會"){$titlecsrc="icon-LOGO3.png";$titlecolor="#3C7556";}
+                            if($rowtitle['Function']=="台灣語言學一日大師/專題講座"){$titlecsrc="icon-LOGO4.png";$titlecolor="#6AA447";}
+                            if($rowtitle['Function']=="青年學者台灣語言學術研討會"){$titlecsrc="icon-LOGO5.png";$titlecolor="#70524A";}
+                            echo "<table style='width:100%'>";
+                            echo "    <tr>";
+                            echo "        <th colspan='12' style='color:".$titlecolor.";line-height:4em;font-size:20px;'><img src='images/".$titlecsrc."'/>".$rowtitle['Function']."</th>";
+                            echo "    </tr>";
+                            $sql = "SELECT * FROM `relatedlinks` WHERE `Notice`='研討會' AND `IsUsed`=1 AND Function='".$rowtitle['Function']."' ORDER BY `OrderIndex` DESC";
+                            $result = $conn_1->query($sql);
+                            $rows=$result->fetch_all(MYSQLI_ASSOC);
+                            $rowcnt=0;
+                            for($i=0;$i<=($result->num_rows)/3;$i++){// 每三個一列，無條件進位
+                                echo "<tr>";
+                                echo "  <td style='width:1%;border-left: 3px solid ".$titlecolor.";'></td>";//左邊綠線的空格
+                                if(isset($rows[$rowcnt])){
+                                    echo "  <td style='width:16%' class='dashed-border'>".$rows[$rowcnt]['Item']."</td>";
+                                    echo "  <td style='width:8%' class='dashed-border'><a href='ConferenceMasterPage.php?sessions=".$rows[$rowcnt]['Link']."' class='coffee-button'>詳細資訊</a></td>";
+                                    echo "  <td style='width:8%' class='dashed-border'><a href='".$rows[$rowcnt]['MeetingURL']."' target='_blank' style='color:#70524A;'>會議主網站▸</a></td>";
+                                }
+                                else{
+                                    echo "  <td style='width:32%' colspan='3'></td>";
+                                }
+                                echo "  <td style='width:1%'>　</td>";//分隔用空格
+                                if(isset($rows[$rowcnt+1])){
+                                    echo "  <td style='width:16%' class='dashed-border'>".$rows[$rowcnt+1]['Item']."</td>";
+                                    echo "  <td style='width:8%' class='dashed-border'><a href='ConferenceMasterPage.php?sessions=".$rows[$rowcnt+1]['Link']."' class='coffee-button'>詳細資訊</a></td>";
+                                    echo "  <td style='width:8%' class='dashed-border'><a href='".$rows[$rowcnt+1]['MeetingURL']."' target='_blank' style='color:#70524A;'>會議主網站▸</a></td>";
+                                }
+                                else{
+                                    echo "  <td style='width:32%' colspan='3'></td>";
+                                }
+                                echo "  <td style='width:1%'>　</td>";//分隔用空格
+                                if(isset($rows[$rowcnt+2])){
+                                    echo "  <td style='width:16%' class='dashed-border'>".$rows[$rowcnt+2]['Item']."</td>";
+                                    echo "  <td style='width:8%' class='dashed-border'><a href='ConferenceMasterPage.php?sessions=".$rows[$rowcnt+2]['Link']."' class='coffee-button'>詳細資訊</a></td>";
+                                    echo "  <td style='width:8%' class='dashed-border'><a href='".$rows[$rowcnt+2]['MeetingURL']."' target='_blank' style='color:#70524A;'>會議主網站▸</a></td>";
+                                }
+                                else{
+                                    echo "  <td style='width:32%' colspan='3'></td>";
+                                }
+                                echo "</tr>";
+                                //印出空白間隔列
+                                echo "<tr>";
+                                echo "  <td style='width:1%;border-left: 3px solid ".$titlecolor.";'></td>";//左邊綠線的空格
+                                if(isset($rows[$rowcnt+3]))
+                                    echo "  <td style='width:32%;height:15px;' colspan='3'class='dashed-border'></td>";
+                                echo "  <td style='width:1%'></td>";//分隔用空格
+                                if(isset($rows[$rowcnt+4]))
+                                    echo "  <td style='width:32%;height:15px;' colspan='3'class='dashed-border'></td>";
+                                echo "  <td style='width:1%'></td>";//分隔用空格
+                                if(isset($rows[$rowcnt+5]))
+                                    echo "  <td style='width:32%;height:15px;' colspan='3'class='dashed-border'></td>";
+                                echo "</tr>";
+                                $rowcnt+=3;
+                            }
+                            echo "</table>";
+                        }
+                    }
+                    
+                ?>
+                <!--青年學者台灣語言學術研討會-->
+                <!--台灣語言學一日大師/專題講座-->
+            </div>
+			<div class="clearfix"> </div>
+		</div>
+		</div>
+
+	
+	<?php include_once('footer.php'); ?>
 	<script src="js/bootstrap.js"></script>
 </body>
 

@@ -15,130 +15,7 @@
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
-	<style>
-		.rslides {
-			background-color: rgba(192, 192, 192, 0.4);
-			border-radius: 15px;
-			padding: 10px;
-		}
-		#bgVideo {
-			position: absolute;
-			right: 0;
-			bottom: 0;
-			width: 100%;
-			height: 100%;
-			z-index: -1;
-		}
-		.AllBODY {
-			background-image: url('images/bg.jpg'); 
-			background-size: auto; 
-			background-position: center;
-			background-repeat: repeat; /* 讓背景圖片重複 */
-		}
-
-		.AboutMe {
-            width: 70%;
-            height: 500px;
-            position: relative;
-            margin: 5% auto;
-            overflow: hidden;
-        }
-        .AboutMe_Slide {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            transition: opacity 0.5s ease-in-out;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .AboutMe_Slide_Content {
-            position: relative;
-            width: 100%;
-            height: 100%;
-        }
-        .AboutMe_Slide_Text {
-            background-color: white;
-			padding: 2% 5% 2% 5%;
-            border-top-left-radius: 90px;
-            width: 45%;
-            height: 70%;
-            position: absolute;
-            top: 30%;
-            right: 10%;
-            z-index: 5;
-        }
-        .AboutMe_Slide_Back {
-			background-color: transparent; /* 將背景顏色設為透明 */
-			border: 2px solid #418765; /* 設置綠色外框 */
-			padding: 2% 5% 2% 5%;
-            border-top-left-radius: 90px;
-            width: 45%;
-            height: 70%;
-            position: absolute;
-            top: 20%;
-            right: 15%;
-            z-index: 1;
-        }
-        .AboutMe_Slide_Image {
-            width: 40%;
-            height: 75%;
-            border-top-left-radius: 90px;
-            background-size: cover;
-            background-position: center;
-            position: absolute;
-            top: 5%;
-            left: 10%;
-            z-index: 3;
-        }
-	</style>
-	<style>
-        .tabs {
-			display: flex;
-			justify-content: space-between;
-		}
-		.tab {
-			flex: 1;
-			text-align: center;
-			padding: 10px;
-			cursor: pointer;
-			background-color: #f1f1f1;
-			border-bottom: 5px solid #418765;
-			margin: 0 1%; 
-			position: relative; 
-			transition: background-color 0.3s;
-		}
-		.tab:hover {
-			background-color: #ddd;
-		}
-
-		.tab.active {
-			background-color: #fff;
-			border-top: 5px solid #418765; /* 活動頁籤的上方邊框 */
-			border-bottom: 0px solid #418765;
-		}
-
-		.tab:hover::after {
-			content: '';
-			position: absolute;
-			top: -4px; /* 上方邊框的位置 */
-			left: 50%;
-			transform: translateX(-50%);
-			width: 0;
-			height: 0;
-			border-left: 10px solid transparent;
-			border-right: 10px solid transparent;
-			border-bottom: 10px solid #ddd; /* 滑動時的箭頭顏色 */
-		}
-
-        .content {
-            border-radius: 30px 30px 0 0;
-            margin-top: 10px;
-			background-color:transparent;
-        }
-    </style>
+	
 	<script type="text/javascript" src="js/jquery.marquee.js"></script>
 	<script>
 		$('.marquee').marquee({ pauseOnHover: true });
@@ -158,7 +35,7 @@
 		</div>
 	</div>
 	<br>
-	<div class="container tabs">
+	<div class="container tabs" style="color:#418765">
 		<div class="tab <?php echo $tab === 'activity' ? 'active' : ''; ?>" onclick="location.href='?tab=activity'">活動消息</div>
 		<div class="tab <?php echo $tab === 'seminar' ? 'active' : ''; ?>" onclick="location.href='?tab=seminar'">學術研討會</div>
 		<div class="tab <?php echo $tab === 'publication' ? 'active' : ''; ?>" onclick="location.href='?tab=publication'">出版資訊</div>

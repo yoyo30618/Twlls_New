@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RTF to HTML Editor</title>
     <!-- 引入 CKEditor -->
-    <script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>
+    
+    <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
+
 </head>
 <body>
 

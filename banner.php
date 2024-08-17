@@ -22,21 +22,16 @@
     window.onscroll = function() {
     var banner = document.querySelector('.banner-info');
     var content = document.querySelector('.AL-slider-container');
-    var navbarBrand = document.querySelector('.navbar-brand');
-    var navbarBrand2 = document.querySelector('.navbar-brand2');
+    var bannerlogo = document.querySelector('.bannerlogo');
 
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         banner.classList.add('shrink');
-        navbarBrand.classList.add('shrink'); // 字體縮小
-        navbarBrand2.classList.add('shrink'); // 字體縮小
-		navbarBrand2.innerHTML ="Taiwan Language & Literature Society";
+		bannerlogo.src="images/logo.png";
         content.style.marginTop = '80px'; // 縮小後的邊距
     } else {
         banner.classList.remove('shrink');
-        navbarBrand.classList.remove('shrink'); // 恢復字體大小
-        navbarBrand2.classList.remove('shrink'); // 恢復字體大小
-		navbarBrand2.innerHTML ="<br>Taiwan<br>Language & Literature<br>Society";
-        content.style.marginTop = '120'; // 初始邊距
+		bannerlogo.src="images/logo-main.png";
+        content.style.marginTop = '120px'; // 初始邊距
     }
 };
 
@@ -45,7 +40,7 @@
 <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
 <div class="banner">
 	<div class="banner-info" style="height: 120px;"> <!-- 設定初始高度 -->
-		<div class="container">
+		<div class="container" style="margin-top:20px">
 			<nav id="navbar" class="navbar navbar-default">
 				<div class="navbar-header" style="margin: 0 auto;">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -58,19 +53,12 @@
 					<div class="logo" style="">
 						<table style="width:100%;">
 							<tr>
-								<td style="width:10%"><a href="index.php"><img src="images/logo.png" style="max-width: 100px;height: auto;vertical-align: middle; display: flex;align-items: center;"id="logo-img" /></a></td>
-								<td style="width:20%">
-									<a class="navbar-brand" href="index.php" style="font-size: 30px;">
-										台灣語文學會<br>
-										<text class="navbar-brand2" style="font-size: 12px; line-height: 1;"><br>Taiwan<br>Language & Literature<br>Society</text>
-									</a>
-
-								</td>
+								<td style="width:30%"><a href="index.php"><img class="bannerlogo" src="images/logo-main.png" style="height: auto;vertical-align: middle; display: flex;align-items: center;"id="logo-img" /></a></td>
 								<td style="width:70%;">
 									<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 										<ul class="nav navbar-nav cl-effect-18" id="cl-effect-18">
 											<li class="act"><a href="index.php" style="font-size: 16px;">首頁</a></li>
-											<li><a href="index.php" style="font-size: 16px;">最新消息</a></li>
+											<li><a href="News.php" style="font-size: 16px;">最新消息</a></li>
 											<li><a href="Introduction.php" style="font-size: 16px;">學會簡介</a></li>
 											<li role="presentation" class="dropdown" style="font-size: 16px;">
 												<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
