@@ -27,7 +27,7 @@
 	<?php include_once('banner.php');?>
 	<div style="margin-top: 120px;"></div>
 	<?php include_once('marquee.php');?>
-	<div class="banner-bottom" style="background-image: url(images/news-banner.jpg);">
+	<div class="banner-bottom" style="background-image: url();">
 		<div class="container">
 			<div class="video-bottom-grids" style="color:white;text-align:center;height:150px; display:flex; align-items:center; justify-content:center;">
 				<text style="font-size:40px;">會員專區</text>

@@ -7,34 +7,34 @@
                     <td style="border-right: 1px solid white;width:20%" rowspan="3">
                         <img src="images/icons/icon_white.png" style="max-width: 100%;" alt="台灣語文學會ICON"/>
                     </td>
-                    <td class="Twlls_Footer_Table_Title">首頁</td>
-                    <td style="">• 最新消息</td>
-                    <td>• 學會簡介</td>
+                    <td class="Twlls_Footer_Table_Title"><a class="Twlls_Footer_Table_Title" href="index.php">首頁</td>
+                    <td style="">• <a href="News.php" style="color:#fff">最新消息</a></td>
+                    <td>• <a href="Introduction.php" style="color:#fff">學會簡介</a></td>
                     <td>
                         • 學術活動<br>
-                        - 研討會<br>
-                        - 期刊
+                        - <a href="Conference.php" style="color:#fff">研討會</a><br>
+                        - <a href="Journal.php" style="color:#fff">期刊</a>
                      </td>
-                    <td>• 歷屆獎項</td>
-                    <td>• 會員專區</td>
+                    <td>• <a href="Award.php" style="color:#fff">歷屆獎項</a></td>
+                    <td>• <a href="Member.php" style="color:#fff">會員專區</a></td>
                     <td>
                         • 線上繳費<br>
-                        - 會員繳費與捐款<br>
-                        - 出版品購買
+                        - <a href="Pay.php" style="color:#fff">會員繳費與捐款</a><br>
+                        - <a href="Purchase.php" style="color:#fff">出版品購買</a>
                     </td>
-                    <td>• 人才庫</td>
+                    <td>• <a href="" style="color:#fff">人才庫</a></td>
                 </tr>
                 <tr>
                     <td class="Twlls_Footer_Table_Title">聯絡我們</td>
                     <td  colspan="7">
-                        • 聯絡信箱：CONTACT.TLLS@GMAIL.COM<br>
+                        • 聯絡信箱：<a href="mailto:contact.tlls@gmail.com" target="_blank" style="color:#fff">contact.tlls@gmail.com</a><br>
                         • 學會地址：11529台北市南港區研究院路二段128號 中研院語言所
                     </td>
                 </tr>
                 <tr>
                     <td class="Twlls_Footer_Table_Title">相關連結</td>
-                    <td  colspan="3">• 洪惟仁老師網站</td>
-                    <td  colspan="4">• 台灣語言學學會</td>
+                    <td  colspan="3">• <a style="color:#fff" href="http://www.uijin.idv.tw/" target="_blank" >洪惟仁老師網站</a></td>
+                    <td  colspan="4">• <a style="color:#fff" href="https://linguist.tw/zh-tw/" target="_blank" >台灣語言學學會</a></td>
                 </tr>
                 <tr>
                     <td></td>

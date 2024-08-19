@@ -56,7 +56,7 @@
 								<td style="width:30%"><a href="index.php"><img class="bannerlogo" src="images/logo-main.png" style="height: auto;vertical-align: middle; display: flex;align-items: center;"id="logo-img" /></a></td>
 								<td style="width:70%;">
 									<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
-										<ul class="nav navbar-nav cl-effect-18" id="cl-effect-18">
+										<ul class="nav navbar-nav" id="cl-effect-18">
 											<li class="act"><a href="index.php" style="font-size: 16px;">首頁</a></li>
 											<li><a href="News.php" style="font-size: 16px;">最新消息</a></li>
 											<li><a href="Introduction.php" style="font-size: 16px;">學會簡介</a></li>
@@ -67,7 +67,7 @@
 												</a>
 												<ul class="dropdown-menu" style="font-size: 16px;">
 													<li><a href="Conference.php">研討會</a></li>
-													<li><a href="http://www.twlls.org.tw/jtll/index.php">期刊</a></li>
+													<li><a href="Journal.php">期刊</a></li>
 												</ul>
 											</li>
 											<li><a href="Award.php" style="font-size: 16px;">歷屆獎項</a></li>

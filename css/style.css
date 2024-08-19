@@ -338,7 +338,7 @@ body a:hover{
 	opacity: 0.7;
 	background: #fff;
 }
-
+/* 
 .cl-effect-18 a:hover::before,
 .cl-effect-18 a:focus::before,.cl-effect-18 a.active::before,
 .cl-effect-18 a.active:focus::before {
@@ -353,7 +353,7 @@ body a:hover{
 	-webkit-transform: rotate(-45deg);
 	-moz-transform: rotate(-45deg);
 	transform: rotate(-45deg);
-}
+} */
 /*-- //nav-effect --*/
 .banner-info-slider{
 	padding:0em 5em 0em 5em;

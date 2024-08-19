@@ -3,7 +3,9 @@
 <head>
 	<?php
 	// 獲取當前選擇的標籤，預設為活動消息
-	$tab = isset($_GET['tab']) ? $_GET['tab'] : 'activity';
+	$tab = isset($_GET['tab']) ? $_GET['tab'] : 'LatestIssue';
+	$Issue = isset($_GET['Issue']) ? $_GET['Issue'] : '';
+	$Session = isset($_GET['Session']) ? $_GET['Session'] : '';
 	?>
 	<title>台灣語文學會</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,9 +32,22 @@
 		<img src="images/Journal-Banner.jpg"/>
 	<div style="background-color:#70524A">
 		<div class="container" style="color:white;line-height:3em;font-size:20px;">
-			<img src="images/icon-賀.png"/>　本刊榮獲收錄於國科會人社中心人文學核心期刊THCI，2023經評比為<text style="color:#FDFFA3">語言學門第一級期刊</text><br>
-			<img src="images/icon-賀.png"/>　賀《臺灣語文研究》榮獲國家圖書館112年臺灣學術資源能量風貌報告<text style="color:#FDFFA3">「期刊即時傳播獎-精選組」</text><br>
-			<img src="images/icon-賀.png"/>　賀《臺灣語文研究》榮獲國家圖書館「111年臺灣學術資源影響力」<text style="color:#FDFFA3">期刊即時傳播獎：語言學學門期刊第一名</text>
+			<?php
+				$JournalAwordsql = "SELECT * FROM `relatedlinks` WHERE `Notice`='期刊獲獎資訊'  ORDER BY OrderIndex LIMIT 3";
+				if($Session!=''){
+					$JournalAwordsql = "SELECT * FROM `relatedlinks` WHERE `Notice`='期刊獲獎資訊' AND `Item`='".$Session."' ORDER BY OrderIndex";
+				}
+				$JournalAwordresult = $conn_1->query($JournalAwordsql);
+				if ($JournalAwordresult->num_rows > 0) {
+					while ($row = mysqli_fetch_array($JournalAwordresult)) {
+						$Aword = $row['Title'];
+						$Aword = preg_replace('/"/', ' <text style=\'color:#FDFFA3\'>', $Aword, 1);
+						$Aword = preg_replace('/"/', '</text>', $Aword, 1);
+						echo "<img src='images/icon-賀.png'/>　".$Aword."<br>";
+					}
+				}
+			?>
+			
 		</div>
 	</div>
 	<br>
@@ -44,13 +59,87 @@
 	<div class="container ">
 		<div class="video-bottom-grids1" style="margin-top:20px;">
 			<div class="col-md-12 video-bottom-grid">
+				
+				<?php
+				if($tab === 'LatestIssue'){
+				?>
+				<div style="font-size:25px;text-align:center;width:100%;color:#70524A;margin-bottom:20px;" >最新期數</div>
+				<div class="col-md-3">
+					<?php
+
+						$JournalListsql = "SELECT `JournalSession` , `JournalIssue` FROM `journalcontent` WHERE 1 GROUP BY `JournalSession` , `JournalIssue` ORDER BY `OrderIndex` ASC";
+						$JournalListresult = $conn_1->query($JournalListsql);
+						$LastSession="";
+						$First=true;
+						if ($JournalListresult->num_rows > 0) {
+							while ($row = mysqli_fetch_array($JournalListresult)) {
+								if($LastSession!=$row['JournalSession']){
+									echo "<div class='JournalListButton'>";
+									echo "<a style='font-size:20px;color:#55463D'>".$row['JournalSession']."</a>　　　<a style='color:#55463D' href='Journal.php?Session=".$row['JournalSession']."&Issue=".$row['JournalIssue']."'>".$row['JournalIssue']."</a>";
+									$LastSession=$row['JournalSession'];
+									$First=true;
+								}
+								else{
+									echo " | <a style='color:#55463D' href='Journal.php?Session=".$row['JournalSession']."&Issue=".$row['JournalIssue']."'>".$row['JournalIssue']."</a>";
+									echo "</div>";
+									$First=false;
+								}
+							}
+						}
+						if($First) echo "</div>";
+					?>
+				</div>
+				<div class="col-md-9">
+					<?php
+						$JournalInfosql = "SELECT `JournalSession` , `JournalIssue`, `JournalDate` FROM `journalcontent` WHERE 1 GROUP BY `JournalSession` , `JournalIssue`, `JournalDate` ORDER BY `OrderIndex` ASC";
+						
+						$JournalTextsql = "WITH TEMP AS (SELECT `JournalSession`, `JournalIssue` FROM `journalcontent` GROUP BY `JournalSession`, `JournalIssue`ORDER BY `OrderIndex` ASC LIMIT 1 )SELECT * FROM `journalcontent` WHERE `JournalSession` = (SELECT `JournalSession` FROM TEMP) AND `JournalIssue` = (SELECT `JournalIssue` FROM TEMP) ORDER BY `PAGE` ASC";
+						if($Session!='' && $Issue!=''){
+							$JournalInfosql = "SELECT `JournalSession` , `JournalIssue`, `JournalDate` FROM `journalcontent` WHERE 1 AND `JournalSession`='".$Session."' AND `JournalIssue`='".$Issue."' GROUP BY `JournalSession` , `JournalIssue`, `JournalDate` ORDER BY `OrderIndex` ASC";
+							$JournalTextsql = "WITH TEMP AS (SELECT `JournalSession`, `JournalIssue` FROM `journalcontent` WHERE 1 AND `JournalSession`='".$Session."' AND `JournalIssue`='".$Issue."' GROUP BY `JournalSession`, `JournalIssue`ORDER BY `OrderIndex` ASC LIMIT 1 )SELECT * FROM `journalcontent` WHERE `JournalSession` = (SELECT `JournalSession` FROM TEMP) AND `JournalIssue` = (SELECT `JournalIssue` FROM TEMP) ORDER BY `PAGE` ASC";
+						}
+						$JournalInforesult = $conn_1->query($JournalInfosql);
+						while ($row = mysqli_fetch_array($JournalInforesult)) {
+							echo "<a style='color:#3C7556;font-size:25px;'>".$row['JournalSession'].$row['JournalIssue']."</a>";
+							echo "<a style='color:#70524A;font-size:20px;'>　".$row['JournalDate']."出刊</a>";
+							break;
+						}
+						echo "<table class='Journaltable'>";
+						echo "	<tr class='Journaltr'>";
+						echo "		<th class='Journalth' style='width:23%;'>作者</th>";
+						echo "		<th class='Journalth' style='width:63%;'>篇名</th>";
+						echo "		<th class='Journalth' style='width:7%;'>頁次</th>";
+						echo "		<th class='Journalth' style='width:7%;'>全文</th>";
+						echo "	</tr>";
+						$JournalTextresult = $conn_1->query($JournalTextsql);
+						while ($row = mysqli_fetch_array($JournalTextresult)) {
+						echo "	<tr class='Journaltr'>";
+						echo "		<td class='Journaltd'>".$row['Author']."<br>".$row['AuthorEng']."</td>";
+						echo "		<td class='Journaltd'>".$row['Title']."</td>";
+						echo "		<td class='Journaltd'>".$row['Page']."</td>";
+						echo "		<td class='Journaltd'>";
+						if($row['FileLink']!=''){
+							echo "			<a href='".$row['FileLink']."' download>";
+							echo "				<img  alt='下載PDF'class='download-icon'>";
+							echo "			</a>";
+						}
+						echo "      </td>";
+						echo "	</tr>";
+						}
+						echo "</table>";
+					?>
+				</div>
+
+				<?php
+				}
+				?>
 				<?php
 				if($tab === 'Inspiration'){
 				?>
 					<div style="line-height:2em;">
 						<table style="vertical-align:top;">
 							<tr style="vertical-align:top;">
-								<td colspan="2" style="font-size:25px;text-align:center;width:100%;">徵稿啟事</td>
+								<td colspan="2" style="font-size:25px;text-align:center;width:100%;color:#70524A;">徵稿啟事</td>
 							</tr>
 							<tr style="vertical-align:top;">
 								<td>一、</td>
@@ -112,7 +201,7 @@
 					<div style="line-height:2em;">
 						<table style="vertical-align:top;">
 							<tr style="vertical-align:top;">
-								<td colspan="2" style="font-size:25px;text-align:center;width:100%;">期刊簡介</td>
+								<td colspan="2" style="font-size:25px;text-align:center;width:100%;color:#70524A;">期刊簡介</td>
 							</tr>
 							<tr style="vertical-align:top;">
 								<td>

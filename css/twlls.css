@@ -464,4 +464,41 @@
             background-color: white; /* 背景顏色 */
 			width: 100%;
         }
-        
+        .JournalListButton{
+            background-color: white; 
+            color: #55463D; 
+            border-bottom: 2px solid #81BB9F; 
+            border-radius: 10px 0 0 0; 
+            padding: 10px;
+            margin-top:10px;
+        }
+        .Journaltable {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .Journalth {
+            color: black;
+            border-top: 2px solid #70524A;
+            border-bottom: 2px solid #70524A;
+            padding: 10px;
+            text-align: center;
+        }
+        .Journaltd {
+            color: black;
+            border-top: 1px dashed #70524A;
+            border-bottom: 1px dashed #70524A;
+            padding: 10px;
+        }
+        .Journaltr {
+            border: none; /* 不顯示左右框線 */
+        }
+        .download-icon {
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            transition: transform 0.3s;
+            content: url('../images/icon-doc=Default.png'); /* 替換為懸停時的圖片 */
+        }
+        .download-icon:hover {
+            content: url('../images/icon-doc=hover.png'); /* 替換為懸停時的圖片 */
+        }
