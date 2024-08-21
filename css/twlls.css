@@ -475,6 +475,8 @@
         .Journaltable {
             border-collapse: collapse;
             width: 100%;
+            margin-top: 10px;
+            margin-bottom: 20px;
         }
         .Journalth {
             color: black;

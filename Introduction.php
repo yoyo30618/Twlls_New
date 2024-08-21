@@ -153,40 +153,23 @@
 	<?php include_once('marquee.php');?>
 	<div style="width: 70%;position: relative;margin: 5% auto;overflow: hidden;">
 	<div class="timeline">
-          <div class="event">
-              <div class="date">1991年<br>04月13日</div>
-              <div class="dot"></div>
-              <div class="description"><div class="timelinetitle">第一次發起人會假國家政策研究中心會議室正式召開</div><br>
-                會中討論了章程草案，填寫發起人名冊，選出籌備委員共九名：張裕宏、洪惟仁、董忠司、姚榮松、曹逢甫、江永進、陳恒嘉、羅肇錦、趙順文（依得票數順序），接著立即召開第一次籌備會議，討論進一步之籌備工作、決定未來一年半的工作計劃：<br>
-                1. 1991年底以前完成音標研議。<br>
-                2. 1992年底以前完成台語常用漢字表。籌備經費由台語社負擔。籌備伊始，台語社即慨捐一萬元，以為支應。<br>
-              </div>
-          </div>
-          <div class="event">
-              <div class="date">1991年<br>05月05日</div>
-              <div class="dot"></div>
-              <div class="description"><div class="timelinetitle">召開第二次籌備會議</div></div>
-          </div>
-          <div class="event">
-              <div class="date">1991年<br>05月08日</div>
-              <div class="dot"></div>
-              <div class="description"><div class="timelinetitle">獲准正式籌備</div><br>由董忠司教授與洪惟仁教授遞送申請書前往內政部申請立案，並於 5月31日獲准正式籌備。</div>
-          </div>
-          <div class="event">
-              <div class="date">1991年<br>06月23日</div>
-              <div class="dot"></div>
-              <div class="description"><div class="timelinetitle">舉行第二次發起人會</div><br>在台北市ＹＭＣＡ舉行第二次發起人會，並依法在內政部社會司派員監督下舉行發起人會議，此為第一次正式之發起人會。會中討論章程草案，選出十一名籌備委員為：曹逢甫、江永進、姚榮松、董忠司、洪惟仁、羅肇錦、陳恒嘉、黃宣範、龔煌城、鍾榮富、張文彬（依得票順序）。並選出曹逢甫為主任委員。</div>
-          </div>
-          <div class="event">
-              <div class="date">1991年<br>07月20日</div>
-              <div class="dot"></div>
-              <div class="description"><div class="timelinetitle">召開第二次籌備會議</div><br>在國立臺灣師範大學召開第二次籌備會議，會中決定 8月17日召開「台灣語文學會」成立大會。</div>
-          </div>
-          <div class="event">
-              <div class="date">1991年<br>08月17日</div>
-              <div class="dot"></div>
-              <div class="description"><div class="timelinetitle">「台灣語文學會」正式成立。</div></div>
-          </div>
+		<?php
+			$Hissql = "SELECT * FROM `relatedlinks` WHERE `Function`='學會簡介編年史' AND `IsUsed`='1' Order BY `OrderIndex` ASC";
+			$Hisresult = $conn_1->query($Hissql);
+			if ($Hisresult->num_rows > 0) {
+				while ($row = mysqli_fetch_array($Hisresult)) {
+					echo "<div class='event'>";
+					echo "	<div class='date'>".explode('年', $row['Date'])[0]."年<br>".explode('年', $row['Date'])[1]."</div>";
+					echo "	<div class='dot'></div>";;
+					echo "	<div class='description'>";
+					echo "		<div class='timelinetitle'>".$row['Item']."</div><br>";
+					echo $row['Title'];
+					echo "	</div>";
+					echo "</div>";
+				}
+			}
+		?>
+          
       </div>
 	</div>
 	<div style="background-color:#418765;">
@@ -219,15 +202,15 @@
 														if($row["Title".$i]!=""){
 															if($i==1){
 																echo "				<tr>";
-																echo "					<td width='35%' style='border:1px solid #3A6B53;border-collapse:collapse;color:white;background-color:#418765;'>".$row["Title".$i]."</td>";
-																echo "					<td style='border:1px solid #3A6B53;border-collapse:collapse;color:#000;'>".$row["Value".$i]."</td>";
+																echo "					<td width='35%' style='font-size:18px;border:1px solid #3A6B53;border-collapse:collapse;color:white;background-color:#418765;'>".$row["Title".$i]."</td>";
+																echo "					<td style='font-size:18px;border:1px solid #3A6B53;border-collapse:collapse;color:#000;'>".$row["Value".$i]."</td>";
 																echo "				</tr>";
 
 															}
 															else{
 																echo "				<tr>";
-																echo "					<td style='border:1px solid #3A6B53;border-collapse:collapse;color:white;background-color:#418765;'>".$row["Title".$i]."</td>";
-																echo "					<td style='border:1px solid #3A6B53;border-collapse:collapse;color:#000;'>".$row["Value".$i]."</td>";
+																echo "					<td style='font-size:18px;border:1px solid #3A6B53;border-collapse:collapse;color:white;background-color:#418765;'>".$row["Title".$i]."</td>";
+																echo "					<td style='font-size:18px;border:1px solid #3A6B53;border-collapse:collapse;color:#000;'>".$row["Value".$i]."</td>";
 																echo "				</tr>";
 															}
 														}

@@ -57,7 +57,7 @@
 								<td style="width:70%;">
 									<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 										<ul class="nav navbar-nav" id="cl-effect-18">
-											<li class="act"><a href="index.php" style="font-size: 16px;">首頁</a></li>
+											<li><a href="index.php" style="font-size: 16px;">首頁</a></li>
 											<li><a href="News.php" style="font-size: 16px;">最新消息</a></li>
 											<li><a href="Introduction.php" style="font-size: 16px;">學會簡介</a></li>
 											<li role="presentation" class="dropdown" style="font-size: 16px;">

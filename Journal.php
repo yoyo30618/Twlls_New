@@ -92,16 +92,18 @@
 				<div class="col-md-9">
 					<?php
 						$JournalInfosql = "SELECT `JournalSession` , `JournalIssue`, `JournalDate` FROM `journalcontent` WHERE 1 GROUP BY `JournalSession` , `JournalIssue`, `JournalDate` ORDER BY `OrderIndex` ASC";
-						
 						$JournalTextsql = "WITH TEMP AS (SELECT `JournalSession`, `JournalIssue` FROM `journalcontent` GROUP BY `JournalSession`, `JournalIssue`ORDER BY `OrderIndex` ASC LIMIT 1 )SELECT * FROM `journalcontent` WHERE `JournalSession` = (SELECT `JournalSession` FROM TEMP) AND `JournalIssue` = (SELECT `JournalIssue` FROM TEMP) ORDER BY `PAGE` ASC";
+						$JournalMembersql="SELECT `Position`, GROUP_CONCAT(CONCAT(`Name`, ' ', `Unit`) SEPARATOR '<br>') AS People FROM `journalinfo` GROUP BY `Position`;";
 						if($Session!='' && $Issue!=''){
 							$JournalInfosql = "SELECT `JournalSession` , `JournalIssue`, `JournalDate` FROM `journalcontent` WHERE 1 AND `JournalSession`='".$Session."' AND `JournalIssue`='".$Issue."' GROUP BY `JournalSession` , `JournalIssue`, `JournalDate` ORDER BY `OrderIndex` ASC";
 							$JournalTextsql = "WITH TEMP AS (SELECT `JournalSession`, `JournalIssue` FROM `journalcontent` WHERE 1 AND `JournalSession`='".$Session."' AND `JournalIssue`='".$Issue."' GROUP BY `JournalSession`, `JournalIssue`ORDER BY `OrderIndex` ASC LIMIT 1 )SELECT * FROM `journalcontent` WHERE `JournalSession` = (SELECT `JournalSession` FROM TEMP) AND `JournalIssue` = (SELECT `JournalIssue` FROM TEMP) ORDER BY `PAGE` ASC";
+							$JournalMembersql="SELECT `Position`, GROUP_CONCAT(CONCAT(`Name`, ' ', `Unit`) SEPARATOR '<br>') AS People FROM `journalinfo` WHERE 1 AND `JournalSession`='".$Session."' AND `JournalIssue`='".$Issue."' GROUP BY `Position`;";
 						}
 						$JournalInforesult = $conn_1->query($JournalInfosql);
 						while ($row = mysqli_fetch_array($JournalInforesult)) {
 							echo "<a style='color:#3C7556;font-size:25px;'>".$row['JournalSession'].$row['JournalIssue']."</a>";
-							echo "<a style='color:#70524A;font-size:20px;'>　".$row['JournalDate']."出刊</a>";
+							echo "<a style='color:#70524A;font-size:20px;'>　".$row['JournalDate']."出刊</a><br>";
+							echo "<a style='color:#70524A;font-size:20px;border-left: 4px solid #3C7556;'>本期內容</a><br>";
 							break;
 						}
 						echo "<table class='Journaltable'>";
@@ -119,7 +121,7 @@
 						echo "		<td class='Journaltd'>".$row['Page']."</td>";
 						echo "		<td class='Journaltd'>";
 						if($row['FileLink']!=''){
-							echo "			<a href='".$row['FileLink']."' download>";
+							echo "			<a href='JournalFile/".$row['FileLink']."' download>";
 							echo "				<img  alt='下載PDF'class='download-icon'>";
 							echo "			</a>";
 						}
@@ -127,9 +129,21 @@
 						echo "	</tr>";
 						}
 						echo "</table>";
+						echo "<a style='color:#70524A;font-size:20px;border-left: 4px solid #3C7556;'>編輯委員會名單</a><br>";
+						echo "<table class='Journaltable'>";
+						
+						$JournalMemberResult = $conn_1->query($JournalMembersql);
+						while ($row = mysqli_fetch_array($JournalMemberResult)) {
+						echo "	<tr >";
+						echo "		<td style='vertical-align: top;font-size:20px;width:30%'>".$row['Position']."</td>";
+						echo "		<td style='vertical-align: top;font-size:15px;'>".$row['People']."</td>";
+						echo "	</tr>";
+						}
+						echo "</table>";
+
+
 					?>
 				</div>
-
 				<?php
 				}
 				?>

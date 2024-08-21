@@ -2,7 +2,6 @@
 <html>
 <head>
 	<?php
-	// 獲取當前選擇的標籤，預設為活動消息
 	$tab = isset($_GET['tab']) ? $_GET['tab'] : 'activity';
 	?>
 	<title>台灣語文學會</title>
@@ -75,7 +74,10 @@
                             echo "        <tr>";
                             echo "            <td style='color:#70524A;font-size:14px; padding: 8px;' colspan='2'>";
                             echo "                <button style='background-color:#70524A;color:#fff;border-radius:5px;border:none;' onclick='window.location.href=\"ConferenceMasterPage.php?sessions=".$rowtitle['Link']."\";'>詳細資訊</button>";
-                            echo "                <a href='ConferenceMasterPage.php?sessions=".$rowtitle['MeetingURL']."' style='color:#52403C'>會議主網站▶</a>";
+                            if($rowtitle['MeetingURL']=="")
+                                echo "                <a href='ConferenceMasterPage.php?sessions=".$rowtitle['Link']."' style='color:#52403C'>會議主網站▶</a>";
+                            else
+                                echo "                <a href='".$rowtitle['MeetingURL']."' style='color:#52403C'>會議主網站▶</a>";
                             echo "            </td>";
                             echo "        </tr>";
                             echo "    </table>";
@@ -116,7 +118,10 @@
                                 if(isset($rows[$rowcnt])){
                                     echo "  <td style='width:16%' class='dashed-border'>".$rows[$rowcnt]['Item']."</td>";
                                     echo "  <td style='width:8%' class='dashed-border'><a href='ConferenceMasterPage.php?sessions=".$rows[$rowcnt]['Link']."' class='coffee-button'>詳細資訊</a></td>";
-                                    echo "  <td style='width:8%' class='dashed-border'><a href='".$rows[$rowcnt]['MeetingURL']."' target='_blank' style='color:#70524A;'>會議主網站▸</a></td>";
+                                    if($rows[$rowcnt]['MeetingURL']=="")
+                                        echo "  <td style='width:8%' class='dashed-border'><a href='ConferenceMasterPage.php?sessions=".$rows[$rowcnt]['Link']."' target='_blank' style='color:#70524A;'>會議主網站▸</a></td>";
+                                    else
+                                        echo "  <td style='width:8%' class='dashed-border'><a href='".$rows[$rowcnt]['MeetingURL']."' target='_blank' style='color:#70524A;'>會議主網站▸</a></td>";
                                 }
                                 else{
                                     echo "  <td style='width:32%' colspan='3'></td>";
@@ -124,8 +129,10 @@
                                 echo "  <td style='width:1%'>　</td>";//分隔用空格
                                 if(isset($rows[$rowcnt+1])){
                                     echo "  <td style='width:16%' class='dashed-border'>".$rows[$rowcnt+1]['Item']."</td>";
-                                    echo "  <td style='width:8%' class='dashed-border'><a href='ConferenceMasterPage.php?sessions=".$rows[$rowcnt+1]['Link']."' class='coffee-button'>詳細資訊</a></td>";
-                                    echo "  <td style='width:8%' class='dashed-border'><a href='".$rows[$rowcnt+1]['MeetingURL']."' target='_blank' style='color:#70524A;'>會議主網站▸</a></td>";
+                                    if($rows[$rowcnt+1]['MeetingURL']=="")
+                                        echo "  <td style='width:8%' class='dashed-border'><a href='ConferenceMasterPage.php?sessions=".$rows[$rowcnt+1]['Link']."' target='_blank' style='color:#70524A;'>會議主網站▸</a></td>";
+                                    else
+                                        echo "  <td style='width:8%' class='dashed-border'><a href='".$rows[$rowcnt+1]['MeetingURL']."' target='_blank' style='color:#70524A;'>會議主網站▸</a></td>";
                                 }
                                 else{
                                     echo "  <td style='width:32%' colspan='3'></td>";
@@ -134,7 +141,10 @@
                                 if(isset($rows[$rowcnt+2])){
                                     echo "  <td style='width:16%' class='dashed-border'>".$rows[$rowcnt+2]['Item']."</td>";
                                     echo "  <td style='width:8%' class='dashed-border'><a href='ConferenceMasterPage.php?sessions=".$rows[$rowcnt+2]['Link']."' class='coffee-button'>詳細資訊</a></td>";
-                                    echo "  <td style='width:8%' class='dashed-border'><a href='".$rows[$rowcnt+2]['MeetingURL']."' target='_blank' style='color:#70524A;'>會議主網站▸</a></td>";
+                                    if($rows[$rowcnt+2]['MeetingURL']=="")
+                                        echo "  <td style='width:8%' class='dashed-border'><a href='ConferenceMasterPage.php?sessions=".$rows[$rowcnt+2]['Link']."' target='_blank' style='color:#70524A;'>會議主網站▸</a></td>";
+                                    else
+                                        echo "  <td style='width:8%' class='dashed-border'><a href='".$rows[$rowcnt+2]['MeetingURL']."' target='_blank' style='color:#70524A;'>會議主網站▸</a></td>";
                                 }
                                 else{
                                     echo "  <td style='width:32%' colspan='3'></td>";
