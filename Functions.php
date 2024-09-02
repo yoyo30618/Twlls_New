@@ -95,7 +95,7 @@ function generateTradeInfo($timestamp,$email,$ItemDesc,$amount) {
         'Amt' => $amount,
         'ItemDesc' => $ItemDesc,
         'Email' => $email,
-        'NotifyURL' => 'http://www.twlls.org.tw/TestPage/NewCheckTest.php?MerchantOrderNo=TY'.$timestamp
+        'NotifyURL' => 'http://www.twlls.org.tw/TestPage/PayNotifyAndCheckDB.php?MerchantOrderNo=TY'.$timestamp
     ));
     $key = str_pad(HASH_KEY, 32, "\0"); 
     $block_size = 16;
