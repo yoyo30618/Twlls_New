@@ -32,7 +32,7 @@
                 <div class="AboutMe_Slide_Text">
 					<img src="images/icons/taiwan.png" style="width:12%;height:12%"/><br>
                     <text style="font-size:30px;color:#418765">關於台灣語文學會</text>　　　　　
-					<a href="" style="color:#6AA447">歡迎加入會員▶</a><br><br>
+					<a href="Member.php" style="color:#6AA447">歡迎加入會員▶</a><br><br>
                     <p>「台灣語文學會」最早於1990年開始，由張裕宏教授、董忠司教授與洪惟仁教授展開籌備。1991年，委由董忠司教授草擬學會章程草案。之後陸續邀集周純一教授、陳恒嘉教授等討論草案內容，並積極聯絡各大學、研究單位的語文及相關科目的學者，募集發起人。</p>
 					<br>
 					<button style="background-color:#418765;color:#fff;border-radius:10px;border:none;" onclick="window.location.href='Introduction.php';">「台灣語文學會」成立經過</button>

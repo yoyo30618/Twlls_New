@@ -110,60 +110,28 @@
                             echo "    </tr>";
                             $sql = "SELECT * FROM `relatedlinks` WHERE `Notice`='研討會' AND `IsUsed`=1 AND Function='".$rowtitle['Function']."' ORDER BY `OrderIndex` DESC";
                             $result = $conn_1->query($sql);
-                            $rows=$result->fetch_all(MYSQLI_ASSOC);
                             $rowcnt=0;
-                            for($i=0;$i<=($result->num_rows)/3;$i++){// 每三個一列，無條件進位
+                            if ($result->num_rows > 0) {
                                 echo "<tr>";
                                 echo "  <td style='width:1%;border-left: 3px solid ".$titlecolor.";'></td>";//左邊綠線的空格
-                                if(isset($rows[$rowcnt])){
-                                    echo "  <td style='width:16%' class='dashed-border'>".$rows[$rowcnt]['Item']."</td>";
-                                    echo "  <td style='width:8%' class='dashed-border'><a href='ConferenceMasterPage.php?sessions=".$rows[$rowcnt]['Link']."' class='coffee-button'>詳細資訊</a></td>";
-                                    if($rows[$rowcnt]['MeetingURL']=="")
-                                        echo "  <td style='width:8%' class='dashed-border'><a href='ConferenceMasterPage.php?sessions=".$rows[$rowcnt]['Link']."' target='_blank' style='color:#70524A;'>會議主網站▸</a></td>";
+                                while ($rows = mysqli_fetch_array($result)) {
+                                    echo "  <td style='width:16%' class='dashed-border'>".$rows['Item']."</td>";
+                                    echo "  <td style='width:8%' class='dashed-border'><a href='ConferenceMasterPage.php?sessions=".$rows['Link']."' class='coffee-button'>詳細資訊</a></td>";
+                                    if($rows['MeetingURL']=="")
+                                        echo "  <td style='width:8%' class='dashed-border'><a href='ConferenceMasterPage.php?sessions=".$rows['Link']."' target='_blank' style='color:#70524A;'>會議主網站▸</a></td>";
                                     else
-                                        echo "  <td style='width:8%' class='dashed-border'><a href='".$rows[$rowcnt]['MeetingURL']."' target='_blank' style='color:#70524A;'>會議主網站▸</a></td>";
+                                        echo "  <td style='width:8%' class='dashed-border'><a href='".$rows['MeetingURL']."' target='_blank' style='color:#70524A;'>會議主網站▸</a></td>";
+                                    
+                                    echo "  <td style='width:1%'>　</td>";//分隔用空格
+                                    $rowcnt++;
+                                    if($rowcnt%3==0){
+                                        echo "</tr>";
+                                        echo "<tr>";
+                                        echo "  <td style='width:1%;border-left: 3px solid ".$titlecolor.";'></td>";//左邊綠線的空格
+                                    }
                                 }
-                                else{
-                                    echo "  <td style='width:32%' colspan='3'></td>";
-                                }
-                                echo "  <td style='width:1%'>　</td>";//分隔用空格
-                                if(isset($rows[$rowcnt+1])){
-                                    echo "  <td style='width:16%' class='dashed-border'>".$rows[$rowcnt+1]['Item']."</td>";
-                                    if($rows[$rowcnt+1]['MeetingURL']=="")
-                                        echo "  <td style='width:8%' class='dashed-border'><a href='ConferenceMasterPage.php?sessions=".$rows[$rowcnt+1]['Link']."' target='_blank' style='color:#70524A;'>會議主網站▸</a></td>";
-                                    else
-                                        echo "  <td style='width:8%' class='dashed-border'><a href='".$rows[$rowcnt+1]['MeetingURL']."' target='_blank' style='color:#70524A;'>會議主網站▸</a></td>";
-                                }
-                                else{
-                                    echo "  <td style='width:32%' colspan='3'></td>";
-                                }
-                                echo "  <td style='width:1%'>　</td>";//分隔用空格
-                                if(isset($rows[$rowcnt+2])){
-                                    echo "  <td style='width:16%' class='dashed-border'>".$rows[$rowcnt+2]['Item']."</td>";
-                                    echo "  <td style='width:8%' class='dashed-border'><a href='ConferenceMasterPage.php?sessions=".$rows[$rowcnt+2]['Link']."' class='coffee-button'>詳細資訊</a></td>";
-                                    if($rows[$rowcnt+2]['MeetingURL']=="")
-                                        echo "  <td style='width:8%' class='dashed-border'><a href='ConferenceMasterPage.php?sessions=".$rows[$rowcnt+2]['Link']."' target='_blank' style='color:#70524A;'>會議主網站▸</a></td>";
-                                    else
-                                        echo "  <td style='width:8%' class='dashed-border'><a href='".$rows[$rowcnt+2]['MeetingURL']."' target='_blank' style='color:#70524A;'>會議主網站▸</a></td>";
-                                }
-                                else{
-                                    echo "  <td style='width:32%' colspan='3'></td>";
-                                }
-                                echo "</tr>";
-                                //印出空白間隔列
-                                echo "<tr>";
-                                echo "  <td style='width:1%;border-left: 3px solid ".$titlecolor.";'></td>";//左邊綠線的空格
-                                if(isset($rows[$rowcnt+3]))
-                                    echo "  <td style='width:32%;height:15px;' colspan='3'class='dashed-border'></td>";
-                                echo "  <td style='width:1%'></td>";//分隔用空格
-                                if(isset($rows[$rowcnt+4]))
-                                    echo "  <td style='width:32%;height:15px;' colspan='3'class='dashed-border'></td>";
-                                echo "  <td style='width:1%'></td>";//分隔用空格
-                                if(isset($rows[$rowcnt+5]))
-                                    echo "  <td style='width:32%;height:15px;' colspan='3'class='dashed-border'></td>";
-                                echo "</tr>";
-                                $rowcnt+=3;
                             }
+                            echo "</tr>";
                             echo "</table>";
                         }
                     }

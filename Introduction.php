@@ -159,7 +159,8 @@
 			if ($Hisresult->num_rows > 0) {
 				while ($row = mysqli_fetch_array($Hisresult)) {
 					echo "<div class='event'>";
-					echo "	<div class='date'>".explode('年', $row['Date'])[0]."年<br>".explode('年', $row['Date'])[1]."</div>";
+					$dateParts = explode('年', $row['Date']);
+					echo "<div class='date'>".$dateParts[0]."年<br>".$dateParts[1]."</div>";
 					echo "	<div class='dot'></div>";;
 					echo "	<div class='description'>";
 					echo "		<div class='timelinetitle'>".$row['Item']."</div><br>";

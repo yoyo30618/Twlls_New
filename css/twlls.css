@@ -504,3 +504,39 @@
         .download-icon:hover {
             content: url('../images/icon-doc=hover.png'); /* 替換為懸停時的圖片 */
         }
+        .PayList{
+            border: 1px solid #3C7556; 
+            border-top-left-radius: 15px; 
+            width: 100%; 
+            position: relative;
+            line-height: 1.5em;
+            margin-bottom:20px;
+        }
+        .PayListTitle{
+            background-color: #3C7556; 
+            padding: 10px; 
+            border-top-left-radius: 15px;
+        }
+        #PayForm {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0); /* 初始縮放為0 */
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            transition: transform 0.3s ease; /* 添加過渡效果 */
+            border-radius: 15px 15px 15px 15px; 
+        }
+        #PayOverlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }

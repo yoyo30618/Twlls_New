@@ -19,8 +19,8 @@
                     <td>• <a href="Member.php" style="color:#fff">會員專區</a></td>
                     <td>
                         • 線上繳費<br>
-                        - <a href="Pay.php" style="color:#fff">會員繳費與捐款</a><br>
-                        - <a href="Purchase.php" style="color:#fff">出版品購買</a>
+                        - <a href="Payment.php" style="color:#fff">會員繳費與捐款</a><br>
+                        - <a href="Publication.php" style="color:#fff">出版品購買</a>
                     </td>
                     <td>• <a href="" style="color:#fff">人才庫</a></td>
                 </tr>

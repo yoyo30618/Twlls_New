@@ -78,11 +78,11 @@
 													線上繳費 <span class="caret"></span>
 												</a>
 												<ul class="dropdown-menu" style="font-size: 16px;">
-													<li><a href="Pay.php">會員繳費與捐款</a></li>
-													<li><a href="Pay_2.php">出版品購買</a></li>
+													<li><a href="Payment.php">會員繳費與捐款</a></li>
+													<li><a href="Publication.php">出版品購買</a></li>
 												</ul>
 											</li>
-											<li><a href="breaking.html" style="font-size: 16px;">人才庫</a></li>
+											<li><a href="" style="font-size: 16px;">人才庫</a></li>
 											<li>
 												<div class="icon-box"><a class="agile-icon" href="#"><i class="fa fa-envelope"></i></a></div>
                                             </li>
