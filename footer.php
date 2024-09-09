@@ -22,7 +22,7 @@
                         - <a href="Payment.php" style="color:#fff">會員繳費與捐款</a><br>
                         - <a href="Publication.php" style="color:#fff">出版品購買</a>
                     </td>
-                    <td>• <a href="" style="color:#fff">人才庫</a></td>
+                    <td>• <a  onclick="alert('建置中，敬請期待！')" style="color:#fff">人才庫</a></td>
                 </tr>
                 <tr>
                     <td class="Twlls_Footer_Table_Title">聯絡我們</td>

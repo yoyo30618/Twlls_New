@@ -39,7 +39,7 @@
             <div class="slide active">
                 <div class="slide-content">
                     <?php
-                    $sqltitleconference = "SELECT * FROM `relatedlinks`  WHERE `Notice`='研討會' AND `IsUsed`='1' AND `Date`!='' ORDER BY `relatedlinks`.`Date` DESC";
+                    $sqltitleconference = "SELECT * FROM `relatedlinks`  WHERE `Notice`='研討會' AND `IsUsed`='1' AND `Date`!='' ORDER BY `relatedlinks`.`OrderIndex` DESC";
                     $resulttitleconference = $conn_1->query($sqltitleconference);
                     if ($resulttitleconference->num_rows > 0) {
                         while ($rowtitle = mysqli_fetch_array($resulttitleconference)) {

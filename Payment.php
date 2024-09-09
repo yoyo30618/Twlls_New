@@ -53,20 +53,6 @@
 							while ($PayListDetalrow = mysqli_fetch_array($PayListDetalResult)) {
 								$PayListColor="#418765";//預設顏色
 								$PayListImg="icon-leaf1.png";//預設圖片
-								/* 可用選項
-								#418765
-								icon-leaf1.png
-								icon-LOGO3.png
-								#6AA447
-								icon-leaf2.png
-								icon-LOGO4.png
-								#81BB9F
-								icon-leaf3.png
-								icon-LOGO6.png
-								#70524A
-								icon-donate.png
-								icon-member.png
-								*/
 								if($PayListDetalrow['ColorType']=="1"){
 									$PayListColor="#418765";
 									$PayListImg="icon-leaf1.png";
@@ -93,13 +79,17 @@
 								}
 								else if($PayListDetalrow['ColorType']=="7"){
 									$PayListColor="#70524A";
-									$PayListImg="icon-donate.png";
+									$PayListImg="icon-LOGO5.png";
 								}
 								else if($PayListDetalrow['ColorType']=="8"){
 									$PayListColor="#70524A";
-									$PayListImg="icon-member.png";
+									$PayListImg="icon-donate.png";
 								}
 								else if($PayListDetalrow['ColorType']=="9"){
+									$PayListColor="#70524A";
+									$PayListImg="icon-member.png";
+								}
+								else if($PayListDetalrow['ColorType']=="10"){
 									$PayListColor="#418765";
 									$PayListImg="icon-book.png";
 								}

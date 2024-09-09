@@ -66,14 +66,14 @@
 				<div style="font-size:25px;text-align:center;width:100%;color:#70524A;margin-bottom:20px;" >最新期數</div>
 				<div class="col-md-3">
 					<?php
-
-						$JournalListsql = "SELECT `JournalSession` , `JournalIssue` FROM `journalcontent` WHERE 1 GROUP BY `JournalSession` , `JournalIssue` ORDER BY `OrderIndex` ASC";
+						$JournalListsql = "SELECT `JournalSession` , `JournalIssue` FROM `journalcontent` WHERE 1 GROUP BY `JournalSession` , `JournalIssue` ORDER BY `OrderIndex` DESC";
 						$JournalListresult = $conn_1->query($JournalListsql);
 						$LastSession="";
-						$First=true;
+						$First=false;
 						if ($JournalListresult->num_rows > 0) {
 							while ($row = mysqli_fetch_array($JournalListresult)) {
 								if($LastSession!=$row['JournalSession']){
+									if($First) echo "</div>";
 									echo "<div class='JournalListButton'>";
 									echo "<a style='font-size:20px;color:#55463D'>".$row['JournalSession']."</a>　　　<a style='color:#55463D' href='Journal.php?Session=".$row['JournalSession']."&Issue=".$row['JournalIssue']."'>".$row['JournalIssue']."</a>";
 									$LastSession=$row['JournalSession'];
@@ -85,19 +85,20 @@
 									$First=false;
 								}
 							}
+							if($First) echo "</div>";
 						}
-						if($First) echo "</div>";
+						
 					?>
 				</div>
 				<div class="col-md-9">
 					<?php
-						$JournalInfosql = "SELECT `JournalSession` , `JournalIssue`, `JournalDate` FROM `journalcontent` WHERE 1 GROUP BY `JournalSession` , `JournalIssue`, `JournalDate` ORDER BY `OrderIndex` ASC";
-						$JournalTextsql =" SELECT *  FROM `journalcontent`  WHERE `JournalSession` = ( 	SELECT `JournalSession`  	FROM `journalcontent`  	WHERE `JournalSession` = '{$Session}'  	  AND `JournalIssue` = '{$Issue}'  	GROUP BY `JournalSession`, `JournalIssue`  	ORDER BY `OrderIndex` ASC  	LIMIT 1 )  AND `JournalIssue` = ( 	SELECT `JournalIssue`  	FROM `journalcontent` GROUP BY `JournalSession`, `JournalIssue`  	ORDER BY `OrderIndex` ASC  	LIMIT 1 )  ORDER BY `PAGE` ASC";
+						$JournalInfosql = "SELECT `JournalSession` , `JournalIssue`, `JournalDate` FROM `journalcontent` WHERE 1 GROUP BY `JournalSession` , `JournalIssue`, `JournalDate` ORDER BY `OrderIndex` DESC";
+						$JournalTextsql =" SELECT *  FROM `journalcontent`  WHERE `JournalSession` = ( 	SELECT `JournalSession`  	FROM `journalcontent`  	WHERE `JournalSession` = '{$Session}'  	  AND `JournalIssue` = '{$Issue}'  	GROUP BY `JournalSession`, `JournalIssue`  	ORDER BY `OrderIndex` DESC  	LIMIT 1 )  AND `JournalIssue` = ( 	SELECT `JournalIssue`  	FROM `journalcontent` GROUP BY `JournalSession`, `JournalIssue`  	ORDER BY `OrderIndex` DESC  	LIMIT 1 )  ORDER BY `PAGE` DESC";
 						$JournalMembersql="SELECT `Position`, GROUP_CONCAT(CONCAT(`Name`, ' ', `Unit`) SEPARATOR '<br>') AS People FROM `journalinfo` GROUP BY `Position`;";
 						if($Session!='' && $Issue!=''){
-							$JournalInfosql = "SELECT `JournalSession` , `JournalIssue`, `JournalDate` FROM `journalcontent` WHERE 1 AND `JournalSession`='".$Session."' AND `JournalIssue`='".$Issue."' GROUP BY `JournalSession` , `JournalIssue`, `JournalDate` ORDER BY `OrderIndex` ASC";
-							//$JournalTextsql = "WITH TEMP AS (SELECT `JournalSession`, `JournalIssue` FROM `journalcontent` WHERE 1 AND `JournalSession`='".$Session."' AND `JournalIssue`='".$Issue."' GROUP BY `JournalSession`, `JournalIssue`ORDER BY `OrderIndex` ASC LIMIT 1 )SELECT * FROM `journalcontent` WHERE `JournalSession` = (SELECT `JournalSession` FROM TEMP) AND `JournalIssue` = (SELECT `JournalIssue` FROM TEMP) ORDER BY `PAGE` ASC";
-							$JournalTextsql =" SELECT *  FROM `journalcontent`  WHERE `JournalSession` = ( 	SELECT `JournalSession`  	FROM `journalcontent`  	WHERE `JournalSession` = '{$Session}'  	  AND `JournalIssue` = '{$Issue}'  	GROUP BY `JournalSession`, `JournalIssue`  	ORDER BY `OrderIndex` ASC  	LIMIT 1 )  AND `JournalIssue` = ( 	SELECT `JournalIssue`  	FROM `journalcontent`  	WHERE `JournalSession` = '".$Session."'  	  AND `JournalIssue` = '".$Issue."'  	GROUP BY `JournalSession`, `JournalIssue`  	ORDER BY `OrderIndex` ASC  	LIMIT 1 )  ORDER BY `PAGE` ASC";
+							$JournalInfosql = "SELECT `JournalSession` , `JournalIssue`, `JournalDate` FROM `journalcontent` WHERE 1 AND `JournalSession`='".$Session."' AND `JournalIssue`='".$Issue."' GROUP BY `JournalSession` , `JournalIssue`, `JournalDate` ORDER BY `OrderIndex` DESC";
+							//$JournalTextsql = "WITH TEMP AS (SELECT `JournalSession`, `JournalIssue` FROM `journalcontent` WHERE 1 AND `JournalSession`='".$Session."' AND `JournalIssue`='".$Issue."' GROUP BY `JournalSession`, `JournalIssue`ORDER BY `OrderIndex` DESC LIMIT 1 )SELECT * FROM `journalcontent` WHERE `JournalSession` = (SELECT `JournalSession` FROM TEMP) AND `JournalIssue` = (SELECT `JournalIssue` FROM TEMP) ORDER BY `PAGE` DESC";
+							$JournalTextsql =" SELECT *  FROM `journalcontent`  WHERE `JournalSession` = ( 	SELECT `JournalSession`  	FROM `journalcontent`  	WHERE `JournalSession` = '{$Session}'  	  AND `JournalIssue` = '{$Issue}'  	GROUP BY `JournalSession`, `JournalIssue`  	ORDER BY `OrderIndex` DESC  	LIMIT 1 )  AND `JournalIssue` = ( 	SELECT `JournalIssue`  	FROM `journalcontent`  	WHERE `JournalSession` = '".$Session."'  	  AND `JournalIssue` = '".$Issue."'  	GROUP BY `JournalSession`, `JournalIssue`  	ORDER BY `OrderIndex` DESC  	LIMIT 1 )  ORDER BY `PAGE` DESC";
 							$JournalMembersql="SELECT `Position`, GROUP_CONCAT(CONCAT(`Name`, ' ', `Unit`) SEPARATOR '<br>') AS People FROM `journalinfo` WHERE 1 AND `JournalSession`='".$Session."' AND `JournalIssue`='".$Issue."' GROUP BY `Position`;";
 						}
 						$JournalInforesult = $conn_1->query($JournalInfosql);
@@ -122,7 +123,7 @@
 						echo "		<td class='Journaltd'>".$row['Page']."</td>";
 						echo "		<td class='Journaltd'>";
 						if($row['FileLink']!=''){
-							echo "			<a href='JournalFile/".$row['FileLink']."' download>";
+							echo "			<a href='Attachment/Journal/".$row['FileLink']."' download>";
 							echo "				<img  alt='下載PDF'class='download-icon'>";
 							echo "			</a>";
 						}

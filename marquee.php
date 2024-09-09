@@ -14,16 +14,26 @@
 </style>
 <div class="marquee">
 	<?php
-		$sql = "SELECT * FROM `news` WHERE `ShowOnMarquee`=1";
+		$sql = "SELECT * FROM `news` WHERE `ShowOnMarquee`=1 AND `IsShow`=1 ORDER BY OrderIndex DESC";
 		$result = $conn_1->query($sql);
 		if ($result->num_rows > 0) {
 			while ($row = mysqli_fetch_array($result)) {
 				if($row["url"]!=""){
 					echo "<div class='marquee1'>";
 					echo "<img src='images/icons/leaf.png' style='height:15px;'/>";
-                    echo "    <a class='breaking' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."　</a>";
-                    echo "<button class='MarqueeButton'>詳細資訊</button>";
-					echo "　　　";
+					if($row["Mode"]=="File"){
+						echo "    <a class='breaking' href='Attachment/News/".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."　</a>";
+						echo "<a class='MarqueeButton' href='Attachment/News/".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>詳細資訊</a>";
+					}
+					else if($row["Mode"]=="Page"){
+						echo "    <a class='breaking' href='NewsMasterPage.php?_ID=".$row['_ID']."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."　</a>";
+						echo "<a class='MarqueeButton' href='NewsMasterPage.php?_ID=".$row['_ID']."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>詳細資訊</a>";
+					}
+					else if($row["Mode"]=="Link"){
+						echo "    <a class='breaking' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."　</a>";
+						echo "<a class='MarqueeButton' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>詳細資訊</a>";
+					}
+                   	echo "　　　";
 					echo "</div>";
                 }
 				else{

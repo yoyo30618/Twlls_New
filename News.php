@@ -56,9 +56,9 @@
 					<div class="video-bottom-grid1" >
 					<ul class="list" style="font-size: 12pt;">
 						<?php
-							if($tab==="activity") $sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='活動消息' ORDER BY OrderIndex";
-							if($tab==="seminar") $sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='學術研討會' ORDER BY OrderIndex";
-							if($tab==="publication") $sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='出版資訊' ORDER BY OrderIndex";
+							if($tab==="activity") $sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='活動消息'  ORDER BY OrderIndex DESC";
+							if($tab==="seminar") $sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='學術研討會' ORDER BY OrderIndex DESC";
+							if($tab==="publication") $sql = "SELECT * FROM `news` WHERE `IsShow`=1 AND `Classification`='出版資訊' ORDER BY OrderIndex DESC";
 							$result = $conn_1->query($sql);
 							if ($result->num_rows > 0) {
 								while ($row = mysqli_fetch_array($result)) {
@@ -67,10 +67,21 @@
 									echo "		<a style='color:black'>".$row["DateTime"]."</a>";
 									echo "</div>";
 									echo "<div style='width:80%;float:left;font-size:15px'>";
-									echo "		<a style='color:black' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a>";
+									if($row["Mode"]=="File")
+										echo "		<a style='color:black' href='Attachment/News/".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a>";
+									else if($row["Mode"]=="Page")
+										echo "		<a style='color:black' href='NewsMasterPage.php?_ID=".$row['_ID']."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a>";
+									else if($row["Mode"]=="Link")
+                                		echo "		<a style='color:black' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a>";
 									echo "</div>";
 									echo "<div style='width:10%;float:right;font-size:10px'>";
-									echo "　　　<a href='".$row["url"]."' class='custom-button'>more...</a>";
+									if($row["Mode"]=="File")
+										echo "　　　<a href='Attachment/News/".$row["url"]."' class='custom-button'>more...</a>";
+									else if($row["Mode"]=="Page")
+										echo "　　　<a href='NewsMasterPage.php?_ID=".$row['_ID']."' class='custom-button'>more...</a>";
+									else if($row["Mode"]=="Link")
+										echo "　　　<a href='".$row["url"]."' class='custom-button'>more...</a>";
+                                
 									echo "</div>";
 									echo "<div style='clear: both;'></div>"; // 清除浮動
 									echo "</li>";

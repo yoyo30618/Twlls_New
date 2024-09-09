@@ -82,9 +82,9 @@
 													<li><a href="Publication.php">出版品購買</a></li>
 												</ul>
 											</li>
-											<li><a href="" style="font-size: 16px;">人才庫</a></li>
+											<li><a  onclick="alert('建置中，敬請期待！')" style="font-size: 16px;">人才庫</a></li>
 											<li>
-												<div class="icon-box"><a class="agile-icon" href="#"><i class="fa fa-envelope"></i></a></div>
+												<div class="icon-box"><a class="agile-icon" href="mailto:contact.tlls@gmail.com"><i class="fa fa-envelope"></i></a></div>
                                             </li>
 										</ul>
 									</div>

@@ -6,7 +6,7 @@
 	// 獲取當前選擇的標籤，預設為活動消息
 	if(isset($_GET['Issue'])==false || $_GET['Issue']=='LatestIssue'){
 		//找出最新一屆數
-		$thesisawardsql = "SELECT `Issue` FROM `thesisawardcontent` ORDER BY `OrderIndex` ASC ";
+		$thesisawardsql = "SELECT `Issue` FROM `thesisawardcontent` ORDER BY `OrderIndex` DESC ";
 		$thesisawardresult = $conn_1->query($thesisawardsql);
 		while ($row = mysqli_fetch_array($thesisawardresult)) {
 			$Issue =$row['Issue'];
@@ -52,7 +52,7 @@
 			<div class="col-md-12 video-bottom-grid">
 				<div class="col-md-3">
 					<?php
-						$thesisawardsql = "SELECT `Issue` FROM `thesisawardcontent` WHERE 1 GROUP BY `Issue` ORDER BY `OrderIndex` ASC";
+						$thesisawardsql = "SELECT `Issue` FROM `thesisawardinfo`  GROUP BY `Issue` ORDER BY `OrderIndex` DESC";
 						$thesisawardresult = $conn_1->query($thesisawardsql);
 						if ($thesisawardresult->num_rows > 0) {
 							while ($row = mysqli_fetch_array($thesisawardresult)) {
@@ -72,11 +72,11 @@
 				</div>
 					<?php
 						if($tab=="Award"){
-							$thesisawardcontentsql = "SELECT * FROM `thesisawardcontent`";
-							$thesisawardinfosql = "SELECT * FROM `thesisawardinfo`";
+							$thesisawardcontentsql = "SELECT * FROM `thesisawardcontent`  ORDER BY `OrderIndex` DESC";
+							$thesisawardinfosql = "SELECT * FROM `thesisawardinfo` ORDER BY `OrderIndex` DESC";
 							if($tab!='' && $Issue!=''){
-								$thesisawardcontentsql = "SELECT * FROM `thesisawardcontent` WHERE 1 AND `Issue`='".$Issue."'";
-								$thesisawardinfosql = "SELECT * FROM `thesisawardinfo` WHERE 1 AND `Issue`='".$Issue."'";
+								$thesisawardcontentsql = "SELECT * FROM `thesisawardcontent` WHERE `Issue`='".$Issue."' ORDER BY `OrderIndex` DESC";
+								$thesisawardinfosql = "SELECT * FROM `thesisawardinfo`  WHERE `Issue`='".$Issue."' ORDER BY `OrderIndex` DESC";
 							}
 							echo "<a style='color:#3C7556;font-size:25px;'>".$Issue."台灣語文學會優秀博士論文獎</a>";
 
@@ -99,12 +99,21 @@
 							echo "</table>";
 							$thesisawardinforesult = $conn_1->query($thesisawardinfosql);
 							while ($row = mysqli_fetch_array($thesisawardinforesult)) {
-								echo "<a style='color:black;font-size:18px;'>".$row['Memo']."</a><br>";
-								echo "<a style='color:black;font-size:15px;'>發布日期：".$row['IssueDate']."</a><br>";
+								echo "<a style='color:black;font-size:18px;'>".$row['Memo']."</a><br><br>";
+								if($row['IssueDate']!="")
+									echo "<a style='color:black;font-size:15px;'>發布日期：".$row['IssueDate']."</a><br>";
 								if($row['Attachment']!="")
-									echo "<a style='color:black;font-size:15px;'>附件：<a href='ThesisAwardFile/".$row['Attachment']."'>結果公告</a></a><br>";
+									echo "<a style='color:black;font-size:15px;'>附件：<a href='Attachment/Award/".$row['Attachment']."'>結果公告</a></a><br>";
 							}
 						}
+						else if($tab=="Apply"){
+							$filePath = "Award/" . $Issue . ".txt";
+							if (file_exists($filePath)) {
+								include_once($filePath);
+							} else {
+								echo "未建立該屆申請辦法";
+							}
+						}						
 					?>
 				</div>
 				

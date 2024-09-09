@@ -1,10 +1,6 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<?php
-	// 獲取當前選擇的標籤，預設為活動消息
-	$tab = isset($_GET['tab']) ? $_GET['tab'] : 'activity';
-	?>
 	<title>台灣語文學會</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -35,7 +31,7 @@
                 <a href="Conference.php" style="color:#6AA447">回到研討會▶</a>
                 <div style="background-color:white;margin-top:10px;padding:20px">
                     <?php 
-                    $sqlMeetingInfo = "SELECT * FROM `relatedlinks` WHERE `Notice`='研討會' and `Link`='".$_GET['sessions']."'";
+                    $sqlMeetingInfo = "SELECT * FROM `relatedlinks` WHERE `Notice`='研討會' and `Link`='".$_GET['sessions']."' and `IsUsed`=1 ORDER BY `OrderIndex` DESC";
                     $resulMeetingInfo = $conn_1->query($sqlMeetingInfo);
                     if ($resulMeetingInfo->num_rows > 0) {
                         while ($rowMeetingInfo = mysqli_fetch_array($resulMeetingInfo)) {
@@ -54,6 +50,13 @@
                             echo "        </td>";
                             echo "    </tr>";
                             echo "</table>";
+							$filePath = "Conference/" . $Issue . ".txt";
+							if (file_exists($filePath)) {
+								include_once($filePath);
+							} else {
+								echo "未建立該屆研討會資訊";
+							}
+                            break;
                         }
                     }
                     ?>
@@ -61,9 +64,8 @@
                 </div>
             </div>
 			<div class="col-md-4 video-bottom-grid">
-                <!--台灣語言及其教學國際研討會-->
                 <?php
-                    $sqltitle = "SELECT  DIStinct `Function` FROM `relatedlinks` WHERE `Notice`='研討會' AND `IsUsed`=1  ORDER BY `Function` ASC";
+                    $sqltitle = "SELECT  DIStinct `Function` FROM `relatedlinks` WHERE `Notice`='研討會' AND `IsUsed`=1  ORDER BY `Function` DESC";
                     $resulttitle = $conn_1->query($sqltitle);
                     if ($resulttitle->num_rows > 0) {
                         while ($rowtitle = mysqli_fetch_array($resulttitle)) {
@@ -89,8 +91,6 @@
                     }
                     
                 ?>
-                <!--青年學者台灣語言學術研討會-->
-                <!--台灣語言學一日大師/專題講座-->
             </div>
 			<div class="clearfix"> </div>
 		</div>
