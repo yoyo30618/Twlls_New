@@ -1,0 +1,171 @@
+<table style="width:100%;">
+	<tr><td style="text-align:center;color:red;"><b>第六屆青年學者台灣語言學術研討會</b></td></tr>
+	<tr><td style="text-align:center;color:black;">會議主網站 <a href="https://sites.google.com/view/ysstl6/ysstl6?authuser=0" target="_blank">https://sites.google.com/view/ysstl6/ysstl6?authuser=0</a></td></tr>
+	<tr><td style=""><br></td></tr>
+	<tr><td style="text-align:center;color:black;"><a href="https://sites.google.com/view/ysstl6/%E5%A0%B1%E5%90%8D%E8%B3%87%E8%A8%8A?authuser=0" target="_blank">直接報名請點我</a></td></tr>
+	<tr><td style=""><br></td></tr>
+	<tr><td style="text-align:center;color:black;"><b>第六屆青年學者台灣語言學術研討會議程表</b></td></tr>
+	<tr>
+		<td style="color:black;">
+			舉辦日期：2019年11月2日（六）<br>
+			會議地點：國立彰化師範大學國文系四樓視聽教室 & 台灣文學研究所二樓白沙書院<br>
+			主辦單位：國立彰化師範大學台灣文學研究所、台灣語文學會<br>
+		</td>
+	</tr>
+	<tr>
+		<td style="">
+			<table class="table table-bordered" style="width:100%;">
+				<tr>
+					<td style="text-align:center;">時間/場次</td>
+					<td style="text-align:center;width:21%">主持人</td>
+					<td style="text-align:center;width:21%">主講人</td>
+					<td style="text-align:center;">活動及發表題目</td>
+					<td style="text-align:center;width:21%">特約討論</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">08:40-09:10</td>
+					<td colspan="4" style="text-align:center;"><b>報到、領取會議資料（國文系四樓視聽教室）</b></td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">09:10-09:20</td>
+					<td style="text-align:center;">召集人 邱湘雲<br>(彰化師大)</td>
+					<td style="text-align:center;">郭艷光校長<br>周益忠院長<br>江敏華會長</td>
+					<td colspan="2" style="text-align:center;">開幕典禮  貴賓致詞 介紹來賓</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">09:20-10:20</td>
+					<td style="text-align:center;">會長 江敏華<br>(中央研究院)</td>
+					<td style="text-align:center;">劉承賢<br>(清華大學)</td>
+					<td colspan="2" style="text-align:center;">台灣語文學會優秀博士論文獎頒獎暨得獎人發表</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">10:20-10:40</td>
+					<td colspan="4" style="text-align:center;">茶敘時間</td>
+				</tr>
+				<tr>
+					<td rowspan="7" style="text-align:center;">Session 1<br>10:40-12:00</td>
+					<td colspan="4" style="text-align:center;">語音 & 詞彙 & 語言風格</td>
+				</tr>
+				<tr>
+					<td rowspan="3" style="text-align:center;">A場：視聽教室<br>楊秀芳<br>(台灣大學)</td>
+					<td style="text-align:center;">游喬茵<br>(臺灣師大)</td>
+					<td style="text-align:center;">論臺灣閩南語中唇音異化的歷時演變</td>
+					<td style="text-align:center;">陳彥君<br>(東海大學)</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">蔣敏全<br>(彰化師大)</td>
+					<td style="text-align:center;">彰化縣在地俗諺之研究</td>
+					<td style="text-align:center;">李惠琦<br>(成功大學)</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">廖志斌<br>(彰化師大)</td>
+					<td style="text-align:center;">閩南語四字格慣用語認知隱喻探析</td>
+					<td style="text-align:center;">楊秀芳<br>(台灣大學)</td>
+				</tr>
+				<tr>
+					<td rowspan="3" style="text-align:center;">B場：白沙書院<br>鍾榮富<br>(南臺科大)</td>
+					<td style="text-align:center;">宋秀桂<br>(彰化師大)</td>
+					<td style="text-align:center;">臺灣俗諺語量詞分類</td>
+					<td style="text-align:center;">駱嘉鵬<br>(台中教大)</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">林淑芬<br>(彰化師大)</td>
+					<td style="text-align:center;">臺語文學獎囡仔歌作品語言風格─以《彰化縣創作比賽優勝作品專輯》為範疇</td>
+					<td style="text-align:center;">梁淑慧<br>(台中教大)</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">左春香<br>(臺北市大)</td>
+					<td style="text-align:center;">試論客語小說語言風格—以〈德旺叔〉、〈求雨〉、〈水筆仔〉為例</td>
+					<td style="text-align:center;">邱湘雲<br>(彰化師大)</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">12:00-13:20</td>
+					<td colspan="4" style="text-align:center;"><b>午餐、休息（台灣語文學會會員大會）</b></td>
+				</tr>
+				<tr>
+					<td rowspan="7" style="text-align:center;">Session 2<br>13:20-14:40</td>
+					<td colspan="4" style="text-align:center;">語法 & 語用</td>
+				</tr>
+				<tr>
+					<td rowspan="3" style="text-align:center;">A場：視聽教室<br>王旭<br>(清華大學)</td>
+					<td style="text-align:center;">蔡雅婷<br>(San José州大)</td>
+					<td style="text-align:center;">ū 有 + VP Construction in Early Southern Min</td>
+					<td style="text-align:center;">郭維茹<br>(台灣師大)</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">高光良<br>(高雄師大)</td>
+					<td style="text-align:center;">台灣南排灣語名物化結構研究—以屏東縣牡丹鄉牡丹部落方言為例</td>
+					<td style="text-align:center;">李佩容<br>(東華大學)</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">張美雲<br>(彰化師大)</td>
+					<td style="text-align:center;">臺灣閩南語四字成詞之語法結構探討</td>
+					<td style="text-align:center;">陳菘霖<br>(成功大學)</td>
+				</tr>
+				<tr>
+					<td rowspan="3" style="text-align:center;">B場：白沙書院<br>葉美利<br>(清華大學)</td>
+					<td style="text-align:center;">陳穎昌<br>(臺灣大學)</td>
+					<td style="text-align:center;">On the Lexicalization and Grammaticalization of the Verbal</td>
+					<td style="text-align:center;">鄭縈<br>(清華大學)</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">黃正靜<br>(彰化師大)</td>
+					<td style="text-align:center;">李文古話本中的詞彙結構探討</td>
+					<td style="text-align:center;">何純惠<br>(交通大學)</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">謝職全<br>(清華大學)</td>
+					<td style="text-align:center;">客家話差比句「X 比 Y 較 W」否定式其華語對譯的語義探討</td>
+					<td style="text-align:center;">賴文英<br>(台灣師大)</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">14:40-15:00</td>
+					<td colspan="4" style="text-align:center;"><b>茶敘時間</b></td>
+				</tr>
+				<tr>
+					<td rowspan="7" style="text-align:center;">Session 3<br>15:00-16:20</td>
+					<td colspan="4" style="text-align:center;">語義 & 教學</td>
+				</tr>
+				<tr>
+					<td rowspan="3" style="text-align:center;">A場：視聽教室<br>邱湘雲<br>(彰化師大)</td>
+					<td style="text-align:center;">郭庭妤<br>(清華大學)</td>
+					<td style="text-align:center;">賽夏族之語言活力與復振─以苗栗縣賽夏族瓦祿部落為例</td>
+					<td style="text-align:center;">范瑞鈴<br>(聯合大學)</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">洪順義<br>(清華大學)</td>
+					<td style="text-align:center;">從認知隱喻的角度看排灣族北葉部落Masilid的命名現象—以地名、人名、家名為例</td>
+					<td style="text-align:center;">謝富惠<br>(大同大學)</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">簡立婷<br>(清華大學)</td>
+					<td style="text-align:center;">達悟語幼兒沉浸式教學實驗班初探</td>
+					<td style="text-align:center;">謝富惠<br>(大同大學)</td>
+				</tr>
+				<tr>
+					<td rowspan="3" style="text-align:center;">B場：白沙書院<br>王本瑛<br>(高雄師大)</td>
+					<td style="text-align:center;">謝芸薇<br>(清華大學)</td>
+					<td style="text-align:center;">「情境模式」應用於祈使句之課程與教學─以賽德克族語為例</td>
+					<td style="text-align:center;">王本瑛<br>(高雄師大)</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">鄧孟倫<br>(臺灣師大)</td>
+					<td style="text-align:center;">淺談網路流行語之認知隱喻─以15-20歲之學生為例</td>
+					<td style="text-align:center;">張群<br>(臺中科大)</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">盧佩芊<br>(成功大學)</td>
+					<td style="text-align:center;">用父親的話教母親的話:透過台語學習越南語的意義及做法</td>
+					<td style="text-align:center;">徐富美<br>(元智大學)</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">16:20-16:30</td>
+					<td style="text-align:center;">江理事長 敏華 </td>
+					<td colspan="3" style="text-align:center;"><b>閉幕典禮</b></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr><td style="">*每場發表時間80分鐘，主持時間5分鐘，發表時間15分鐘，特約討論時間8分鐘，綜合討論時間6分鐘。</td></tr>
+</table>
+						

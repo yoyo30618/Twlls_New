@@ -1,0 +1,21 @@
+
+					<h3><b>[徵稿啟事]第十四屆台灣語言及其教學暨台灣學「蛻變的聲音」國際學術研討會</b></h3>
+					<div class="news-grid-rght3">
+						<div class="story">
+							本會與國立成功大學人文社會科學中心將於2022年08月27、28日舉辦「第十四屆台灣語言及其教學暨台灣學『蛻變的聲音』國際學術研討會」，徵稿辦法詳如附件。誠摯邀請您踴躍投稿，亦請不吝轉知、廣為宣傳，謝謝您！
+							<br><br>
+							附件：
+							<span style="font-size:small;line-height:30px;text-align:justify;"><font color="black">
+								本會與國立成功大學人文社會科學中心將於2022年08月27、28日舉辦「第十四屆台灣語言及其教學暨台灣學『蛻變的聲音』國際學術研討會」，徵稿辦
+								法詳如附件。誠摯邀請您踴躍投稿，亦請不吝轉知、廣為宣傳，謝謝您！
+							<br><br>附件： 
+							 1. <a href="Documents/ISTLT_14_CallforPapers_Hanzi.pdf">徵稿辦法（華語文版本） </a>
+							 2. <a href="Documents/ISTLT_14_CallforPapers_POJ.pdf">徵稿辦法（台語文版本） </a>
+							 3. <a href="Documents/ISTLT_14_CallforPapers_Hanzi_TLJ.pdf">徵稿辦法（台語文漢羅版本）</a>
+							 4. <a href="Documents/ISTLT_14_CallforPapers_Hanzi(Xi-ien).pdf">徵稿辦法（四縣客家語文版本） </a>
+							 5. <a href="Documents/ISTLT_14_CallforPapers_Hanzi(Hoi-liug).pdf">徵稿辦法（海陸客家語文版本） </a>
+							 6. <a href="Documents/ISTLT_14_CallforPapers_English.pdf">徵稿辦法（英文版本） </a>
+							 7. <a href="Documents/ISTLT_14_CallforPapers_Form_1.docx">投稿人資料表及論文摘要表 </a>
+							 8. <a href="Documents/ISTLT_14_CallforPapers_Form_2.doc">台灣語文學會入會申請表</a>
+						</div>
+					</div>

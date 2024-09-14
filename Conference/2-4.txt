@@ -1,0 +1,254 @@
+<table style="width:100%;">
+	<tr><td style="text-align:center;color:red;"><b>青年學者臺灣語言學術研討會</b></td></tr>
+	<tr><td style="text-align:center;color:black;"><b>第四屆青年學者臺灣語言學術研討會</b></td></tr>
+	<tr><td style="text-align:center;color:black;">（網址：<a href="https://sites.google.com/site/4youngscholarsconference/da-hui-xiao-xi" target="_blank">https://sites.google.com/site/4youngscholarsconference/da-hui-xiao-xi</a>）</td></tr>
+	<tr><td style=""><br></td></tr>
+	<tr><td style="text-align:center;color:black;font-size:20pt"><b>第四屆青年學者台灣語言學術研討會議程表</b></td></tr>
+	<tr>
+		<td style="">
+			<table class="table table-bordered" style="width:100%;">
+				<tr>
+					<td style="text-align:center;width:21%;">時間/場次</td>
+					<td colspan="4" style="text-align:center;">會議進程</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">09：00－09：20</td>
+					<td colspan="4" style="text-align:center;">報到、領取會議資料</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">09：20－09：30</td>
+					<td colspan="4" style="text-align:center;">開幕典禮國立台東大學劉校長金源致詞</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">09：30－09：50</td>
+					<td colspan="4" style="text-align:center;">台灣語文學會理事長楊秀芳教授致詞</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">場次</td>
+					<td style="text-align:center;width:15%;">主持人</td>
+					<td style="text-align:center;width:15%;">主講人</td>
+					<td colspan="2" style="text-align:center;">論文題目</td>
+				</tr>
+				<tr>
+					<td rowspan="4" style="text-align:center;">第一場發表會A<br>（原住民語）<br>09：50－11：35</td>
+					<td rowspan="4" style="text-align:center;">黃美金</td>
+					<td style="text-align:center;">高秀玉</td>
+					<td style="text-align:center;">泰雅族家庭的族語傳承與使用—以新竹縣尖石鄉為例</td>
+					<td style="text-align:center;width:15%;">陳淑娟</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">黃天來</td>
+					<td style="text-align:center;">從話語概念看阿美語族語教材課文用語的研究</td>
+					<td style="text-align:center;">黃美金</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">黃基成</td>
+					<td style="text-align:center;">排灣語na與nu標記初探</td>
+					<td style="text-align:center;">湯愛玉</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">陳誼誠</td>
+					<td style="text-align:center;">從族語文本評估阿美族語的語言活力</td>
+					<td style="text-align:center;">張學謙</td>
+				</tr>
+				<tr>
+					<td rowspan="4" style="text-align:center;">第一場發表會B<br>（原住民語）<br>9：40－11:35</td>
+					<td rowspan="4" style="text-align:center;">楊秀芳</td>
+					<td style="text-align:center;">董宜佳</td>
+					<td style="text-align:center;">排灣貴族階層使用的語言意義及其關係─以土坂村Patjalinuk頭目家的祭儀為例</td>
+					<td style="text-align:center;">葉美利</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">陳嬿庄</td>
+					<td style="text-align:center;">噶哈巫語的使用現狀與語言、文化復振</td>
+					<td style="text-align:center;">李佩容</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">何秀珍</td>
+					<td style="text-align:center;">初探雙語人以雙語作論述用語，觀察其語言成分及論述效益—以排灣族牧師講道為例</td>
+					<td style="text-align:center;">江敏華</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">武佳箴</td>
+					<td style="text-align:center;">阿美族表達感謝的語用研究—以面子與文化比較的觀點切入</td>
+					<td style="text-align:center;">陳麗君</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">11：35－13：00</td>
+					<td colspan="4" style="text-align:center;"><b>午餐、休息</b></td>
+				</tr>
+				<tr>
+					<td rowspan="3" style="text-align:center;">第二場發表會A<br>（客家語）<br>13：00－14：20</td>
+					<td rowspan="3" style="text-align:center;">葉美利</td>
+					<td style="text-align:center;">許秀娟、鍾鎮城</td>
+					<td style="text-align:center;">國小數學科客華雙語教學之課室言談分析</td>
+					<td style="text-align:center;">江敏華</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">陳彥君</td>
+					<td style="text-align:center;">語言轉移後的母語殘餘成份—以臺灣幾個語言現象為例</td>
+					<td style="text-align:center;">葉美利</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">何純惠</td>
+					<td style="text-align:center;">兩岸客家話小稱詞演變探析─臺灣客家話與廣東、福建客家話的初步比較</td>
+					<td style="text-align:center;">杜佳倫</td>
+				</tr>
+				<tr>
+					<td rowspan="3" style="text-align:center;">第二場發表會B<br>（華語與台華比較）<br>13：00－14：20</td>
+					<td rowspan="3" style="text-align:center;">陳麗君</td>
+					<td style="text-align:center;">佐藤圭司</td>
+					<td style="text-align:center;">從閩南語看日語漢字讀音「長音」</td>
+					<td style="text-align:center;">陳麗君</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">黃萍雅</td>
+					<td style="text-align:center;">導覽員的語言使用現象—以高雄市哈瑪星文化公車為觀察對象</td>
+					<td style="text-align:center;">楊允言</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">蔡子培</td>
+					<td style="text-align:center;">台灣華語電視新聞主播播報語音分析</td>
+					<td style="text-align:center;">舒兆民</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">14：20－14：40</td>
+					<td colspan="4" style="text-align:center;"><b>茶敘時間</b></td>
+				</tr>
+				<tr>
+					<td rowspan="2" style="text-align:center;">第三場發表會A<br>（雙語、跨語言）<br>14：40－15：35</td>
+					<td rowspan="2" style="text-align:center;">張學謙</td>
+					<td style="text-align:center;">謝詩萱</td>
+					<td style="text-align:center;">語言多樣性的利與弊─馬來西亞華語受粵語的影響下的語言遷移現象</td>
+					<td style="text-align:center;">湯愛玉</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">馬秀英</td>
+					<td style="text-align:center;">約量助詞「左右」、「前後」及「上下」漢泰語對比與分析</td>
+					<td style="text-align:center;">曾金金</td>
+				</tr>
+				<tr>
+					<td rowspan="2" style="text-align:center;">第三場發表會B<br>（台語）<br>14：40－15：35</td>
+					<td rowspan="2" style="text-align:center;">李佩容</td>
+					<td style="text-align:center;">張以文</td>
+					<td style="text-align:center;">鄉土語言教育的觀察與省思—以蘆洲地區的閩南語教學為例</td>
+					<td style="text-align:center;">杜佳倫</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">鄧孟倫</td>
+					<td style="text-align:center;">華語與閩南語手部三字格認知隱喻研究</td>
+					<td style="text-align:center;">李佩容</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">15：35－15：55</td>
+					<td colspan="4" style="text-align:center;"><b>茶敘時間</b></td>
+				</tr>
+				<tr>
+					<td rowspan="2" style="text-align:center;">第四場發表會A<br>（台語）<br>15：55－17：15</td>
+					<td rowspan="2" style="text-align:center;">陳淑娟</td>
+					<td style="text-align:center;">潘惠華</td>
+					<td style="text-align:center;">當代台語八點檔電視連續劇《風水世家》雙語現象之探討</td>
+					<td style="text-align:center;">張學謙</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">李紫瑜</td>
+					<td style="text-align:center;">從語句的「預設」與「衍推」訊息，區別台灣閩南語「甲、著、了」的補語語意</td>
+					<td style="text-align:center;">楊秀芳</td>
+				</tr>
+				<tr>
+					<td rowspan="3" style="text-align:center;">第四場發表會B<br>（新移民語）<br>15：55－17：15</td>
+					<td rowspan="3" style="text-align:center;">曾金金</td>
+					<td style="text-align:center;">陳咨玟</td>
+					<td style="text-align:center;">師生共創越南字母雙語書</td>
+					<td style="text-align:center;">曾金金</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">盧佩芊</td>
+					<td style="text-align:center;">融入文化在TPRS 越南語教學上－以越南菊花故事為例</td>
+					<td style="text-align:center;">楊允言</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">蘇青婉</td>
+					<td style="text-align:center;">新住民母語學習在台之狀況以泰語為例</td>
+					<td style="text-align:center;">舒兆民</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">17：15－17：35</td>
+					<td colspan="4" style="text-align:center;"><b>閉幕典禮楊理事長秀芳主持、賦歸</b></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr><td style=""><br></td></tr>
+	<tr><td style="text-align:center;color:red;"><b>第四屆青年學者台灣語言學術研討會</b></td></tr>
+	<tr><td style="text-align:center;color:black;font-size:16pt"><b>徵稿啟事</b></td></tr>
+	<tr>
+		<td style="text-align:center;color:black;font-size:12pt">
+			<b>
+				會議主題：<br>
+				台灣的雙語現象與雙語教育<br>
+				會議子題：<br>
+				台灣的雙語現象  ● 台灣的雙語教育<br>
+				台灣語言的保存與流失 ● 族群語言的教育規畫<br>
+				雙語的語言學研究 ● 雙語教育與語言習得<br>
+				雙語的心理語言學研究 ● 國小母語教學<br>
+				雙語的社會語言學研究 ● 沉浸式母語教學<br>
+				雙語現象與語言景觀 ● 國、高中母語必修課的規劃<br>
+				瀕危語言的記錄與數位化 ● 母語教學的創新發展<br>
+				族群語言的地位規畫 ● 母語的讀寫教育<br>
+				族群語言的文本規畫 ● 雙語翻譯與口譯<br>
+				（其他與台灣語言及語言教學相關的論文亦所歡迎）<br>
+			</b>
+		</td>
+	</tr>
+	<tr><td style="color:darkblue;">摘要截稿：</td></tr>
+	<tr><td style="">2015年3月22日</td></tr>
+	<tr><td style=""><br></td></tr>
+	<tr><td style="color:darkblue;">錄取通知：</td></tr>
+	<tr><td style="">2015年4月26日</td></tr>
+	<tr><td style=""><br></td></tr>
+	<tr><td style="color:darkblue;">全文截稿：</td></tr>
+	<tr><td style="">2015年10月24日</td></tr>
+	<tr><td style=""><br></td></tr>
+	<tr><td style="color:darkblue;">投稿方式：</td></tr>
+	<tr><td style="">下載並填寫「發表人資料表」及「論文題目與摘要」，以電子郵件寄到sky821119@gmail.com(每人限制發表一篇)</td></tr>
+	<tr><td style=""><br></td></tr>
+	<tr><td style="color:darkblue;">研討會網址：</td></tr>
+	<tr><td style=""><a href="https://sites.google.com/site/4youngscholarsconference/" target="_blank">https://sites.google.com/site/4youngscholarsconference/</a></td></tr>
+	<tr><td style=""><br></td></tr>
+	<tr><td style="color:darkblue;">會議收費方式：</td></tr>
+	<tr>
+		<td style="">
+		（1） 論文發表費：學生1500元；非學生2000元（已含會議註冊費）<br>
+		（2） 會議註冊費稍後公告<br>
+		（3） 台灣語文學會會員免論文發表費及會議註冊費<br>
+		</td>
+	</tr>
+	<tr><td style=""><br></td></tr>
+	<tr><td style="color:darkblue;">主辦單位：</td></tr>
+	<tr><td style="">台灣語文學會、國立台東大學華語文學系</td></tr>
+	<tr><td style=""><br></td></tr>
+	<tr><td style="color:darkblue;">會議地點：</td></tr>
+	<tr><td style="">國立台東大學華語文學系</td></tr>
+	<tr><td style=""><br></td></tr>
+	<tr><td style="color:darkblue;">聯絡方式：</td></tr>
+	<tr>
+		<td style="">
+			聯絡地址：95092台東市大學路二段369號<br>
+			聯絡電話：089-517764<br>
+			稿件聯繫：sky821119@gmail.com 蘇元廷同學<br>
+			<a href="Documents/youth/2015_第四屆青年學者台灣語言學術研討會徵稿啟事fnl.doc">表單下載</a><br>
+		</td>
+	</tr>
+	<tr><td style=""><br></td></tr>
+	<tr>
+		<td style="">
+			備註：<br>
+			1.論文摘要請至少包括：「主旨」、「研究問題」、「取材」、「方法」、「預期成果」等。<br>
+			2.論文摘要之字數請掌握在一頁以內。<br>
+			3.為匿名送審，論文摘要內容請避免透露個人資訊。<br>
+			4.投稿時請回傳WORD及PDF一式兩檔。<br>
+		</td>
+	</tr>
+</table>
+						

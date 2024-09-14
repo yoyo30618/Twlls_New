@@ -1,0 +1,7 @@
+
+					<h3><b>《臺灣語文研究》榮獲2023年臺灣人文及社會科學核心期刊第一級</b></h3>
+					<div class="news-grid-rght3">
+						<div class="story">
+						<embed src="Documents/20231230_01.pdf" style="width:100%;height:600px"></embed>
+						</div>
+					</div>

@@ -46,7 +46,7 @@
 	?>		
 	<div class="clearfix"></div>
 </div>
-<script type="text/javascript" src="js/jquery.marquee.js"></script>
+<script type="text/javascript" src="assets/js/jquery.marquee.js"></script>
 <script>
 	$('.marquee').marquee({ pauseOnHover: true });
 </script>

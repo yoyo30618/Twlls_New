@@ -1,0 +1,12 @@
+<table style="width:100%;">
+	<tr><td style="text-align:center;color:red;"><b>第十四屆臺灣語言及其教學國際學術研討會</b></td></tr>
+	<tr><td style="text-align:center;color:red;"><b>The 14th International Symposium on Taiwanese Languages and Teaching</b></td></tr>
+	<tr><td style="text-align:center;"><br></td></tr>
+	<tr><td style="text-align:center;">會議訊息通知</td></tr>
+	<tr><td style="text-align:center;">會議網站：<a href="https://chass.ncku.edu.tw/p/412-1011-27963.php?Lang=zh-tw" target="_blank">https://chass.ncku.edu.tw/p/412-1011-27963.php?Lang=zh-tw</a></td></tr>
+	<tr><td style="text-align:center;"><br></td></tr>
+	<tr><td style="text-align:center;">——海報——</td></tr>
+	<tr><td style="text-align:center;"><img src="Documents/ISTLT14_poster.jpg" style="width:100%;" alt="第十四屆臺灣語言及其教學國際學術研討會海報"/></td></tr>
+	<tr><td style="text-align:center;">——議程（暫定）——</td></tr>
+	<tr><td style="text-align:center;"><embed src="Documents/ISTLT14_agenda_220719.pdf" style="width:100%;height:600px" alt="第十四屆臺灣語言及其教學國際學術研討會議程" ></embed></td></tr>
+</table>

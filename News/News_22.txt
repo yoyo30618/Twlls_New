@@ -1,0 +1,8 @@
+
+					<h3><b>因應Covid-19多數學校延後畢業離校手續期限，第六屆台灣語文學會優秀博士論文獎持續收件至十月底</b></h3>
+					<div class="news-grid-rght3">
+						<div class="story">
+						附件：
+						<a href="Award.php?Issue=第六屆&tab=Apply" >徵件啟事</a>
+						</div>
+					</div>

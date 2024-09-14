@@ -1,0 +1,7 @@
+<table style="width:100%;">
+	<tr><td style="text-align:center;color:red;"><b>第七屆青年學者台灣語言學術研討會</b></td></tr>
+	<tr><td style="text-align:center;"><br></td></tr>
+	<tr><td style="text-align:center;">會議主網站：<a href="https://sites.google.com/view/ysstl7" target="_blank">https://sites.google.com/view/ysstl7</a></td></tr>
+	<tr><td style="text-align:center;"><br></td></tr>
+	<tr><td style="text-align:center;"><a href="https://sites.google.com/view/ysstl7/%E5%A0%B1%E5%90%8D%E8%88%87%E6%9C%83?authuser=0" target="_blank">直接報名請點我</a></td></tr>
+</table>

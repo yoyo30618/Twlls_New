@@ -13,12 +13,12 @@
 	<meta name="keywords" content="" />
 	<script
 		type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-	<script src="js/jquery-1.11.1.min.js"></script>
+	<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<script src="assets/js/jquery-1.11.1.min.js"></script>
 	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
 	
-	<script type="text/javascript" src="js/jquery.marquee.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.marquee.js"></script>
 	<script>
 		$('.marquee').marquee({ pauseOnHover: true });
 	</script>
@@ -93,12 +93,12 @@
 				<div class="col-md-9">
 					<?php
 						$JournalInfosql = "SELECT `JournalSession` , `JournalIssue`, `JournalDate` FROM `journalcontent` WHERE 1 GROUP BY `JournalSession` , `JournalIssue`, `JournalDate` ORDER BY `OrderIndex` DESC";
-						$JournalTextsql =" SELECT *  FROM `journalcontent`  WHERE `JournalSession` = ( 	SELECT `JournalSession`  	FROM `journalcontent`  	WHERE `JournalSession` = '{$Session}'  	  AND `JournalIssue` = '{$Issue}'  	GROUP BY `JournalSession`, `JournalIssue`  	ORDER BY `OrderIndex` DESC  	LIMIT 1 )  AND `JournalIssue` = ( 	SELECT `JournalIssue`  	FROM `journalcontent` GROUP BY `JournalSession`, `JournalIssue`  	ORDER BY `OrderIndex` DESC  	LIMIT 1 )  ORDER BY `PAGE` DESC";
+						$JournalTextsql =" SELECT * FROM `journalcontent` WHERE  `JournalSession`=( SELECT `JournalSession` FROM `journalcontent` WHERE 1 GROUP BY `JournalSession`,`JournalIssue` ORDER BY `OrderIndex` DESC  LIMIT 1)AND  `JournalIssue`=( SELECT `JournalIssue` FROM `journalcontent` WHERE 1 GROUP BY `JournalSession`,`JournalIssue` ORDER BY `OrderIndex` DESC  LIMIT 1) ORDER BY OrderIndex DESC";
 						$JournalMembersql="SELECT `Position`, GROUP_CONCAT(CONCAT(`Name`, ' ', `Unit`) SEPARATOR '<br>') AS People FROM `journalinfo` GROUP BY `Position`;";
 						if($Session!='' && $Issue!=''){
 							$JournalInfosql = "SELECT `JournalSession` , `JournalIssue`, `JournalDate` FROM `journalcontent` WHERE 1 AND `JournalSession`='".$Session."' AND `JournalIssue`='".$Issue."' GROUP BY `JournalSession` , `JournalIssue`, `JournalDate` ORDER BY `OrderIndex` DESC";
-							//$JournalTextsql = "WITH TEMP AS (SELECT `JournalSession`, `JournalIssue` FROM `journalcontent` WHERE 1 AND `JournalSession`='".$Session."' AND `JournalIssue`='".$Issue."' GROUP BY `JournalSession`, `JournalIssue`ORDER BY `OrderIndex` DESC LIMIT 1 )SELECT * FROM `journalcontent` WHERE `JournalSession` = (SELECT `JournalSession` FROM TEMP) AND `JournalIssue` = (SELECT `JournalIssue` FROM TEMP) ORDER BY `PAGE` DESC";
-							$JournalTextsql =" SELECT *  FROM `journalcontent`  WHERE `JournalSession` = ( 	SELECT `JournalSession`  	FROM `journalcontent`  	WHERE `JournalSession` = '{$Session}'  	  AND `JournalIssue` = '{$Issue}'  	GROUP BY `JournalSession`, `JournalIssue`  	ORDER BY `OrderIndex` DESC  	LIMIT 1 )  AND `JournalIssue` = ( 	SELECT `JournalIssue`  	FROM `journalcontent`  	WHERE `JournalSession` = '".$Session."'  	  AND `JournalIssue` = '".$Issue."'  	GROUP BY `JournalSession`, `JournalIssue`  	ORDER BY `OrderIndex` DESC  	LIMIT 1 )  ORDER BY `PAGE` DESC";
+							//$JournalTextsql = "WITH TEMP AS (SELECT `JournalSession`, `JournalIssue` FROM `journalcontent` WHERE 1 AND `JournalSession`='".$Session."' AND `JournalIssue`='".$Issue."' GROUP BY `JournalSession`, `JournalIssue`ORDER BY `OrderIndex` DESC LIMIT 1 )SELECT * FROM `journalcontent` WHERE `JournalSession` = (SELECT `JournalSession` FROM TEMP) AND `JournalIssue` = (SELECT `JournalIssue` FROM TEMP) ORDER BY `OrderIndex` DESC";
+							$JournalTextsql =" SELECT *  FROM `journalcontent`  WHERE `JournalSession` = '$Session'  	    AND `JournalIssue` = '$Issue' ORDER BY `OrderIndex` DESC";
 							$JournalMembersql="SELECT `Position`, GROUP_CONCAT(CONCAT(`Name`, ' ', `Unit`) SEPARATOR '<br>') AS People FROM `journalinfo` WHERE 1 AND `JournalSession`='".$Session."' AND `JournalIssue`='".$Issue."' GROUP BY `Position`;";
 						}
 						$JournalInforesult = $conn_1->query($JournalInfosql);
@@ -250,7 +250,7 @@
 
 	
 	<?php include_once('footer.php'); ?>
-	<script src="js/bootstrap.js"></script>
+	<script src="assets/js/bootstrap.js"></script>
 </body>
 
 </html>

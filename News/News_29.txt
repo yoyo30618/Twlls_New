@@ -1,0 +1,51 @@
+
+					<h3><b>《閩南地區方言地圖集》已出版</b></h3>
+					<div class="news-grid-rght3">
+						<div class="story">
+							<table>
+								<tr>
+									<td colspan="4" style="text-align:center">
+									《三十而立——台灣語文學會三十週年慶祝論文集》已出版，欲購買本書請來信至<a href="mailto:contact.tlls@gmail.com">本會</a>。<br>
+									本會2021、2022年有效會員可獲贈1本，會員與非會員加購均享優惠（會員7折，非會員8折）。
+									</td>
+								</tr>
+								<tr>
+									<td><br></td>
+								</tr>
+								<tr>
+									<td style="width:15%">
+									</td>
+									<td style="width:30%;">
+										<img src="Documents/30th_cover.jpg" style="width:100%"/>
+									</td>
+									<td style="width:5%">
+									</td>
+									<td>
+										書　　名：三十而立——台灣語文學會三十週年慶祝論文集<br>
+										主　　編：陳淑娟、江敏華<br>
+										編輯委員：杜佳倫、陳麗君、曹逢甫<br>
+										出  版  者：台灣語文學會<br>
+										印　　刷：秀威資訊科技股份有限公司<br>
+										出版日期：中華民國 110 年 12 月<br>
+										版　　次：1<br>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="4" style="text-align:center">——封面——</td>
+								</tr>
+								<tr>
+									<td colspan="4"  style="text-align:center">
+										<embed src="Documents/30th_cover.jpg" style="height:600px"></embed>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="4" style="text-align:center">——目次——</td>
+								</tr>
+								<tr>
+									<td colspan="4"  style="text-align:center">
+										<embed src="Documents/30th_content.pdf" style="width:100%;height:600px"></embed>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>

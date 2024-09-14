@@ -1,0 +1,94 @@
+<table style="width:100%;">
+	<tr><td style="text-align:center;color:red;"><b>第十三屆臺灣語言及其教學國際學術研討會</b></td></tr>
+	<tr><td style="text-align:center;color:red;"><b>The 13th International Symposium on Taiwanese Languages and Teaching</b></td></tr>
+	<tr><td style="text-align:center;"><br></td></tr>
+	<tr><td style="text-align:center;">會議訊息通知</td></tr>
+	<tr><td style=""><br></td></tr>
+	<tr><td style="">Michael Hornsby</td></tr>
+	<tr>
+		<td style="">
+			服務單位：Adam Mickiewicz University Poznan<br>
+			演講題目：The contribution of ’new speakers’ to minority language minoritisation<br>
+		</td>
+	</tr>
+	<tr><td style=""><br></td></tr>
+	<tr><td style="">Sally Rice</td></tr>
+	<tr>
+		<td style="">
+			服務單位：University of Alberta<br>
+			演講題目：Cognitive Linguistics and Endangered Language Pedagogy<br>
+		</td>
+	</tr>
+	<tr><td style=""><br></td></tr>
+	<tr><td style="">蔡素娟</td></tr>
+	<tr>
+		<td style="">
+			服務單位：國立中正大學語言學研究所教授<br>
+			演講題目：台灣閩南語口語語料庫的多重功能：研究、傳承與應用（The Multiple Functions of Taiwan-Minnan Spoken Corpora: Research, Inheritance, and Applications）<br>
+		</td>
+	</tr>
+	<tr><td style="text-align:center;"><img src="Documents/istlt13.png" style="width:100%;" alt=""/></td></tr>
+	<tr>
+		<td style="color:red">
+			報名資訊：<br>
+			1.線上報名系統：<a href="https://reurl.cc/5qGR16" target="_blank">https://reurl.cc/5qGR16（論文發表者、主持人、評論人免線上註冊報名）</a><br>
+			2.線上繳費系統：<a href="http://www.twlls.org.tw/Pay.php" target="_blank">http://www.twlls.org.tw/Pay.php</a><br>
+			3.註冊費用：<br>
+				<table style="width:100%;" class="table table-bordered">
+					<tr>
+						<td colspan="3">I. 台灣語文學會會員</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>已繳交<br>2020年度會費</td>
+						<td>尚未繳交<br>2020年度會費</td>
+					</tr>
+					<tr>
+						<td>學生</td>
+						<td>免費</td>
+						<td>$500</td>
+					</tr>
+					<tr>
+						<td>一般人士</td>
+						<td>免費</td>
+						<td>$1,000</td>
+					</tr>
+					<tr>
+						<td colspan="3">II. 非台灣語文學會會員</td>
+					</tr>
+					<tr>
+						<td colspan="2">即日起至9/30完成線上註冊<br>(最遲須於10/8完成繳費)</td>
+						<td>現場註冊<br>10/16-10/17</td>
+					</tr>
+					<tr>
+						<td>學生</td>
+						<td>$600</td>
+						<td>$750</td>
+					</tr>
+					<tr>
+						<td>一般人士</td>
+						<td>$1,200</td>
+						<td>$1,500</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							備註：
+							1. 9/30關閉線上註冊表單，10/8關閉匯款權限，若未於期限內完成，視同現場註冊。
+							2. 現場報名之與會者，恕無法保證取得論文集。
+						</td>
+					</tr>
+				</table>
+			會議網址：<a href="https://istlt2020.wixsite.com/nthu" target="_blank">https://istlt2020.wixsite.com/nthu</a><br>
+		</td>
+	</tr>
+	<tr><td style="text-align:center;"><embed src="Documents/istlt13.pdf" style="width:100%;height:600px" alt="" ></embed></td></tr>
+	<tr><td style=""><br></td></tr>
+	<tr>
+		<td style="">
+			主辦單位：國立清華大學臺灣語言研究與教學研究所<br>
+			聯絡資訊：<br>
+			03-5715131轉73601 張小姐<br>
+			<a href="mailto:istlt2020@gmail.com">istlt2020@gmail.com</a><br>
+		</td>
+	</tr>
+</table>

@@ -1,0 +1,16 @@
+<table style="width:100%;">
+	<tr><td style="text-align:center;color:red;"><b>台灣語文學會「一日大師講座」活動行程如下：</b></td></tr>
+	<tr><td style=""><br></td></tr>
+	<tr>
+		<td style="">
+			日期：2020/10/28 星期三<br>
+			地點：國立臺中教育大學勤樸樓 F104 教室<br>
+			10:10-10:30 報到<br>
+			10:30-12:00 董忠司教授：十七世紀初《漳州語語藝》中的句法及其句構教學規畫<br>
+			13:30-15:00 連金發教授：台語詞法漫談<br>
+			15:10-15:40 大師學思歷程綜合座談<br>
+		</td>
+	</tr>
+	<tr><td style=""><br></td></tr>
+	<tr><td style="">線上報名：<a href="http://campus.ntcu.edu.tw/ntcu/activity/content.asp?actno=1607" target="_blank">http://campus.ntcu.edu.tw/ntcu/activity/content.asp?actno=1607</a></td></tr>
+</table>

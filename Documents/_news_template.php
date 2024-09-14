@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <title>台灣語文學會</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/nav.css" />
-    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/nav.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
     <style type="text/css">
     #abanner {
         width: 1200px;

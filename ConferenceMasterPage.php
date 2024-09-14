@@ -7,13 +7,13 @@
 	<meta name="keywords" content="" />
 	<script
 		type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-	<script src="js/jquery-1.11.1.min.js"></script>
+	<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<script src="assets/js/jquery-1.11.1.min.js"></script>
 	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
 	<style>
     </style>
-	<script type="text/javascript" src="js/jquery.marquee.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.marquee.js"></script>
 	<script>
 		$('.marquee').marquee({ pauseOnHover: true });
 	</script>
@@ -31,6 +31,10 @@
                 <a href="Conference.php" style="color:#6AA447">回到研討會▶</a>
                 <div style="background-color:white;margin-top:10px;padding:20px">
                     <?php 
+                    if(!isset($_GET['sessions'])){
+                        echo "<script>alert('請由正確路徑進入');</script>";
+                        header("Location: index.php");
+                    }
                     $sqlMeetingInfo = "SELECT * FROM `relatedlinks` WHERE `Notice`='研討會' and `Link`='".$_GET['sessions']."' and `IsUsed`=1 ORDER BY `OrderIndex` DESC";
                     $resulMeetingInfo = $conn_1->query($sqlMeetingInfo);
                     if ($resulMeetingInfo->num_rows > 0) {
@@ -44,13 +48,30 @@
                             echo $rowMeetingInfo['TitleEng'];
                             echo "        </td>";
                             echo "    </tr>";
-                            echo "    <tr>";
-                            echo "        <td style='padding:10px;'>";
-                            echo "            <button style='background-color:#418765;color:#fff;border-radius:5px;border:none;' onclick='window.open(\"".$rowMeetingInfo['MeetingURL']."\");'>前往會議網站</button>";
-                            echo "        </td>";
-                            echo "    </tr>";
+                            if($rowMeetingInfo['MeetingURL']!=""){
+                                echo "    <tr>";
+                                echo "        <td style='padding:10px;'>";
+                                echo "            <button style='background-color:#418765;color:#fff;border-radius:5px;border:none;' onclick='window.open(\"".$rowMeetingInfo['MeetingURL']."\");'>前往會議網站</button>";
+                                echo "        </td>";
+                                echo "    </tr>";
+                            }
+                            if($rowMeetingInfo['Place']!=""){
+                                echo "    <tr>";
+                                echo "        <td style='padding:10px;'>會議地點：".$rowMeetingInfo['Place']."</td>";
+                                echo "    </tr>";
+                            }
+                            if($rowMeetingInfo['Date']!=""){
+                                echo "    <tr>";
+                                echo "        <td style='padding:10px;'>會議日期：".$rowMeetingInfo['Date']."</td>";
+                                echo "    </tr>";
+                            }
+                            if($rowMeetingInfo['Title']!=""){
+                                echo "    <tr>";
+                                echo "        <td style='padding:10px;'>會議主題：".$rowMeetingInfo['Title']."</td>";
+                                echo "    </tr>";
+                            }
                             echo "</table>";
-							$filePath = "Conference/" . $Issue . ".txt";
+							$filePath = "Conference/" . $_GET['sessions'] . ".txt";
 							if (file_exists($filePath)) {
 								include_once($filePath);
 							} else {
@@ -98,7 +119,7 @@
 
 	
 	<?php include_once('footer.php'); ?>
-	<script src="js/bootstrap.js"></script>
+	<script src="assets/js/bootstrap.js"></script>
 </body>
 
 </html>

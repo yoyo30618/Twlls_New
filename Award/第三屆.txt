@@ -37,7 +37,7 @@
 	　　電子郵件請寄<a href="mailto:contact.tlls@gmail.com">contact.tlls@gmail.com</a><br>
 	　　郵政劃撥：<b>19743151</b>「台灣語文學會」，請註明「第三屆台灣語文學會優秀博士論文獎」。<br><br>
 	十四、聯絡地址：台灣語文學會祕書處聯絡組<a href="mailto:contact.tlls@gmail.com">contact.tlls@gmail.com</a><br><br>
-	<a href="Award/Documents/Award_Attachment_3th.doc">表單下載</a><br><br>
+	<a href="Attachment/Award/Award_Attachment_3th.doc">表單下載</a><br><br>
 	</td>
 </tr>
 </table>

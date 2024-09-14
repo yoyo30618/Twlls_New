@@ -1,0 +1,42 @@
+<table style="width:100%;">
+    <tr>
+        <td style="text-align:center;">
+            <embed src="Documents/2017master.png" style="width:100%;" alt="第十四屆臺灣語言及其教學國際學術研討會議程" ></embed>
+        </td>
+    </tr>
+    <tr><td style="text-align:center;color:red;"><b>台灣語言學一日大師講座</b></td></tr>
+    <tr><td style=""><br></td></tr>
+    <tr>
+    	<td style="">
+    		日    期：2017年5月5日（五）<br>
+    		時    間：09:00-16:10<br>
+    		地    點：清華大學南大校區綜合教育大樓四樓 第三會議室<br>
+    		主辦單位：國立清華大學南大校區中國語文學系、臺灣語文學會<br>
+    	</td>
+    </tr>
+    <tr><td style=""><br></td></tr>
+    <tr><td style="">●主講人： 洪惟仁 教授｜台中教育大學臺灣語文學系退休教授</td></tr>
+    <tr><td style=""><br></td></tr>
+    <tr>
+    	<td style="">
+    		09:00-09:20             報到<br>
+    		09:30-11:00             我的語言學不歸路<br>
+    		11:00-11:20             休息<br>
+    		11:20-12:00             我的學思歷程－田野調查經驗分享<br>
+    	</td>
+    </tr>
+    <tr><td style=""><br></td></tr>
+    <tr><td style="">●主講人：曹逢甫 教授｜清華大學語言學研究所榮譽退休教授</td></tr>
+    <tr><td style=""><br></td></tr>
+    <tr>
+    	<td style="">
+    		12:00-13:30             午餐+下午場報到<br>
+    		13:30-15:00             臺灣閩南語共同腔的浮現：語言學與社會語言學的探討<br>
+    		15:00-15:30             茶敘<br>
+    		15:30-16:10             我的學思歷程<br>
+    	</td>
+    </tr>
+    <tr><td style=""><br></td></tr>
+    <tr><td style="">網路報名時間：自即日起至5/2止（因名額有限，請儘早報名以免向隅。）</td></tr>
+    <tr><td style="">網路報名網址：<a href="https://docs.google.com/forms/d/e/1FAIpQLSfJ01cFlhrzoSxBu9NSJA-8qzuXlaNPHfcwF8nKrni6aWivNA/viewform?c=0&w=1" target="_blank">https://docs.google.com/forms/d/e/1FAIpQLSfJ01cFlhrzoSxBu9NSJA-8qzuXlaNPHfcwF8nKrni6aWivNA/viewform?c=0&w=1</a></td></tr>
+</table>

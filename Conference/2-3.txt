@@ -1,0 +1,266 @@
+<table style="width:100%;">
+	<tr><td style="text-align:center;color:red;"><b>第三屆青年學者臺灣語言學術研討會</b></td></tr>
+	<tr><td style="text-align:center;color:black;font-size:20pt"><b>第三屆青年學者臺灣語言學術研討會議程表</b></td></tr>
+	<tr><td style=""><br></td></tr>
+	<tr>
+		<td style="">
+			<table class="table table-bordered" style="width:100%;">
+				<tr>
+					<td style="text-align:center;width:21%;">時間/場次</td>
+					<td colspan="4" style="text-align:center;">會議進程</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">08：40－09：10</td>
+					<td colspan="4" style="text-align:center;">報到、領取會議資料</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">09：10－09：30</td>
+					<td colspan="4" style="text-align:center;"><b>開幕典禮</b><br>客文所利所長亮時主持、國立高雄師範大學蔡校長培村致詞</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;"><b>場次</b></td>
+					<td style="text-align:center;width:12%;"><b>主持人</b></td>
+					<td style="text-align:center;width:12%;"><b>發表人</b></td>
+					<td colspan="2"  style="text-align:center;"><b>論文題目</b></td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">09：30－10：00</td>
+					<td rowspan="2" style="text-align:center;">陳淑娟</td>
+					<td style="text-align:center;color:red;">邀請中</td>
+					<td colspan="2"  style="text-align:center;color:red;">102年度台灣語文博士論文獎得獎人發表(I)</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">10：00－10：30</td>
+					<td style="text-align:center;color:red;">邀請中</td>
+					<td colspan="2"  style="text-align:center;color:red;">102年度台灣語文博士論文獎得獎人發表(II)</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">10：30－10：50</td>
+					<td colspan="3"  style="text-align:center;"><b>茶敘時間</b></td>
+					<td style="text-align:center;width:12%;"><b>評論人</b></td>
+				</tr>
+				<tr>
+					<td rowspan="3" style="text-align:center;">第一場發表會A(客家語)<br>10：50－12：00</td>
+					<td rowspan="3" style="text-align:center;">吳中杰</td>
+					<td style="text-align:center;">何純惠</td>
+					<td style="text-align:center;">長汀縣羊牯鄉(官坑)客家方言的音韻演變</td>
+					<td style="text-align:center;">鄭曉峯</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">蔡幸娥</td>
+					<td style="text-align:center;">台灣客家「乞食」諺語之社會文化研究</td>
+					<td style="text-align:center;">邱湘雲</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">盧俊方</td>
+					<td style="text-align:center;">臺灣客語曾梗兩攝韻尾流變探析</td>
+					<td style="text-align:center;">江敏華</td>
+				</tr>
+				
+				<tr>
+					<td rowspan="3" style="text-align:center;">第一場發表會B(南島語)<br>10：50－12：00</td>
+					<td rowspan="3" style="text-align:center;">黃美金</td>
+					<td style="text-align:center;">林政明</td>
+					<td style="text-align:center;">Analysis for Stress Assignment in Amis Emphatic Form</td>
+					<td style="text-align:center;">葉詩綺</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">潘家榮</td>
+					<td style="text-align:center;">Imperatives and Commands in Saaroa and Tsou</td>
+					<td style="text-align:center;">葉美利</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">吳新生</td>
+					<td style="text-align:center;">泰雅語比較結構的句法研究</td>
+					<td style="text-align:center;">黃美金</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">12：00－13：30</td>
+					<td colspan="4"  style="text-align:center;"><b>午餐、休息（台灣語文學會會員大會）</b></td>
+				</tr>
+				<tr>
+					<td rowspan="3" style="text-align:center;">第二場發表會A（客家語）<br>13：30－14：40</td>
+					<td rowspan="3" style="text-align:center;">鍾榮富</td>
+					<td style="text-align:center;">徐賢德</td>
+					<td style="text-align:center;">六堆客家語言接觸研究—以高樹地區為例</td>
+					<td style="text-align:center;">劉秀雪</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">李慧質</td>
+					<td style="text-align:center;">臺灣南部客家話「同」之用法</td>
+					<td style="text-align:center;">鍾榮富</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">陳美婷</td>
+					<td style="text-align:center;">「客語生活學校」實施客語教學的現況與行動策略：以美濃國中為例</td>
+					<td style="text-align:center;">鍾鎮城</td>
+				</tr>
+				<tr>
+					<td rowspan="3" style="text-align:center;">第二場發表會B（閩南語）<br>13：30－14：40</td>
+					<td rowspan="3" style="text-align:center;">楊秀芳</td>
+					<td style="text-align:center;">郭永松</td>
+					<td style="text-align:center;">試析臺灣閩南語介詞「自」、「從(tsing5)」與「從(tsiong5)」的時空概念化差異</td>
+					<td style="text-align:center;">連金發</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">劉慧娟</td>
+					<td style="text-align:center;">影響閩南語音段在語誤當中出現的頻率高低的幾個關鍵因素</td>
+					<td style="text-align:center;">賴怡秀</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">盧玟伶</td>
+					<td style="text-align:center;">台灣閩南語「食」的動作詞彙語義辨析初探</td>
+					<td style="text-align:center;">楊秀芳</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">14：40－15：00</td>
+					<td colspan="4"  style="text-align:center;"><b>茶敘時間</b></td>
+				</tr>
+				<tr>
+					<td rowspan="3" style="text-align:center;">第三場發表會A（華語）<br>15：00－16：10</td>
+					<td rowspan="3" style="text-align:center;">曹逢甫</td>
+					<td style="text-align:center;">葉梓安</td>
+					<td style="text-align:center;">常用詞「然後」語音的轉變</td>
+					<td style="text-align:center;">歐淑珍</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">袁華鴻</td>
+					<td style="text-align:center;">The two types of verbal plurality: the case of chang (常) ‘often’ and shichang (時常) ‘often’</td>
+					<td style="text-align:center;">曹逢甫</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">林怡安</td>
+					<td style="text-align:center;">The Comprehension of the Subject and the Object Relative Clauses by Mandarin-speaking Individuals with Down Syndrome</td>
+					<td style="text-align:center;">許馨仁</td>
+				</tr>
+				<tr>
+					<td rowspan="3" style="text-align:center;">第三場發表會B（閩南語）<br>15：00－16：10</td>
+					<td rowspan="3" style="text-align:center;">姚榮松</td>
+					<td style="text-align:center;">盧立祥</td>
+					<td style="text-align:center;">Hyperbolic Expressions in Conversation of Taiwanese Serial Drama</td>
+					<td style="text-align:center;">李惠琦</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">葉千菁</td>
+					<td style="text-align:center;">檳城閩南語中的馬來語借詞之聲調規律研究</td>
+					<td style="text-align:center;">林香薇</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">陳筱琪</td>
+					<td style="text-align:center;">漳平新橋閩南話魚虞韻讀iau/au的層次與音變</td>
+					<td style="text-align:center;">吳瑞文</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">16：10－16：30</td>
+					<td colspan="4"  style="text-align:center;"><b>茶敘時間</b></td>
+				</tr>
+				<tr>
+					<td rowspan="3" style="text-align:center;">第四場發表會A（跨語言）<br>16：30－17：40</td>
+					<td rowspan="3" style="text-align:center;">洪惟仁</td>
+					<td style="text-align:center;">李宣槿</td>
+					<td style="text-align:center;">漢語方言異序詞研究—以牲畜公與母的地名為例</td>
+					<td style="text-align:center;">韋煙灶</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">黃天仕</td>
+					<td style="text-align:center;">論漢語作格動詞的定義問題</td>
+					<td style="text-align:center;">徐淑瑛</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">黃崇哲</td>
+					<td style="text-align:center;">臺灣閩南語詈語研究：動物隱喻的男女轉喻</td>
+					<td style="text-align:center;">洪惟仁</td>
+				</tr>
+				<tr>
+					<td rowspan="3" style="text-align:center;">第四場發表會B（跨語言）<br>16：30－17：40</td>
+					<td rowspan="3" style="text-align:center;">王旭</td>
+					<td style="text-align:center;">鄭安秀</td>
+					<td style="text-align:center;">台灣語言使用與態度初探─以台北、高雄兩地為例</td>
+					<td style="text-align:center;">陳麗君</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">陳韋廷</td>
+					<td style="text-align:center;">王白淵《蕀の道》漢譯本中破折號的增刪與意涵─以巫永福、陳才崑譯本為例</td>
+					<td style="text-align:center;">彭瑞金</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">陳依真</td>
+					<td style="text-align:center;">「母親的語言」還在嗎？----宜蘭口音中/uinn/的流失現狀之個案探討</td>
+					<td style="text-align:center;">王旭</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">17：40－18：00</td>
+					<td colspan="4"  style="text-align:center;"><b>閉幕典禮</b>（陳會長淑娟、吳老師中杰<b>共同主持</b>）</td>
+				</tr>
+				<tr>
+					<td colspan="5">
+						備註<br>
+						<br>
+						◎ 報到、開幕典禮及閉幕典禮皆於文學院B1『小劇場』<br>
+						◎ 會場A：文學院B1『小劇場』<br>
+						◎ 會場B：文學院2F『地理學系3216教室』<br>
+						◎ 茶敘：文學院B1小劇場外廣場<br>
+						◎ 會員大會：中午十二點於地理學系3216教室召開<br>
+						◎ 午餐：會場A及會場B外領取，用餐地點現場引導<br>
+						◎ 午餐需出示餐券才可領取<br>
+						◎ 文學院B1『小劇場』內嚴禁飲食<br>
+						◎ 為響應環保，會議當天請大家自備環保杯，現場有飲水機供大家<br>
+						
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr><td style=""><br></td></tr>
+	<tr><td style="text-align:center;color:red;"><b>第三屆青年學者台灣語言學術研討會</b></td></tr>
+	<tr><td style="text-align:center;color:black;font-size:16pt"><b>徵稿啟事</b></td></tr>
+	<tr><td style="color:darkblue;">一、會議名稱：</td></tr>
+	<tr><td style="">第三屆青年學者台灣語言學術研討會</td></tr>
+	<tr><td style=""><br></td></tr>
+	<tr><td style="color:darkblue;">二、主辦單位：</td></tr>
+	<tr><td style="">臺灣語文學會、國立高雄師範大學客家文化研究所、國立高雄師範大學台灣歷史文化及語言研究所</td></tr>
+	<tr><td style=""><br></td></tr>
+	<tr><td style="color:darkblue;">三、會議日期：</td></tr>
+	<tr><td style="">2013年10月26、27日</td></tr>
+	<tr><td style=""><br></td></tr>
+	<tr><td style="color:darkblue;">四、會議地點：</td></tr>
+	<tr><td style="">國立高雄師範大學文學院</td></tr>
+	<tr><td style=""><br></td></tr>
+	<tr><td style="color:darkblue;">五、會議主題：台灣語言的多樣性研究</td></tr>
+	<tr><td style="">會議子題：有關台灣閩南語、客家話、南島語及華語的語音、音韻、構詞、句法及其他語言學相關研究</td></tr>
+	<tr><td style=""><br></td></tr>
+	<tr><td style="color:darkblue;">六、摘要截稿日期：</td></tr>
+	<tr><td style="">2013年3月4日</td></tr>
+	<tr><td style=""><br></td></tr>
+	<tr><td style="color:darkblue;">七、公布摘要通過日期：</td></tr>
+	<tr><td style="">2013年4月15日</td></tr>
+	<tr><td style=""><br></td></tr>
+	<tr><td style="color:darkblue;">八、全文截稿日期：</td></tr>
+	<tr><td style="">2013年9月15日</td></tr>
+	<tr><td style=""><br></td></tr>
+	<tr><td style="color:darkblue;">九、資格限定：</td></tr>
+	<tr><td style="">研究生及取得博士學位五年內之青年學者。</td></tr>
+	<tr><td style=""><br></td></tr>
+	<tr><td style="color:darkblue;">十、投稿方式：</td></tr>
+	<tr><td style="">請填寫「發表人資料表」及「論文題目與摘要」兩份文件，並將「論文題目與摘要」存為一式兩檔（WORD檔及PDF檔），以電子郵件寄到gsstl2013@gmail.com（每人限制發表一篇）。</td></tr>
+	<tr><td style=""><br></td></tr>
+	<tr><td style="color:darkblue;">十一、聯絡地址：</td></tr>
+	<tr>
+		<td style="">
+			802高雄市苓雅區和平一路116號<br>
+			國立高雄師範大學台灣歷史文化及語言研究所 李慧質同學<br>
+			聯絡電話：07-717-2930轉2541; 0983008107<br>
+			電子信箱：gsstl2013@gmail.com<br>
+		</td>
+	</tr>
+	<tr><td style=""><br></td></tr>
+	<tr><td style="color:darkblue;">十二、會議收費方式：</td></tr>
+	<tr>
+		<td style="">
+			（1） 論文發表費：學生1500元；非學生2000元（已含會議註冊費）<br>
+			（2） 會議註冊費稍後公告。<br>
+			（3） 台灣語文學會會員免費參加。<br>
+		</td>
+	</tr>
+	<tr><td style=""><br></td></tr>
+</table>

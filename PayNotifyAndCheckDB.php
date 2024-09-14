@@ -51,7 +51,9 @@ if ($edata1 !== false) {
                 // 填入收據編號欄位的值 
                 $sql = "UPDATE `qtest` SET `ReceiptID` = $yearno,`ReceiptSeq` = $ReceiptSeq where orderNo = '".$BuyInfoRow['orderNo']."'"; // ReceiptID: 資料庫的收據編號
                 $conn_1->query($sql);
-                $tdString ="<tr><td style=\"height: 20px; line-height: 20px; font-size: 12px;\" colspan=\"4\" >".$BuyInfoRow['itemdesc']."</td><td style=\"height: 20px; line-height: 20px;\" colspan=\"7\">".$BuyInfoRow['amt']."</td><td colspan=\"2\" style=\"height: 20px; line-height: 20px; color: blue;\">".$BuyInfoRow['name']."</td></tr>";
+                $BuyInfosize = (mb_strlen($BuyInfoRow['itemdesc'], "utf-8") <= 9) ? "12px" : "10px";
+                $tdString="";
+                $tdString ="<tr><td style=\"height: 20px; line-height: 20px; font-size: ".$BuyInfosize.";\" colspan=\"4\" >".$BuyInfoRow['itemdesc']."</td><td style=\"height: 20px; line-height: ".$BuyInfosize.";\" colspan=\"7\">".$BuyInfoRow['amt']."</td><td colspan=\"2\" style=\"height: 20px; line-height: 20px; color: blue;\">".$BuyInfoRow['name']."</td></tr>";
                 $tdString .="<tr><td style=\"height: 20px; line-height: 20px; font-size: 12px;\" colspan=\"4\" ></td><td style=\"height: 20px; line-height: 20px;\" colspan=\"7\"></td><td colspan=\"2\" style=\"height: 20px; line-height: 20px; color: blue;\"></td></tr>";
                 $tdString .="<tr><td style=\"height: 20px; line-height: 20px; font-size: 12px;\" colspan=\"4\" ></td><td style=\"height: 20px; line-height: 20px;\" colspan=\"7\"></td><td colspan=\"2\" style=\"height: 20px; line-height: 20px; color: blue;\"></td></tr>";
                 $titlesize = (mb_strlen($title, "utf-8") <= 9) ? "12px" : "6px";

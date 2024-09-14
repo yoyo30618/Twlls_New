@@ -1,0 +1,7 @@
+<table style="width:100%;">
+	<tr>
+        <td style="text-align:center;">
+            <embed src="Documents/2016master.pdf" style="width:100%;height:600px" alt="第十四屆臺灣語言及其教學國際學術研討會議程" ></embed>
+        </td>
+    </tr>
+</table>

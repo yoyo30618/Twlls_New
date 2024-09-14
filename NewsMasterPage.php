@@ -7,13 +7,13 @@
 	<meta name="keywords" content="" />
 	<script
 		type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-	<script src="js/jquery-1.11.1.min.js"></script>
+	<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<script src="assets/js/jquery-1.11.1.min.js"></script>
 	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
 	<style>
     </style>
-	<script type="text/javascript" src="js/jquery.marquee.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.marquee.js"></script>
 	<script>
 		$('.marquee').marquee({ pauseOnHover: true });
 	</script>
@@ -35,18 +35,21 @@
                         $News_ID=$_GET['_ID'];
                     else
                         $News_ID=1;
-                    $sqlNewsConnent = "SELECT * FROM `news` WHERE `IsShow`=1 AND `_ID`='".$_ID."' ORDER BY `OrderIndex` DESC";
+                    $sqlNewsConnent = "SELECT * FROM `news` WHERE `IsShow`=1 AND `_ID`='".$News_ID."' ORDER BY `OrderIndex` DESC";
                     $resulNewsConnent = $conn_1->query($sqlNewsConnent);
                     $filePath="";
                     if ($resulNewsConnent->num_rows > 0) {
                         while ($rowNewsConnent = mysqli_fetch_array($resulNewsConnent)) {
-                            $filePath=$rowNewsConnent['url'];
+                            $filePath="News/".$rowNewsConnent['url'].".txt";
+                            if (file_exists($filePath)) {
+                                echo "<h2>".$rowNewsConnent['Title']."</h2><br>";
+                                echo "<h4>".$rowNewsConnent['DateTime']."  ".$rowNewsConnent['PostedBy']."</h4><br>";
+                                include_once($filePath);
+                            } else {
+                                echo "未正確設定消息檔案";
+                            }
+                            break;
                         }
-                    }
-                    if (file_exists($filePath)) {
-                        include_once($filePath);
-                    } else {
-                        echo "未正確設定消息檔案";
                     }
                     ?>
                     
@@ -91,7 +94,7 @@
 		</div>
 		</div>
 	<?php include_once('footer.php'); ?>
-	<script src="js/bootstrap.js"></script>
+	<script src="assets/js/bootstrap.js"></script>
 </body>
 
 </html>

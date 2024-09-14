@@ -37,7 +37,7 @@
 
 </script>
 
-<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
 <div class="banner">
 	<div class="banner-info" style="height: 120px;"> <!-- 設定初始高度 -->
 		<div class="container" style="margin-top:20px">

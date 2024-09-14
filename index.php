@@ -7,13 +7,13 @@
 	<meta name="keywords" content="" />
 	<script
 		type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-	<script src="js/jquery-1.11.1.min.js"></script>
+	<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<script src="assets/js/jquery-1.11.1.min.js"></script>
 	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
 	<style>
 	</style>
-	<script type="text/javascript" src="js/jquery.marquee.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.marquee.js"></script>
 	<script>
 		$('.marquee').marquee({ pauseOnHover: true });
 	</script>
@@ -78,11 +78,11 @@
 											echo "</div>";
 											echo "<div style='width:30%;float:right;font-size:10px'>";
 											if($row["Mode"]=="File")
-												echo "　　　<a href='Attachment/News/".$row["url"]."' class='custom-button'>more...</a>";
+												echo "　　　<a href='Attachment/News/".$row["url"]."'  target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."' class='custom-button'>more...</a>";
 											else if($row["Mode"]=="Page")
-												echo "　　　<a href='NewsMasterPage.php?_ID=".$row['_ID']."' class='custom-button'>more...</a>";
+												echo "　　　<a href='NewsMasterPage.php?_ID=".$row['_ID']."'  target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."' class='custom-button'>more...</a>";
 											else if($row["Mode"]=="Link")
-												echo "　　　<a href='".$row["url"]."' class='custom-button'>more...</a>";
+												echo "　　　<a href='".$row["url"]."'  target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."' class='custom-button'>more...</a>";
 											echo "</div>";
 											echo "</li>";
 										}
@@ -166,7 +166,7 @@
 		</div>
 	</div>
 	<?php include_once('footer.php'); ?>
-	<script src="js/bootstrap.js"></script>
+	<script src="assets/js/bootstrap.js"></script>
 </body>
 
 </html>

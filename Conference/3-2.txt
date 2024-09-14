@@ -1,0 +1,35 @@
+<table style="width:100%;">
+	<tr><td style="text-align:center;color:red;"><b>台灣語言學一日大師講座</b></td></tr>
+	<tr><td style=""><br></td></tr>
+	<tr><td style="">日期：104年10月03日（六）<br>時間：9:00-16:10<br>地點：國立中央大學客家學院大樓1F國際會議廳</td></tr>
+	<tr><td style=""><br></td></tr>
+	<tr><td style="">主辦單位：台灣語文學會、國立中央大學客家語文暨社會科學學系</td></tr>
+	<tr><td style="">費用：免費參加</td></tr>
+	<tr><td style=""><br></td></tr>
+	<tr>
+		<td style="">
+			議程：<br>
+			09:00-09:20　報到<br>
+			09:20-10:50　古國順教授－何明勳《渡台記》介析<br>
+			11:10-12:00　古國順教授－我的學思歷程<br>
+			12:00-13:30　午餐<br>
+			13:30-15:00　賴惠玲教授－「隱性」到「顯性」：從客家 〈硬頸〉在臺灣報紙之使用談起<br>
+			15:20-16:10　賴惠玲教授－我的學思歷程<br>
+			16:10          　閉幕<br>
+		</td>
+	</tr>
+	<tr><td style=""><br></td></tr>
+	<tr><td style="">網路報名網址：<a href="https://goo.gl/BYXtt4" target="_blank">https://goo.gl/BYXtt4</a></td></tr>
+	<tr><td style="">網路報名期限：即日起至104年10月02日（五）中午12點。</td></tr>
+	<tr><td style="">聯絡資訊：<a href="mailto:contact.tlls@gmail.com" >contact.tlls@gmail.com</a> 台灣語文學會祕書處聯絡組</td></tr>
+	<tr><td style=""><br></td></tr>
+	<tr>
+		<td style="">
+		備註：<br>
+		1.校內停放汽車，停車費優惠一天60元。<br>
+		2.台灣語文學會會員及中央大學客家語文暨社會學系所學生免費提供便當，非以上身分者，代訂便當一個80元（葷素皆可），請於簽到時登記及繳費。<br>
+		3.為了響應環保，恕不提供免洗杯，請自行攜帶環保杯。<br>
+		4.講義以事先報名者優先領取。<br>
+		</td>
+	</tr>
+</table>
