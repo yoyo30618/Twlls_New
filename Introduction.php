@@ -7,9 +7,9 @@
 	<meta name="keywords" content="" />
 	<script
 		type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-	<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
-	<script src="assets/js/jquery-1.11.1.min.js"></script>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<script src="js/jquery-1.11.1.min.js"></script>
 	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
 	<style>
 		.rslides {
@@ -140,7 +140,7 @@
 			 font-weight: bold;
           }
 	</style>
-	<script type="text/javascript" src="assets/js/jquery.marquee.js"></script>
+	<script type="text/javascript" src="js/jquery.marquee.js"></script>
 	<script>
 		$('.marquee').marquee({ pauseOnHover: true });
 	</script>
@@ -514,7 +514,7 @@
 			</div>
 		</div>
 		<?php include_once('footer.php'); ?>
-	<script src="assets/js/bootstrap.js"></script>
+	<script src="js/bootstrap.js"></script>
 </body>
 
 </html>
