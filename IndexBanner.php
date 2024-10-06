@@ -9,7 +9,7 @@
                         echo "<div class='slide'>";
                         echo "    <div class='slide-content'>";
                         echo "        <div class='slide-text'>";
-                        echo "            <h2>".$row['Title']."</h2>";
+                        echo "            <h3>".$row['Title']."</h3><br>";
                         echo "            <p>".$row['TitleEng']."</p>";
                         if($row['Link']!=""){
                             echo "<button style='background-color:#418765;color:#fff;border-radius:10px;border:none;' onclick='window.location.href=\"".$row['Link']."\";'>查看更多</button>";

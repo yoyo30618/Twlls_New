@@ -42,7 +42,7 @@
 	</div>
 	<div class="container ">
 		<div class="video-bottom-grids1">
-			<div class="col-md-12 video-bottom-grid">
+			<div class="col-md-12 col-sm-12">
 				
 					<div class="video-bottom-grid1-before" style="">
 					<?php if($tab==="activity") echo "<img src='images/NewsBanner-event.jpg' alt=' ' class='img-responsive content' style='height:130px; object-fit: cover; width: 100%;'/>";?>
@@ -66,7 +66,7 @@
 									echo "<div style='width:10%;float:left;font-size:15px'>";
 									echo "		<a style='color:black'>".$row["DateTime"]."</a>";
 									echo "</div>";
-									echo "<div style='width:80%;float:left;font-size:15px'>";
+									echo "<div style='width:70%;float:left;font-size:15px'>";
 									if($row["Mode"]=="File")
 										echo "		<a style='color:black' href='Attachment/News/".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a>";
 									else if($row["Mode"]=="Page")
@@ -74,7 +74,7 @@
 									else if($row["Mode"]=="Link")
                                 		echo "		<a style='color:black' href='".$row["url"]."' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>".$row["Title"]."</a>";
 									echo "</div>";
-									echo "<div style='width:10%;float:right;font-size:10px'>";
+									echo "<div style='width:20%;float:right;font-size:10px'>";
 									if($row["Mode"]=="File")
 										echo "　　　<a href='Attachment/News/".$row["url"]."' class='custom-button' target='".($row["OpenAnotherWindow"]==1?"_blank":"_self")."'>more...</a>";
 									else if($row["Mode"]=="Page")

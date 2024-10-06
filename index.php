@@ -48,7 +48,7 @@
 					<p style="color:#fff;font-size:25px">最新消息　<a href="News.php" style="color:#F7FBCF;font-size:15px">more...</a></p>
 				</div>
 				<div class="video-bottom-grids1">
-					<div class="col-md-4 video-bottom-grid">
+					<div class="col-md-4 col-sm-12">
 						<div class="video-bottom-grid1">
 							<div class="video-bottom-grid1-before">
 								<img src="images/frontpage-news-activity.jpg" alt=" " class="img-responsive" />
@@ -92,7 +92,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-md-4 video-bottom-grid">
+					<div class="col-md-4 col-sm-12">
 						<div class="video-bottom-grid1">
 							<div class="video-bottom-grid1-before before">
 								<img src="images/frontpage-news-conference.jpg" alt=" " class="img-responsive" />
@@ -125,7 +125,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-md-4 video-bottom-grid">
+					<div class="col-md-4 col-sm-12">
 						<div class="video-bottom-grid1">
 							<div class="video-bottom-grid1-before before">
 								<img src="images/frontpage-news-publish.jpg" alt=" " class="img-responsive" />

@@ -58,7 +58,7 @@
 	</div>
 	<div class="container ">
 		<div class="video-bottom-grids1" style="margin-top:20px;">
-			<div class="col-md-12 video-bottom-grid">
+			<div class="col-md-12 ">
 				
 				<?php
 				if($tab === 'LatestIssue'){
@@ -75,7 +75,7 @@
 								if($LastSession!=$row['JournalSession']){
 									if($First) echo "</div>";
 									echo "<div class='JournalListButton'>";
-									echo "<a style='font-size:20px;color:#55463D'>".$row['JournalSession']."</a>　　　<a style='color:#55463D' href='Journal.php?Session=".$row['JournalSession']."&Issue=".$row['JournalIssue']."'>".$row['JournalIssue']."</a>";
+									echo "<a style='font-size:20px;color:#55463D'>".$row['JournalSession']."</a>　　<a style='color:#55463D' href='Journal.php?Session=".$row['JournalSession']."&Issue=".$row['JournalIssue']."'>".$row['JournalIssue']."</a>";
 									$LastSession=$row['JournalSession'];
 									$First=true;
 								}

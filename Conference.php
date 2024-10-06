@@ -92,7 +92,7 @@
     </div>
 	<div class="AllBODY container ">
 		<div class="video-bottom-grids1">
-			<div class="col-md-12 video-bottom-grid">
+			<div class="col-md-12 col-sm-12">
                 <!--台灣語言及其教學國際研討會-->
                 <?php
                     $sqltitle = "SELECT  DIStinct `Function` FROM `relatedlinks` WHERE `Notice`='研討會' AND `IsUsed`=1  ORDER BY `Function` ASC";

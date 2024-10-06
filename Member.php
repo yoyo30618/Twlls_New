@@ -36,7 +36,7 @@
 	</div>
 	<div class="container ">
 		<div class="video-bottom-grids1">
-			<div class="col-md-12 video-bottom-grid">
+			<div class="col-md-12">
 				<div class="news-grid-rght3" style="margin:15px;">
 					<div class="story">
 						<text style="color:red">關於加入本學會，成為本學會會員，本學會章程規定如下：</text> 

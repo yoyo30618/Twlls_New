@@ -39,61 +39,54 @@
 
 <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
 <div class="banner">
-	<div class="banner-info" style="height: 120px;"> <!-- 設定初始高度 -->
-		<div class="container" style="margin-top:20px">
-			<nav id="navbar" class="navbar navbar-default">
-				<div class="navbar-header" style="margin: 0 auto;">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-						data-target="#bs-example-navbar-collapse-1">
-						<span class="sr-only"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<div class="logo" style="">
-						<table style="width:100%;">
-							<tr>
-								<td style="width:30%"><a href="index.php"><img class="bannerlogo" src="images/logo-main.png" style="height: auto;vertical-align: middle; display: flex;align-items: center;"id="logo-img" /></a></td>
-								<td style="width:70%;">
-									<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
-										<ul class="nav navbar-nav" id="cl-effect-18">
-											<li><a href="index.php" style="font-size: 16px;">首頁</a></li>
-											<li><a href="News.php" style="font-size: 16px;">最新消息</a></li>
-											<li><a href="Introduction.php" style="font-size: 16px;">學會簡介</a></li>
-											<li role="presentation" class="dropdown" style="font-size: 16px;">
-												<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-													aria-haspopup="true" aria-expanded="false" style="font-size: 16px;">
-													學術活動 <span class="caret"></span>
-												</a>
-												<ul class="dropdown-menu" style="font-size: 16px;">
-													<li><a href="Conference.php">研討會</a></li>
-													<li><a href="Journal.php">期刊</a></li>
-												</ul>
-											</li>
-											<li><a href="Award.php" style="font-size: 16px;">歷屆獎項</a></li>
-											<li><a href="Member.php" style="font-size: 16px;">會員專區</a></li>
-											<li role="presentation" class="dropdown" style="font-size: 16px;">
-												<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-													aria-haspopup="true" aria-expanded="false" style="font-size: 16px;">
-													線上繳費 <span class="caret"></span>
-												</a>
-												<ul class="dropdown-menu" style="font-size: 16px;">
-													<li><a href="Payment.php">會員繳費與捐款</a></li>
-													<li><a href="Publication.php">出版品購買</a></li>
-												</ul>
-											</li>
-											<li><a  onclick="alert('建置中，敬請期待！')" style="font-size: 16px;">人才庫</a></li>
-											<li>
-												<div class="icon-box"><a class="agile-icon" href="mailto:contact.tlls@gmail.com"><i class="fa fa-envelope"></i></a></div>
-                                            </li>
-										</ul>
-									</div>
-								</td>
-							</tr>
-						</table>
-					</div>
-				</div>
-			</nav>
-		</div>
-	</div>
+    <div class="banner-info">
+        <div class="container">
+            <nav id="navbar" class="navbar navbar-default">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.php">
+                        <img class="bannerlogo" src="images/logo-main.png" alt="Logo" />
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.php">首頁</a></li>
+                        <li><a href="News.php">最新消息</a></li>
+                        <li><a href="Introduction.php">學會簡介</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                學術活動 <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="Conference.php">研討會</a></li>
+                                <li><a href="Journal.php">期刊</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="Award.php">歷屆獎項</a></li>
+                        <li><a href="Member.php">會員專區</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                線上繳費 <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="Payment.php">會員繳費與捐款</a></li>
+                                <li><a href="Publication.php">出版品購買</a></li>
+                            </ul>
+                        </li>
+                        <li><a onclick="alert('建置中，敬請期待！')">人才庫</a></li>
+                        <li>
+                            <div class="icon-box">
+                                <a class="agile-icon" href="mailto:contact.tlls@gmail.com"><i class="fa fa-envelope"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
 </div>

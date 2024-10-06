@@ -27,7 +27,7 @@
 	<div class="AllBODY container ">
 		<div class="video-bottom-grids1" style="margin:10px">
             
-			<div class="col-md-8 video-bottom-grid" style="margin-top:20px;">
+			<div class="col-md-8" style="margin-top:20px;">
                 <a href="News.php" style="color:#6AA447">回到最新消息▶</a>
                 <div style="background-color:white;margin-top:10px;padding:20px">
                     <?php 
@@ -55,7 +55,7 @@
                     
                 </div>
             </div>
-			<div class="col-md-4 video-bottom-grid">
+			<div class="col-md-4 ">
                 <!--台灣語言及其教學國際研討會-->
                 <?php
                     $sqlNewsInfo = "SELECT distinct `Classification` FROM `news` WHERE `IsShow`=1 ORDER BY `OrderIndex` DESC";

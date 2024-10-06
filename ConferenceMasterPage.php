@@ -27,7 +27,7 @@
 	<div class="AllBODY container ">
 		<div class="video-bottom-grids1" style="margin:10px">
             
-			<div class="col-md-8 video-bottom-grid" style="margin-top:20px;">
+			<div class="col-md-8" style="margin-top:20px;">
                 <a href="Conference.php" style="color:#6AA447">回到研討會▶</a>
                 <div style="background-color:white;margin-top:10px;padding:20px">
                     <?php 
@@ -84,7 +84,7 @@
                     
                 </div>
             </div>
-			<div class="col-md-4 video-bottom-grid">
+			<div class="col-md-4">
                 <?php
                     $sqltitle = "SELECT  DIStinct `Function` FROM `relatedlinks` WHERE `Notice`='研討會' AND `IsUsed`=1  ORDER BY `Function` DESC";
                     $resulttitle = $conn_1->query($sqltitle);

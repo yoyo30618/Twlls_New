@@ -36,7 +36,7 @@
 	?>
 	<div class="container ">
 		<div class="video-bottom-grids1">
-			<div class="col-md-12 video-bottom-grid">
+			<div class="col-md-12">
 				<?php
 					$PayListSQL="SELECT * FROM `relatedlinks` WHERE `Function`='出版品' AND `IsUsed`='1' ORDER BY `OrderIndex` DESC";
 					$PayListResult = $conn_1->query($PayListSQL);

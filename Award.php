@@ -49,7 +49,7 @@
 	<br>
 	<div class="container ">
 		<div class="video-bottom-grids1" style="margin-top:20px;">
-			<div class="col-md-12 video-bottom-grid">
+			<div class="col-md-12 ">
 				<div class="col-md-3">
 					<?php
 						$thesisawardsql = "SELECT `Issue` FROM `thesisawardinfo`  GROUP BY `Issue` ORDER BY `OrderIndex` DESC";
