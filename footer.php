@@ -33,7 +33,6 @@
                 </tr>
                 <tr>
                     <td class="Twlls_Footer_Table_Title">相關連結</td>
-                    <td  colspan="3">• <a style="color:#fff" href="http://www.uijin.idv.tw/" target="_blank" >洪惟仁老師網站</a></td>
                     <td  colspan="4">• <a style="color:#fff" href="https://linguist.tw/zh-tw/" target="_blank" >台灣語言學學會</a></td>
                 </tr>
                 <tr>

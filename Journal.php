@@ -29,7 +29,7 @@
 	<?php include_once('banner.php');?>
 	<div style="margin-top: 120px;"></div>
 	<?php include_once('marquee.php');?>
-		<img src="images/Journal-Banner.jpg"/>
+		<img style="width:100%" src="images/Journal-Banner.jpg"/>
 	<div style="background-color:#70524A">
 		<div class="container" style="color:white;line-height:3em;font-size:20px;">
 			<?php
