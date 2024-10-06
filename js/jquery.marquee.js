@@ -392,7 +392,7 @@
         //true or false - should the marquee be duplicated to show an effect of continues flow
         duplicated: false,
         //speed in milliseconds of the marquee in milliseconds
-        duration: 8000,
+        duration: 15000,
         //gap in pixels between the tickers
         gap: 20,
         //on cycle pause the marquee

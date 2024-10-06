@@ -1134,7 +1134,7 @@ INSERT INTO `relatedlinks` (`_ID`, `Function`, `Item`, `MeetingURL`, `Link`, `Da
 (1, '台灣語言及其教學國際研討會', '第十四屆', 'https://chass.ncku.edu.tw/p/412-1011-27963.php?Lang=zh-tw', '1-14', '2022年08月27~28日', '國立成功大學 光復校區 國際會議廳 演講室 &Webex', '多聲道的台灣共同體', 'The 14th International Symposium on Taiwanese Languages and Teaching', '', 1, 8, '研討會'),
 (2, '台灣語言及其教學國際研討會', '第十三屆', 'https://istlt2020.wixsite.com/nthu', '1-13', '2020年10月16、17日', '國立清華大學臺灣語言研究與教學研究所', '台灣語言研究傳承與推廣', 'The 13th International Symposium on Taiwanese Languages and Teaching', '', 1, 7, '研討會'),
 (3, '台灣語言及其教學國際研討會', '第十二屆', 'https://goo.gl/27a7y6', '1-12', '2018年10月26、27日', '國立中山大學文學院\n\n', '台灣語言的多樣性與永續發展\n\n', 'The 12th International Symposium on Taiwanese Languages and Teaching', '', 1, 6, '研討會'),
-(4, '台灣語言及其教學國際研討會', '第十一屆', '', '1-11', '2016年7月12、13日', '中央研究院學術活動中心 \n\n', '台灣語言的共時與歷時研究\n\n', 'The 11th International Symposium on Taiwanese Languages and Teaching', '', 1, 5, '研討會'),
+(4, '台灣語言及其教學國際研討會', '第十一屆', '', '1-11', '2016年7月12、13日', '中央研究院學術活動中心\n\n', '台灣語言的共時與歷時研究\n\n', 'The 11th International Symposium on Taiwanese Languages and Teaching', '', 1, 5, '研討會'),
 (5, '台灣語言及其教學國際研討會', '第十屆', 'http://2014istl10.blog.fc2.com/', '1-10', '2014年10月25~26日', '國立成功大學 台灣文學系', '', 'The 10th International Symposium on Taiwanese Languages and Teaching', '', 1, 4, '研討會'),
 (6, '台灣語言及其教學國際研討會', '第九屆', '', '1-9', '2012年 10月5-6 日', '國立中央大學客家學院大樓國際會議廳', '臺灣語言的跨領域研究', 'The 9th International Symposium on Taiwanese Languages and Teaching', '', 1, 3, '研討會'),
 (7, '台灣語言及其教學國際研討會', '第八屆', '', '1-8', '2010年10月15、16日', '國立聯合大學國際會議廳', '臺灣語言之聚合與擴散', 'The 8th International Symposium on Taiwanese Languages and Teaching', '', 1, 2, '研討會'),

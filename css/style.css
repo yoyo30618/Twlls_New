@@ -487,9 +487,9 @@ body a:hover{
     top: 115%;
 }
 .dropdown-menu > li > a {
-    padding: 5px 0;
+    padding: 5px 10px;
     text-align: center;
-	background-color: #418765;
+	background-color: #81BB9F;
 }
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
     color: #fff;
