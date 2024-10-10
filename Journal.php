@@ -70,6 +70,10 @@
 						$JournalListresult = $conn_1->query($JournalListsql);
 						$LastSession="";
 						$First=false;
+						
+						echo "<div class='JournalListButton' style='background-color:#81BB9F'>";
+						echo "<a style='font-size:20px;color:#55463D;'>線上投稿</a>　　<a style='color:#55463D' href=''>線上投稿請點我(開發中)</a>";
+						echo "</div>";
 						if ($JournalListresult->num_rows > 0) {
 							while ($row = mysqli_fetch_array($JournalListresult)) {
 								if($LastSession!=$row['JournalSession']){
