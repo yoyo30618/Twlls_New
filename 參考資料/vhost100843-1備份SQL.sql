@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net
 --
 -- 主機: localhost
--- 建立日期: 2024 年 09 月 15 日 02:23
+-- 建立日期: 2024 年 10 月 19 日 16:45
 -- 伺服器版本: 5.1.48-log
 -- PHP 版本: 5.2.17
 
@@ -179,6 +179,9 @@ INSERT INTO `journalcontent` (`JournalSession`, `JournalIssue`, `JournalDate`, `
 ('第十三卷', '第二期', '2018年10月', '連金發', '(Chinfa LIEN)', '疑問和否定語式初探：以Lexilogus（1841）的漳腔福建話為例', '213', '13.2-3.pdf', 144, ''),
 ('第十三卷', '第二期', '2018年10月', '葉高華', '(Ko-Hua YAP)', '臺灣歷次語言普查回顧', '247', '13.2-4.pdf', 143, ''),
 ('第十三卷', '第二期', '2018年10月', '邱克威', '(Kiak Uei KHOO)', '馬來西亞巴冬潮汕話陰上調的方言融合與條件變讀', '201', '13.2-2.pdf', 145, ''),
+('第十九卷', '第一期', '2024年4月', 'Shuanfan HUANG', '(黃宣範)', 'A Voice System in Search of an Identity: The Multiple Functions of the Patient Voice Construction in', '35', '19.1-2.pdf', 197, ''),
+('第十九卷', '第一期', '2024年4月', 'Andre GODERICH', '(郭育賢)', 'Glottal Stop Alternations in Plngawan Atayal', '103', '19.1-3.pdf', 196, ''),
+('第十九卷', '第一期', '2024年4月', '許慧如', '(Hui-Lu KHOO)', '外省人的台語經驗初探：一個半結構式訪談研究', '1', '19.1-1.pdf', 198, ''),
 ('第十二卷', '第一期', '2017年4月', 'Shuanfan HUANG', '(黃宣範)', 'Variability and Stability in Squliq Atayal Syntax', '1', '12.1-1.pdf', 142, ''),
 ('第十二卷', '第一期', '2017年4月', '蔡維天', '(Wei-Tien Dylan, TSAI)', '「只」有「自己」才能幫自己－談泰雅語中焦點和反身狀語的互動關係', '49', '12.1-2.pdf', 141, ''),
 ('第十二卷', '第一期', '2017年4月', '施朝凱、全茂永', '(Chao-Kai SHIH, Atul MANQOQO)', '卡群布農語雙重施用結構的句法研究', '111', '12.1-4.pdf', 139, ''),
@@ -888,7 +891,7 @@ CREATE TABLE `member` (
   `Title15` text COLLATE utf8_unicode_ci NOT NULL,
   `Value15` text COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`_ID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=17 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=18 ;
 
 --
 -- 資料表的匯出資料 `member`
@@ -931,7 +934,7 @@ CREATE TABLE `news` (
   `OpenAnotherWindow` tinyint(1) NOT NULL DEFAULT '0',
   `Mode` text COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`_ID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=47 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=56 ;
 
 --
 -- 資料表的匯出資料 `news`
@@ -983,7 +986,16 @@ INSERT INTO `news` (`_ID`, `Title`, `Classification`, `url`, `OrderIndex`, `Date
 (43, '《臺灣語文研究》第18卷第2期已出版', '出版資訊', 'Journal.php?Session=第十八卷&Issue=第二期', 43, '2023-10-04', '台灣語文學會', 1, 1, 0, 'Link'),
 (44, '《臺灣語文研究》榮獲2023年臺灣人文及社會科學核心期刊第一級', '出版資訊', 'News_44', 44, '2023-12-30', '台灣語文學會', 1, 1, 0, 'Page'),
 (45, '國際漢學平台李壬癸院士的訪談影片分享', '活動消息', 'News_45', 45, '2024-01-03', '台灣語文學會', 1, 1, 0, 'Page'),
-(46, '「第十五屆台灣語言及其教學國際學術研討會」徵稿啟事', '學術研討會', 'CFP_ISTLT_15.pdf', 46, '2024-01-16', '台灣語文學會', 1, 1, 1, 'File');
+(46, '「第十五屆台灣語言及其教學國際學術研討會」徵稿啟事', '學術研討會', 'CFP_ISTLT_15.pdf', 46, '2024-01-16', '台灣語文學會', 1, 1, 1, 'Page'),
+(47, '台灣語文ê進展&台灣語文學會系列講座', '活動消息', 'News_47', 47, '2024-04-12', '台灣語文學會', 1, 0, 1, 'Page'),
+(48, '[台灣語文ê進展&台灣語文學會系列講座]第一場：閩南語的構擬和分群', '活動消息', 'News_48', 48, '2024-04-12', '台灣語文學會', 1, 0, 1, 'Page'),
+(49, '[台灣語文ê進展&台灣語文學會系列講座]第二場：學台語有啥路用、學台語當著時', '活動消息', 'News_49', 49, '2024-04-12', '台灣語文學會', 1, 0, 1, 'Page'),
+(50, '[台灣語文ê進展&台灣語文學會系列講座]第三場：西拉雅語的過去與未來', '活動消息', 'News_50', 50, '2024-04-12', '台灣語文學會', 1, 0, 1, 'Page'),
+(51, '[台灣語文ê進展&台灣語文學會系列講座]第四場：臺灣語言研究的新展望', '活動消息', 'News_51', 51, '2024-04-12', '台灣語文學會', 1, 0, 1, 'Page'),
+(52, '[台灣語文ê進展&台灣語文學會系列講座]第五場：臺灣手語時貌的分析與教學', '活動消息', 'News_52', 52, '2024-04-13', '台灣語文學會', 1, 0, 1, 'Page'),
+(53, '[台灣語文ê進展&台灣語文學會系列講座]第六場：閩客語共同詞彙的歷史層次比較', '活動消息', 'News_53', 53, '2024-05-20', '台灣語文學會', 1, 0, 1, 'Page'),
+(54, '[台灣語文ê進展&台灣語文學會系列講座]第七場：臺語裡的日語借詞', '活動消息', 'News_54', 54, '2024-07-09', '台灣語文學會', 1, 0, 1, 'Page'),
+(55, '第十五屆台灣語言及其教學暨國際學術研討會', '學術研討會', 'ConferenceMasterPage.php?sessions=1-15', 55, '2024-08-09', '台灣語文學會', 1, 0, 1, 'Link');
 
 -- --------------------------------------------------------
 
@@ -1026,7 +1038,7 @@ CREATE TABLE `payparameter` (
   `ColorType` text COLLATE utf8_bin NOT NULL,
   `OrderIndex` int(11) NOT NULL,
   PRIMARY KEY (`_ID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=11 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=12 ;
 
 --
 -- 資料表的匯出資料 `payparameter`
@@ -1069,11 +1081,11 @@ CREATE TABLE `publication` (
 --
 
 INSERT INTO `publication` (`_ID`, `Category`, `Title`, `Detail`, `Classification`, `Amount`, `DiscountAmount`, `IsUsed`, `ColorType`, `OrderIndex`) VALUES
-(1, '出版品', '閩南地區方言地圖集', '五本85折(同地址)', '《閩南地區方言地圖集》', 2600, 2210, 1, '10', 1),
-(2, '出版品', '閩南地區方言地圖集', '四本85折(同地址)', '《閩南地區方言地圖集》', 2080, 1768, 1, '10', 2),
-(3, '出版品', '閩南地區方言地圖集', '三本85折(同地址)', '《閩南地區方言地圖集》', 1560, 1326, 1, '10', 3),
-(4, '出版品', '閩南地區方言地圖集', '兩本85折(同地址)', '《閩南地區方言地圖集》', 1040, 884, 1, '10', 4),
-(5, '出版品', '閩南地區方言地圖集', '一本85折', '《閩南地區方言地圖集》', 520, 442, 1, '10', 5),
+(1, '出版品', '閩南地區方言地圖集', '五本85折(同地址)', '《閩南地區方言地圖集》', 8000, 6800, 1, '10', 1),
+(2, '出版品', '閩南地區方言地圖集', '四本85折(同地址)', '《閩南地區方言地圖集》', 6400, 5440, 1, '10', 2),
+(3, '出版品', '閩南地區方言地圖集', '三本85折(同地址)', '《閩南地區方言地圖集》', 4800, 4080, 1, '10', 3),
+(4, '出版品', '閩南地區方言地圖集', '兩本9折(同地址)', '《閩南地區方言地圖集》', 3200, 2880, 1, '10', 4),
+(5, '出版品', '閩南地區方言地圖集', '一本9折', '《閩南地區方言地圖集》', 1600, 1440, 1, '10', 5),
 (6, '出版品', '三十而立', '五本85折(同地址)', '《三十而立——台灣語文學會三十週年慶祝論文集》', 2600, 2210, 1, '10', 6),
 (7, '出版品', '三十而立', '四本85折(同地址)', '《三十而立——台灣語文學會三十週年慶祝論文集》', 2080, 1768, 1, '10', 7),
 (8, '出版品', '三十而立', '三本85折(同地址)', '《三十而立——台灣語文學會三十週年慶祝論文集》', 1560, 1326, 1, '10', 8),
@@ -1101,7 +1113,16 @@ CREATE TABLE `qtest` (
   `orderNo` varchar(255) COLLATE utf8_unicode_ci NOT NULL COMMENT 'TLLS訂單編號',
   `isPay` tinyint(1) NOT NULL DEFAULT '0' COMMENT '支付完成狀態',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='測試用' AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='測試用' AUTO_INCREMENT=4 ;
+
+--
+-- 資料表的匯出資料 `qtest`
+--
+
+INSERT INTO `qtest` (`id`, `name`, `email`, `phone`, `TaxIDTitle`, `TaxIDNumber`, `ReceiptID`, `ReceiptSeq`, `timestamp`, `amt`, `itemdesc`, `orderNo`, `isPay`) VALUES
+(1, 'CCC', 'yoyo30618@gmail.com', '09789623', 'CCC', 'CCC', '113001', '1', '2024-09-19 19:47:26', 1000, '補繳2023年會費一般會員', 'TY1726746446', 1),
+(2, '測試', 'service@twlls.org.tw', '123456789', '測試', '', '113002', '2', '2024-09-30 15:26:22', 1000, '補繳2023年會費一般會員', 'TY1727681182', 1),
+(3, '王大明', 'yoyobuycard@gmail.com', '0912346578', '國立台灣大學', '', '113003', '3', '2024-10-08 20:38:02', 200, '三十而立一本85折', 'TY1728391082', 1);
 
 -- --------------------------------------------------------
 
@@ -1124,14 +1145,14 @@ CREATE TABLE `relatedlinks` (
   `OrderIndex` int(11) NOT NULL,
   `Notice` text COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`_ID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=45 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=52 ;
 
 --
 -- 資料表的匯出資料 `relatedlinks`
 --
 
 INSERT INTO `relatedlinks` (`_ID`, `Function`, `Item`, `MeetingURL`, `Link`, `Date`, `Place`, `Title`, `TitleEng`, `Photo`, `IsUsed`, `OrderIndex`, `Notice`) VALUES
-(1, '台灣語言及其教學國際研討會', '第十四屆', 'https://chass.ncku.edu.tw/p/412-1011-27963.php?Lang=zh-tw', '1-14', '2022年08月27~28日', '國立成功大學 光復校區 國際會議廳 演講室 &Webex', '多聲道的台灣共同體', 'The 14th International Symposium on Taiwanese Languages and Teaching', '', 1, 8, '研討會'),
+(1, '台灣語言及其教學國際研討會', '第十四屆', 'https://chass.ncku.edu.tw/p/412-1011-27963.php?Lang=zh-tw', '1-14', '2022年08月27~28日', '國立成功大學 光復校區 國際會議廳 演講室 &Webex', '多聲道的台灣共同體', 'The 14th International Symposium on Taiwanese Languages and Teaching', 'ISTLT14_poster.jpg', 1, 8, '研討會'),
 (2, '台灣語言及其教學國際研討會', '第十三屆', 'https://istlt2020.wixsite.com/nthu', '1-13', '2020年10月16、17日', '國立清華大學臺灣語言研究與教學研究所', '台灣語言研究傳承與推廣', 'The 13th International Symposium on Taiwanese Languages and Teaching', '', 1, 7, '研討會'),
 (3, '台灣語言及其教學國際研討會', '第十二屆', 'https://goo.gl/27a7y6', '1-12', '2018年10月26、27日', '國立中山大學文學院\n\n', '台灣語言的多樣性與永續發展\n\n', 'The 12th International Symposium on Taiwanese Languages and Teaching', '', 1, 6, '研討會'),
 (4, '台灣語言及其教學國際研討會', '第十一屆', '', '1-11', '2016年7月12、13日', '中央研究院學術活動中心\n\n', '台灣語言的共時與歷時研究\n\n', 'The 11th International Symposium on Taiwanese Languages and Teaching', '', 1, 5, '研討會'),
@@ -1162,11 +1183,15 @@ INSERT INTO `relatedlinks` (`_ID`, `Function`, `Item`, `MeetingURL`, `Link`, `Da
 (36, '學會簡介編年史', '召開第二次籌備會議', '', '', '1991年07月20日', '', '在國立臺灣師範大學召開第二次籌備會議，會中決定 8月17日召開「台灣語文學會」成立大會。', '', '', 1, 5, ''),
 (37, '學會簡介編年史', '「台灣語文學會」正式成立。', '', '', '1991年08月17日', '', '', '', '', 1, 0, ''),
 (39, '出版品', '《三十而立——台灣語文學會三十週年慶祝論文集》', '', 'contact.tlls@gmail.com', '', '', '提醒：<br>\n1. 《三十而立——台灣語文學會三十週年慶祝論文集》定價520元，免運費。<br>\n2. 6-10本7.5折、10本以上享團購價，請來信訂購：<<EMAIL>>（學會秘書處）。<br>\n3. 不同地址請分開訂單訂購。<br>\n4. 本系統於收到繳費後，會寄發電子收據。', '', '1.png', 1, 3, ''),
-(40, '出版品', '《閩南地區方言地圖集》', '', 'contact.tlls@gmail.com', '', '', '提醒：<br>\n1. 本書定價1600元，國內購買免郵資。<br>\n2. 不同地址請分開訂單訂購。<br>\n3. 國外購買除以上折扣以外，需外加郵費。請來信購買：<<EMAIL>>（學會秘書處）。<br>\n4. 本系統於收到繳費後，會寄發電子收據。', '', '1.png', 1, 2, ''),
-(41, '出版品', '紙本期刊', '', 'contact.tlls@gmail.com', '', '', '請來信購買。學會秘書處EMAIL：<<EMAIL>>。', '簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介簡介', '', 1, 1, ''),
-(42, '首頁橫幅', 'Video', '', '', '', '', '訊息1', '這是訊息1的說明', 'banner.mp4', 1, 3, ''),
-(43, '首頁橫幅', 'Image', '', '', '', '', '訊息2', '這是訊息2的說明', 'about.jpg', 1, 2, ''),
-(44, '首頁橫幅', 'Image', '', '', '', '', '訊息3', '這是訊息3的說明', '', 1, 1, '');
+(40, '出版品', '《閩南地區方言地圖集》', '', 'contact.tlls@gmail.com', '', '', '提醒：<br>\n1. 本書定價1600元，國內購買免郵資。<br>\n2. 不同地址請分開訂單訂購。<br>\n3. 國外購買除以上折扣以外，需外加郵費。請來信購買：<<EMAIL>>（學會秘書處）。<br>\n4. 本系統於收到繳費後，會寄發電子收據。', '', '2.jpg', 1, 2, ''),
+(41, '出版品', '紙本期刊', '', 'contact.tlls@gmail.com', '', '', '請來信購買。學會秘書處EMAIL：<<EMAIL>>。', '請來信詢問購買', '3.jpg', 1, 1, ''),
+(42, '首頁橫幅', 'Video', '', '', '', '', '《三十而立——台灣語文學會三十週年慶祝論文集》出版', '「台灣語文學會」成立於 1991 年 8 月 17 日，2021年為「台灣語文學會」創會三十週年。本會以從事臺灣語文的研究和教育為宗旨，三十年來，在確立臺灣語言的主體性、推動台灣語文教育以及促進台灣語文的學術化上都扮演重要的角色。', 'banner.mp4', 1, 3, ''),
+(43, '首頁橫幅', 'Image', '', '', '', '', '這是今天的訊息', '這是訊息2的說明', 'about.jpg', 1, 2, ''),
+(44, '首頁橫幅', 'Image', '', '', '', '', '訊息3', '這是訊息3的說明', 'about.jpg', 1, 1, ''),
+(48, '台灣語言及其教學國際研討會', '第十五屆', 'https://sites.google.com/dhakka.nknu.edu.tw/istlt15', '1-15', '2024年11月01~02日', '國立高雄師範大學 10F國際會議廳', '語言社群之個體性、都市化與多模態實踐', 'The 15th International Symposium on Taiwanese Languages and Teaching', 'conference_1_15_01.png', 1, 9, '研討會'),
+(49, '期刊', '第十九卷', '', '', '', '', '本刊榮獲收錄於國科會人社中心人文學核心期刊THCI，2023經評比為語言學門第一級期刊', '', '', 1, 1, '期刊獲獎資訊'),
+(50, '期刊', '第十九卷', '', '', '', '', '賀《臺灣語文研究》榮獲國家圖書館112年臺灣學術資源能量風貌報告「期刊即時傳播獎-精選組」', '', '', 1, 1, '期刊獲獎資訊'),
+(51, '期刊', '第十九卷', '', '', '', '', '賀《臺灣語文研究》榮獲國家圖書館「111年臺灣學術資源影響力」期刊即時傳播獎：語言學學門期刊第一名', '', '', 1, 1, '期刊獲獎資訊');
 
 -- --------------------------------------------------------
 
@@ -1230,6 +1255,29 @@ INSERT INTO `thesisawardinfo` (`Issue`, `IssueDate`, `Memo`, `Attachment`, `Orde
 ('第五屆', '', '第五屆台灣語文學會優秀博士論文獎（2019）獲獎者一名，佳作一名。', '', 5),
 ('第六屆', '2022年01月28日', '第六屆台灣語文學會優秀博士論文獎（2021）獲獎者一名。', 'award_1_06.pdf', 6),
 ('第四屆', '', '', '', 4);
+
+-- --------------------------------------------------------
+
+--
+-- 資料表結構 `tlls_order`
+--
+
+CREATE TABLE `tlls_order` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(30) COLLATE utf8_unicode_ci NOT NULL COMMENT '繳款人姓名',
+  `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL COMMENT '繳款人之email',
+  `phone` varchar(30) COLLATE utf8_unicode_ci NOT NULL COMMENT '繳款人電話',
+  `TaxIDTitle` varchar(30) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '收據抬頭',
+  `TaxIDNumber` varchar(30) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `ReceiptID` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '收據郵寄地址',
+  `ReceiptSeq` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `timestamp` datetime NOT NULL COMMENT '時間戳記',
+  `amt` int(11) NOT NULL COMMENT '金額',
+  `itemdesc` varchar(255) COLLATE utf8_unicode_ci NOT NULL COMMENT '費用用途細節',
+  `orderNo` varchar(255) COLLATE utf8_unicode_ci NOT NULL COMMENT 'TLLS訂單編號',
+  `isPay` tinyint(1) NOT NULL DEFAULT '0' COMMENT '支付完成狀態',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
