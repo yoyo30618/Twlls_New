@@ -31,7 +31,7 @@ $timestamp = time();
 $datestamp = date('Y-m-d H:i:s');
 $order_no = 'TY' . $timestamp;
 //寫入DB紀錄有人想買東西了
-$SomeOneWantBuySQL = "INSERT INTO `qtest`(`name`, `email`, `phone`, `TaxIDTitle`, `TaxIDNumber`, `timestamp`, `amt`, `itemdesc`, `orderNo`, `isPay`) VALUES ('".$payer_name."','".$email."','".$phone."','".$receipt_title."','".$tax_id."','".$datestamp."','".$amount."','".$ItemDesc."','".$order_no."','0')";
+$SomeOneWantBuySQL = "INSERT INTO `tlls_order`(`name`, `email`, `phone`, `TaxIDTitle`, `TaxIDNumber`, `timestamp`, `amt`, `itemdesc`, `orderNo`, `isPay`) VALUES ('".$payer_name."','".$email."','".$phone."','".$receipt_title."','".$tax_id."','".$datestamp."','".$amount."','".$ItemDesc."','".$order_no."','0')";
 $conn_1->query($SomeOneWantBuySQL);
 
 $HashData=generateTradeInfo($timestamp,$email,$ItemDesc,$amount);

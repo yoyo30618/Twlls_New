@@ -1,11 +1,17 @@
 ﻿<?php
+// 定義常量-測試用
+// define('MERCHANT_ID', 'MS116215250');
+// define('HASH_KEY', 'PhwJZl6DVlOeodv8b8KTRXm2QReVLvMK');
+// define('HASH_IV', 'CsDoKAnT71yDsoXP');
+// define('TLLS_EMAIL', 'yoyo30618@gmail.com');
+// $key = 'PhwJZl6DVlOeodv8b8KTRXm2QReVLvMK';
+// $iv = 'CsDoKAnT71yDsoXP';
+
 // 定義常量
-define('MERCHANT_ID', 'MS116215250');
-define('HASH_KEY', 'PhwJZl6DVlOeodv8b8KTRXm2QReVLvMK');
-define('HASH_IV', 'CsDoKAnT71yDsoXP');
-define('TLLS_EMAIL', 'yoyo30618@gmail.com');
-$key = 'PhwJZl6DVlOeodv8b8KTRXm2QReVLvMK';
-$iv = 'CsDoKAnT71yDsoXP';
+define('MERCHANT_ID', 'MS3340779031');
+define('HASH_KEY', '2qZoz5pmpq4PolPgRsxz8adBXyooGxai');
+define('HASH_IV', 'PQK9lCFHY2IuFZqC');
+define('TLLS_EMAIL', 'contact.tlls@gmail.com');
 
 function sendMail($to, $subject, $ResponseData)
 {
@@ -95,7 +101,7 @@ function generateTradeInfo($timestamp,$email,$ItemDesc,$amount) {
         'Amt' => $amount,
         'ItemDesc' => $ItemDesc,
         'Email' => $email,
-        'NotifyURL' => 'http://www.twlls.org.tw/TestPage/PayNotifyAndCheckDB.php?MerchantOrderNo=TY'.$timestamp
+        'NotifyURL' => 'http://www.twlls.org.tw/PayNotifyAndCheckDB.php?MerchantOrderNo=TY'.$timestamp
     ));
     $key = str_pad(HASH_KEY, 32, "\0"); 
     $block_size = 16;

@@ -13,7 +13,7 @@ parse_str($edata1, $ResposeArray);
 if ($edata1 !== false) {
     if($ResposeArray['Status']=='SUCCESS'){//藍新回覆刷卡成功，寄信給學會及買家收據
         //確認買家成功支付後，需要改寫DB內容
-        $CheckBuySQL="SELECT * FROM `qtest` WHERE `orderNo`='".$ResposeArray['MerchantOrderNo']."'";
+        $CheckBuySQL="SELECT * FROM `tlls_order` WHERE `orderNo`='".$ResposeArray['MerchantOrderNo']."'";
         $SomeOneWantBuyResult=$conn_1->query($CheckBuySQL);
         if($SomeOneWantBuyResult->num_rows>0){//確認有這筆訂單
             $Cnt=0;
@@ -27,7 +27,7 @@ if ($edata1 !== false) {
                     break;
                 }
                 //DB紀錄付款完成
-                $SetPaySUCCESSSQL="UPDATE `qtest` SET `IsPay`='1' WHERE `orderNo`='".$ResposeArray['MerchantOrderNo']."'";
+                $SetPaySUCCESSSQL="UPDATE `tlls_order` SET `IsPay`='1' WHERE `orderNo`='".$ResposeArray['MerchantOrderNo']."'";
                 $conn_1->query($SetPaySUCCESSSQL);
                 $chineseSum = num2str($ResposeArray['Amt']);
                 $TaxIDNumber = ($BuyInfoRow['TaxIDNumber'] == "") ? "" : convertStrType($BuyInfoRow['TaxIDNumber'], "TODBC");
@@ -39,7 +39,7 @@ if ($edata1 !== false) {
                 $thisyear = date('Y', strtotime($BuyInfoRow['timestamp']));
                 $y = $thisyear - 1911;
                 $mytime = "中華民國　" . $y . "　年　" . date('m　月　d　日', strtotime($BuyInfoRow['timestamp']));
-                $sql = "SELECT MAX(ReceiptSeq) FROM `qtest` where timestamp >=  '$thisyear/01/01 00:00:00' and timestamp <= '$thisyear/12/31 23:59:59'";
+                $sql = "SELECT MAX(ReceiptSeq) FROM `tlls_order` where timestamp >=  '$thisyear/01/01 00:00:00' and timestamp <= '$thisyear/12/31 23:59:59'";
                 $result2 = $conn_1->query($sql);
                 $row2 = $result2->fetch_row();// 產生收據編號
                 if ($result2->num_rows == 0 || $row2[0] == 0 || $row2[0] == '') {
@@ -49,7 +49,7 @@ if ($edata1 !== false) {
                 }
                 $yearno = $y . str_pad($ReceiptSeq, 3, "0", STR_PAD_LEFT); //$yearno: 收據編號
                 // 填入收據編號欄位的值 
-                $sql = "UPDATE `qtest` SET `ReceiptID` = $yearno,`ReceiptSeq` = $ReceiptSeq where orderNo = '".$BuyInfoRow['orderNo']."'"; // ReceiptID: 資料庫的收據編號
+                $sql = "UPDATE `tlls_order` SET `ReceiptID` = $yearno,`ReceiptSeq` = $ReceiptSeq where orderNo = '".$BuyInfoRow['orderNo']."'"; // ReceiptID: 資料庫的收據編號
                 $conn_1->query($sql);
                 $BuyInfosize = (mb_strlen($BuyInfoRow['itemdesc'], "utf-8") <= 9) ? "12px" : "10px";
                 $tdString="";

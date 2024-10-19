@@ -1,0 +1,9 @@
+
+					<h3><b>[台灣語文ê進展&台灣語文學會系列講座]第二場：學台語有啥路用、學台語當著時</b></h3>
+					<div class="news-grid-rght3">
+						<div class="story">
+							<text style="color:red">[台灣語文ê進展&台灣語文學會系列講座]第二場：學台語有啥路用、學台語當著時</text>
+							<img src="Documents/NEWS_49.png" style="height:600px"/><br>
+							附件：<a href="Documents/NEWS_49.png" >海報</a>
+						</div>
+					</div>

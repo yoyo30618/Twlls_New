@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台灣語文ê進展&台灣語文學會系列講座</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            margin: 15px 0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .pdf-links {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>台灣語文ê進展&台灣語文學會系列講座</h1>
+    <p>根據UNESCO「不同世代語言傳承指標」，台灣原住民語面臨嚴重危險和滅絕的危機，客語和台語也被列為嚴重危險語言（2022年行政院會議文化部報告）。以語言使用的年齡層細分調查結果可發現，65歲以上民眾使用「國語」比例不到28.5%，14歲以下族群卻超過9成，國家本土語言被「國語取代情形顯著（2020年行政院人口及住宅普查）。
+	</p>
+    <p>若按呢，現今台灣語文的教學、研究敢有步？請逐家做公親做伙來聽看覓！</p>
+    <p>詳細資訊內容請點:</p>
+    <div class="pdf-links">
+        <a href="index.php">台灣語文學會</a><br>
+        <a href="NewsMasterPage.php?_ID=48">第一場(0418)</a><br>
+        <a href="NewsMasterPage.php?_ID=49">第二場(0423)</a><br>
+        <a href="NewsMasterPage.php?_ID=50">第三場(0507)</a><br>
+        <a href="NewsMasterPage.php?_ID=51">第四場(0508)</a><br>
+        <a href="NewsMasterPage.php?_ID=52">第五場(0514)</a><br>
+        <a href="NewsMasterPage.php?_ID=53">第六場(0521)</a><br>
+        <a href="NewsMasterPage.php?_ID=54">第七場(0927)</a><br>
+		<img src="Documents/NEWS_20240412_new.png" style="height:600px"/><br>
+		附件：<a href="Documents/NEWS_20240412_new.png" >海報</a>
+	</div>
+</body>
+</html>

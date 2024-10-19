@@ -1,6 +1,6 @@
 <table style="width:100%;">
 	<tr><td style="text-align:center;"><br></td></tr>
-	<tr><td style="text-align:center;color:red;"><b>第七屆台灣語文學會優秀博士論文獎</b></td></tr>
+	<tr><td style="text-align:center;color:red;"><b>第七屆台灣語文學會優秀博士論文獎<br><br></b></td></tr>
 	<tr><td style="text-align:center;color:darkblue;"><b>徵件啟事</b></td></tr>
 	<tr><td style="text-align:center;"><br></td></tr>
 	<tr>

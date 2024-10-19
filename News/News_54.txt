@@ -1,0 +1,9 @@
+
+					<h3><b>[台灣語文ê進展&台灣語文學會系列講座]第七場：臺語裡的日語借詞</b></h3>
+					<div class="news-grid-rght3">
+						<div class="story">
+							<text style="color:red"[台灣語文ê進展&台灣語文學會系列講座]第七場：臺語裡的日語借詞</text>
+							<img src="Documents/NEWS_54.png" style="height:600px"/><br>
+							附件：<a href="Documents/NEWS_54.png" >海報</a>
+						</div>
+					</div>

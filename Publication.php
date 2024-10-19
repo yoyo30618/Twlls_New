@@ -211,7 +211,7 @@
 					</tr>
 				</table>
 			</form>
-			<form id="paymentForm" method="post" action="https://ccore.newebpay.com/MPG/mpg_gateway" style="display: none;">
+			<form id="paymentForm" method="post" action="https://core.newebpay.com/MPG/mpg_gateway" style="display: none;">
 				<input type="hidden" id="TradeInfo" name="TradeInfo">
 				<input type="hidden" id="TradeSha" name="TradeSha">
 				<input type="hidden" id="MerchantID" name="MerchantID">
