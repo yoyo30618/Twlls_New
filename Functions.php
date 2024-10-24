@@ -12,6 +12,7 @@ define('MERCHANT_ID', 'MS3340779031');
 define('HASH_KEY', '2qZoz5pmpq4PolPgRsxz8adBXyooGxai');
 define('HASH_IV', 'PQK9lCFHY2IuFZqC');
 define('TLLS_EMAIL', 'contact.tlls@gmail.com');
+define('CURTPWD', 'tlls2015');
 
 function sendMail($to, $subject, $ResponseData)
 {

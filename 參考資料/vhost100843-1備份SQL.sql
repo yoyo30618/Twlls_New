@@ -1000,29 +1000,6 @@ INSERT INTO `news` (`_ID`, `Title`, `Classification`, `url`, `OrderIndex`, `Date
 -- --------------------------------------------------------
 
 --
--- 資料表結構 `orderlist`
---
-
-CREATE TABLE `orderlist` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(30) COLLATE utf8_unicode_ci NOT NULL COMMENT '繳款人姓名',
-  `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL COMMENT '繳款人之email',
-  `phone` varchar(30) COLLATE utf8_unicode_ci NOT NULL COMMENT '繳款人電話',
-  `TaxIDTitle` varchar(30) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '收據抬頭',
-  `TaxIDNumber` varchar(30) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `ReceiptID` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '收據郵寄地址',
-  `ReceiptSeq` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `timestamp` datetime NOT NULL COMMENT '時間戳記',
-  `amt` int(11) NOT NULL COMMENT '金額',
-  `itemdesc` varchar(255) COLLATE utf8_unicode_ci NOT NULL COMMENT '費用用途細節',
-  `orderNo` varchar(255) COLLATE utf8_unicode_ci NOT NULL COMMENT 'TLLS訂單編號',
-  `isPay` tinyint(1) NOT NULL DEFAULT '0' COMMENT '支付完成狀態',
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='測試用' AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
 -- 資料表結構 `payparameter`
 --
 
