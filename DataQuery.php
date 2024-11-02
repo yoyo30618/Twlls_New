@@ -50,7 +50,7 @@
 					<table class="table table-bordered">
 							<thead>
 								<tr align="right">
-									<td colspan="9">
+									<td colspan="10">
 										<form action="DataQuery.php" method="get">
 											<div class="input-group mb-3 d-grid gap-2 d-md-flex justify-content-md-end">
 												<input type="hidden" name="Page" value="1">
@@ -71,6 +71,7 @@
 									<td>用途<br></td>
 									<td>寄書<br>資訊</td>
 									<td>購買<br>本數</td>
+									<td>重新觸發<br>(會重新產生收據)</td>
 								</tr>
 							</thead>
 							<tbody>
@@ -108,6 +109,10 @@
 										echo "<td bgcolor='$color'>$row->itemdesc</td>";
 										echo "<td bgcolor='$color'>$row->BookAddress</td>";
 										echo "<td bgcolor='$color'>$row->BookQuantity</td>";
+										if ($row->isPay == 0)
+											echo "<td bgcolor='$color'>不可重新觸發</td>";
+										if ($row->isPay == 1)
+											echo "<td bgcolor='$color'><button onclick='confirmRedirect(\"$row->orderNo\")'>重新觸發</button></td>";
 										echo "</tr>";
 									}
 								}
@@ -204,6 +209,14 @@
 	?>
 	<?php include_once('footer.php'); ?>
 	<script src="js/bootstrap.js"></script>
+	<script>
+        function confirmRedirect(page) {
+            // 顯示確認對話框
+            if (confirm("將會產生新的收據編號，確定要重新觸發嗎？")) {
+                window.location.href = "ReSendRecipe.php?orderNo="+page;
+            }
+        }
+    </script>
 </body>
 
 </html>
