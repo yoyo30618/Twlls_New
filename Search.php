@@ -105,7 +105,7 @@
 								}
 							}
 							if($tab==="Journal"){
-								$sql = "SELECT * FROM `journalcontent` WHERE 1=1 AND (`JournalSession` like '%".$Key."%' OR `JournalIssue` like '%".$Key."%' OR `Author` like '%".$Key."%' OR `AuthorEng` like '%".$Key."%' OR `Title` like '%".$Key."%') ORDER BY `OrderIndex` DESC ";
+								$sql = "SELECT * FROM `journalcontent_NewOrder` WHERE 1=1 AND (`JournalSession` like '%".$Key."%' OR `JournalIssue` like '%".$Key."%' OR `Author` like '%".$Key."%' OR `AuthorEng` like '%".$Key."%' OR `Title` like '%".$Key."%') ORDER BY `OrderIndex` DESC ";
 								$result = $conn_1->query($sql);
 								if ($result->num_rows > 0) {
 									while ($row = mysqli_fetch_array($result)) {
