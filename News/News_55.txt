@@ -1,0 +1,9 @@
+
+					<h3><b>紀念張裕宏教授系列台語講座 第一場：如何以AI復振台語：機會與挑戰</b></h3>
+					<div class="news-grid-rght3">
+						<div class="story">
+							<text style="color:red"紀念張裕宏教授系列台語講座 第一場：如何以AI復振台語：機會與挑戰</text>
+							<img src="Documents/NEWS_55.png" style="height:600px"/><br>
+							附件：<a href="Documents/NEWS_55.png" >海報</a>
+						</div>
+					</div>

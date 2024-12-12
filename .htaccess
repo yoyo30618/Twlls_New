@@ -1,0 +1,4 @@
+###輕鬆架站轉址設定start###
+RewriteEngine On
+RewriteBase /
+###輕鬆架站轉址設定end###
